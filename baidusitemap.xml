@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/2022/03/15/Lecture/Introduction_to_AI/</loc>
-    <lastmod>2022-03-14</lastmod>
+    <loc>http://example.com/2022/02/20/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%BA%8C%E9%83%A8/</loc>
+    <lastmod>2022-03-15</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/02/20/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%BA%8C%E9%83%A8/</loc>
-    <lastmod>2022-03-14</lastmod>
+    <loc>http://example.com/2022/01/12/CS/%E5%85%B6%E4%BB%96/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAUnix%E5%85%A5%E5%9D%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2022-03-15</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/15/Lecture/Advanced%20Word%20Power%20Winter/</loc>
+    <lastmod>2022-03-15</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/03/15/Lecture/Introduction_to_AI/</loc>
     <lastmod>2022-03-14</lastmod>
   </url>
   <url>
@@ -178,10 +182,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/01/09/CS/%E5%85%B6%E4%BB%96/typing/</loc>
-    <lastmod>2022-02-23</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/01/12/CS/%E5%85%B6%E4%BB%96/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAUnix%E5%85%A5%E5%9D%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2022-02-23</lastmod>
   </url>
   <url>
