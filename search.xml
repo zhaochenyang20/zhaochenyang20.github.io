@@ -1041,6 +1041,39 @@ push 我的中文简历</li>
 <p>那些让我将枪口指向对岸的吸血鬼们，才是我一生的敌人…</p>
 </blockquote></li>
 </ul>
+<h2 id="月-16-日的记忆碎片">3 月 16 日的记忆碎片</h2>
+<ul>
+<li><p>昨天上午效率很高，可惜起来背英语的时候一直在和人聊天，感觉还是无法割舍人与人的感情</p></li>
+<li><p>上午上概统课，和昊迪扯皮，感觉梁老师讲的蛮好，就是节奏慢了些，之后上课干脆自己看普林斯顿统计读本吧</p></li>
+<li><p><del>反正 lambda 帮我 SRT 报销负载均衡</del></p></li>
+<li><p>下午继续学 shell，不过可惜那本书不讲脚本，我还得单独想办法学脚本</p></li>
+<li><p>为了给 git 换端口，在科协水群提问，被夏老板批评了，希望以后能做个 smart asker</p></li>
+<li><p>晚饭完了没有休息，直接继续看书，盘坐在阳台的柱子上，很舒服</p></li>
+<li><p>晚上 7 点多便觉得困倦，想要睡觉</p></li>
+<li><p>昨天酒井资讯搞了个笔记大赛，笑死了，该我乱杀了！</p>
+<blockquote>
+<p><strong>1.1 面向对象</strong></p>
+<p>本次笔记大赛面向计算机系所有同学（计金班中代管院系为经管学院的同学也可参加）。</p>
+<p><strong>1.2 内容要求</strong></p>
+<p><strong>TL;DR: 必限都可以，大一到大四都可以。</strong></p>
+<p>征募笔记所涉及的课程包括：</p>
+<p>数理基础课程：微积分、线性代数、大学物理、概率论与数理统计等；</p>
+<p>系专业课：离散数学、面向对象程序设计基础、数据结构、计算机组成原理、计算机网络原理、操作系统等全部系必修、限选课程。</p>
+<p><strong>1.3 笔记形式</strong></p>
+<p>形式不限，课堂笔记、PPT注解、复习整理资料均可。</p>
+<p>投稿不需覆盖一门课的全部知识，<strong>单章、部分知识点</strong>的笔记也可。</p>
+<p><strong>1.4 提交方式</strong></p>
+<p>电子版与纸质版均可。</p>
+<p>提交笔记为电子版的同学，请发送笔记至学生会邮箱（cstsu_thu@163.com）；</p>
+<p>提交笔记为纸质版的同学，请将笔记放在紫荆公寓二号楼408A门上的袋子里（如下图）。</p>
+<p><strong>1.5 注意事项</strong></p>
+<ol type="1">
+<li><p>无论提交笔记为纸质版或电子版均<strong>需注明姓名、班级、邮箱</strong>，保证能及时联系到供稿者。</p></li>
+<li><p>如不希望笔记最终被共享至 bypass 资料库，或希望共享时匿名（匿名后将只保留年级信息），也请特别备注说明。</p></li>
+<li><p>交笔记时，<strong>可另外交1-3页最为满意的“样章”</strong>。评选时会优先审阅“样章”内容，以便了解水平、提高评阅效率和避免评阅错漏。</p></li>
+</ol>
+</blockquote></li>
+</ul>
 ]]></content>
       <categories>
         <category>心心念念</category>
@@ -1145,6 +1178,98 @@ push 我的中文简历</li>
       <tags>
         <tag>2022寒假</tag>
         <tag>照片墙</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机系笔记大赛</title>
+    <url>/2022/03/17/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E7%AC%94%E8%AE%B0%E5%A4%A7%E8%B5%9B/</url>
+    <content><![CDATA[<h1 id="readme">Readme</h1>
+<ul>
+<li>这是 <a href="https://zhaochenyang20.github.io/">zhaochen20</a> 参加计算机系笔记大赛的笔记集合，本人非常荣幸这些可以全体加入 by-pass 集合为计算机系后人铺路</li>
+<li>本人的笔记较多，风格各异，部分笔记已经部署在<a href="https://docs.net9.org/">酒井科协 SAST 技能文档</a>，其他部分分享给了少数朋友与计 06 班，私以为质量较高</li>
+</ul>
+<h1 id="样张">样张</h1>
+<ul>
+<li><a href="https://docs.net9.org/languages/c-oop/">oop 课程笔记( 已部署为技能文档 )</a></li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/17/PsJ7Qi2UhwdnpCk.png" style="zoom:33%;" /></p>
+<ul>
+<li><strong>线性代数思维导图</strong></li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/17/s46UelrfS5NF7uy.png" style="zoom:50%;" /></p>
+<ul>
+<li><strong>微积分期末复习笔记</strong></li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/17/gro8mdwHa7kEGCR.png" alt="" style="zoom:60%;" /></p>
+<ul>
+<li><strong>Linux, Python, JavaScript 笔记( 全部部署在个人博客 )</strong></li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/17/wpjTsy4e62zROIl.png" alt="image.png" style="zoom:30%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/17/fjOYDzki4ZbqvIe.png" style="zoom:30%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/17/epJxufiljFkn2gU.png" style="zoom:30%;" /></p>
+<p><img src="https://s2.loli.net/2022/03/17/LtGMkboEf4O3Svm.png" style="zoom:30%;" /></p>
+<h1 id="存储说明">存储说明</h1>
+<ul>
+<li>由于笔记数量较多，单独开辟了清华云盘来存储笔记</li>
+<li>少部分大一学年的笔记由本人前女友贡献，再次致谢</li>
+<li>如若要上传至 by-pass，可以先行剔除笔记里的部分影响阅读的词汇</li>
+<li>如若因版权原因造成了不必要的麻烦，烦请告知本人，并将笔记删除</li>
+<li>本人所作笔记都有全部本地文档，而 JavaScript 笔记主要是摘抄自技能文档，廖雪峰博客等网络资源，暂时先放入参赛作品，倘若涉及侵权，立刻删除</li>
+<li>云盘链接<a href="https://cloud.tsinghua.edu.cn/d/598bef9e3b844f17bf59/">见此处</a></li>
+</ul>
+<h1 id="文件说明">文件说明</h1>
+<ul>
+<li><p>caculous 为大一学年的微积分笔记</p>
+<blockquote>
+<ol type="1">
+<li>Calculous Finale 为大一期末复习笔记，写的较为详尽，也做过更改</li>
+<li>其余笔记主要为大一下学期多元微积分内容</li>
+<li>部分笔记为 docx，部分为 md，部分为 pdf</li>
+</ol>
+</blockquote></li>
+<li><p>oop 为大一下学期的 oop 笔记</p>
+<blockquote>
+<ol type="1">
+<li>已完全部署至 <a href="https://docs.net9.org/languages/c-oop/">SAST 技能文档 C++ OOP 部分</a></li>
+<li>最后的整理工作由计算机系科协 c7w 和 holder 二人整理并格式化，再次致谢</li>
+</ol>
+</blockquote></li>
+<li><p>linear algebra 为大一上学期的线性代数笔记</p>
+<blockquote>
+<ol type="1">
+<li>主要为本人所绘制的思维导图</li>
+</ol>
+</blockquote></li>
+<li><p>complex 为大二上学期的复变笔记</p>
+<blockquote>
+<ol type="1">
+<li>本人的课程笔记</li>
+<li>期末考试的复习资料</li>
+</ol>
+</blockquote></li>
+<li><p>大二下课程目前仍在更新</p>
+<blockquote>
+<ol type="1">
+<li>所有笔记目前部署在<a href="https://zhaochenyang20.github.io/categories/%E8%AF%BE%E7%A8%8B/">我的个人博客</a></li>
+<li>目前笔记仍在更新，可查看博客获得最新文章</li>
+<li>笔记内容除了编程基础，还有毛概、体育与科技英语</li>
+</ol>
+</blockquote></li>
+<li><p>CS 其他为 Linux. Python, JavaScript 等开发笔记</p>
+<blockquote>
+<ol type="1">
+<li>完全部署在个人博客的 <a href="https://zhaochenyang20.github.io/categories/CS/">CS 部分</a>和<a href="https://zhaochenyang20.github.io/categories/%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91/">全栈开发部分</a></li>
+<li>目前笔记仍在更新，可查看博客获得最新文章</li>
+</ol>
+</blockquote></li>
+</ul>
+]]></content>
+      <categories>
+        <category>心心念念</category>
+      </categories>
+      <tags>
+        <tag>2022春季</tag>
+        <tag>社工</tag>
       </tags>
   </entry>
   <entry>
