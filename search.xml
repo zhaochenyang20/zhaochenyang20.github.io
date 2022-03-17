@@ -1181,6 +1181,38 @@ push 我的中文简历</li>
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2022/03/17/CS/%E5%85%B6%E4%BB%96/shell_script/</url>
+    <content><![CDATA[<h1 id="philosophy">Philosophy</h1>
+<p>There are a number of factors which can go into good, clean, quick, shell scripts.</p>
+<ul>
+<li>The most important criteria must be a clear, readable layout.</li>
+<li>Second is avoiding unnecessary commands.</li>
+</ul>
+<h2 id="a-clear-layout"><strong>A clear layout</strong></h2>
+<p><strong>A clear layout</strong> makes the difference between a shell script appearing as "black magic" and one which is easily maintained and understood. You may be forgiven for thinking that with a simple script, this is not too significant a problem, but two things here are worth bearing in mind.</p>
+<ol type="1">
+<li>First, a simple script will, more often than anticipated, grow into a large, complex one.</li>
+<li>Secondly, if nobody else can understand how it works, you will be lumbered with maintaining it yourself for the rest of your life!</li>
+</ol>
+<p>Something about shell scripts seems to make them particularly likely to be badly indented, and since the main control structures are if/then/else and loops, indentation is critical for understanding what a script does.</p>
+<h2 id="avoiding-unnecessary-commands">avoiding unnecessary commands</h2>
+<p>One weakness in many shell scripts is lines such as:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">cat /tmp/myfile | grep <span class="string">&quot;mystring&quot;</span></span><br></pre></td></tr></table></figure>
+<p>which would run much faster as:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;mystring&quot;</span> /tmp/myfile</span><br></pre></td></tr></table></figure>
+<p>Not much, you may consider; the OS has to load up the <code>/bin/grep</code> executable, which is a reasonably small 75600 bytes on my system, open a <code>pipe</code> in memory for the transfer, load and run the <code>/bin/cat</code> executable, which is an even smaller 9528 bytes on my system, attach it to the input of the pipe, and let it run.</p>
+<p>Of course, this kind of thing is what the OS is there for, and it's normally pretty efficient at doing it. But if this command were in a loop being run many times over, the saving of not locating and loading the <code>cat</code> executable, setting up and releasing the pipe, can make some difference, especially in, say, a CGI environment where there are enough other factors to slow things down without the script itself being too much of a hurdle.</p>
+<p>Some Unices are more efficient than others at what they call "building up and tearing down processes" - i.e., loading them up, executing them, and clearing them away again. But however good your flavour of Unix is at doing this, it'd rather not have to do it at all.</p>
+<p>Which leads me nicely on to something else: Don't <em>ever</em> feel too close to your own shell scripts; by their nature, the source cannot be closed. If you supply a customer with a shell script, s/he can inspect it quite easily. So you might as well accept that it will be inspected by anyone you pass it to; use this to your advantage with the <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a> - encourage people to give you feedback and bugfixes for free!</p>
+<h1 id="a-first-script">A First Script</h1>
+<p><a href="https://www.shellscript.sh/eg/first.sh.txt">first.sh</a></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="comment"># This is a comment!</span></span><br><span class="line"><span class="built_in">echo</span> Hello World        <span class="comment"># This is a comment, too!</span></span><br></pre></td></tr></table></figure>
+<p>The first line tells Unix that the file is to be executed by /bin/sh. This is the standard location of the Bourne shell on just about every Unix system. If you're using GNU/Linux, /bin/sh is normally a symbolic link to bash (or, more recently, dash).</p>
+<p>The second line begins with a special symbol: <code>#</code>. This marks the line as a comment, and it is ignored completely by the shell. The only exception is when the <em>very first</em> line of the file starts with <code>#!</code> - as ours does. This is a special directive which Unix treats specially. It means that even if you are using csh, ksh, or anything else as your interactive shell, that what follows should be interpreted by the Bourne shell. Similarly, a Perl script may start with the line <code>#!/usr/bin/perl</code>to tell your interactive shell that the program which follows should be executed by perl. For Bourne shell programming, we shall stick to <code>#!/bin/sh.</code></p>
+]]></content>
+  </entry>
+  <entry>
     <title>和初恋结婚的概率，是1%</title>
     <url>/2022/03/17/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E5%92%8C%E5%88%9D%E6%81%8B%E7%BB%93%E5%A9%9A%E7%9A%84%E6%A6%82%E7%8E%87%EF%BC%8C%E6%98%AF1%25/</url>
     <content><![CDATA[<p><a href="https://mp.weixin.qq.com/s/FypY_UHvf8lGuRr03rdv7A">原文链接</a></p>
