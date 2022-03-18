@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2022/03/14/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Complex%20matrix%EF%BC%88Chapter%201%EF%BC%89/</loc>
+    <lastmod>2022-03-18</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2022/03/17/CS/%E5%85%B6%E4%BB%96/shell_script/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
