@@ -1286,6 +1286,75 @@ push 我的中文简历</li>
 <p>So much like f-string in Python.</p>
 <p>The shell now knows that we are referring to the variable <code>USER_NAME</code> and that we want it suffixed with "<code>_file</code>". This can be the downfall of many a new shell script programmer, as the source of the problem can be difficult to track down.</p>
 <p>Also, note the quotes around <code>"$&#123;USER_NAME&#125;_file"</code> - if the user entered "Steve Parker" (note the space) then without the quotes, the arguments passed to <code>touch</code> would be <code>Steve</code> and <code>Parker_file</code> - that is, we'd effectively be saying <code>touch Steve Parker_file</code>, which is two files to be <code>touch</code>ed, not one. The quotes avoid this. Thanks to Chris for highlighting this.</p>
+<h1 id="wildcards">Wildcards</h1>
+<p>Wildcards are really nothing new if you have used Unix at all before.</p>
+<p>It is not necessarily obvious how they are useful in shell scripts though. This section is really just to get the old grey cells thinking how things look when you're in a shell script - predicting what the effect of using different syntaxes are. This will be used later on, particularly in the <a href="https://www.shellscript.sh/loops.html">Loops</a> section.</p>
+<p>Think first how you would copy all the files from <code>/tmp/a</code> into <code>/tmp/b</code>. All the .txt files? All the .html files? Hopefully you will have come up with:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ cp /tmp/a/* /tmp/b/</span><br><span class="line">$ cp /tmp/a/*.txt /tmp/b/</span><br><span class="line">$ cp /tmp/a/*.html /tmp/b/</span><br></pre></td></tr></table></figure>
+<p>Now how would you list the files in <code>/tmp/a/</code> without using <code>ls /tmp/a/</code>? How about <code>echo /tmp/a/*</code>? What are the two key differences between this and the <code>ls</code> output? How can this be useful? Or a hinderance? How could you rename all .txt files to .bak? Note that</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ mv *.txt *.bak</span><br></pre></td></tr></table></figure>
+<p>will not have the desired effect; think about how this gets expanded by the shell before it is passed to <code>mv</code>. Try this using <code>echo</code> instead of <code>mv</code> if this helps.</p>
+<p>We will look into this further later on, as it uses a few concepts not yet covered.</p>
+<h1 id="escape-characters">Escape Characters</h1>
+<p>Certain characters are significant to the shell; we have seen, for example, that the use of double quotes (") characters affect how spaces and TAB characters are treated, for example:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> Hello       World</span><br><span class="line">Hello World</span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;Hello       World&quot;</span></span><br><span class="line">Hello     World</span><br></pre></td></tr></table></figure>
+<p>So how do we display: <code>Hello  "World"</code> ?</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello   \&quot;World\&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<p>The first and last " characters wrap the whole lot into one parameter passed to <code>echo</code> so that the spacing between the two words is kept as is. But the code:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello   &quot;</span> World <span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<p>would be interpreted as three parameters:</p>
+<ol type="1">
+<li>"Hello "</li>
+<li>World</li>
+<li>""</li>
+</ol>
+<p>So the output would be</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">Hello    World</span><br></pre></td></tr></table></figure>
+<p>Note that we lose the quotes entirely. This is because the first and second quotes mark off the Hello and following spaces; the second argument is an unquoted "World" and the third argument is the empty string; "".</p>
+<p>Thanks to Patrick for pointing out that this:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;Hello   &quot;</span>World<span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<p>is actually only one parameter (no spaces between the quoted parameters), and that you can test this by replacing the <code>echo</code> command with (for example) <code>ls</code>.</p>
+<p>Most characters (<code>*</code>, <code>'</code>, etc) are not interpreted (ie, they are taken literally) by means of placing them in double quotes (""). They are taken as is and passed on to the command being called. An example using the asterisk (*) goes:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> *</span><br><span class="line">case.shtml escape.shtml first.shtml </span><br><span class="line">functions.shtml hints.shtml index.shtml </span><br><span class="line">ip-primer.txt raid1+0.txt</span><br><span class="line">$ <span class="built_in">echo</span> *txt</span><br><span class="line">ip-primer.txt raid1+0.txt</span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;*&quot;</span></span><br><span class="line">*</span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;*txt&quot;</span></span><br><span class="line">*txt</span><br></pre></td></tr></table></figure>
+<p>In the first example, * is expanded to mean all files in the current directory.</p>
+<p>In the second example, *txt means all files ending in <code>txt</code>.</p>
+<p>In the third, we put the * in double quotes, and it is interpreted literally.</p>
+<p>In the fourth example, the same applies, but we have appended <code>txt</code> to the string.</p>
+<p>However, <code>"</code>, <code>$</code>, ``<code>, and</code>` are still interpreted by the shell, even when they're in double quotes.</p>
+<p>The backslash <code>\</code> character is used to mark these special characters so that they are not interpreted by the shell, but passed on to the command being run (for example, <code>echo</code>).</p>
+<p>So to output the string: (Assuming that the value of <code>$X</code> is 5):</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">A quote is <span class="string">&quot;, backslash is \, backtick is `.</span></span><br><span class="line"><span class="string">A few spaces are    and dollar is $. <span class="variable">$X</span> is 5.</span></span><br></pre></td></tr></table></figure>
+<p>we would have to write:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;A quote is \&quot;, backslash is \\, backtick is \`.&quot;</span></span><br><span class="line">A quote is <span class="string">&quot;, backslash is \, backtick is `.</span></span><br><span class="line"><span class="string">$ echo &quot;</span>A few spaces are    and dollar is \$. \<span class="variable">$X</span> is <span class="variable">$&#123;X&#125;</span>.<span class="string">&quot;</span></span><br><span class="line"><span class="string">A few spaces are    and dollar is $. <span class="variable">$X</span> is 5.</span></span><br></pre></td></tr></table></figure>
+<p>We have seen why the " is special for preserving spacing. Dollar (<code>$</code>) is special because it marks a variable, so <code>$X</code> is replaced by the shell with the contents of the variable <code>X</code>. Backslash (<code>\</code>) is special because it is itself used to mark other characters off; we need the following options for a complete shell:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;This is \\ a backslash&quot;</span></span><br><span class="line">This is \ a backslash</span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;This is \&quot; a quote and this is \\ a backslash&quot;</span></span><br><span class="line">This is <span class="string">&quot; a quote and this is \ a backslash</span></span><br></pre></td></tr></table></figure>
+<p>So backslash itself must be escaped to show that it is to be taken literally. The other special character, the backtick, is discussed later in Chapter 12, <a href="https://www.shellscript.sh/external.html">External Programs</a>.</p>
+<h1 id="loops">Loops</h1>
+<p>Most languages have the concept of loops: If we want to repeat a task twenty times, we don't want to have to type in the code twenty times, with maybe a slight change each time. As a result, we have <code>for</code> and <code>while</code> loops in the Bourne shell. This is somewhat fewer features than other languages, but nobody claimed that shell programming has the power of C.</p>
+<h2 id="for-loops">For Loops</h2>
+<p><code>for</code> loops iterate through a set of values until the list is exhausted:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> 1 2 3 4 5</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Looping ... number <span class="variable">$i</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<p>Try this code and see what it does. Note that the values can be anything at all:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> hello 1 * 2 goodbye </span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Looping ... i is set to <span class="variable">$i</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">&gt; ./first.sh</span><br><span class="line">Looping ... i is <span class="built_in">set</span> to hello</span><br><span class="line">Looping ... i is <span class="built_in">set</span> to 1</span><br><span class="line">Looping ... i is <span class="built_in">set</span> to first.sh</span><br><span class="line">Looping ... i is <span class="built_in">set</span> to zcy.md</span><br><span class="line">Looping ... i is <span class="built_in">set</span> to 2</span><br><span class="line">Looping ... i is <span class="built_in">set</span> to goodbye</span><br></pre></td></tr></table></figure>
+<p>This is well worth trying. Make sure that you understand what is happening here. Try it without the <code>*</code> and grasp the idea, then re-read the <a href="https://www.shellscript.sh/wildcards.html">Wildcards</a> section and try it again with the <code>*</code> in place. Try it also in different directories, and with the <code>*</code> surrounded by double quotes, and try it preceded by a backslash (<code>\*</code>)</p>
+<p>In case you don't have access to a shell at the moment (it is very useful to have a shell to hand whilst reading this tutorial), the results of the above two scripts are:</p>
+<h2 id="while-loops">While Loops</h2>
+<p><code>while</code> loops can be much more fun! (depending on your idea of fun, and how often you get out of the house... )</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">INPUT_STRING=hello</span><br><span class="line"><span class="keyword">while</span> [ <span class="string">&quot;<span class="variable">$INPUT_STRING</span>&quot;</span> != <span class="string">&quot;bye&quot;</span> ]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Please type something in (bye to quit)&quot;</span></span><br><span class="line">  <span class="built_in">read</span> INPUT_STRING</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;You typed: <span class="variable">$INPUT_STRING</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<p>What happens here, is that the echo and read statements will run indefinitely until you type "bye" when prompted.</p>
+<p>Review <a href="https://www.shellscript.sh/variables1.html">Variables - Part I</a> to see why we set <code>INPUT_STRING=hello</code> before testing it. This makes it a repeat loop, not a traditional while loop.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; ./first.sh</span><br><span class="line">Please type something in (bye to quit)</span><br><span class="line">zhaochen20</span><br><span class="line">You typed: zhaochen20</span><br><span class="line">Please type something in (bye to quit)</span><br><span class="line">acy</span><br><span class="line">You typed: acy</span><br><span class="line">Please type something in (bye to quit)</span><br><span class="line">wwqswez</span><br><span class="line">You typed: wwqswez</span><br><span class="line">Please type something in (bye to quit)</span><br><span class="line">bye</span><br><span class="line">You typed: bye</span><br></pre></td></tr></table></figure>
+<p>What happens here, is that the echo and read statements will run indefinitely until you type "bye" when prompted.</p>
+<p>Review <a href="https://www.shellscript.sh/variables1.html">Variables - Part I</a> to see why we set <code>INPUT_STRING=hello</code> before testing it. This makes it a repeat loop, not a traditional while loop.</p>
+<p>The colon (<code>:</code>) always evaluates to true; whilst using this can be necessary sometimes, it is often preferable to use a real exit condition. Compare quitting the above loop with the one below; see which is the more elegant. Also think of some situations in which each one would be more useful than the other:</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="keyword">while</span> :</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Please type something in (^C to quit)&quot;</span></span><br><span class="line">  <span class="built_in">read</span> INPUT_STRING</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;You typed: <span class="variable">$INPUT_STRING</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">&gt; ./first.sh</span><br><span class="line">Please <span class="built_in">type</span> something <span class="keyword">in</span> (^C to quit)</span><br><span class="line">zhaochen20</span><br><span class="line">You typed: zhaochen20</span><br><span class="line">Please <span class="built_in">type</span> something <span class="keyword">in</span> (^C to quit)</span><br><span class="line">^C</span><br></pre></td></tr></table></figure>
+<p>Another useful trick is the <code>while read</code> loop. This example uses the <a href="https://www.shellscript.sh/case.html">case</a> statement, which we'll cover later. It reads from the file <code>myfile.txt</code>, and for each line, tells you what language it thinks is being used.</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="keyword">while</span> <span class="built_in">read</span> input_text</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="keyword">case</span> <span class="variable">$input_text</span> <span class="keyword">in</span></span><br><span class="line">        hello)          <span class="built_in">echo</span> English    ;;</span><br><span class="line">        howdy)          <span class="built_in">echo</span> American   ;;</span><br><span class="line">        gday)           <span class="built_in">echo</span> Australian ;;</span><br><span class="line">        bonjour)        <span class="built_in">echo</span> French     ;;</span><br><span class="line">        <span class="string">&quot;guten tag&quot;</span>)    <span class="built_in">echo</span> German     ;;</span><br><span class="line">        *)              <span class="built_in">echo</span> Unknown Language: <span class="variable">$input_text</span></span><br><span class="line">                ;;</span><br><span class="line">   <span class="keyword">esac</span></span><br><span class="line"><span class="keyword">done</span> &lt; myfile.txt</span><br></pre></td></tr></table></figure>
+<p>(note: Each line must end with a LF (newline) - if <code>cat myfile.txt</code> doesn't end with a blank line, that final line will not be processed.)</p>
+<p>his reads the file "<code>myfile.txt</code>", one line at a time, into the variable "<code>$input_text</code>". The <a href="https://www.shellscript.sh/case.html">case</a> statement then checks the value of <code>$input_text</code>. If the word that was read from <code>myfile.txt</code> was "hello" then it <code>echo</code>es the word "English". If it was "gday" then it will <code>echo Australian</code>. If the word (or words) read from a line of <code>myfile.txt</code> don't match any of the provided patterns, then the catch-all "*" default will display the message "Unknown Language: <span class="math inline">\(input_text&quot; - where of course &quot;\)</span>input_text" is the value of the line that it read in from <code>myfile.txt</code>.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">this file is called myfile.txt and we are using it as an example input.</span><br><span class="line">hello</span><br><span class="line">gday</span><br><span class="line">bonjour</span><br><span class="line">hola</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>CS</category>
@@ -1798,12 +1867,38 @@ push 我的中文简历</li>
 </ul>
 <h1 id="文件说明">文件说明</h1>
 <ul>
-<li><p>caculous 为大一学年的微积分笔记</p>
+<li><p>calculus 为大一学年的微积分笔记</p>
 <blockquote>
 <ol type="1">
 <li>Calculous Finale 为大一期末复习笔记，写的较为详尽，也做过更改</li>
-<li>其余笔记主要为大一下学期多元微积分内容</li>
+<li>其余主要为大一下学期多元微积分内容</li>
+<li>一部分是我大一下学期所写，还有一部分是大二寒假与我一字班学弟一起复习微积分 A2 时所写</li>
 <li>部分笔记为 docx，部分为 md，部分为 pdf</li>
+</ol>
+</blockquote></li>
+<li><p>程设为大一上学期的程设课程期末复习笔记</p>
+<blockquote>
+<ol type="1">
+<li>我自己大一写的笔记，之后我一字班的学弟把 docx 转为了 md</li>
+</ol>
+</blockquote></li>
+<li><p>高代为大一下学期的高代选讲笔记</p>
+<blockquote>
+<ol type="1">
+<li>主要为我大一下学期所写，目前交给了我的学弟整理</li>
+<li>现在先放上第一章，复矩阵的笔记</li>
+</ol>
+</blockquote></li>
+<li><p>具体数学为邓俊辉老师推荐的《具体数学》一书的笔记</p>
+<blockquote>
+<ol type="1">
+<li>寒假，我和朋友一起读书时所写</li>
+</ol>
+</blockquote></li>
+<li><p>初等数论为贵系一门上古课程的自学笔记</p>
+<blockquote>
+<ol type="1">
+<li>还在持续更新</li>
 </ol>
 </blockquote></li>
 <li><p>oop 为大一下学期的 oop 笔记</p>
@@ -1824,6 +1919,13 @@ push 我的中文简历</li>
 <ol type="1">
 <li>本人的课程笔记</li>
 <li>期末考试的复习资料</li>
+</ol>
+</blockquote></li>
+<li><p>DSA 为所有作业的笔记</p>
+<blockquote>
+<ol type="1">
+<li>完全由本人所写，比大多同学详尽</li>
+<li>请务必与邓老师商议是否能公开</li>
 </ol>
 </blockquote></li>
 <li><p>大二下课程目前仍在更新</p>
