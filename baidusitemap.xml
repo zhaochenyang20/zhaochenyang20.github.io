@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2022/03/13/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf02/</loc>
+    <lastmod>2022-03-19</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/03/10/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20three%EF%BC%89/</loc>
+    <lastmod>2022-03-19</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/03/11/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20four%EF%BC%89/</loc>
+    <lastmod>2022-03-19</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/02/23/Lecture/probabilityAndStatistic/</loc>
+    <lastmod>2022-03-19</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2022/02/20/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%BA%8C%E9%83%A8/</loc>
     <lastmod>2022-03-19</lastmod>
   </url>
@@ -34,18 +50,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/03/10/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork01/</loc>
-    <lastmod>2022-03-18</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/03/10/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20three%EF%BC%89/</loc>
-    <lastmod>2022-03-18</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/03/11/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20four%EF%BC%89/</loc>
-    <lastmod>2022-03-18</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/03/13/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf02/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
@@ -134,10 +138,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/02/22/CS/%E5%85%B6%E4%BB%96/Tsing_answer_analysis/</loc>
-    <lastmod>2022-03-16</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/02/23/Lecture/probabilityAndStatistic/</loc>
     <lastmod>2022-03-16</lastmod>
   </url>
   <url>
