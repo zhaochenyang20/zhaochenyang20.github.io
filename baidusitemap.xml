@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2021/05/31/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E4%B8%80%E8%87%B4%E6%94%B6%E6%95%9B%E5%87%BD%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%92%8C%E5%87%BD%E6%95%B0%E6%80%A7%E8%B4%A8/</loc>
+    <lastmod>2022-03-20</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2022/02/20/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%BA%8C%E9%83%A8/</loc>
     <lastmod>2022-03-20</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/13/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf02/</loc>
+    <loc>http://example.com/2022/02/23/Lecture/2022%20Spring/probabilityAndStatistic/</loc>
+    <lastmod>2022-03-20</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/03/13/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf02/</loc>
     <lastmod>2022-03-19</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/10/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20three%EF%BC%89/</loc>
+    <loc>http://example.com/2022/03/09/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf03/</loc>
     <lastmod>2022-03-19</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/11/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20four%EF%BC%89/</loc>
+    <loc>http://example.com/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20three%EF%BC%89/</loc>
     <lastmod>2022-03-19</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/02/23/Lecture/probabilityAndStatistic/</loc>
+    <loc>http://example.com/2022/03/11/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20four%EF%BC%89/</loc>
     <lastmod>2022-03-19</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/14/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Complex%20matrix%EF%BC%88Chapter%201%EF%BC%89/</loc>
+    <loc>http://example.com/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Complex%20matrix%EF%BC%88Chapter%201%EF%BC%89/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
@@ -29,59 +37,51 @@
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2021/05/31/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E4%B8%80%E8%87%B4%E6%94%B6%E6%95%9B%E5%87%BD%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%92%8C%E5%87%BD%E6%95%B0%E6%80%A7%E8%B4%A8/</loc>
+    <loc>http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/06/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/</loc>
+    <loc>http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88first%20week%EF%BC%89/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/06/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88first%20week%EF%BC%89/</loc>
+    <loc>http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%20%EF%BC%88Chapter%20two%EF%BC%89/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/06/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%20%EF%BC%88Chapter%20two%EF%BC%89/</loc>
+    <loc>http://example.com/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork01/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/09/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf03/</loc>
+    <loc>http://example.com/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf04/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/10/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork01/</loc>
+    <loc>http://example.com/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork2/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/14/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf04/</loc>
+    <loc>http://example.com/2022/03/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Gauss%E5%85%AC%E5%BC%8F%E5%92%8CStokes%E5%85%AC%E5%BC%8F/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/14/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork2/</loc>
+    <loc>http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%89%E7%AB%A0/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/17/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Gauss%E5%85%AC%E5%BC%8F%E5%92%8CStokes%E5%85%AC%E5%BC%8F/</loc>
+    <loc>http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Concrete%20Mathematics%20Chapter%20one%20note/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/02/17/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%89%E7%AB%A0/</loc>
+    <loc>http://example.com/2022/02/16/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%94%E7%AB%A0/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/06/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Concrete%20Mathematics%20Chapter%20one%20note/</loc>
+    <loc>http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%80%E7%AB%A0/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/02/16/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%94%E7%AB%A0/</loc>
-    <lastmod>2022-03-18</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/02/17/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%80%E7%AB%A0/</loc>
-    <lastmod>2022-03-18</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/02/17/CS/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%8C%E7%AB%A0/</loc>
+    <loc>http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%8C%E7%AB%A0/</loc>
     <lastmod>2022-03-18</lastmod>
   </url>
   <url>
@@ -141,15 +141,15 @@
     <lastmod>2022-03-16</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/01/15/Lecture/Advanced%20Word%20Power%20Winter/</loc>
+    <loc>http://example.com/2022/01/15/Lecture/2022%20Spring/Advanced%20Word%20Power%20Winter/</loc>
     <lastmod>2022-03-16</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/15/Lecture/Introduction_to_AI/</loc>
+    <loc>http://example.com/2022/03/15/Lecture/2022%20Spring/Introduction_to_AI/</loc>
     <lastmod>2022-03-14</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/05/Lecture/DLC/</loc>
+    <loc>http://example.com/2022/03/05/Lecture/2022%20Spring/DLC/</loc>
     <lastmod>2022-03-13</lastmod>
   </url>
   <url>
@@ -161,11 +161,11 @@
     <lastmod>2022-03-12</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/06/Lecture/%E7%99%BE%E5%B9%B4%E5%90%8E%E6%96%B0%E9%9D%92%E5%B9%B4%E8%AE%B2%E7%A8%BF/</loc>
+    <loc>http://example.com/2022/03/06/Lecture/2022%20Spring/%E7%99%BE%E5%B9%B4%E5%90%8E%E6%96%B0%E9%9D%92%E5%B9%B4%E8%AE%B2%E7%A8%BF/</loc>
     <lastmod>2022-03-11</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/02/23/Lecture/Advanced_word_power/</loc>
+    <loc>http://example.com/2022/02/23/Lecture/2022%20Spring/Advanced_word_power/</loc>
     <lastmod>2022-03-10</lastmod>
   </url>
   <url>
@@ -173,7 +173,7 @@
     <lastmod>2022-03-08</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/02/22/Lecture/HCI/</loc>
+    <loc>http://example.com/2022/02/22/Lecture/2022%20Spring/HCI/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   <url>
@@ -257,7 +257,7 @@
     <lastmod>2022-03-06</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/03/03/Lecture/%E4%B8%89%E5%A4%A7%E6%94%B9%E9%80%A0%E8%AE%B2%E7%A8%BF/</loc>
+    <loc>http://example.com/2022/03/03/Lecture/2022%20Spring/%E4%B8%89%E5%A4%A7%E6%94%B9%E9%80%A0%E8%AE%B2%E7%A8%BF/</loc>
     <lastmod>2022-03-06</lastmod>
   </url>
   <url>
@@ -301,11 +301,11 @@
     <lastmod>2022-02-23</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/02/03/Lecture/%E4%BA%94%E9%81%93%E5%8F%A3%E4%BD%93%E6%A0%A1%E7%A7%8B%E5%AD%A3%E5%AD%A6%E6%9C%9F%E7%94%B7%E5%AD%90%E4%BD%93%E6%A0%A1%E4%BD%93%E8%82%B2%E8%AE%AD%E7%BB%83/</loc>
+    <loc>http://example.com/2022/02/03/Lecture/2022%20Spring/%E4%BA%94%E9%81%93%E5%8F%A3%E4%BD%93%E6%A0%A1%E7%A7%8B%E5%AD%A3%E5%AD%A6%E6%9C%9F%E7%94%B7%E5%AD%90%E4%BD%93%E6%A0%A1%E4%BD%93%E8%82%B2%E8%AE%AD%E7%BB%83/</loc>
     <lastmod>2022-02-23</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/02/21/Lecture/answer_for_mao/</loc>
+    <loc>http://example.com/2022/02/21/Lecture/2022%20Spring/answer_for_mao/</loc>
     <lastmod>2022-02-23</lastmod>
   </url>
   <url>
