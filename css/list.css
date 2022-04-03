@@ -1,0 +1,34 @@
+/**********文章列表**********/
+.article {
+  margin: 30px auto 30px;
+}
+.article-item {
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 auto 20px;
+  padding-bottom: 15px;
+}
+.article-item a {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.article-item a:link {
+  color: #333;
+}
+.article-item a:hover {
+  text-decoration: underline;
+}
+.article-item a:visited {
+  color: #969696;
+}
+.article-item-content p {
+  color: #999;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0 auto 8px;
+}
+.atricle-item-time span {
+  color: #b4b4b4;
+  font-size: 12px;
+  line-height: 20px;
+}

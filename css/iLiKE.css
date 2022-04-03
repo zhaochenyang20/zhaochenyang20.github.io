@@ -1,0 +1,832 @@
+.header {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.header .container {
+  min-height: 0px;
+  margin: 0 auto 0;
+}
+.menu {
+  overflow: auto;
+}
+.menu a {
+  text-decoration: none;
+  line-height: 80px;
+  font-size: 18px;
+}
+.menu-left {
+  float: left;
+}
+.menu-left img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.menu-right {
+  float: right;
+}
+.menu-right a {
+  margin-left: 10px;
+}
+.footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px 0 20px;
+}
+.footer .container {
+  min-height: 0px;
+  margin: 0 auto 0;
+}
+.footer a {
+  text-decoration: none;
+  line-height: 30px;
+}
+.copyright {
+  overflow: auto;
+}
+.social {
+  text-align: center;
+}
+.social-list {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.social li {
+  list-style-type: none;
+  float: left;
+  margin: 0 4px 0;
+}
+.fa {
+  width: 26px;
+  height: 26px;
+  display: block;
+  background-size: contain;
+}
+.fa-weibo {
+  background-image: url("../image/weibo.png");
+}
+.fa-github {
+  background-image: url("../image/github.png");
+}
+.power a {
+  color: #333;
+  font-weight: 700;
+}
+.social {
+  text-align: center;
+}
+.social-list {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.social li {
+  list-style-type: none;
+  float: left;
+  margin: 0 4px 0;
+}
+.fa {
+  width: 26px;
+  height: 26px;
+  display: block;
+  background-size: contain;
+}
+.fa-email {
+  background-image: url("../image/email.png");
+}
+.fa-stack-overflow {
+  background-image: url("../image/stack-overflow.png");
+}
+.fa-twitter {
+  background-image: url("../image/twitter.png");
+}
+.fa-facebook {
+  background-image: url("../image/facebook.png");
+}
+.fa-linkedin {
+  background-image: url("../image/linkedin.png");
+}
+.fa-google {
+  background-image: url("../image/google.png");
+}
+.fa-github {
+  background-image: url("../image/github.png");
+}
+.fa-weibo {
+  background-image: url("../image/weibo.png");
+}
+.fa-douban {
+  background-image: url("../image/douban.png");
+}
+.fa-zhihu {
+  background-image: url("../image/zhihu.png");
+}
+.fa-jianshu {
+  background-image: url("../image/jianshu.png");
+}
+.fa-pocket {
+  background-image: url("../image/pocket.png");
+}
+.fa-tumblr {
+  background-image: url("../image/tumblr.png");
+}
+.fa-instagram {
+  background-image: url("../image/instagram.png");
+}
+.power a {
+  color: #333;
+  font-weight: 700;
+}
+.pagenator {
+  overflow: auto;
+  margin: 20px auto 20px;
+}
+.post-pagenator {
+  max-width: 600px;
+  height: 30px;
+}
+.post-pagenator p {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  cursor: default;
+}
+.extend {
+  float: left;
+  margin: 0;
+  padding: 6px 10px 6px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+}
+.prev {
+  color: #888;
+  cursor: pointer;
+}
+.prev {
+  float: left;
+}
+.prev-none {
+  color: #888;
+  cursor: not-allowed;
+}
+.next {
+  color: #888;
+  cursor: pointer;
+}
+.post-next {
+  float: right;
+}
+.next-none {
+  color: #888;
+  cursor: not-allowed;
+}
+.page-item {
+  margin: 0 5px 0;
+  cursor: default;
+}
+.page-item-normal {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+.page-item-select {
+  background-color: #333;
+  color: #fff;
+}
+.year-list {
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+.year-list ul {
+  margin: 0;
+}
+.year-list li {
+  margin: 5px 0 5px;
+  list-style-type: none;
+}
+.year-list time {
+  font-size: 14px;
+  font-weight: 300;
+}
+.year-list a {
+  font-size: 14px;
+}
+.year-list a:hover {
+  text-decoration: underline;
+}
+.year-list a:visited {
+  color: #969696;
+}
+.article {
+  margin: 30px auto 30px;
+}
+.article-item {
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 auto 20px;
+  padding-bottom: 15px;
+}
+.article-item a {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.article-item a:link {
+  color: #333;
+}
+.article-item a:hover {
+  text-decoration: underline;
+}
+.article-item a:visited {
+  color: #969696;
+}
+.article-item-content p {
+  color: #999;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0 auto 8px;
+}
+.atricle-item-time span {
+  color: #b4b4b4;
+  font-size: 12px;
+  line-height: 20px;
+}
+.post {
+  width: 100%;
+}
+.post-title {
+  margin: 35px 0 25px;
+  text-align: center;
+}
+.post ul {
+  margin: 10px 5px 20px 25px;
+}
+.post img {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.markdown-style {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+.markdown-style a {
+  color: #0366d6;
+}
+.markdown-style figure {
+  margin: 0;
+}
+.markdown-style figure table {
+  background-color: #f6f8fa;
+}
+.markdown-style figure table td.code {
+  padding: 0;
+  border: none;
+}
+.markdown-style::before {
+  display: table;
+  content: "";
+}
+.markdown-style::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.markdown-style>*:first-child {
+  margin-top: 0 !important;
+}
+.markdown-style>*:last-child {
+  margin-bottom: 0 !important;
+}
+.markdown-style a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+.markdown-style .absent {
+  color: #cb2431;
+}
+.markdown-style .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+.markdown-style .anchor:focus {
+  outline: none;
+}
+.markdown-style p,
+.markdown-style blockquote,
+.markdown-style ul,
+.markdown-style ol,
+.markdown-style dl,
+.markdown-style table,
+.markdown-style pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.markdown-style hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+.markdown-style blockquote {
+  padding: 0 1em;
+  margin-left: 0;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+.markdown-style blockquote>:first-child {
+  margin-top: 0;
+}
+.markdown-style blockquote>:last-child {
+  margin-bottom: 0;
+}
+.markdown-style kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+.markdown-style h1,
+.markdown-style h2,
+.markdown-style h3,
+.markdown-style h4,
+.markdown-style h5,
+.markdown-style h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.markdown-style h1 .octicon-link,
+.markdown-style h2 .octicon-link,
+.markdown-style h3 .octicon-link,
+.markdown-style h4 .octicon-link,
+.markdown-style h5 .octicon-link,
+.markdown-style h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.markdown-style h1:hover .anchor,
+.markdown-style h2:hover .anchor,
+.markdown-style h3:hover .anchor,
+.markdown-style h4:hover .anchor,
+.markdown-style h5:hover .anchor,
+.markdown-style h6:hover .anchor {
+  text-decoration: none;
+}
+.markdown-style h1:hover .anchor .octicon-link,
+.markdown-style h2:hover .anchor .octicon-link,
+.markdown-style h3:hover .anchor .octicon-link,
+.markdown-style h4:hover .anchor .octicon-link,
+.markdown-style h5:hover .anchor .octicon-link,
+.markdown-style h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.markdown-style h1 tt,
+.markdown-style h1 code,
+.markdown-style h2 tt,
+.markdown-style h2 code,
+.markdown-style h3 tt,
+.markdown-style h3 code,
+.markdown-style h4 tt,
+.markdown-style h4 code,
+.markdown-style h5 tt,
+.markdown-style h5 code,
+.markdown-style h6 tt,
+.markdown-style h6 code {
+  font-size: inherit;
+}
+.markdown-style h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+}
+.markdown-style h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+.markdown-style h3 {
+  font-size: 1.25em;
+}
+.markdown-style h4 {
+  font-size: 1em;
+}
+.markdown-style h5 {
+  font-size: 0.875em;
+}
+.markdown-style h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+.markdown-style ul,
+.markdown-style ol {
+  padding-left: 2em;
+}
+.markdown-style ul.no-list,
+.markdown-style ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+.markdown-style ul ul,
+.markdown-style ul ol,
+.markdown-style ol ol,
+.markdown-style ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.markdown-style li>p {
+  margin-top: 16px;
+}
+.markdown-style li+li {
+  margin-top: 0.25em;
+}
+.markdown-style dl {
+  padding: 0;
+}
+.markdown-style dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+.markdown-style dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.markdown-style table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+}
+.markdown-style table th {
+  font-weight: 600;
+}
+.markdown-style table th,
+.markdown-style table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+.markdown-style table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+.markdown-style table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+.markdown-style table img {
+  background-color: transparent;
+}
+.markdown-style img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+.markdown-style img[align=right] {
+  padding-left: 20px;
+}
+.markdown-style img[align=left] {
+  padding-right: 20px;
+}
+.markdown-style .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+.markdown-style span.frame {
+  display: block;
+  overflow: hidden;
+}
+.markdown-style span.frame>span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #dfe2e5;
+}
+.markdown-style span.frame span img {
+  display: block;
+  float: left;
+}
+.markdown-style span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #24292e;
+}
+.markdown-style span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.markdown-style span.align-center>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+.markdown-style span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+.markdown-style span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+.markdown-style span.align-right>span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+.markdown-style span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+.markdown-style span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+.markdown-style span.float-left span {
+  margin: 13px 0 0;
+}
+.markdown-style span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+.markdown-style span.float-right>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+.markdown-style code,
+.markdown-style tt {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+.markdown-style code::before,
+.markdown-style code::after,
+.markdown-style tt::before,
+.markdown-style tt::after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+.markdown-style code br,
+.markdown-style tt br {
+  display: none;
+}
+.markdown-style del code {
+  text-decoration: inherit;
+}
+.markdown-style pre {
+  word-wrap: normal;
+}
+.markdown-style pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.markdown-style .highlight {
+  margin-bottom: 16px;
+}
+.markdown-style .highlight table tr {
+  border-top: none;
+  background-color: transparent;
+}
+.markdown-style .highlight table td {
+  padding: 0;
+  border: none;
+}
+.markdown-style .highlight table td .line {
+  height: 17px;
+}
+.markdown-style .highlight table .gutter pre {
+  padding-right: 0;
+}
+.markdown-style .highlight table .code {
+  vertical-align: top;
+}
+.markdown-style .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+.markdown-style .highlight pre,
+.markdown-style pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+.markdown-style pre code,
+.markdown-style pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.markdown-style pre code::before,
+.markdown-style pre code::after,
+.markdown-style pre tt::before,
+.markdown-style pre tt::after {
+  content: normal;
+}
+.markdown-style .csv-data td,
+.markdown-style .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+.markdown-style .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: #fff;
+  border: 0;
+}
+.markdown-style .csv-data tr {
+  border-top: 0;
+}
+.markdown-style .csv-data th {
+  font-weight: 600;
+  background: #f6f8fa;
+  border-top: 0;
+}
+.markdown-style .code .comment,
+.markdown-style .code .meta {
+  color: #969896;
+}
+.markdown-style .code .string,
+.markdown-style .code .variable,
+.markdown-style .code .template-variable,
+.markdown-style .code .strong,
+.markdown-style .code .emphasis,
+.markdown-style .code .quote {
+  color: #df5000;
+}
+.markdown-style .code .keyword,
+.markdown-style .code .selector-tag,
+.markdown-style .code .type {
+  color: #a71d5d;
+}
+.markdown-style .code .literal,
+.markdown-style .code .symbol,
+.markdown-style .code .bullet,
+.markdown-style .code .attribute {
+  color: #0086b3;
+}
+.markdown-style .code .section,
+.markdown-style .code .name {
+  color: #63a35c;
+}
+.markdown-style .code .tag {
+  color: #333;
+}
+.markdown-style .code .title,
+.markdown-style .code .attr,
+.markdown-style .code .selector-id,
+.markdown-style .code .selector-class,
+.markdown-style .code .selector-attr,
+.markdown-style .code .selector-pseudo {
+  color: #795da3;
+}
+.markdown-style .code .addition {
+  color: #55a532;
+  background-color: #eaffea;
+}
+.markdown-style .code .deletion {
+  color: #bd2c00;
+  background-color: #ffecec;
+}
+.markdown-style .code .link {
+  text-decoration: underline;
+}
+.container {
+  margin: 25px auto 20px;
+}
+/********** 通用控制 **********/
+body,
+a,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+p {
+  color: #2f2f2f;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+span {
+  color: #333;
+  font-size: 14px;
+}
+img {
+  width: 100%;
+}
+/********** MarkDown **********/
+blockquote {
+  border-left: 0.25em solid #dfe2e5;
+  padding: 20px;
+  color: #b4b4b4;
+  background-color: #f7f7f7;
+  margin: 0 0 6px 0;
+}
+blockquote p {
+  font-size: 17px;
+}
+/********** 媒体查询 **********/
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 930px;
+    min-height: 650px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 930px;
+    min-height: 600px;
+  }
+}
+@media only screen and (max-width: 979px) {
+  .container {
+    width: 710px;
+    min-height: 550px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 85%;
+    min-height: 500px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 85%;
+    min-height: 450px;
+  }
+}

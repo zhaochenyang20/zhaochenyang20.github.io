@@ -1,0 +1,31 @@
+/**********导航头**********/
+.header {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.header .container {
+  min-height: 0px;
+  margin: 0 auto 0;
+}
+.menu {
+  overflow: auto;
+}
+.menu a {
+  text-decoration: none;
+  line-height: 80px;
+  font-size: 18px;
+}
+.menu-left {
+  float: left;
+}
+.menu-left img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.menu-right {
+  float: right;
+}
+.menu-right a {
+  margin-left: 10px;
+}

@@ -1,0 +1,67 @@
+/********** 社交 **********/
+.social {
+  text-align: center;
+}
+.social-list {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.social li {
+  list-style-type: none;
+  float: left;
+  margin: 0 4px 0;
+}
+.fa {
+  width: 26px;
+  height: 26px;
+  display: block;
+  background-size: contain;
+}
+.fa-email {
+  background-image: url("../image/email.png");
+}
+.fa-stack-overflow {
+  background-image: url("../image/stack-overflow.png");
+}
+.fa-twitter {
+  background-image: url("../image/twitter.png");
+}
+.fa-facebook {
+  background-image: url("../image/facebook.png");
+}
+.fa-linkedin {
+  background-image: url("../image/linkedin.png");
+}
+.fa-google {
+  background-image: url("../image/google.png");
+}
+.fa-github {
+  background-image: url("../image/github.png");
+}
+.fa-weibo {
+  background-image: url("../image/weibo.png");
+}
+.fa-douban {
+  background-image: url("../image/douban.png");
+}
+.fa-zhihu {
+  background-image: url("../image/zhihu.png");
+}
+.fa-jianshu {
+  background-image: url("../image/jianshu.png");
+}
+.fa-pocket {
+  background-image: url("../image/pocket.png");
+}
+.fa-tumblr {
+  background-image: url("../image/tumblr.png");
+}
+.fa-instagram {
+  background-image: url("../image/instagram.png");
+}
+.power a {
+  color: #333;
+  font-weight: 700;
+}

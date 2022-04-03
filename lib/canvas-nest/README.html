@@ -1,0 +1,31 @@
+<h1 id="theme-next-canvas-nest">Theme NexT Canvas Nest</h1>
+<figure>
+<img src="https://img.shields.io/badge/NexT-v7.3.0+-blue?style=flat-square" alt="Theme Version" /><figcaption aria-hidden="true">Theme Version</figcaption>
+</figure>
+<p><a href="https://github.com/hustcc/canvas-nest.js">canvas-nest.js</a> for <a href="https://github.com/theme-next">NexT</a>.</p>
+<h2 id="install">Install</h2>
+<h3 id="step-1-go-to-hexo-dir">Step 1 → Go to Hexo dir</h3>
+<p>Change dir to <strong>Hexo</strong> directory. There must be <code>scaffolds</code>, <code>source</code>, <code>themes</code> and other directories:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd hexo</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ls</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">scaffolds</span>  source  themes  _config.yml  package.json</span></code></pre></div>
+<h3 id="step-2-create-footer.swig">Step 2 → Create <code>footer.swig</code></h3>
+<p>Create a file named <code>footer.swig</code> in <code>hexo/source/_data</code> directory (create <code>_data</code> directory if it does not exist).</p>
+<p>Edit this file and add the following content:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;script</span><span class="ot"> color=</span><span class="st">&quot;0,0,255&quot;</span><span class="ot"> opacity=</span><span class="st">&quot;0.5&quot;</span><span class="ot"> zIndex=</span><span class="st">&quot;-1&quot;</span><span class="ot"> count=</span><span class="st">&quot;99&quot;</span><span class="ot"> src=</span><span class="st">&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span></code></pre></div>
+<p>You can customize these options.</p>
+<h3 id="step-3-set-it-up">Step 3 → Set it up</h3>
+<p>In the NexT <code>_config.yml</code>, uncomment <code>footer</code> under the <code>custom_file_path</code> section.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom file paths.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">custom_file_path</span><span class="kw">:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">  #head: source/_data/head.swig</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">  #header: source/_data/header.swig</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">  #sidebar: source/_data/sidebar.swig</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">  #postMeta: source/_data/post-meta.swig</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">  #postBodyEnd: source/_data/post-body-end.swig</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">footer</span><span class="kw">:</span><span class="at"> source/_data/footer.swig</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">  #bodyEnd: source/_data/body-end.swig</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">  #variable: source/_data/variables.styl</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">  #mixin: source/_data/mixins.styl</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">  #style: source/_data/styles.styl</span></span></code></pre></div>
