@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/2022/04/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%89%E9%83%A8/</loc>
-    <lastmod>2022-04-03</lastmod>
+    <loc>http://example.com/2022/04/02/Lecture/2022%20Spring/distribution/</loc>
+    <lastmod>2022-04-04</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/02/23/Lecture/2022%20Spring/probability_and_statistic/</loc>
-    <lastmod>2022-04-03</lastmod>
+    <lastmod>2022-04-04</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/04/03/post-name/</loc>
+    <loc>http://example.com/2022/04/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%89%E9%83%A8/</loc>
     <lastmod>2022-04-03</lastmod>
   </url>
   <url>
@@ -23,10 +23,6 @@
   <url>
     <loc>http://example.com/2022/02/20/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%BA%8C%E9%83%A8/</loc>
     <lastmod>2022-04-02</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/04/02/Lecture/2022%20Spring/distribution/</loc>
-    <lastmod>2022-04-01</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/25/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%80%E9%83%A8/</loc>
@@ -74,6 +70,10 @@
   </url>
   <url>
     <loc>http://example.com/2022/03/21/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E6%88%90%E9%83%BD/</loc>
+    <lastmod>2022-03-21</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/02/23/Lecture/2022%20Spring/Advanced_word_power/</loc>
     <lastmod>2022-03-21</lastmod>
   </url>
   <url>
@@ -227,10 +227,6 @@
   <url>
     <loc>http://example.com/2022/03/06/Lecture/2022%20Spring/%E7%99%BE%E5%B9%B4%E5%90%8E%E6%96%B0%E9%9D%92%E5%B9%B4%E8%AE%B2%E7%A8%BF/</loc>
     <lastmod>2022-03-11</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/02/23/Lecture/2022%20Spring/Advanced_word_power/</loc>
-    <lastmod>2022-03-10</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/21/%E5%87%BA%E5%9B%BD/Summer%20research/</loc>
