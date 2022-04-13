@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="en-US" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>微积分 WXF 第二章作业 | La vida sola viviras</title><meta name="keywords" content="2022寒假,多元微积分"><meta name="author" content="Eren Zhao"><meta name="copyright" content="Eren Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="当我意识到数学有用的时候，我已经毕业了...">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分 WXF 第二章作业">
+<meta property="og:url" content="http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%8C%E7%AB%A0/index.html">
+<meta property="og:site_name" content="La vida sola viviras">
+<meta property="og:description" content="当我意识到数学有用的时候，我已经毕业了...">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic.imgdb.cn/item/62270f075baa1a80ab393529.jpg">
+<meta property="article:published_time" content="2022-02-16T16:16:48.000Z">
+<meta property="article:modified_time" content="2022-03-18T21:41:19.173Z">
+<meta property="article:author" content="Eren Zhao">
+<meta property="article:tag" content="2022寒假">
+<meta property="article:tag" content="多元微积分">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/62270f075baa1a80ab393529.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '微积分 WXF 第二章作业',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-03-19 05:41:19'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">162</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/62270f075baa1a80ab393529.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">La vida sola viviras</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">微积分 WXF 第二章作业</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-02-16T16:16:48.000Z" title="Created 2022-02-17 00:16:48">2022-02-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-03-18T21:41:19.173Z" title="Updated 2022-03-19 05:41:19">2022-03-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BF%87%E5%8E%BB%E7%9A%84%E6%95%B0%E5%AD%A6/">过去的数学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">6.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>35min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="微积分 WXF 第二章作业"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="微积分wxf第二章作业-作者鲁睿">微积分WXF第二章作业 作者：鲁睿</h1>
+<h2 id="习题2.1">习题2.1</h2>
+<h4 id="section">4(3)</h4>
+<p>解：先证明 <span class="math inline">\(Poission\)</span> 积分 <span class="math inline">\(\displaystyle\int_0^{+\infin}e^{-x^2}dx({=\dfrac{\sqrt{\pi}}{2}})\)</span> 收敛</p>
+<blockquote>
+<p>引理：<span class="math inline">\(\displaystyle\int_0^{+\infin}e^{-x^2}dx\)</span> 收敛，代换 <span class="math inline">\(t=x^2\)</span>，有 <span class="math inline">\(\displaystyle\int_0^{+\infin}e^{-x^2}dx=\dfrac{1}{2}(\int_0^1\dfrac{e^{-t}}{\sqrt{t}}dt+\int_1^{+\infin}\dfrac{e^{-t}}{\sqrt{t}}dt)\)</span></p>
+<p>前者 <span class="math inline">\(\displaystyle\int_0^1\dfrac{e^{-t}}{\sqrt{t}}dt&lt;\int_0^1\dfrac{1}{\sqrt{t}}dt=2\)</span>，后者 <span class="math inline">\(\displaystyle\int_1^{+\infin}\dfrac{e^{-t}}{\sqrt{t}}dt&lt;\int_1^{+\infin}e^{-t}dt=\dfrac{1}{e}\)</span></p>
+<p>显然 <span class="math inline">\(f(A)=\displaystyle\int_0^{A}\dfrac{e^{-t}}{\sqrt{t}}dt\)</span> 单调递增，且有上界 <span class="math inline">\(2+\dfrac{1}{e}\)</span>，从而 <span class="math inline">\(\displaystyle\int_0^{+\infin}e^{-x^2}dx\)</span> 收敛</p>
+</blockquote>
+<p>放缩有 <span class="math inline">\(\displaystyle \int_0^{+\infin}x^{2n}e^{-tx^2}dx\leq\int_0^{+\infin}x^{2n}e^{-t_0x^2}dx\)</span>，只需要考虑后者的收敛性（比较判别法）</p>
+<p>由极限 <span class="math inline">\(\lim\limits_{x\to +\infin}x^{2n}e^{-\frac{1}{2}t_0x^2}=0\)</span>，且有 <span class="math inline">\(x^{2n}e^{-\frac{1}{2}tx^2\big |_{x=0}}=0\)</span>，则由连续性知令 <span class="math inline">\(\max\{x^{2n}e^{-\frac{1}{2}t_0x^2}\}=M\)</span> <span class="math display">\[
+\forall\ \epsilon&gt;0,\exist\ M&gt;0,\displaystyle\int_0^{+\infin}x^{2n}e^{-t_0x^2}dx\leq M\int_0^{+\infin}e^{-\frac{1}{2}t_0x^2}dx\leq M\sqrt{\dfrac{2}{t_0}}\int_0^{+\infin}e^{-m^2}dm\\
+\]</span> 由单调性和上界知 <span class="math inline">\(\displaystyle \int_0^{+\infin}x^{2n}e^{-t_0x^2}dx\)</span> 收敛，则 <span class="math inline">\(\displaystyle\int_0^{+\infin}x^{2n}e^{-\frac{1}{2}tx^2}dx\)</span> 在 <span class="math inline">\(t\in[t_0,+\infin)\)</span> 一致收敛</p>
+<h4 id="section-1">4(5)</h4>
+<p>解：由被积函数为偶函数得 <span class="math inline">\(f(t)=\displaystyle\int_{-\infin}^{+\infin}\dfrac{x^2\cos(tx)}{1+x^4}dx=2\int_0^{+\infin}\dfrac{x^2\cos(tx)}{1+x^4}dx\)</span>，其中 <span class="math display">\[
+\because\forall\ x\in[0,1],\dfrac{x^2}{1+x^4}=\dfrac{1}{x^2+\dfrac{1}{x^2}}\leq\dfrac{1}{2},\forall\ x\in R,|\cos(tx)|\leq1\\
+\therefore|\int_0^{+\infin}\dfrac{x^2\cos(tx)}{1+x^4}dx|\leq\int_0^{+\infin}|\dfrac{x^2\cos(tx)}{1+x^4}|dx=\int_0^1|\dfrac{x^2\cos(tx)}{1+x^4}|dx+\int_1^{+\infin}|\dfrac{x^2\cos(tx)}{1+x^4}|dx\\
+\leq \dfrac{1}{2}\int_0^11\cdot dx+\int_1^{+\infin}\dfrac{x^2}{1+x^4}dx=\dfrac{1}{2}+\int_1^{+\infin}\dfrac{1}{x^2}dx=\dfrac{3}{2}
+\]</span> 则 <span class="math inline">\(\displaystyle\int_{-\infin}^{+\infin}\abs{\dfrac{x^2\cos(tx)}{1+x^4}}dx\leq3\)</span> 收敛，则 <span class="math inline">\(\displaystyle\int_{-\infin}^{+\infin}\dfrac{x^2\cos(tx)}{1+x^4}dx\)</span> 对 <span class="math inline">\(t\in R\)</span> 一致收敛</p>
+<h4 id="section-2">4(7)</h4>
+<p>解：对 <span class="math inline">\(\displaystyle \int_0^{+\infin}e^{-tx}\dfrac{\cos x}{\sqrt{x}}dx\)</span> 取绝对值拆为两部分放缩，对 <span class="math inline">\(t\geq 0\)</span> 时总有从而收敛 <span class="math display">\[
+\displaystyle\int_0^{+\infin}e^{-tx}\dfrac{\cos x}{\sqrt{x}}dx=\int_0^1e^{-tx}\dfrac{\cos x}{\sqrt{x}}dx+\int_1^{+\infin}e^{-tx}\dfrac{\cos x}{\sqrt{x}}dx\leq\displaystyle \int_0^11\cdot \dfrac{1}{\sqrt{x}}dx+\int_1^{+\infin}e^{-tx}\dfrac{\cos x}{\sqrt{x}}dx\\
+\]</span> 前者为 <span class="math inline">\(2\sqrt{x}\big |_0^{1}=2\)</span>，后者分部积分放缩得 <span class="math display">\[
+I(t)=\int_1^{+\infin}e^{-tx}\dfrac{d(\sin x)}{\sqrt{x}}=\dfrac{e^{-tx}\sin x}{\sqrt{x}}\big |_1^{+\infin}+\int_1^{+\infin}\sin x\cdot \dfrac{-te^{-tx}\cdot \sqrt{x}-e^{-tx}\cdot \dfrac{1}{2\sqrt{x}}}{x}dx\\
+=-e^{-t}\sin 1-\dfrac{1}{2}\int_1^{+\infin}(\dfrac{e^{-tx}\sin x}{x^{\frac{3}{2}}}+2t\cdot \dfrac{e^{-tx}\sin x}{\sqrt{x}})dx&lt;0+\dfrac{1}{2}\int_1^{+\infin}(\dfrac{dx}{x^{\frac{3}{2}}}+2t\cdot \dfrac{e^{-tx}d(\cos x)}{\sqrt{x}})\\
+=e^{-t}(-\dfrac{2}{\sqrt{x}})\big |_1^{+\infin}+t\cdot \dfrac{e^{-tx}\cos x}{\sqrt{x}}\big |_1^{+\infin}+t\int_1^{+\infin}\cos x\cdot \dfrac{-te^{-tx}\cdot \sqrt{x}-e^{-tx}\cdot \dfrac{1}{2\sqrt{x}}}{x}dx\\
+\leq2e^{-t}-te^{-t}\cos 1+\dfrac{t}{2}\int_1^{+\infin}\dfrac{e^{-t}\cdot 1}{x^{\frac{3}{2}}}dx-t^2\cdot\int_1^{+\infin}e^{-tx}\dfrac{\cos x}{\sqrt{x}}dx\leq2-te^{-t}\cos 1+\dfrac{t}{2}\cdot 2-t^2I(t)\\
+I(t)&lt;\dfrac{2+(1-\cos 1)\cdot t}{1+t^2}=g(t)\ \because g(0)=2,\lim\limits_{t\to +\infin}g(t)=0\ \therefore\exist \ M&gt;0,\forall \ t\geq 0,g(t)\leq M
+\]</span> 从而 <span class="math inline">\(\displaystyle \int_0^{+\infin}e^{-tx}\dfrac{\cos x}{\sqrt{x}}dx\)</span> 有常数上限 <span class="math inline">\(2+M\)</span>，则 <span class="math inline">\(I(t)\)</span> 对 <span class="math inline">\(t\geq0\)</span> 均一致收敛</p>
+<h4 id="section-3">4(10)</h4>
+<p>解：对该积分换元 <span class="math inline">\(t=x^2\)</span> ，有 <span class="math inline">\(\displaystyle \int_0^{+\infin}\dfrac{\sin x^2}{x^{p}}dx=\int_0^{+\infin}\dfrac{\sin t}{t^{\frac{p}{2}}}\cdot \dfrac{1}{2}t^{-\frac{1}{2}}dt=\dfrac{1}{2}\int_0^{+\infin}\dfrac{\sin t}{t^{\frac{p+1}{2}}}dt\)</span></p>
+<p>由极限 <span class="math inline">\(\lim\limits_{t\to 0}\dfrac{\sin x}{x}=1\)</span>，有 <span class="math inline">\(\exist\ \dfrac{\pi}{2}&gt;x_0&gt;0,\forall \abs{x}&lt;x_0,s.t.\dfrac{\sin x}{x}\geq\dfrac{1}{2}\)</span>，则 <span class="math inline">\(\dfrac{\sin t}{t^{\frac{p+1}{2}}}=\dfrac{\sin t}{t}\cdot t^{\frac{1-p}{2}}\geq\dfrac{1}{2}t^{\frac{1-p}{2}}\)</span></p>
+<p>若 <span class="math inline">\(p\geq3\)</span>，有 <span class="math inline">\(\displaystyle \int_{0}^{x_0}\dfrac{\sin t}{t^{\frac{p+1}{2}}}dt\geq\dfrac{1}{2}\int_0^{x_0}\dfrac{dt}{t^{\frac{p-1}{2}}}\)</span> 积分发散，从而该函数并非一致收敛</p>
+<h4 id="section-4">5</h4>
+<p>证明：<span class="math inline">\(\displaystyle \int_0^{+\infin}e^{-tx}\dfrac{\sin 3x}{x+t}dx=\int_0^1e^{-tx}\dfrac{\sin 3x}{x+t}dx+\int_1^{+\infin}e^{-tx}\dfrac{\sin 3x}{x+t}dx\leq3+\int_1^{+\infin}e^{-tx}\dfrac{\sin 3x}{x+t}dx\\\)</span></p>
+<p>在 <span class="math inline">\([0,1]\)</span> 区间上积分有常数上限，进而该区间一致收敛，只需考虑 <span class="math inline">\([1,+\infin)\)</span> 区间，当 <span class="math inline">\(t=0\)</span> 时 <span class="math display">\[
+\displaystyle \int_0^{+\infin}e^{-tx}\dfrac{\sin 3x}{x+t}dx=\displaystyle \int_0^{+\infin}\dfrac{\sin 3x}{x}dx=\int_0^1\dfrac{\sin 3x}{x}dx+\int_1^{+\infin}\dfrac{\sin 3x}{x}dx\le3+\int_1^{+\infin}\dfrac{\sin 3x}{x}dx\\
+\int_1^{+\infin}\dfrac{\sin 3x}{x}dx=-\dfrac{1}{3}\int_1^{+\infin}\dfrac{d(\cos 3x)}{x}=-\dfrac{1}{3}\dfrac{\cos 3x}{x}\big |_1^{+\infin}+\frac{1}{3}\int_1^{+\infin}\dfrac{\cos 3x}{x^2}dx\\
+\because \int_1^{+\infin}\abs{\dfrac{\cos 3x}{x^2}}dx\leq\int_1^{+\infin}\dfrac{dx}{x^2}=1\ \therefore\int_1^{+\infin}\dfrac{\cos 3x}{x^2}dx\  收敛\ \therefore \int_1^{+\infin}\dfrac{\sin 3x}{x}dx \ 收敛
+\]</span> 从而 <span class="math inline">\(t=0\)</span> 时收敛且 <span class="math inline">\(\displaystyle\int_1^{+\infin}f(x)dx= \int_1^{+\infin}\dfrac{\sin 3x}{x}dx\)</span> 收敛，考虑 <span class="math inline">\(g(x)=\dfrac{x}{x+t}e^{-tx}\ (t&gt;0)\)</span> ，其导数为 <span class="math display">\[
+\dfrac{dg(x)}{dx}=\dfrac{(e^{-tx}-txe^{-tx})\cdot (x+t)-xe^{-tx}\cdot 1}{(x+t)^2}=\dfrac{t(1-(x+t)x)}{(x+t)^2}e^{-tx}\\
+\because x\geq1,\ t&gt;0\therefore 1-(x+t)x&lt;0,\ \dfrac{dg(x)}{dx}&lt;0\therefore g(x)单调递减,\ 0&lt;g(x)\leq g(1)=\dfrac{e^{-t}}{t+1}
+\]</span> 由 <span class="math inline">\(Abel\)</span> 判别法，<span class="math inline">\(\displaystyle \int_1^{+\infin}e^{-tx}\dfrac{\sin 3x}{x+t}dx=\int_1^{+\infin}f(x)g(x)dx\)</span>，<span class="math inline">\(f(x)\)</span> 收敛，<span class="math inline">\(g(x)\)</span> 单调有界，原函数一致收敛</p>
+<h4 id="section-5">8</h4>
+<p>证明：<span class="math inline">\(\displaystyle \int_0^{+\infin}\dfrac{\sin tx}{x}dx\)</span> 对 <span class="math inline">\(\forall \ t&gt;0\)</span> 换元 <span class="math inline">\(tx=y\in[0,+\infin)\)</span> 有 <span class="math display">\[
+\displaystyle \int_0^{+\infin}\dfrac{\sin tx}{x}dx=\int_0^{+\infin}\dfrac{t\sin y}{y}\cdot \dfrac{1}{t}dy=\int_0^{+\infin}\dfrac{\sin y}{y}dy=\dfrac{\pi}{2}
+\]</span> 而 <span class="math inline">\(\forall \ t&lt;0\)</span>，换元 <span class="math inline">\(tx=y\in(-\infin,0]\)</span> 有 <span class="math display">\[
+\displaystyle \int_0^{+\infin}\dfrac{\sin tx}{x}dx=\int_0^{-\infin}\dfrac{t\sin y}{y}\cdot \dfrac{1}{t}dy=\int_0^{-\infin}\dfrac{\sin y}{y}dy=-\int_0^{+\infin}\dfrac{\sin y}{y}dy=-\dfrac{\pi}{2}
+\]</span> 从而只要区间包含 <span class="math inline">\(t=0\)</span> 则在 <span class="math inline">\(t=0\)</span> 处不连续</p>
+<h2 id="习题2.2">习题2.2</h2>
+<h4 id="section-6">2(1)</h4>
+<p>解：对 <span class="math inline">\(F(x)=\int_x^{x^2}e^{-xy^2}dy\)</span>，其对 <span class="math inline">\(x\)</span> 的导函数分为两部分 <span class="math display">\[
+F&#39;(x)=2x\cdot e^{-x\cdot (x^2)^2}-e^{-x\cdot x^2}+\int_x^{x^2}\dfrac{\part (e^{-xy^2})}{\part x}dy=2xe^{-x^5}-e^{-x^3}-\int_x^{x^2}y^2e^{-xy^2}dy
+\]</span></p>
+<h4 id="section-7">2(2)</h4>
+<p>解：对 <span class="math inline">\(F(y)=\displaystyle\int_{a+y}^{b+y}\dfrac{sin(yx)}{x}dx\)</span>，其对 <span class="math inline">\(x\)</span> 的导函数分为两部分，分类讨论 <span class="math display">\[
+F&#39;(y)=\dfrac{sin(y(b+y))}{b+y}-\dfrac{sin(y(a+y))}{a+y}+\int_{a+y}^{b+y}sin(xy)dx\\=(\dfrac{1}{b+y}+\dfrac{1}{y})sin(y(b+y))-(\dfrac{1}{a+y}+\dfrac{1}{y})sin(y(a+y))
+\]</span> 其中 <span class="math inline">\(y=0\)</span> 时，代入求极限得 <span class="math inline">\(F&#39;(y)=b-a\)</span> ；</p>
+<p>当 <span class="math inline">\(y=-b\)</span> 时，代入求极限得 <span class="math inline">\(F&#39;(y)=-b+(\dfrac{1}{b-a}+\dfrac{1}{b})sin(b(b-a))\)</span>；</p>
+<p>当 <span class="math inline">\(y=-a\)</span> 时，代入求极限得 <span class="math inline">\(F&#39;(y)=(\dfrac{1}{b-a}-\dfrac{1}{a})sin(a(a-b))+a\)</span></p>
+<h4 id="section-8">2(3)</h4>
+<p>解：对 <span class="math inline">\(F(t)=\displaystyle\int_0^{t}\dfrac{\ln(1+tx)}{x}dx\)</span>，其对 <span class="math inline">\(t\)</span> 求导得 <span class="math display">\[
+F&#39;(t)=\dfrac{\ln(1+t^2)}{t}+\int_0^{t}\dfrac{1}{1+tx}dx=\dfrac{\ln(1+t^2)}{t}+\dfrac{1}{t}\ln(1+tx)\big |_0^t=\dfrac{2\ln(1+t^2)}{t}
+\]</span> 当 <span class="math inline">\(t=0\)</span> 时，代入求极限得 <span class="math inline">\(F&#39;(t)=0\)</span></p>
+<h4 id="section-9">2(4)</h4>
+<p>解：对 <span class="math inline">\(F(t)=\int_0^{t}f(x+t,x-t)dx,f\in C&#39;\)</span>，记 <span class="math inline">\(F(x+t,x-t)=F(u,v)\)</span> 对 <span class="math inline">\(t\)</span> 求导得 <span class="math display">\[
+F&#39;(t)=f(2t,0)+\int_0^{t}(\dfrac{\part F}{\part u}\cdot 1+\dfrac{\part F}{\part v}\cdot(-1))dx=f(2t,0)+\int_0^{t}(\dfrac{\part F}{\part u}-\dfrac{\part F}{\part v})dx
+\]</span></p>
+<h4 id="section-10">4</h4>
+<p>证明：<span class="math inline">\(u(x)=\dfrac{1}{2}(\varphi(x+at)+\varphi(x-at))+\dfrac{1}{2a}\displaystyle\int_{x-at}^{x+at}\psi(s)ds\)</span>，其中 <span class="math inline">\(\varphi\in C^2,\psi\in C^1\)</span>，有 <span class="math display">\[
+\dfrac{\part u}{\part t}=\dfrac{a}{2}(\varphi(x+at)-\varphi(x-at))+\dfrac{1}{2} (\psi(x+at)+\psi(x-at))\\
+\dfrac{\part^2 u}{\part t^2}=\dfrac{a^2}{2}(\varphi(x+at)+\varphi(x-at))+\dfrac{a}{2}(\psi(x+at)-\psi(x-at))\\
+\dfrac{\part u}{\part x}=\dfrac{1}{2}(\varphi(x+at)+\varphi(x-at))+\dfrac{1}{2a} (\psi(x+at)-\psi(x-at))\\
+\dfrac{\part^2 u}{\part x^2}=\dfrac{1}{2}(\varphi(x+at)+\varphi(x-at))+\dfrac{1}{2a}(\psi(x+at)-\psi(x-at))\\
+\]</span> 对比知 <span class="math inline">\(\dfrac{\part ^2u}{\part t^2}=a^2\dfrac{\part^2 u}{\part x^2}\)</span>，满足弦振动方程</p>
+<h4 id="section-11">5(1)</h4>
+<p>解：由提示变换 <span class="math inline">\(\dfrac{\arctan x}{x}=\displaystyle\int_0^1\dfrac{1}{1+x^2y^2}dy\)</span>，化为二重积分得 <span class="math display">\[
+\int_0^1\dfrac{\arctan x}{x}\dfrac{1}{\sqrt{1-x^2}}dx=\int_0^1\displaystyle\int_0^1\dfrac{1}{1+x^2y^2}\dfrac{1}{\sqrt{1-x^2}}dxdy
+\]</span> 代换 <span class="math inline">\(x=\sin\varphi,\varphi\in[0,\dfrac{\pi}{2}]\)</span>，有 <span class="math inline">\(\dfrac{1}{1+x^2y^2}\dfrac{1}{\sqrt{1-x^2}}dx=\dfrac{d\varphi}{1+y^2\sin^2\varphi}=\dfrac{\cos^2\varphi \cdot d(\tan \varphi)}{(1+y^2)\sin^2\varphi+\cos^2 \varphi}\)</span> <span class="math display">\[
+\int_0^1\dfrac{\arctan x}{x}\dfrac{1}{\sqrt{1-x^2}}dx=\int_0^1(\int_0^{\frac{\pi}{2}}\dfrac{d(\tan \varphi)}{1+(1+y^2)\tan^2\varphi})dy=\int_0^1(\dfrac{\arctan (\sqrt{1+y^2}\tan \varphi)}{\sqrt{1+y^2}})\big |_0^{\frac{\pi}{2}}dy\\
+=\dfrac{\pi}{2}\int_0^1\dfrac{dy}{\sqrt{1+y^2}}=\dfrac{\pi}{2}\ln(y+\sqrt{1+y^2})\big |_0^1=\dfrac{\pi}{2}\ln(1+\sqrt{2})
+\]</span></p>
+<h4 id="section-12">5(2)</h4>
+<p>解：由 <span class="math inline">\(\dfrac{x^b-x^a}{\ln x}=\displaystyle \int_a^bx^ydy\)</span>，化为二重积分得 <span class="math display">\[
+\int_0^1\dfrac{x^b-x^a}{\ln x}\sin(\ln\dfrac{1}{x})dx=-\int_0^1\int_a^bx^y\sin(\ln x)dxdy=-\int_a^bdy\int_0^1x^y\sin(\ln x)dx
+\]</span> 变换 <span class="math inline">\(t=\ln x,t\in(-\infin,0]\)</span>，有 <span class="math inline">\(x^y\sin(\ln x)dx=e^{yt}\sin t\cdot e^tdt=e^{(y+1)t}\sin tdt\)</span>，分部积分得 <span class="math display">\[
+\int_0^1x^y\sin(\ln x)dx=\int_{-\infin}^0e^{(y+1)t}\sin tdt=-\cos t\cdot e^{(y+1)t}\big |_{-\infin}^0+(y+1)\int_{-\infin}^0\cos t\cdot e^{(y+1)t}dt\\
+=-1+(y+1)\int_{-\infin}^0e^{(y+1)t}d(\sin t)=-1+(y+1)(e^{(y+1)t}\sin t\big |_{-\infin}^0-(y+1)\int_{-\infin}^0e^{(y+1)t}\sin tdt)\\
+=-1-(y+1)^2\int_{-\infin}^0e^{(y+1)t}\sin tdt \Longrightarrow\int_{-\infin}^0e^{(y+1)t}\sin tdt=-\dfrac{1}{1+(y+1)^2}
+\]</span> 代入原式得 <span class="math display">\[
+\int_0^1\dfrac{x^b-x^a}{\ln x}\sin(\ln\dfrac{1}{x})dx=\int_a^b\dfrac{dy}{1+(y+1)^2}=\arctan (1+y)\big |_a^b=\arctan (1+b)-\arctan (1+a)
+\]</span></p>
+<h2 id="习题2.3">习题2.3</h2>
+<h4 id="section-13">1(1)</h4>
+<p>解：<span class="math inline">\(\displaystyle \int_0^{+\infin}\dfrac{e^{-ax^2}-e^{-bx^2}}{x}dx\ (a,b&gt;0)=\int_0^{+\infin}\dfrac{1}{x}dx\int_a^bx^2e^{-x^2y}dy=\int_0^{+\infin}\int_a^bxe^{-x^2y}dxdy\)</span> <span class="math display">\[
+\int_0^{+\infin}xe^{-x^2y}dx=\dfrac{1}{2}\int_0^{+\infin}e^{-x^2y}d(x^2)=-\dfrac{1}{2y}\cdot e^{-x^2y}\big |_0^{+\infin}=\dfrac{1}{2y}\\
+\int_0^{+\infin}\dfrac{e^{-ax^2}-e^{-bx^2}}{x}dx=\int_a^{b}\dfrac{1}{2y}dy=\dfrac{1}{2}\ln (\dfrac{b}{a})
+\]</span></p>
+<h4 id="section-14">1(2)</h4>
+<p>解：由定理 <span class="math inline">\(2.3.2\)</span> 对 <span class="math inline">\(x\)</span> 的广义积分和对 <span class="math inline">\(y\)</span> 的导数运算可以交换次序得 <span class="math display">\[
+\displaystyle \int_0^{+\infin}xe^{-ax^2}\sin(yx)dx\ (a&gt;0)=-\int_0^{+\infin}\dfrac{\part (\cos (yx)e^{-ax^2})}{\part y}dx=-\dfrac{d}{dy}(\int_0^{+\infin}\cos (yx)e^{-ax^2}dx)
+\]</span></p>
+<blockquote>
+<p>引理：教材例 <span class="math inline">\(2.3.2\)</span> 给出 <span class="math inline">\(I(y)=\displaystyle\int_0^{+\infin}e^{-ax^2}\cos (xy)dx=\dfrac{1}{2}\sqrt{\dfrac{\pi}{a}}e^{-\frac{y^2}{4a}}\)</span> ，使用分部积分证明： <span class="math display">\[
+\dfrac{dI}{dy}=I&#39;(y)=-\displaystyle \int_0^{+\infin}xe^{-ax^2}\sin(xy)dx=\dfrac{1}{2a}\int_0^{+\infin}\sin(xy)d(e^{-ax^2})\\=\dfrac{1}{2a}(\sin(xy)e^{-ax^2}\big |_0^{+\infin}-\int_0^{+\infin}y\cos(xy)e^{-ax^2}dx)=-\dfrac{y}{2a}\int_0^{+\infin}e^{-ax^2}\cos(xy)dx=-\dfrac{y}{2a}I(y)
+\]</span> 积分得 <span class="math inline">\(\ln I=-\dfrac{y^2}{4a}+C\)</span>，代入 <span class="math inline">\(Poission\)</span> 积分 <span class="math inline">\(\displaystyle \int_0^{+\infin}e^{-x^2}dx=\dfrac{\sqrt{\pi}}{2}\)</span>，有 <span class="math display">\[
+I(0)=\displaystyle \int_0^{+\infin}e^{-ax^2}dx=\dfrac{1}{\sqrt{a}}\int_0^{+\infin}e^{-t^2}dt=\dfrac{\sqrt{\pi}}{2\sqrt{a}}\Longrightarrow C=\ln (\dfrac{1}{2}\sqrt{\dfrac{\pi}{a}}),I(y)=\dfrac{1}{2}\sqrt{\dfrac{\pi}{a}}e^{-\frac{y^2}{4a}}
+\]</span></p>
+</blockquote>
+<p>则 <span class="math inline">\(\displaystyle \int_0^{+\infin}xe^{-ax^2}\sin(yx)dx=-\dfrac{d}{dy}(\dfrac{1}{2}\sqrt{\dfrac{\pi}{a}}e^{-\frac{y^2}{4a}})=\dfrac{y}{4a}\sqrt{\dfrac{\pi}{a}}e^{-\frac{y^2}{4a}}\)</span></p>
+<h4 id="section-15">1(3)</h4>
+<p>解：<span class="math inline">\(\displaystyle \int_0^{+\infin}\dfrac{\cos ax-\cos bx}{x^2}dx\ (a,b&gt;0)=-\int_0^{+\infin}\dfrac{1}{x^2}dx\int_b^{a}x\sin(xy)dy=\int_0^{+\infin}\int_a^b\dfrac{\sin (xy)}{x}dxdy\)</span> <span class="math display">\[
+\because y\in[a,b]\ \therefore t=xy\in[0,+\infin),\int_0^{+\infin}\dfrac{\sin (xy)}{x}dx=\int_0^{+\infin}\dfrac{y\sin t}{t}d(\dfrac{t}{y})=\int_0^{+\infin}\dfrac{\sin t}{t}dt=\dfrac{\pi}{2}
+\]</span> 代入得 <span class="math inline">\(\displaystyle \int_0^{+\infin}\dfrac{\cos ax-\cos bx}{x^2}dx=\int_a^b\dfrac{\pi}{2}dy=\dfrac{\pi}{2}(b-a)\)</span></p>
+<h4 id="section-16">2(1)</h4>
+<p>解：<span class="math inline">\(I(t)=\displaystyle\int_0^{+\infin}e^{-tx^2}x^{2n}dx\ (t&gt;0)\)</span> 代入特殊值 <span class="math inline">\(n=0\)</span> 得到基础函数，对该函数求 <span class="math inline">\(n\)</span> 阶导得 <span class="math display">\[
+n=0,I(t)=\displaystyle\int_0^{+\infin}e^{-tx^2}dx=\sqrt{\dfrac{1}{t}}\int_0^{+\infin}e^{-m^2}dm=\dfrac{1}{2}\sqrt{\dfrac{\pi}{t}}\\
+\displaystyle\int_0^{+\infin}e^{-tx^2}x^{2n}dx=(-1)^{n}\dfrac{d^n}{dt^n}\int_0^{+\infin}e^{-tx^2}dx=(-1)^{n}\dfrac{d^n}{dt^n}(\dfrac{\sqrt{\pi}}{2}t^{-\frac{1}{2}})\\
+=(-1)^n\dfrac{\sqrt{\pi}}{2}(-\dfrac{1}{2})(-\dfrac{3}{2})\dots(-\dfrac{2n-1}{2})t^{-\frac{2n+1}{2}}=\dfrac{(2n-1)!!\sqrt{\pi}}{2^{n+1}}t^{-\frac{2n+1}{2}}
+\]</span></p>
+<h4 id="section-17">2(2)</h4>
+<p>证明：<span class="math inline">\(I(y)=\displaystyle \int_0^{\infin}\dfrac{dx}{(y+x^2)^{n+1}}\)</span> 代入特殊值 <span class="math inline">\(n=0\)</span> 得到 <span class="math inline">\(\displaystyle \int_0^{+\infin}\dfrac{dx}{y+x^2}=\dfrac{1}{\sqrt{y}}\arctan(\dfrac{x}{\sqrt{y}})\big|_0^{+\infin}=\dfrac{\pi}{2}y^{-\frac{1}{2}}\)</span> <span class="math display">\[
+I(y)=\dfrac{(-1)^{n}}{n!}\dfrac{d^n}{dy^n}(\dfrac{\pi}{2}y^{-\frac{1}{2}})=\dfrac{\pi}{2}\dfrac{(-1)^n}{n!}(-\dfrac{1}{2})(-\dfrac{3}{2})\dots(-\dfrac{2n-1}{2})y^{-\frac{2n+1}{2}}=\dfrac{\pi(2n-1)!!}{2(2n)!!}y^{-(n+\frac{1}{2})}
+\]</span></p>
+<blockquote>
+<p>原题分母缺少2，例如对 <span class="math inline">\(n=2,y=4\)</span> 使用 <span class="math inline">\(Python\)</span> 计算 <span class="math inline">\(\displaystyle \int_0^{+\infin}\dfrac{dx}{(x^2+4)^{3}}\stackrel{?}{=}(\dfrac{\pi\cdot3!!}{2\cdot 4!!}\cdot 4^{-\frac{5}{2}}=\dfrac{3\pi}{512})\)</span></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> cmath <span class="keyword">import</span> pi</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">start = <span class="number">0</span></span><br><span class="line">stop = <span class="number">100000</span></span><br><span class="line">length = <span class="number">10000000</span></span><br><span class="line">x = np.linspace(start, stop, length)</span><br><span class="line">y = <span class="number">1</span>/(x*x+<span class="number">4</span>)**<span class="number">3</span></span><br><span class="line">result = <span class="built_in">sum</span>(y*(stop-start)/length)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Integral ≈ &quot;</span>+<span class="built_in">str</span>(result)+<span class="string">&quot;   3π/512 ≈ &quot;</span>+<span class="built_in">str</span>(<span class="number">3</span>*pi/<span class="number">512</span>))</span><br></pre></td></tr></table></figure>
+<p>输出：<code>Integral ≈ 0.01848589261383987   3π/512 ≈ 0.018407769454627694</code>，说明分母确实少 <span class="math inline">\(2\)</span></p>
+</blockquote>
+<h2 id="第2章复习题">第2章复习题</h2>
+<h4 id="section-18">4(1)</h4>
+<p>解：<span class="math inline">\(I(a,b)=\displaystyle \int_0^{\frac{\pi}{2}}\ln (a^2\sin ^2x+b^2\cos^2 x)dx\)</span> 由 <span class="math inline">\(I(a,b)=I(\abs{a},\abs{b})\)</span>，只需考虑 <span class="math inline">\(a,b\geq0\)</span> 的情况 <span class="math display">\[
+\dfrac{\part I}{\part a}=\int_0^{\frac{\pi}{2}}\dfrac{2a\sin ^2x}{a^2\sin ^2x+b^2\cos^2 x}dx=\int_0^{\frac{\pi}{2}}\dfrac{2a\sin^2x\cdot d(\tan x)}{a^2\tan^2x+b^2}=2a\int_0^{\frac{\pi}{2}}\dfrac{\tan^2x}{1+\tan^2x}\dfrac{d(\tan x)}{a^2\tan^2x+b^2}\\
+t=\tan x\in[0,+\infin),\dfrac{\part I}{\part a}=2a\int_0^{+\infin}\dfrac{t^2dt}{(1+t^2)(a^2t^2+b^2)}=2a\int_0^{+\infin}(\dfrac{Adt}{1+t^2}+\dfrac{Bdt}{a^2t^2+b^2})\\
+\]</span> 当 <span class="math inline">\(a\neq b\)</span> 时，有对应系数相等 <span class="math inline">\(\begin{cases}Aa^2+B=1\\Ab^2+B=0\end{cases}\)</span>，解得 <span class="math inline">\(\begin{cases}A=\dfrac{1}{a^2-b^2}\\B=-\dfrac{b^2}{a^2-b^2}\end{cases}\)</span>，则代入有 <span class="math display">\[
+\because \displaystyle \int_0^{+\infin}\dfrac{dt}{1+t^2}=\arctan t\big |_0^{+\infin}=\dfrac{\pi}{2}\ \ ,\int_0^{+\infin}\dfrac{dt}{a^2t^2+b^2}=\dfrac{1}{ab}\arctan(\dfrac{at}{b})\big |_0^{+\infin}=\dfrac{\pi}{2ab}\\
+\therefore \dfrac{\part I}{\part a}=2a(\dfrac{1}{a^2-b^2}\cdot \dfrac{\pi}{2}-\dfrac{b^2}{a^2-b^2}\cdot \dfrac{\pi}{2ab})=\dfrac{\pi}{a+b},I(a)=\pi\ln(a+b)+C
+\]</span> 而当 <span class="math inline">\(a=b\)</span> 时，<span class="math inline">\(\dfrac{\part I}{\part a}=\displaystyle2a\int_0^{\frac{\pi}{2}}\dfrac{\sin^2 xdx}{a^2(\sin^2x+\cos^2x)}=\dfrac{2}{a}\cdot \dfrac{\pi}{4}=\dfrac{\pi}{2a}\)</span>，也与上述结果相同，代入 <span class="math inline">\(a=0\)</span></p>
+<blockquote>
+<p><span class="math inline">\(Euler\)</span> 积分： <span class="math inline">\(\displaystyle\int_0^{\frac{\pi}{2}}\ln (\sin x)dx=\int_0^{\frac{\pi}{2}}\ln (\cos x)dx=-\dfrac{\pi}{2}\ln 2\)</span>，考虑 <span class="math inline">\(t=\dfrac{1}{2}x\in[0,\dfrac{\pi}{4}]\)</span> <span class="math display">\[
+\int_0^{\frac{\pi}{2}}\ln(\sin x)dx=2\int_0^{\frac{\pi}{4}}\ln(\sin 2t)dt=2\int_0^{\frac{\pi}{4}}(\ln2+\ln(\cos t)+\ln(\sin t))dx\\
+=\dfrac{\pi}{2}\ln 2+2\cdot (\int_0^{\frac{\pi}{4}}\ln (\sin t )dt+\int_{\frac{\pi}{2}}^{\frac{\pi}{4}}\ln (\cos (\dfrac{\pi}{2}-t&#39;)))\cdot (-dt&#39;)=\dfrac{\pi}{2}\ln 2+2\int_0^{\frac{\pi}{2}}\ln (\sin x)dx\\
+-\int_0^{\frac{\pi}{2}}\ln(\sin x)dx=\dfrac{\pi}{2}\ln 2\Longrightarrow \int_0^{\frac{\pi}{2}}\ln (\sin x)dx=-\dfrac{\pi}{2}\ln 2
+\]</span></p>
+</blockquote>
+<p><span class="math display">\[
+I(0,b)=\int_0^{\frac{\pi}{2}}\ln (b^2\cos ^2x)dx=\pi\ln b+2\int_0^{\frac{\pi}{2}}\ln (\cos x)dx=\pi\ln (\dfrac{b}{2})
+\]</span></p>
+<p>代入 <span class="math inline">\(I(a,b)=\pi \ln(a+b)+C\)</span>，得 <span class="math inline">\(C=-\pi \ln 2\)</span>，即 <span class="math inline">\(a,b\geq0,\ I(a,b)=\pi\ln(\dfrac{a+b}{2})\)</span></p>
+<p>从而有当 <span class="math inline">\(a=b=0\)</span> 时原积分不存在，当 <span class="math inline">\(a,b\)</span> 不同为 <span class="math inline">\(0\)</span> 时， <span class="math inline">\(I(a,b)=\pi\ln (\dfrac{\abs{a}+\abs{b}}{2})\)</span></p>
+<h4 id="section-19">4(2)</h4>
+<p>解：<span class="math inline">\(I(a)=\displaystyle \int_0^{\frac{\pi}{2}}\dfrac{\arctan(a\tan x)}{\tan x}dx\)</span>，对参数 <span class="math inline">\(a\)</span> 求导得 <span class="math inline">\(I&#39;(a)=\displaystyle \int_0^{\frac{\pi}{2}}\dfrac{\tan x}{(1+a^2\tan ^2x)\tan x}dx\)</span></p>
+<p>由上小问知 <span class="math inline">\(\displaystyle \int_0^{\frac{\pi}{2}}\dfrac{2a\sin ^2x}{a^2\sin ^2x+b^2\cos^2 x}dx=\int_0^{\frac{\pi}{2}}\dfrac{2a\cos ^2x}{a^2\cos ^2x+b^2\sin^2 x}dx=\dfrac{\pi}{a+b}\)</span>，代入有 <span class="math display">\[
+\dfrac{dI}{da}=I&#39;(a)=\int_0^{\frac{\pi}{2}}\dfrac{\cos ^2x}{a^2\sin ^2x+\cos ^2x}dx=\dfrac{\pi}{a+1}\cdot \dfrac{1}{2}=\dfrac{\pi}{2(a+1)}
+\]</span> 积分得 <span class="math inline">\(I(a)=\dfrac{\pi}{2}\ln (a+1)+C\)</span>，显然 <span class="math inline">\(I(0)=\displaystyle \int_0^{\frac{\pi}{2}}0\cdot dx=0\)</span>，得 <span class="math inline">\(C=0\)</span> ，即 <span class="math inline">\(I(a)=\dfrac{\pi}{2}\ln (a+1)\)</span></p>
+<p>考虑 <span class="math inline">\(a\)</span> 的符号有 <span class="math inline">\(I(a)=sgn(a)\dfrac{\pi}{2}\ln (\abs{a}+1),where\ sgn(x)=\begin{cases}1,x&gt;0\\0,x=0\\-1,x&lt;0\end{cases}\)</span></p>
+<h4 id="section-20">5(1)</h4>
+<p>解：<span class="math inline">\(\displaystyle \int_1^{+\infin}\dfrac{y^2-x^2}{(x^2+y^2)^2}=\lim\limits_{A\to +\infin}\int_1^A\dfrac{y^2-x^2}{(x^2+y^2)^2}=\lim\limits_{A\to +\infin}\dfrac{x}{x^2+y^2}\big |_1^{A}=\lim\limits_{A\to +\infin}\dfrac{A}{A^2+y^2}-\dfrac{1}{1+y^2}\)</span> <span class="math display">\[
+\forall \ \epsilon&gt;0,\exist \ \delta&gt;\dfrac{1}{\epsilon},\forall \ A&gt;\delta,s.t.\dfrac{A}{A^2+y^2}\leq\dfrac{1}{A}&lt;\epsilon
+\]</span> 从而 <span class="math inline">\(f(y)=\displaystyle \int_1^{+\infin}\dfrac{y^2-x^2}{(x^2+y^2)^2}=0-\dfrac{1}{1+y^2}=-\dfrac{1}{1+y^2}\)</span>，对该函数有 <span class="math display">\[
+\forall \ \epsilon&gt;0,\exist\ \delta=\epsilon&gt;0,\forall \ \abs{y_1-y_2}&lt;\delta,s.t.\abs{f(y_1)-f(y_2)}=\dfrac{\abs{(y_1-y_2)(y_1+y_2)}}{(1+y_1^2)(1+y_2^2)}\\
+&lt;\delta\cdot (\dfrac{\abs{y_1}}{(1+y_1^2)(1+y_2^2)}+\dfrac{\abs{y_2}}{(1+y_1^2)(1+y_2^2)})\leq\delta\cdot (\dfrac{1}{\abs{y_1+\dfrac{1}{y_1}}}+\dfrac{1}{\abs{y_2+\dfrac{1}{y_2}}})\leq\delta(\dfrac{1}{2}+\dfrac{1}{2})=\epsilon
+\]</span> 从而 <span class="math inline">\(\displaystyle \int_1^{+\infin}\dfrac{y^2-x^2}{(x^2+y^2)^2}\)</span> 对 <span class="math inline">\(y\in R\)</span> 一致收敛</p>
+<h4 id="section-21">5(2)</h4>
+<p>解：<span class="math inline">\(\displaystyle \int_0^{1}\ln (xy)dx\ (\dfrac{1}{2}&lt;y&lt;2)=x\cdot \ln(xy)\big |_0^1-\int_0^1x\cdot \dfrac{y}{xy}dx=\ln(y)-\lim\limits_{x\to 0}x\cdot \ln (xy)-1\)</span>，其中 <span class="math display">\[
+\because y&gt;0\ \therefore\lim\limits_{x\to 0}x\cdot \ln (xy)=\lim\limits_{x\to 0}\dfrac{\ln (xy)}{\dfrac{1}{x}}=\lim\limits_{x\to 0}\dfrac{\dfrac{1}{xy}\cdot y}{-\dfrac{1}{x^2}}=\lim\limits_{x\to 0}(-x)=0
+\]</span> 从而 <span class="math inline">\(f(y)=\displaystyle \int_0^{1}\ln (xy)dx\ (\dfrac{1}{2}&lt;y&lt;2)=\ln y-1\)</span>，对该函数有 <span class="math display">\[
+\forall \ \epsilon&gt;0,\exist\ \delta=\dfrac{1}{2}\epsilon&gt;0,\forall \ y_1,y_2\in(\dfrac{1}{2},2)\ 且\ \abs{y_1-y_2}&lt;\delta,s.t.\abs{f(y_1)-f(y_2)}=\abs{\ln(\dfrac{y_1}{y_2})}\\
+\ln(\abs{1+\dfrac{y_1-y_2}{y_2}})\leq\ln(1+\dfrac{\delta}{y_2})&lt;\ln(1+\dfrac{\delta}{\frac{1}{2}})&lt;\ln(1+2\delta)&lt;2\delta=\epsilon
+\]</span> 从而 <span class="math inline">\(\displaystyle \int_0^{1}\ln (xy)dx\)</span> 对 <span class="math inline">\(y\in(\dfrac{1}{2},2)\)</span> 一致收敛</p>
+<h4 id="section-22">5(3)</h4>
+<p>解： <span class="math inline">\(f(t)=\displaystyle \int_1^{+\infin}\dfrac{t}{x^3}e^{-\frac{t}{2x^2}}dx\ (t&gt;0)=\int_1^{+\infin}e^{-\frac{t}{2x^2}}d(-\frac{t}{2x^2})=e^{-\frac{t}{2x^2}}\big |_1^{+\infin}=1-e^{-\frac{t}{2}}\)</span>，该函数有 <span class="math display">\[
+\forall \ \epsilon&gt;0,\exist\ \delta=2\epsilon&gt;0,\forall \ \abs{t_1-t_2}&lt;\delta,s.t.\abs{f(t_1)-f(t_2)}=\abs{e^{-\frac{t_1}{2}}-e^{-\frac{t_2}{2}}}
+\\=e^{-\frac{t_1}{2}}\abs{1-e^{\frac{1}{2}(t_1-t_2)}}=e^{-\frac{t_2}{2}}\abs{1-e^{\frac{1}{2}(t_2-t_1)}}\leq e^{-\frac{t_1+t_2}{2}}\abs{1-e^{-\frac{1}{2}\abs{t_1-t_2}}}\leq1\cdot(\dfrac{1}{2}\abs{t_1-t_2})&lt;\epsilon
+\]</span> 从而 <span class="math inline">\(f(t)=\displaystyle \int_1^{+\infin}\dfrac{t}{x^3}e^{-\frac{t}{2x^2}}dx\)</span> 对 <span class="math inline">\(t&gt;0\)</span> 一致收敛</p>
+<h4 id="section-23">5(4)</h4>
+<p>解：对函数 <span class="math inline">\(f(y)=\displaystyle \int_1^{+\infin}e^{-\frac{1}{y^2}(x-\frac{1}{y})^2}\sin ydx\ (0&lt;y&lt;1)\)</span> 换元 <span class="math inline">\(t=\dfrac{x-\dfrac{1}{y}}{y}\in[\dfrac{y-1}{y^2},+\infin)\)</span> <span class="math display">\[
+\because y\in[0,1]\ \therefore\sin y&gt;0,\ \int_{\frac{y-1}{y^2}}^{+\infin}e^{-t^2} \sin y \cdot ydt=y\sin y\int_{\frac{y-1}{y^2}}^{+\infin}e^{-t^2}dt&lt;y\sin y\int_{-\infin}^{+\infin}e^{-t^2}dt
+\]</span> 由习题 <span class="math inline">\(2.1.4(3)\)</span> 引理知 <span class="math inline">\(\displaystyle \int_{-\infin}^{+\infin}e^{-t^2}dt\)</span> 收敛于某常数 <span class="math inline">\(\sqrt{\pi}\)</span>，对函数 <span class="math inline">\(g(y)=y\sin y\)</span> 有 <span class="math inline">\(g(y)\leq y\)</span> 后者显然一致连续</p>
+<p>由比较判别法知 <span class="math inline">\(f(y)=\displaystyle \int_1^{+\infin}e^{-\frac{1}{y^2}(x-\frac{1}{y})^2}\sin ydx\)</span> 在 <span class="math inline">\(y\in(0,1)\)</span> 一致收敛</p>
+<h4 id="section-24">5(5)</h4>
+<p>解：<span class="math inline">\(f(y)=\displaystyle\int_1^{+\infin}e^{-yx^2}\sin ydx\ (y\in [0,+\infin)\)</span> 考虑 <span class="math inline">\(y&gt;0\)</span> 时换元 <span class="math inline">\(t=\sqrt{y}x\)</span> 计算 <span class="math display">\[
+f(y)=\sin y\cdot \int_1^{+\infin}e^{-t^2}\dfrac{dt}{\sqrt{y}}=C\cdot\dfrac{\sin y}{\sqrt{y}},\ where \ C=\int_1^{+\infin}e^{-t^2}dt&lt;\dfrac{\sqrt{\pi}}{2}\\
+\because y\in [0,+\infin),\ \sin y\leq y\therefore\dfrac{\sin y}{\sqrt{y}}\leq\sqrt{y},\ \lim\limits_{y\to 0}f(y)=C\cdot \lim\limits_{y\to 0}\dfrac{\sin y}{\sqrt{y}}=0\therefore f(y)&lt;\dfrac{\sqrt{\pi}}{2}\sqrt{y}
+\]</span> 而对于基础函数 <span class="math inline">\(g(y)=\sqrt{y}\)</span> 有可证明其一致连续 <span class="math display">\[
+\forall \ \epsilon&gt;0,\exist\ \delta=\epsilon^2&gt;0,\forall \ \abs{y_1-y_2}&lt;\delta,s.t.\abs{g(y_1)-g(y_2)}=\abs{\sqrt{y_1}-\sqrt{y_2}}=\dfrac{\abs{y_1-y_2}}{\sqrt{y_1}+\sqrt{y_2}}\\
+\leq\dfrac{\abs{y_1-y_2}}{\abs{\sqrt{y_1}-\sqrt{y_2}}}\Longrightarrow\abs{\sqrt{y_1}-\sqrt{y_2}}\leq\sqrt{\abs{y_1-y_2}}&lt;\sqrt{\delta}=\epsilon
+\]</span> 由比较判别法知 <span class="math inline">\(f(y)=\displaystyle\int_1^{+\infin}e^{-yx^2}\sin ydx\)</span> 在 <span class="math inline">\(y\in[0,+\infin)\)</span> 一致连续</p>
+<h4 id="section-25">5(6)</h4>
+<p>解：<span class="math inline">\(f(x)=\displaystyle \int_1^{+\infin}e^{-yx^2}\sin ydy\ (x\in [0,+\infin))\)</span> ，直接分部积分有 <span class="math display">\[
+f(x)\ (x\geq 0)=-\displaystyle \int_1^{+\infin}e^{-yx^2}d(\cos y)=-e^{-yx^2}\cos y\big |_1^{+\infin}-x^2\int_1^{+\infin}\cos y\cdot e^{-yx^2}dy\\
+=e^{-x^2}\cdot \cos 1-x^2\int_1^{+\infin}e^{-yx^2}d(\sin y)=e^{-x^2}\cdot \cos 1-x^2e^{-yx^2}\sin y\big |_1^{+\infin}-x^4\int_1^{+\infin}e^{-yx^2}\sin ydy\\
+=e^{-x^2}\cdot \cos 1+x^2e^{-x^2}\cdot \sin 1-x^4f(x)=e^{-x^2}(\cos 1+\sin 1\cdot x^2)-x^4f(x)\\
+\therefore f(x)=\dfrac{\cos 1+\sin 1\cdot x^2}{1+x^4}e^{-x^2}\leq \dfrac{\cos 1+\sin 1\cdot x^2}{1+x^4}\leq\cos 1+\sin 1 \cdot \dfrac{x^2}{1+x^4}
+\]</span> 考虑基础函数 <span class="math inline">\(g(x)=\dfrac{x^2}{1+x^4}\ (x\geq0)\)</span> 可证明其一致连续性 <span class="math display">\[
+\forall \ \epsilon&gt;0,\exist\ \delta=\dfrac{2\cdot \epsilon}{3^{\frac{3}{4}}}&gt;0,\forall \ \abs{x_1-x_2}&lt;\delta,s.t.\abs{g(x_1)-g(x_2)}=\abs{\dfrac{x_1^2}{1+x_1^4}-\dfrac{x_2^2}{1+x_2^4}}\\
+=\abs{\dfrac{(x_1^2-x_2^2)(1-x_1^2x_2^2)}{(1+x_1^4)(1+x_2^4)}}&lt;\delta\cdot \abs{\dfrac{(x_1+x_2)\cdot 1}{(1+x_1^4)(1+x_2^4)}}\leq\delta\cdot (\dfrac{x_1}{1+x_1^4}+\dfrac{x_2}{1+x_2^4})\\
+=\delta \cdot (\dfrac{1}{x_1^3+\dfrac{1}{x_1}}+\dfrac{1}{x_2^3+\dfrac{1}{x_2}})=\delta\cdot (\dfrac{1}{x_1^3+\dfrac{1}{3x_1}+\dfrac{1}{3x_2}+\dfrac{1}{3x_2}}+\dfrac{1}{x_1^3+\dfrac{1}{3x_2}+\dfrac{1}{3x_2}+\dfrac{1}{3x_2}})\\
+\leq\delta\cdot \dfrac{2}{4\cdot\sqrt[4]{\dfrac{1}{27}}}=\delta\cdot \dfrac{3^{\frac{3}{4}}}{2}=\epsilon
+\]</span> 由比较判别法知 <span class="math inline">\(f(x)=\displaystyle \int_1^{+\infin}e^{-yx^2}\sin ydy\)</span> 在 <span class="math inline">\(x\geq0\)</span> 一致收敛</p>
+<h4 id="section-26">6(1)</h4>
+<p>解：<span class="math inline">\(I(y)=\displaystyle \int_0^{+\infin}\dfrac{\arctan xy}{x(1+x^2)}dx\ (y\geq0)\)</span>，其对 <span class="math inline">\(y\)</span> 求导得 <span class="math display">\[
+I&#39;(y)=\int_0^{+\infin}\dfrac{\part }{\part y}(\dfrac{\arctan xy}{x(1+x^2)})dx=\int_0^{+\infin}\dfrac{dx}{(1+x^2)(1+x^2y^2)}:\\if\ y=1,I&#39;(y)=\int_0^{\frac{\pi}{2}}\dfrac{d(\tan \varphi)}{(1+\tan ^2\varphi)^2}
+=\int_0^{\frac{\pi}{2}}\cos ^2\varphi d\varphi=\dfrac{\pi}{4};\\if \ y\neq1,I&#39;(y)=\dfrac{}{}\dfrac{1}{1-y^2}\int_0^{+\infin}(\dfrac{1}{1+x^2}-\dfrac{y^2}{1+x^2y^2})dx=\dfrac{1}{1-y^2}(\arctan x-y\arctan (\frac{x}{y}))\big |_0^{+\infin}\\
+=\dfrac{1}{1-y^2}(\dfrac{\pi}{2}(1-y))=\dfrac{\pi}{2(y+1)},\ when \ y=1,I&#39;(1)=\dfrac{\pi}{2(1+1)}=\dfrac{\pi}{4}\therefore I&#39;(y)=\dfrac{\pi}{2(y+1)}
+\]</span> 积分有 <span class="math inline">\(I(y)=\dfrac{\pi}{2}\ln (y+1)+C\)</span>，代入特殊值 <span class="math inline">\(I(0)=\displaystyle \int_0^{+\infin}0\cdot dx=0\)</span>，从而有 <span class="math inline">\(I(y)=\dfrac{\pi}{2}\ln (y+1)\)</span></p>
+<h4 id="section-27">6(2)</h4>
+<p>解：<span class="math inline">\(I(y)=\displaystyle \int_0^{+\infin}\dfrac{\cos x}{y^2+x^2}dx\)</span>，<span class="math inline">\(I(y)\)</span> 为偶函数 <span class="math inline">\(I(y)=I(-y)\)</span> ，当 <span class="math inline">\(y=0\)</span> 时 <span class="math display">\[
+I(0)=\int_0^{+\infin}\dfrac{\cos x}{x^2}dx=-\int_0^{+\infin}\cos x\cdot d(\dfrac{1}{x})=-\dfrac{\cos x}{x}\big |_0^{+\infin}-\int_0^{+\infin}\dfrac{\sin x}{x}dx
+\]</span> 则 <span class="math inline">\(I(0)\)</span> 发散，当 <span class="math inline">\(y&gt;0\)</span> 时，代换 <span class="math inline">\(t=\dfrac{x}{y}\in[0,+\infin)\)</span>，<code>Thanks for WYZ's reference!</code> <span class="math display">\[
+I(y)=\displaystyle \int_0^{+\infin}\dfrac{\cos x}{y^2+x^2}dx=\dfrac{1}{y}\int_0^{+\infin}\dfrac{\cos yt}{1+t^2}dt\Longrightarrow f(y)=yI(y)=\int_0^{+\infin}\dfrac{\cos yt}{1+t^2}dt\\
+f&#39;(y)=-\int_0^{+\infin}\dfrac{t\sin yt}{1+t^2}dt=\int_0^{+\infin}\sin yt\cdot (-\dfrac{1}{t}+\dfrac{1}{t(1+t^2)})dt=-\dfrac{\pi}{2}+\int_0^{+\infin}\dfrac{\sin yt}{t(1+t^2)}dt\\
+\int_0^{+\infin}\dfrac{\sin yt}{t}dt=\int_0^{+\infin}\dfrac{\sin yt}{yt}d(yt)=\int_0^{+\infin}\dfrac{\sin u}{u}du=\dfrac{\pi}{2},f&#39;(0)=-\dfrac{\pi}{2}+0=-\dfrac{\pi}{2}\\
+f&#39;&#39;(y)=\int_0^{+\infin}\dfrac{\cos yt}{1+t^2}dt=f(y)\Longrightarrow f(y)=C_1e^{y}+C_2e^{-y},f(0)=\int_0^{+\infin}\dfrac{1}{1+t^2}dt=\dfrac{\pi}{2}
+\]</span> 得到初始条件 <span class="math inline">\(\begin{cases}C_1+C_2=\dfrac{\pi}{2}\\C_1-C_2=-\dfrac{\pi}{2}\end{cases}\)</span>，解得 <span class="math inline">\(\begin{cases}C_1=0\\C_2=\dfrac{\pi}{2}\end{cases}\)</span>，代入有 <span class="math inline">\(I(y)=\dfrac{\pi}{2y}e^{-y}\)</span></p>
+<h2 id="wxf教材4.1">WXF教材4.1</h2>
+<h4 id="section-28">1</h4>
+<p>选取函数列收敛于某个函数 <span class="math inline">\(f(x)\)</span> <span class="math inline">\(\lim\limits_{n\to {+\infin}}\{f_n(x)\}=f(x)\)</span> 且在区间上可积，使用 <span class="math inline">\(\epsilon-\delta\)</span> 语言描述有 <span class="math display">\[
+\forall\ \epsilon&gt;0,\exist\ N\in N^*,\forall \ x\in[a,b],n&gt;N,s.t\ |f_n(x)-f(x)|&lt;\epsilon
+\]</span> 证明：由 <span class="math inline">\(|\displaystyle\int_a^bf_n(x)dx-\displaystyle\int_a^bf(x)dx|\leq\displaystyle\int_a^b|f_n(x)-f(x)|dx&lt;\epsilon\int_a^bdx=\epsilon(b-a)\)</span></p>
+<p>取 <span class="math inline">\(n\to+\infin\)</span>，得 <span class="math inline">\(\displaystyle\lim\limits_{n\to {+\infin}}\int_a^bf_n(x)dx=\int_a^b\lim\limits_{n\to {+\infin}}f(x)dx=\int_a^b\lim\limits_{n\to {+\infin}}f_n(x)dx\)</span></p>
+<h4 id="section-29">2</h4>
+<p>解：(a) <span class="math inline">\(\displaystyle\int_0^1\dfrac{2xy^2}{(x^2+y^2)^2}dx=-2y^2(x^2+y^2)^{-1}\big |_0^1=2(1-\dfrac{y^2}{1+y^2})=\dfrac{2}{1+y^2}\)</span></p>
+<p>(b)只要 <span class="math inline">\(x\neq0\)</span> <span class="math inline">\(\lim\limits_{y\to 0}\dfrac{2xy^2}{(x^2+y^2)^2}=0\)</span>，若 <span class="math inline">\(x=0\)</span>，有 <span class="math inline">\(f(0,y)=0\)</span>，若 <span class="math inline">\(x\to 0\)</span>，取 <span class="math inline">\(|x|\leq|y|\)</span></p>
+<p><span class="math inline">\(\dfrac{2xy^2}{(x^2+y^2)^2}\leq\dfrac{2xy^2}{(2x^2)^2}=\dfrac{y^2}{4x^3}\)</span>，对 <span class="math inline">\(\forall\  y,\epsilon&gt;0\)</span>，总 <span class="math inline">\(\exist\ |x|&lt;\sqrt[3]{\dfrac{y^2}{4\epsilon}},s.t.f(x,y)&gt;\epsilon\)</span>，从而不一致收敛</p>
+<p>(c)显然有 <span class="math inline">\(\lim\limits_{y\to0}f(x,y)=0\)</span>，则有 <span class="math inline">\(\displaystyle\int_0^1\lim\limits_{y\to 0}f(x,y)dx=0\)</span>，而 <span class="math inline">\(\lim\limits_{y\to0}\displaystyle \int_0^1f(x,y)dx=\lim\limits_{y\to0}\dfrac{2}{1+y^2}=2\)</span></p>
+<p>从而 <span class="math inline">\(\lim\limits_{y\to0}\displaystyle \int_0^1f(x,y)dx\neq \displaystyle\int_0^1\lim\limits_{y\to 0}f(x,y)dx\)</span></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Eren Zhao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%8C%E7%AB%A0/">http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%8C%E7%AB%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/2022%E5%AF%92%E5%81%87/">2022寒假</a><a class="post-meta__tags" href="/tags/%E5%A4%9A%E5%85%83%E5%BE%AE%E7%A7%AF%E5%88%86/">多元微积分</a></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/62270f075baa1a80ab393529.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%89%E7%AB%A0/"><img class="prev-cover" src="https://pic.imgdb.cn/item/61ed14332ab3f51d911d3503.jpg" onerror="onerror=null;src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">微积分 WXF 第三章作业</div></div></a></div><div class="next-post pull-right"><a href="/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%80%E7%AB%A0/"><img class="next-cover" src="https://pic.imgdb.cn/item/61f106b02ab3f51d917b4c8a.jpg" onerror="onerror=null;src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">微积分 WXF 第一章作业</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/05/31/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E4%B8%80%E8%87%B4%E6%94%B6%E6%95%9B%E5%87%BD%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%92%8C%E5%87%BD%E6%95%B0%E6%80%A7%E8%B4%A8/" title="一致收敛函数项级数的和函数性质"><img class="cover" src="https://pic.imgdb.cn/item/62270ef75baa1a80ab39048b.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-31</div><div class="title">一致收敛函数项级数的和函数性质</div></div></a></div><div><a href="/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf04/" title="第四讲 高阶导数与 Taylor 公式"><img class="cover" src="https://pic.imgdb.cn/item/61eccc242ab3f51d91d6d7ab.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-14</div><div class="title">第四讲 高阶导数与 Taylor 公式</div></div></a></div><div><a href="/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork2/" title="王晓峰老师的微积分A2作业（二）"><img class="cover" src="https://pic.imgdb.cn/item/61eccb4d2ab3f51d91d616f7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-14</div><div class="title">王晓峰老师的微积分A2作业（二）</div></div></a></div><div><a href="/2022/03/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Gauss%E5%85%AC%E5%BC%8F%E5%92%8CStokes%E5%85%AC%E5%BC%8F/" title="多元微积分 Gauss 公式与 Stokes 公式总结"><img class="cover" src="https://pic.imgdb.cn/item/61eccb3f2ab3f51d91d60b7d.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-17</div><div class="title">多元微积分 Gauss 公式与 Stokes 公式总结</div></div></a></div><div><a href="/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%89%E7%AB%A0/" title="微积分 WXF 第三章作业"><img class="cover" src="https://pic.imgdb.cn/item/61ed14332ab3f51d911d3503.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-17</div><div class="title">微积分 WXF 第三章作业</div></div></a></div><div><a href="/2022/02/16/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%94%E7%AB%A0/" title="微积分 WXF 第五章作业"><img class="cover" src="https://pic.imgdb.cn/item/61f2b2892ab3f51d91051bb8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-16</div><div class="title">微积分 WXF 第五章作业</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend.jpg'" alt="avatar"/></div><div class="author-info__name">Eren Zhao</div><div class="author-info__description">THUCST Class 06, Undergraduate</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">162</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zhaochenyang20"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">但是，当我醒来，我看见一片无垠的自由</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AE%E7%A7%AF%E5%88%86wxf%E7%AC%AC%E4%BA%8C%E7%AB%A0%E4%BD%9C%E4%B8%9A-%E4%BD%9C%E8%80%85%E9%B2%81%E7%9D%BF"><span class="toc-number">1.</span> <span class="toc-text">微积分WXF第二章作业 作者：鲁睿</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%A0%E9%A2%982.1"><span class="toc-number">1.1.</span> <span class="toc-text">习题2.1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#section"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">4(3)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-1"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">4(5)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-2"><span class="toc-number">1.1.0.3.</span> <span class="toc-text">4(7)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-3"><span class="toc-number">1.1.0.4.</span> <span class="toc-text">4(10)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-4"><span class="toc-number">1.1.0.5.</span> <span class="toc-text">5</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-5"><span class="toc-number">1.1.0.6.</span> <span class="toc-text">8</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%A0%E9%A2%982.2"><span class="toc-number">1.2.</span> <span class="toc-text">习题2.2</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#section-6"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">2(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-7"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">2(2)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-8"><span class="toc-number">1.2.0.3.</span> <span class="toc-text">2(3)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-9"><span class="toc-number">1.2.0.4.</span> <span class="toc-text">2(4)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-10"><span class="toc-number">1.2.0.5.</span> <span class="toc-text">4</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-11"><span class="toc-number">1.2.0.6.</span> <span class="toc-text">5(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-12"><span class="toc-number">1.2.0.7.</span> <span class="toc-text">5(2)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%A0%E9%A2%982.3"><span class="toc-number">1.3.</span> <span class="toc-text">习题2.3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#section-13"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">1(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-14"><span class="toc-number">1.3.0.2.</span> <span class="toc-text">1(2)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-15"><span class="toc-number">1.3.0.3.</span> <span class="toc-text">1(3)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-16"><span class="toc-number">1.3.0.4.</span> <span class="toc-text">2(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-17"><span class="toc-number">1.3.0.5.</span> <span class="toc-text">2(2)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC2%E7%AB%A0%E5%A4%8D%E4%B9%A0%E9%A2%98"><span class="toc-number">1.4.</span> <span class="toc-text">第2章复习题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#section-18"><span class="toc-number">1.4.0.1.</span> <span class="toc-text">4(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-19"><span class="toc-number">1.4.0.2.</span> <span class="toc-text">4(2)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-20"><span class="toc-number">1.4.0.3.</span> <span class="toc-text">5(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-21"><span class="toc-number">1.4.0.4.</span> <span class="toc-text">5(2)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-22"><span class="toc-number">1.4.0.5.</span> <span class="toc-text">5(3)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-23"><span class="toc-number">1.4.0.6.</span> <span class="toc-text">5(4)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-24"><span class="toc-number">1.4.0.7.</span> <span class="toc-text">5(5)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-25"><span class="toc-number">1.4.0.8.</span> <span class="toc-text">5(6)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-26"><span class="toc-number">1.4.0.9.</span> <span class="toc-text">6(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-27"><span class="toc-number">1.4.0.10.</span> <span class="toc-text">6(2)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wxf%E6%95%99%E6%9D%904.1"><span class="toc-number">1.5.</span> <span class="toc-text">WXF教材4.1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#section-28"><span class="toc-number">1.5.0.1.</span> <span class="toc-text">1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-29"><span class="toc-number">1.5.0.2.</span> <span class="toc-text">2</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/Lecture/2022%20Spring/%E7%8C%AE%E4%B8%8A%E4%B8%80%E6%9B%B2%E5%96%80%E7%A7%8B%E8%8E%8E/" title="献上一曲喀秋莎"><img src="https://pic.imgdb.cn/item/6234754d5baa1a80ab39c4c4.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="献上一曲喀秋莎"/></a><div class="content"><a class="title" href="/2022/04/13/Lecture/2022%20Spring/%E7%8C%AE%E4%B8%8A%E4%B8%80%E6%9B%B2%E5%96%80%E7%A7%8B%E8%8E%8E/" title="献上一曲喀秋莎">献上一曲喀秋莎</a><time datetime="2022-04-13T10:15:08.391Z" title="Created 2022-04-13 18:15:08">2022-04-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E4%B8%AD%E5%9B%BD%E8%A6%81%E5%BD%93%E5%BF%83%E9%9F%A9%E5%9B%BD%E7%9A%84%E6%95%99%E8%AE%AD/" title="反女权能选总统，中国要当心韩国的教训"><img src="https://pic.imgdb.cn/item/61eccc262ab3f51d91d6d94a.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="反女权能选总统，中国要当心韩国的教训"/></a><div class="content"><a class="title" href="/2022/04/13/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E4%B8%AD%E5%9B%BD%E8%A6%81%E5%BD%93%E5%BF%83%E9%9F%A9%E5%9B%BD%E7%9A%84%E6%95%99%E8%AE%AD/" title="反女权能选总统，中国要当心韩国的教训">反女权能选总统，中国要当心韩国的教训</a><time datetime="2022-04-12T23:45:50.909Z" title="Created 2022-04-13 07:45:50">2022-04-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/Lecture/2022%20Spring/%E7%82%B9%E4%BA%AE%E6%95%B0%E5%AD%97%E4%BA%BA%E7%94%9F/" title="点亮数字人生"><img src="https://pic.imgdb.cn/item/61f106862ab3f51d917b202b.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="点亮数字人生"/></a><div class="content"><a class="title" href="/2022/04/13/Lecture/2022%20Spring/%E7%82%B9%E4%BA%AE%E6%95%B0%E5%AD%97%E4%BA%BA%E7%94%9F/" title="点亮数字人生">点亮数字人生</a><time datetime="2022-04-12T22:28:09.665Z" title="Created 2022-04-13 06:28:09">2022-04-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/10/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E4%B8%8A%E6%B5%B7%E9%98%B2%E7%96%AB%EF%BC%8C%E8%83%8C%E5%90%8E%E7%9A%84%E5%9B%BD%E6%9C%AC%E4%B9%8B%E4%BA%89/" title="上海防疫，背后的国本之争"><img src="https://pic.imgdb.cn/item/61eccb1f2ab3f51d91d5f05b.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="上海防疫，背后的国本之争"/></a><div class="content"><a class="title" href="/2022/04/10/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E4%B8%8A%E6%B5%B7%E9%98%B2%E7%96%AB%EF%BC%8C%E8%83%8C%E5%90%8E%E7%9A%84%E5%9B%BD%E6%9C%AC%E4%B9%8B%E4%BA%89/" title="上海防疫，背后的国本之争">上海防疫，背后的国本之争</a><time datetime="2022-04-10T07:21:45.489Z" title="Created 2022-04-10 15:21:45">2022-04-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/09/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/help/" title="Help!!!"><img src="https://pic.imgdb.cn/item/61eccb212ab3f51d91d5f245.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="Help!!!"/></a><div class="content"><a class="title" href="/2022/04/09/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/help/" title="Help!!!">Help!!!</a><time datetime="2022-04-08T20:12:25.950Z" title="Created 2022-04-09 04:12:25">2022-04-09</time></div></div></div></div></div></div></main><footer id="footer" style="background: ＃191970"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Local search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
