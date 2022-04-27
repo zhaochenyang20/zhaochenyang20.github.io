@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en-US" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Build | La vida sola viviras</title><meta name="keywords" content="跪系的普通学生"><meta name="author" content="Eren Zhao"><meta name="copyright" content="Eren Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="据悉，这道题是所有PA里，人类会做的题里最难的...">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Build">
+<meta property="og:url" content="http://example.com/2021/11/24/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/build/index.html">
+<meta property="og:site_name" content="La vida sola viviras">
+<meta property="og:description" content="据悉，这道题是所有PA里，人类会做的题里最难的...">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg">
+<meta property="article:published_time" content="2021-11-24T12:32:01.011Z">
+<meta property="article:modified_time" content="2022-01-14T15:00:42.147Z">
+<meta property="article:author" content="Eren Zhao">
+<meta property="article:tag" content="跪系的普通学生">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2021/11/24/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/build/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Build',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-01-14 23:00:42'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">165</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">La vida sola viviras</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Build</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-11-24T12:32:01.011Z" title="Created 2021-11-24 20:32:01">2021-11-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-01-14T15:00:42.147Z" title="Updated 2022-01-14 23:00:42">2022-01-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/DSA/">DSA</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>9min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Build"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="pa2-1-build题解">PA2-1 Build题解</h1>
+<h2 id="一算法分析">一、算法分析</h2>
+<p>首先考虑如何模拟一棵多叉树的行为。参照讲义所讲，我们采取长子兄弟法来模拟这样的一棵树。每个节点需要储存的信息为直接前驱编号，直接后续编号，长子编号，幼子编号，父亲编号。并且规定倘若不存在某一关系节点，则编号为<code>0</code>。毕竟根节点的编号从<code>1</code>开始。</p>
+<p>除关系节点之外，还需储存子树大小信息，子树高度信息，后缀节点最大高度。</p>
+<p>如上<code>6</code>个信息采用<code>unsigned int</code>储存足矣。故而构造节点结构体，开辟足够大小空间即可。</p>
+<p>接下来考虑改进递归实现的后序遍历算法来生成初始信息。</p>
+<p>最初我考虑通过递归来实现这个功能：</p>
+<p>标准的后续遍历为先遍历<code>lc</code>，随后遍历<code>rc</code>，最后<code>visit</code>节点本身。然而本题的后缀节点最大高度这一数据实际上需要依赖于某一节点所有的后续节点。故而需要从<code>last_child</code>反向遍历至<code>first_child</code>。这一操作实际上是反向的后序遍历。考虑以如下方式实现：</p>
+<p>如果一个节点是叶子，则设计<code>size=1,height=0,subffix=0</code>，随后返回。</p>
+<p>从幼子节点开始反向遍历，直到长子节点。</p>
+<p>随后该节点的<code>size</code>等于所有自己子节点的<code>size</code>之和。<code>subffix</code>为长子节点和右邻居的最大值。<code>height</code>为长子节点的<code>subffix+1</code>。</p>
+<p>然而实际上由于递归的空间开在函数栈上，而输入规模为<code>1000_000</code>。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">In [3]: 1000_000*8/(1024**2)</span><br><span class="line">Out[3]: 7.62939453125</span><br></pre></td></tr></table></figure>
+<p>如果一棵树完全退化为一维的线性数组，则很有可能因为不断递归进入幼子节点而爆栈。（如果有同学的代码用递归能过全集测试，我去试试能否用这个<code>worst case</code>卡掉他们），所以我们需要递归改为迭代。具体可以参见第三部分第一节。</p>
+<p>接下来考虑动态操作。</p>
+<h3 id="功能设计">功能设计</h3>
+<h4 id="int-readnode"><code>int readnode()</code></h4>
+<p><code>readnode()</code>接口用于给出被表示的节点。起初我考虑通过一个<code>vector</code>将参数传入后再返回被表示的节点，然而并不需要如此操作，毕竟 <code>vector</code>在此处并不优化时间，反而浪费了空间。</p>
+<p>考虑到实际上会读入非法路径，故而设计四个全局变量，用于实现<code>int readnode()</code>接口。</p>
+<p><code>child_number</code>表示读入的子节点的编号，<code>length</code>表示读入的路径长度，<code>real_vertex</code>和<code>tmp_vertex</code>分别表示在树上，沿着路径深入时，真实的节点和临时的节点。注意到因为路径可能非法，故而我们将<code>tmp_vertex</code>设置为<code>0</code>以表示路径已然非法。且在函数开始时，将<code>tmp_vertex、real_vertex</code>初始化为<code>1</code>，表示必然会走到树根节点。</p>
+<p>随后，读入<code>length</code>，然后开启循环。循环内部每次读入<code>child_number</code>，并调用<code>void search(child_number)</code>来设置<code>tmp_vertex、real_vertex</code>。循环结束后返回<code>real_vertex</code>并用<code>detach_vertex、attach_vertex</code>接收即可。</p>
+<h4 id="void-searchint-child_number"><code>void search(int child_number)</code></h4>
+<p>如同<code>readnode</code>中叙述，<code>search</code>是在模拟在树上的行走过程。首先，如果<code>tmp_vertex</code>已然等于<code>0</code>，也即下行路线到达了叶节点，则直接返回。反之，我们从<code>real_vertex</code>节点的长子节点开始不断移动即可。</p>
+<h4 id="void-detachint-detach_vertex"><code>void detach(int detach_vertex)</code></h4>
+<p>模拟将一个节点从父亲的树中摘除。首先对于其左右节点，让左右邻居的邻居接口直接相互指向即可。同时特判被摘除节点是否为父节点的长子节点或者幼子节点，如果是则应该将长子节点或幼子节点移交。</p>
+<p>其后考虑先更新所有受到影响的节点的信息。具体而言，需要更新的是<code>size、height、subffix</code>。</p>
+<p>对于<code>size</code>的更新，只需沿着父节点不断向上，减去当前节点的<code>size</code>。</p>
+<p>对于<code>height、subfix</code>，从被摘除节点的<code>parent</code>开始，通过一个<code>while</code>循环，如果有左邻居则向左，如果没有左邻居则向上。在每次循环内，对于左邻居，后缀树最大高度<code>subffix</code>为左邻居的高度与左邻居（新的）右邻居的<code>subffix</code>中的最大值，而高度不会发生改变。如果左邻居的左邻居仍然存在，则继续向左。如果不存在，则已经到达长子。在长子的循环内，父节点的高度等于长子的<code>subffix+1</code>。随后转入父节点的循环。</p>
+<h4 id="void-attachint-attach_numberint-rank"><code>void attach(int attach_number，int rank)</code></h4>
+<p>约定<code>attach_number</code>为待插入位置的父节点。</p>
+<p>考虑如何获得实际待插入的位置。类似于<code>search</code>接口的方法，我们通过两个全局变量<code>tmp_insert</code>和<code>real_insert</code>配合<code>rank</code>的<code>while</code>循环获得被<code>attach</code>的位置当前的节点(注意需要将两个全局变量在每次使用前设置为<code>-1</code>)。特别的，倘若<code>tmp_insert!=real_insert</code>，则意味着被插入的位置当前节点为幼子节点。</p>
+<p>接着我们应该获得将待插入节点与父节点的儿子链条接起来。如果插入到链条中部，则将原来此处节点的左邻居的右邻居指针指向待插入节点，原来此处节点的左邻居指针指向待插入节点。如果是在长子或者幼子的位置，则注意更新父节点的长子或者幼子指针。</p>
+<p>类似于<code>detach</code>，我们需要更新受影响的节点的信息。</p>
+<p>对于<code>size</code>的更新，只需沿着父节点不断向上，加上当前节点的<code>size</code>。</p>
+<p>对于<code>height</code>和<code>subffix</code>，被插入节点的<code>height</code>不变，而<code>subffix</code>为高度与右邻居的<code>subffix</code>的最大值。而后，从被插入节点的左邻居开始，在每次循环内，对于左邻居，后缀树最大高度<code>subffix</code>为左邻居的高度与左邻居（新的）右邻居的<code>subffix</code>中的最大值，而高度不会发生改变。如果左邻居的左邻居仍然存在，则继续向左。如果不存在，则已经到达长子。在长子的循环内，父节点的高度等于长子的<code>subffix+1</code>。随后转入父节点的循环。</p>
+<h4 id="void-queryquery_number"><code>void query(query_number)</code></h4>
+<p>直接返回维护好的信息即可。</p>
+<h4 id="更新信息">更新信息</h4>
+<p>由于摘除和添加节点都会对原来的树造成影响，需要更新全树。故而单独将此写为一个接口。且做语义约定：摘除时，在<code>detach</code>函数中将原来的树与被摘除子树完全脱离。被摘除节点的左右邻居的左右邻居指针应该互相指向（这里需要特判左右邻居是否为空，也就是<code>0</code>，因为尽量不应该更改点<code>0</code>的属性，也即不可让<code>0</code>节点的某一个邻居指针指向非<code>0</code>的节点），如果被摘除节点的左右邻居有节点<code>0</code>，则不应该修改左右邻居的邻居指针，且此时也即被摘除点是原本父节点的长子或者幼子，也应该将长子指针或者幼子指针更新。</p>
+<p>以及，因为更新时，对于<code>size</code>的更新方式并不统一，故而将<code>size</code>的更新放置在<code>detach、attach</code>中，只需沿着<code>parent</code>指针做一<code>while</code>循环，不断加上或者减去<code>size</code>即可。</p>
+<p>这样约定后，在摘除过程中，我们并没有改变被摘下节点的现在的指针位置，但是原本的树中已经完全没有了次节点。如此以来，对摘除过程进行更新。</p>
+<p>注意到实际上受到影响的点是被摘除节点沿着向左向上的方向直到到达根节点的路径上的全部节点。</p>
+<p>其次考虑更新<code>subffix、height</code>。先更新<code>subffix</code>再更新<code>height</code>。</p>
+<p>做一<code>while</code>循环，沿着先向左的方式更新<code>subffix</code>，在向左的过程中<code>subbfix=max&#123;height,新的右邻居的subffix&#125;</code>。当到达最左侧后，试图向上。如果向上成功，则<code>height=长子的subffix+1</code>，且再次向左。这一过程即更新了所有受影响节点的<code>height</code>与<code>subffix</code>。</p>
+<p>完成了全树的更新后，为了确保运行安全，将被摘除节点的<code>parent、left_sibling、right_sibling</code>指针清零以便于之后再使用。</p>
+<p>对于插入的语义预定，我们在调用<code>update</code>之前将接口全部接上，也即如果被插入的位置现在有节点，则插入节点的<code>right_sibling</code>指向被插入位置原来的节点，如果被插入位置现在的节点的<code>left_sibling</code>不为空，则被插入位置在儿子链条的中部，相互回扣上链条即可。如果被插入位置现在的节点的<code>left_sibling</code>为空，则新插入节点为父节点的长子，需要回扣上相应的指针。如果被插入位置现在没有节点，则待插入节点为幼子，更改父节点的幼子指针，且判断此时待插入节点的父亲的长子是否为空。如果长子为空，则修改父亲的长子指针。如果长子不为空，则待插入位置原本的节点的<code>left_sibling</code>的右邻居指针和待插入节点进行回扣。</p>
+<p>随后调用更新接口即可。</p>
+<h2 id="二复杂度分析">二、复杂度分析</h2>
+<h3 id="时间复杂度">时间复杂度</h3>
+<p>构建树的拓扑结构的过程仅仅与节点数目有关系，故而时间复杂度为<code>o(n)</code>。</p>
+<p>利用辅助栈实现信息初始化时，每一个节点必然且仅仅入栈、出栈各一次，故而整体的时间复杂度为<code>0(n)</code>。</p>
+<p>子树移动过程，移动本身只设计了寻找节点的时间消耗，故而时间复杂度为<code>o(cost)</code>。</p>
+<p>移动过程中维护大小时，只与节点深度有关，故而复杂度仍然是<code>o(cost)</code>。</p>
+<p>移动过程中维护高度和<code>subffix</code>，实际上是逆向的查找过程，花费也是<code>o(cost)</code>。</p>
+<p>综上所述，总体的时间复杂度为<code>o(cost+n)</code>，根据数据范围可知符合要求。</p>
+<h3 id="空间复杂度">空间复杂度</h3>
+<p>每个节点，记录了大小，长子，幼子，左邻居，右邻居，高度，后缀，总体的空间消耗为<code>o(n)</code>。</p>
+<p>为了利用辅助站完成迭代操作，开设的辅助栈也为<code>o(n)</code>。</p>
+<p>为了完成对于辅助栈的标记，开设了<code>bitmap</code>，空间消耗也为<code>o(n)</code>。</p>
+<p>综上所述，空间复杂度为<code>o(n)</code>。</p>
+<h2 id="三相关问题">三、相关问题</h2>
+<p>在这次作业过程中，集中解决了如下问题。</p>
+<h4 id="递归改迭代">递归改迭代</h4>
+<p>在最开始我考虑子树信息的初始化时，采用了递归版本实现，但是正如前文所述，递归可能会被完全线性的序列卡掉，造成栈溢出。</p>
+<p>故而参考了邓老师上课所讲的后续迭代算法，并与我的朋友刘明道、高焕昂讨论后，我利用辅助栈结合标记的方法将递归改为了迭代。</p>
+<p>其中辅助栈利用数组模拟即可。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">///入栈</span></span><br><span class="line"><span class="keyword">if</span>(top_last_child)  stack_for_size[++top]=top_last_child;</span><br><span class="line"><span class="comment">//出栈</span></span><br><span class="line"><span class="keyword">int</span> pop = stack_for_size[top];</span><br><span class="line">visited-&gt;<span class="built_in">clear</span>(top);</span><br><span class="line">top--;</span><br></pre></td></tr></table></figure>
+<p>而标记数组，为了节省空间，这里利用<code>bitmap</code>来完成。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">bitmap</span>&#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">char</span> *m;</span><br><span class="line">    <span class="keyword">int</span> N;</span><br><span class="line">    <span class="keyword">int</span> size;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">///N的值并不是bitmap的元素个数,size才是</span></span><br><span class="line">    <span class="built_in">bitmap</span>(<span class="keyword">int</span> n = <span class="number">16777216</span>):<span class="built_in">size</span>(n)</span><br><span class="line">    &#123;</span><br><span class="line">        m = <span class="keyword">new</span> <span class="keyword">char</span>[N =(n+<span class="number">7</span>)/<span class="number">8</span>];</span><br><span class="line">        <span class="built_in">memset</span>(m,<span class="number">0</span>,N);</span><br><span class="line">    &#125;</span><br><span class="line">    ~<span class="built_in">bitmap</span>()&#123;<span class="keyword">delete</span> []m;m = <span class="literal">nullptr</span>;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">get_size</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123;<span class="keyword">return</span> size;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">set</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        m[k&gt;&gt;<span class="number">3</span>]|=(<span class="number">0x80</span>&gt;&gt;(k&amp;<span class="number">0x07</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">clear</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        m[k&gt;&gt;<span class="number">3</span>]&amp;=~(<span class="number">0x80</span>&gt;&gt;(k&amp;<span class="number">0x07</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> m[k&gt;&gt;<span class="number">3</span>]&amp;(<span class="number">0x80</span>&gt;&gt;(k&amp;<span class="number">0x07</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Eren Zhao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2021/11/24/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/build/">http://example.com/2021/11/24/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/build/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/11/27/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/hacker/"><img class="prev-cover" src="https://pic.imgdb.cn/item/61f0fc662ab3f51d9172fef0.jpg" onerror="onerror=null;src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Hacker</div></div></a></div><div class="next-post pull-right"><a href="/2021/11/23/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/kidds/"><img class="next-cover" src="https://pic.imgdb.cn/item/61eccc242ab3f51d91d6d7ab.jpg" onerror="onerror=null;src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Kidds</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend.jpg'" alt="avatar"/></div><div class="author-info__name">Eren Zhao</div><div class="author-info__description">求道之人，不论寒暑，无问西东</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">165</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zhaochenyang20"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">但是，当我醒来，我看见一片无垠的自由</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#pa2-1-build%E9%A2%98%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text">PA2-1 Build题解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90"><span class="toc-number">1.1.</span> <span class="toc-text">一、算法分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.1.1.</span> <span class="toc-text">功能设计</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#int-readnode"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">int readnode()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#void-searchint-child_number"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">void search(int child_number)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#void-detachint-detach_vertex"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">void detach(int detach_vertex)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#void-attachint-attach_numberint-rank"><span class="toc-number">1.1.1.4.</span> <span class="toc-text">void attach(int attach_number，int rank)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#void-queryquery_number"><span class="toc-number">1.1.1.5.</span> <span class="toc-text">void query(query_number)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.1.6.</span> <span class="toc-text">更新信息</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90"><span class="toc-number">1.2.</span> <span class="toc-text">二、复杂度分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-number">1.2.1.</span> <span class="toc-text">时间复杂度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-number">1.2.2.</span> <span class="toc-text">空间复杂度</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98"><span class="toc-number">1.3.</span> <span class="toc-text">三、相关问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%92%E5%BD%92%E6%94%B9%E8%BF%AD%E4%BB%A3"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">递归改迭代</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/25/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E6%B1%82%E9%81%93%E4%B9%8B%E4%BA%BA/" title="求道之人，不问寒暑"><img src="https://pic.imgdb.cn/item/623475e95baa1a80ab3b366f.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="求道之人，不问寒暑"/></a><div class="content"><a class="title" href="/2022/04/25/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E6%B1%82%E9%81%93%E4%B9%8B%E4%BA%BA/" title="求道之人，不问寒暑">求道之人，不问寒暑</a><time datetime="2022-04-25T00:12:06.667Z" title="Created 2022-04-25 08:12:06">2022-04-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/24/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/aniversary/" title="分流转系后的一整年"><img src="https://pic.imgdb.cn/item/61eccb5c2ab3f51d91d6238c.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="分流转系后的一整年"/></a><div class="content"><a class="title" href="/2022/04/24/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/aniversary/" title="分流转系后的一整年">分流转系后的一整年</a><time datetime="2022-04-24T13:17:30.403Z" title="Created 2022-04-24 21:17:30">2022-04-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/15/CS/others/GSOC_proposal/" title="Proposal for Explore and Optimize Popular Datasets for Hub"><img src="https://pic.imgdb.cn/item/61f0fc802ab3f51d91731f03.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="Proposal for Explore and Optimize Popular Datasets for Hub"/></a><div class="content"><a class="title" href="/2022/04/15/CS/others/GSOC_proposal/" title="Proposal for Explore and Optimize Popular Datasets for Hub">Proposal for Explore and Optimize Popular Datasets for Hub</a><time datetime="2022-04-15T02:33:59.508Z" title="Created 2022-04-15 10:33:59">2022-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/Lecture/2022%20Spring/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BC%9F%E5%A4%A7%E4%B8%8E%E6%B8%BA%E5%B0%8F/" title="我们的伟大与渺小"><img src="https://pic.imgdb.cn/item/61f106b42ab3f51d917b5210.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="我们的伟大与渺小"/></a><div class="content"><a class="title" href="/2022/04/13/Lecture/2022%20Spring/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BC%9F%E5%A4%A7%E4%B8%8E%E6%B8%BA%E5%B0%8F/" title="我们的伟大与渺小">我们的伟大与渺小</a><time datetime="2022-04-13T10:15:08.391Z" title="Created 2022-04-13 18:15:08">2022-04-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E4%B8%AD%E5%9B%BD%E8%A6%81%E5%BD%93%E5%BF%83%E9%9F%A9%E5%9B%BD%E7%9A%84%E6%95%99%E8%AE%AD/" title="反女权能选总统，中国要当心韩国的教训"><img src="https://pic.imgdb.cn/item/61eccc262ab3f51d91d6d94a.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="反女权能选总统，中国要当心韩国的教训"/></a><div class="content"><a class="title" href="/2022/04/13/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E4%B8%AD%E5%9B%BD%E8%A6%81%E5%BD%93%E5%BF%83%E9%9F%A9%E5%9B%BD%E7%9A%84%E6%95%99%E8%AE%AD/" title="反女权能选总统，中国要当心韩国的教训">反女权能选总统，中国要当心韩国的教训</a><time datetime="2022-04-12T23:45:50.909Z" title="Created 2022-04-13 07:45:50">2022-04-13</time></div></div></div></div></div></div></main><footer id="footer" style="background: ＃191970"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Local search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
