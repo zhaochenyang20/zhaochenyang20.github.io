@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="en-US" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>FPN &amp; RefineNet | La vida sola viviras</title><meta name="keywords" content="科研,2022寒假,CV"><meta name="author" content="Eren Zhao"><meta name="copyright" content="Eren Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="又要组会了，好紧张....">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FPN &amp; RefineNet">
+<meta property="og:url" content="http://example.com/2022/01/12/%E7%A3%95%E7%9B%90/FPN/index.html">
+<meta property="og:site_name" content="La vida sola viviras">
+<meta property="og:description" content="又要组会了，好紧张....">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg">
+<meta property="article:published_time" content="2022-01-12T10:32:48.448Z">
+<meta property="article:modified_time" content="2022-02-12T14:51:33.897Z">
+<meta property="article:author" content="Eren Zhao">
+<meta property="article:tag" content="科研">
+<meta property="article:tag" content="2022寒假">
+<meta property="article:tag" content="CV">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2022/01/12/%E7%A3%95%E7%9B%90/FPN/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'FPN & RefineNet',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-02-12 22:51:33'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">165</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">La vida sola viviras</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">FPN &amp; RefineNet</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-01-12T10:32:48.448Z" title="Created 2022-01-12 18:32:48">2022-01-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-02-12T14:51:33.897Z" title="Updated 2022-02-12 22:51:33">2022-02-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A7%91%E7%A0%94/">科研</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>5min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="FPN &amp; RefineNet"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="feature-pyramid-networks-for-object-detection">Feature Pyramid Networks for Object Detection</h1>
+<h2 id="问题提出">问题提出</h2>
+<p><strong>原始图像经过卷积神经网络后下采样一定倍数后，有一些小像素物体在特征图上会消失，导致无法被检测出。</strong> 举个例子，假设在原始图像中，待检测物体尺寸大小为32*32，那么下采样32倍后，在特征图上该物体尺寸变为1*1，那么该物体的特征，有一定可能被保留下来；但如果原尺寸为16*16，经过下采样32倍后，很可能在某一个<code>maxpooling</code>中被其他特征挤掉，而在特征图上消失，导致后续分类检测层无法检测出该物体。</p>
+<h2 id="问题解决">问题解决</h2>
+<p>为了能最多的检测出图像上的大小目标，有如下几个解决思路。</p>
+<h3 id="图像金字塔">图像金字塔</h3>
+<p>生成不同尺寸的图片，每张图片生成不同的特征，分别进行预测，最后统计所有尺寸的预测结果。</p>
+<h3 id="feature-map">feature map</h3>
+<p>使用神经网络某一层输出的<code>feature map</code>进行预测，一般是网络最后一层<code>feature map</code>；然而靠近网络输入层的<code>feature map</code>包含粗略的位置信息，导致预测的目标<code>bbox</code>不准确，靠近最后网络最后一层的<code>feature map</code>会忽略小物体信息。</p>
+<h3 id="特征金字塔">特征金字塔</h3>
+<p>使用不同层次的金字塔层<code>feature map</code>进行预测。<code>SSD</code>就是采用这种多尺度特征融合方法，从网络不同层抽取不同尺寸的特征做预测，没有增加额外的计算量。</p>
+<h3 id="特征金字塔网络即fpn">特征金字塔网络即<code>FPN</code></h3>
+<p>识别不同尺寸的物体是目标检测中的一个基本挑战，而特征金字塔一直是多尺度目标检测中的一个基本的组成部分，但是由于特征金字塔计算量大，会拖慢整个检测速度，所以大多数方法为了检测速度而尽可能的去避免使用特征金字塔，而是只使用高层的特征来进行预测。高层的特征虽然包含了丰富的语义信息，但是由于低分辨率，很难准确地保存物体的位置信息。与之相反，低层的特征虽然语义信息较少，但是由于分辨率高，就可以准确地包含物体位置信息。所以如果可以将低层的特征和高层的特征融合起来，就能得到一个识别和定位都准确的目标检测系统。所以本文就旨在设计出这样的一个结构来使得检测准确且快速。</p>
+<p>虽然之前也有算法采用了多尺度融合的方式，但是一般都是在特征融合之后再做预测，而本文则是在不同的特征层都单独进行预测。</p>
+<p>对最底层的特征进行向上采样，并与该底层特征进行融合，得到高分辨率、强语义的特征（即加强了特征的提取）。</p>
+<p>为了不让原始特征在最后一层特征图上消失，业界最常用的办法就是多尺度特征图检测，使用多个下采样倍数提取出多张特征图。FPN就是目前多尺度特征图提取方法中的<code>state-of-the-art</code></p>
+<p>严格来说，<code>FPN</code>是一个多尺度物体检测特征提取方法，然而大尺寸的物体检测效果一直比较理想，所以FPN主要大幅提升了小像素目标检测的效果。</p>
+<p><strong>核心想法：把高层的特征传下来，补充低层的语义，这样就可以获得高分辨率、强语义的特征，有利于小目标的检测。</strong></p>
+<h2 id="三种常见结构">三种常见结构</h2>
+<h3 id="featurized-image-pyramid"><code>Featurized image pyramid</code></h3>
+<p>这种方式就是先把图片弄成不同尺寸的，然后再对每种尺寸的图片提取不同尺度的特征，再对每个尺度的特征都进行单独的预测，这种方式的优点是不同尺度的特征都可以包含很丰富的语义信息，但是缺点就是时间成本太高。</p>
+<h3 id="pyramid-feature-hierarchy"><code>Pyramid feature hierarchy</code></h3>
+<p>这是<code>SSD</code>采用的多尺度融合的方法，即从网络不同层抽取不同尺度的特征，然后在这不同尺度的特征上分别进行预测，这种方法的优点在于它不需要额外的计算量。而缺点就是有些尺度的特征语义信息不是很丰富，此外，<code>SSD</code>没有用到足够低层的特征，作者认为低层的特征对于小物体检测是非常有帮助的。</p>
+<h3 id="single-feature-map"><code>Single feature map</code></h3>
+<p>这是在<code>SPPnet</code>，<code>Fast R-CNN</code>，<code>Faster R-CNN</code>中使用的，就是在网络的最后一层的特征图上进行预测。这种方法的优点是计算速度会比较快，但是缺点就是最后一层的特征图分辨率低，不能准确的包含物体的位置信息。</p>
+<p>了使得不同尺度的特征都包含丰富的语义信息，同时又不使得计算成本过高，作者就采用<code>top down</code>和<code>lateral connection</code>的方式，让低层高分辨率低语义的特征和高层低分辨率高语义的特征融合在一起，使得最终得到的不同尺度的特征图都有丰富的语义信息</p>
+<h2 id="特征金字塔结构">特征金字塔结构</h2>
+<p><a target="_blank" rel="noopener" href="https://pic4.zhimg.com/v2-a81f97b300305ec60696f77d9ea8cbf7_r.jpg"></a></p>
+<h1 id="refinenet-multi-path-refinement-networks-for-high-resolution-semantic-segmentation">RefineNet: Multi-Path Refinement Networks for High-Resolution Semantic Segmentation</h1>
+<h2 id="背景">背景</h2>
+<p>目前流行的深度网络，比如<code>VGG、Resnet</code>等，由于<code>pooling</code>和卷积步长的存在，<code>feature map</code>会越来越小，导致损失一些细粒度的信息（低层<code>feature map</code>有较丰富的细粒度信息，高层<code>feature map</code>则拥有更抽象，粗粒度的信息）。对于分类问题而言，只需要深层的强语义信息就能表现较好，但是对于稠密预测问题，比如逐像素的图像分割问题，除了需要强语义信息之外，还需要高空间分辨率。</p>
+<h2 id="已有的解决思路">已有的解决思路</h2>
+<ol type="1">
+<li>针对<code>pooling</code>下采样过程中的分辨率损失，采用<code>deconvolution</code>恢复。但是却很难恢复位置信息。</li>
+<li>使用空洞卷积保持分辨率，增大感受野，但是这么做有两个缺点：A.明显增加了计算代价。B.空洞卷积是一种<code>coarse sub-sampling</code>，因此容易损失重要信息。</li>
+<li>通过<code>skip connection</code>来产生高分辨率的预测。作者认为高级语义特征可以更好地进行分类识别，而低级别视觉特征有助于生成清晰、详细的边界。所以作者认为第<code>3</code>点是很好的思路。</li>
+</ol>
+<h2 id="refinenet的贡献">RefineNet的贡献</h2>
+<ol type="1">
+<li>提出一种多路径<code>refinement</code>网络，称为<code>RefineNet</code>。这种网络可以使用各个层级的<code>features</code>，使得语义分割更为精准。</li>
+<li><code>RefineNet</code>中所有部分都利用<code>residual connections(identity mappings）</code>，使得梯度更容易短向或者长向前传，使段端对端的训练变得更加容易和高效。</li>
+<li>提出了一种叫做<code>chained residual pooling</code>的模块，它可以从一个大的图像区域捕捉背景上下文信息。</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Eren Zhao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/01/12/%E7%A3%95%E7%9B%90/FPN/">http://example.com/2022/01/12/%E7%A3%95%E7%9B%90/FPN/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%A7%91%E7%A0%94/">科研</a><a class="post-meta__tags" href="/tags/2022%E5%AF%92%E5%81%87/">2022寒假</a><a class="post-meta__tags" href="/tags/CV/">CV</a></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/01/13/%E7%A3%95%E7%9B%90/%E8%B0%83%E5%8F%82/"><img class="prev-cover" src="https://pic.imgdb.cn/item/61eccb202ab3f51d91d5f178.jpg" onerror="onerror=null;src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">人生第一次调参</div></div></a></div><div class="next-post pull-right"><a href="/2022/01/12/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/OOP/L1%E3%80%81L2%20%E7%BB%AA%E8%AE%BA%E4%B8%8E%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83/"><img class="next-cover" src="https://pic.imgdb.cn/item/61ed142a2ab3f51d911d2a57.jpg" onerror="onerror=null;src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">oop笔记  L1、L2 绪论与编程环境</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/01/13/%E7%A3%95%E7%9B%90/%E8%B0%83%E5%8F%82/" title="人生第一次调参"><img class="cover" src="https://pic.imgdb.cn/item/61eccb202ab3f51d91d5f178.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-13</div><div class="title">人生第一次调参</div></div></a></div><div><a href="/2022/01/15/%E7%A3%95%E7%9B%90/Dive%20Into%20Deep%20Learning%20Part%201/" title="Dive Into Deep Learning Chapter 1~3"><img class="cover" src="https://pic.imgdb.cn/item/61f0fc6b2ab3f51d91730400.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-15</div><div class="title">Dive Into Deep Learning Chapter 1~3</div></div></a></div><div><a href="/2022/01/11/%E7%A3%95%E7%9B%90/paper_reading/" title="如何有效的读一篇论文"><img class="cover" src="https://pic.imgdb.cn/item/61eccc372ab3f51d91d6e87d.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-11</div><div class="title">如何有效的读一篇论文</div></div></a></div><div><a href="/2022/01/09/CS/others/typing/" title="typing"><img class="cover" src="https://pic.imgdb.cn/item/62270f5c5baa1a80ab3a4417.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-09</div><div class="title">typing</div></div></a></div><div><a href="/2022/02/16/CS/others/python_decorator/" title="decorator Python装饰器"><img class="cover" src="https://pic.imgdb.cn/item/61f106922ab3f51d917b2b9f.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-16</div><div class="title">decorator Python装饰器</div></div></a></div><div><a href="/2022/01/10/%E7%A3%95%E7%9B%90/VIT/" title="Vision Transformer Learning Log"><img class="cover" src="https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-10</div><div class="title">Vision Transformer Learning Log</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend.jpg'" alt="avatar"/></div><div class="author-info__name">Eren Zhao</div><div class="author-info__description">求道之人，不论寒暑，无问西东</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">165</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zhaochenyang20"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">但是，当我醒来，我看见一片无垠的自由</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#feature-pyramid-networks-for-object-detection"><span class="toc-number">1.</span> <span class="toc-text">Feature Pyramid Networks for Object Detection</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%90%E5%87%BA"><span class="toc-number">1.1.</span> <span class="toc-text">问题提出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3"><span class="toc-number">1.2.</span> <span class="toc-text">问题解决</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E9%87%91%E5%AD%97%E5%A1%94"><span class="toc-number">1.2.1.</span> <span class="toc-text">图像金字塔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#feature-map"><span class="toc-number">1.2.2.</span> <span class="toc-text">feature map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E9%87%91%E5%AD%97%E5%A1%94"><span class="toc-number">1.2.3.</span> <span class="toc-text">特征金字塔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E9%87%91%E5%AD%97%E5%A1%94%E7%BD%91%E7%BB%9C%E5%8D%B3fpn"><span class="toc-number">1.2.4.</span> <span class="toc-text">特征金字塔网络即FPN</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.</span> <span class="toc-text">三种常见结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#featurized-image-pyramid"><span class="toc-number">1.3.1.</span> <span class="toc-text">Featurized image pyramid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pyramid-feature-hierarchy"><span class="toc-number">1.3.2.</span> <span class="toc-text">Pyramid feature hierarchy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#single-feature-map"><span class="toc-number">1.3.3.</span> <span class="toc-text">Single feature map</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E9%87%91%E5%AD%97%E5%A1%94%E7%BB%93%E6%9E%84"><span class="toc-number">1.4.</span> <span class="toc-text">特征金字塔结构</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#refinenet-multi-path-refinement-networks-for-high-resolution-semantic-segmentation"><span class="toc-number">2.</span> <span class="toc-text">RefineNet: Multi-Path Refinement Networks for High-Resolution Semantic Segmentation</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">2.1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%B2%E6%9C%89%E7%9A%84%E8%A7%A3%E5%86%B3%E6%80%9D%E8%B7%AF"><span class="toc-number">2.2.</span> <span class="toc-text">已有的解决思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#refinenet%E7%9A%84%E8%B4%A1%E7%8C%AE"><span class="toc-number">2.3.</span> <span class="toc-text">RefineNet的贡献</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/25/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E6%B1%82%E9%81%93%E4%B9%8B%E4%BA%BA/" title="求道之人，不问寒暑"><img src="https://pic.imgdb.cn/item/623475e95baa1a80ab3b366f.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="求道之人，不问寒暑"/></a><div class="content"><a class="title" href="/2022/04/25/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E6%B1%82%E9%81%93%E4%B9%8B%E4%BA%BA/" title="求道之人，不问寒暑">求道之人，不问寒暑</a><time datetime="2022-04-25T00:12:06.667Z" title="Created 2022-04-25 08:12:06">2022-04-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/24/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/aniversary/" title="分流转系后的一整年"><img src="https://pic.imgdb.cn/item/61eccb5c2ab3f51d91d6238c.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="分流转系后的一整年"/></a><div class="content"><a class="title" href="/2022/04/24/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/aniversary/" title="分流转系后的一整年">分流转系后的一整年</a><time datetime="2022-04-24T13:17:30.403Z" title="Created 2022-04-24 21:17:30">2022-04-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/15/CS/others/GSOC_proposal/" title="Proposal for Explore and Optimize Popular Datasets for Hub"><img src="https://pic.imgdb.cn/item/61f0fc802ab3f51d91731f03.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="Proposal for Explore and Optimize Popular Datasets for Hub"/></a><div class="content"><a class="title" href="/2022/04/15/CS/others/GSOC_proposal/" title="Proposal for Explore and Optimize Popular Datasets for Hub">Proposal for Explore and Optimize Popular Datasets for Hub</a><time datetime="2022-04-15T02:33:59.508Z" title="Created 2022-04-15 10:33:59">2022-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/Lecture/2022%20Spring/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BC%9F%E5%A4%A7%E4%B8%8E%E6%B8%BA%E5%B0%8F/" title="我们的伟大与渺小"><img src="https://pic.imgdb.cn/item/61f106b42ab3f51d917b5210.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="我们的伟大与渺小"/></a><div class="content"><a class="title" href="/2022/04/13/Lecture/2022%20Spring/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BC%9F%E5%A4%A7%E4%B8%8E%E6%B8%BA%E5%B0%8F/" title="我们的伟大与渺小">我们的伟大与渺小</a><time datetime="2022-04-13T10:15:08.391Z" title="Created 2022-04-13 18:15:08">2022-04-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E4%B8%AD%E5%9B%BD%E8%A6%81%E5%BD%93%E5%BF%83%E9%9F%A9%E5%9B%BD%E7%9A%84%E6%95%99%E8%AE%AD/" title="反女权能选总统，中国要当心韩国的教训"><img src="https://pic.imgdb.cn/item/61eccc262ab3f51d91d6d94a.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="反女权能选总统，中国要当心韩国的教训"/></a><div class="content"><a class="title" href="/2022/04/13/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E4%B8%AD%E5%9B%BD%E8%A6%81%E5%BD%93%E5%BF%83%E9%9F%A9%E5%9B%BD%E7%9A%84%E6%95%99%E8%AE%AD/" title="反女权能选总统，中国要当心韩国的教训">反女权能选总统，中国要当心韩国的教训</a><time datetime="2022-04-12T23:45:50.909Z" title="Created 2022-04-13 07:45:50">2022-04-13</time></div></div></div></div></div></div></main><footer id="footer" style="background: ＃191970"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Local search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
