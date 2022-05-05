@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="en-US" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>微积分 WXF 第三章作业 | 求道之人，不问寒暑</title><meta name="keywords" content="2022寒假,多元微积分"><meta name="author" content="Eren Zhao"><meta name="copyright" content="Eren Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="咱们成外的后浪挤死前浪啊！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分 WXF 第三章作业">
+<meta property="og:url" content="http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%89%E7%AB%A0/index.html">
+<meta property="og:site_name" content="求道之人，不问寒暑">
+<meta property="og:description" content="咱们成外的后浪挤死前浪啊！">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic.imgdb.cn/item/61ed14332ab3f51d911d3503.jpg">
+<meta property="article:published_time" content="2022-02-16T16:19:10.000Z">
+<meta property="article:modified_time" content="2022-03-18T21:46:38.729Z">
+<meta property="article:author" content="Eren Zhao">
+<meta property="article:tag" content="2022寒假">
+<meta property="article:tag" content="多元微积分">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/61ed14332ab3f51d911d3503.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%89%E7%AB%A0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '微积分 WXF 第三章作业',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-03-19 05:46:38'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">166</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/61ed14332ab3f51d911d3503.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">求道之人，不问寒暑</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">微积分 WXF 第三章作业</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-02-16T16:19:10.000Z" title="Created 2022-02-17 00:19:10">2022-02-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-03-18T21:46:38.729Z" title="Updated 2022-03-19 05:46:38">2022-03-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BF%87%E5%8E%BB%E7%9A%84%E6%95%B0%E5%AD%A6/">过去的数学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">2.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>13min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="微积分 WXF 第三章作业"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="微积分wxf第三章作业-作者鲁睿">微积分WXF第三章作业 作者：鲁睿</h1>
+<h2 id="习题3.3">习题3.3</h2>
+<h4 id="section">4(1)</h4>
+<p>解：区域 <span class="math inline">\(D:\begin{cases}x+y\leq1\\y-x\leq1\\y\geq0\end{cases}\)</span> 图像如右 <img src="img\习题3.3.4(1)区域.png" style="zoom:40%;" /></p>
+<p>从而 <span class="math inline">\(\displaystyle \underset{D}{\iint}f(x,y)dxdy=\int_{-1}^0 dx\int_0^{x+1} f(x,y)dy+\int_0^1 dx\int_0^{1-x} f(x,y)dy=\int_0^{1}dy\int_{y-1}^{1-y}f(x,y)dx\)</span></p>
+<h4 id="section-1">4(2)</h4>
+<p>解：区域 <span class="math inline">\(D:\begin{cases}y\geq x-2\\x\geq y^2\end{cases}\)</span> 图像如右 <img src="\img\习题3.3.4(2)区域.png" style="zoom:40%;" /></p>
+<p>从而 <span class="math inline">\(\displaystyle \underset{D}{\iint}f(x,y)dxdy=\int_{-1}^{2}dy\int_{y^2}^{y+2}f(x,y)dx\)</span></p>
+<h4 id="section-2">4(3)</h4>
+<p>解：区域 <span class="math inline">\(D:\begin{cases}\dfrac{2}{x}\leq y\leq2x\\1\leq x\leq 2\end{cases}\)</span> 图像如右 <img src="\img\习题3.3.4(3)区域.png" style="zoom:40%;" /></p>
+<p>从而 <span class="math inline">\(\displaystyle \underset{D}{\iint}f(x,y)dxdy=\int_{1}^{2}dx\int_{\frac{2}{x}}^{2x}f(x,y)dy\)</span></p>
+<h4 id="section-3">5(1)</h4>
+<p>解：本题图像与 <span class="math inline">\(3.3.4(1)\)</span> 相同，积分区域为等腰直角三角形，由图像得 <span class="math display">\[
+\int_{-1}^0dx\int_0^{+\infin}f(x,y)dy+\int_0^{1}dx\int_0^{1-x}f(x,y)dy=\int_0^1dy\int_{y-1}^{1-y}f(x,y)dx
+\]</span></p>
+<h4 id="section-4">5(3)</h4>
+<p>解：积分区域 <span class="math inline">\(\displaystyle\begin{cases}0\leq y\leq\sqrt{2x-x^2},x\in[0,1)\\0\leq y\leq 2-x,x\in[1,2]\end{cases}\)</span> 图像如右 <img src="\img\习题3.3.5(3)区域.png" style="zoom:40%;" /></p>
+<p>从而 <span class="math inline">\(\displaystyle\int_0^1dx\int_0^{\sqrt{2x-x^2}}f(x,y)dy+\int_1^2dx\int_0^{2-x}f(x,y)dy=\int_0^1dy\int_{1-\sqrt{1-y^2}}^{2-y}f(x,y)dx\)</span></p>
+<p>其中 <span class="math inline">\(y=\sqrt{2x-x^2}\Longrightarrow x^2-2x+y^2=0\)</span> 一元二次方程满足图像的解为 <span class="math inline">\(x=1-\sqrt{1-y^2}\)</span></p>
+<h4 id="section-5">5(5)</h4>
+<p>解：积分区域 <span class="math inline">\(\begin{cases}0\leq y\leq \cos x,x\in[0,\dfrac{\pi}{2})\\\cos x\leq y\leq 0,x\in [\dfrac{\pi}{2},\pi]\end{cases}\)</span> 图像如右 <img src="img\习题3.3.5(5)区域.png" style="zoom:40%;" /></p>
+<p>考虑符号有 <span class="math inline">\(\displaystyle \int_0^{\pi}dx\int_0^{\cos x}f(x,y)dy=\int_0^1dy\int_0^{\arccos y}f(x,y)dx-\int_{-1}^0dy\int_{\arccos y}^{\pi}f(x,y)dx\)</span></p>
+<h4 id="section-6">6(2)</h4>
+<p>解：积分区域 <span class="math inline">\(\begin{cases}(x-a)^2+(y-a)^2\leq a^2\\0\leq x,y\leq a\end{cases}\)</span> 图像如右 <img src="img\习题3.3.6(2)区域.png" style="zoom:40%;" /> <span class="math display">\[
+\underset{D}{\iint}\dfrac{1}{\sqrt{2a-x}}dxdy=\int_0^{a}dx\int_{a-\sqrt{x(2a-x)}}^a\dfrac{1}{\sqrt{2a-x}}dy=\int_0^{a}\sqrt{x(2a-x)}\cdot \dfrac{1}{\sqrt{2a-x}}dx=\dfrac{2}{3}a^{\frac{3}{2}}
+\]</span></p>
+<h4 id="section-7">6(4)</h4>
+<p>解：积分区域 <span class="math inline">\(D:x^2+y^2\leq R^2\)</span> 图像如右 <img src="img\习题3.3.6(4)区域.png" style="zoom:40%;" /></p>
+<p>拆成两部分 <span class="math inline">\(\displaystyle \underset{D}{\iint}x\cos (xy)dxdy=\underset{D\ \cap\ \{x|x\leq 0\}}{\iint}x\cos (xy)dxdy+\underset{D\ \cap\ \{x|x&gt;0\}}{\iint}x\cos (xy)dxdy\)</span></p>
+<p>对 <span class="math inline">\(f(x,y)=x\cos (xy)\)</span> 有 <span class="math inline">\(f(x,y)=-f(-x,y)\)</span> 为关于 <span class="math inline">\(x\)</span> 的奇函数，从而 <span class="math inline">\(\displaystyle \underset{D}{\iint}x\cos (xy)dxdy=0\)</span></p>
+<h4 id="section-8">6(8)</h4>
+<p>解：积分区域 <span class="math inline">\(D=[0,\pi]^2\)</span>，代换 <span class="math inline">\(\begin{cases}v=x-y\\u=x+y\end{cases}\)</span>，区域 <span class="math inline">\(D&#39;\)</span> 图像如右 <img src="img\习题3.3.6(8)区域.png" style="zoom:40%;" /></p>
+<p>由 <span class="math inline">\(\cos(u)=\cos (2\pi-u)\)</span>，且图像左右对称，从而原积分为深绿色部分的 <span class="math inline">\(4\)</span> 倍，有 <span class="math display">\[
+\underset{D}{\iint}\abs{\cos (x+y)}dxdy=\underset{D&#39;}{\iint}\abs{\cos (x+y)}\dfrac{D (x,y)}{D(v,u)}dvdu=\underset{D}{\iint}\abs{\cos (x+y)}\begin{vmatrix}\frac{1}{2}&amp;\frac{1}{2}\\{-}\frac{1}{2}&amp;\frac{1}{2}\end{vmatrix}dudv\\
+=\dfrac{1}{2}\underset{D}{\iint}\abs{\cos (x+y)}dvdu=\dfrac{1}{2}\cdot 4\int_0^{\pi}\abs{\cos u}du\int_0^{u}dv=2\cdot 2\int_0^{\frac{\pi}{2}}ud(\sin u)=4(\frac{\pi}{2}-1)=2\pi-4
+\]</span></p>
+<h4 id="section-9">6(9)</h4>
+<p>解：滚轮线 <span class="math inline">\(f(x)\begin{cases}x=a(t-\sin t)\\y=a(1-\cos t)\end{cases}\ \small t\in[0,2\pi],\normalsize D\scriptsize:\normalsize \begin{cases}y\leq f(x)\\0\leq y\end{cases}\)</span> 图像如右<img src="img\习题3.3.6(9)区域（滚轮线）.png" style="zoom:40%;" /></p>
+<p><span class="math inline">\(\displaystyle\underset{D}{\iint}y^2dxdy=\int_0^{2\pi a} dx\int_{0}^{f(x)} y^2dy=\dfrac{1}{3}\int_0^{2\pi a} f(x)^3dx\)</span>，换成参数 <span class="math inline">\(t\)</span> 积分得 <span class="math display">\[
+\dfrac{1}{3}\int_0^{2\pi}   a^{4}(1-\cos t)^{3}d(t-\sin t)=\dfrac{a^4}{3}\int_0^{2\pi}(1-\cos t)^4dt=\dfrac{a^4}{3}\int_{-\pi}^{\pi}(1+\cos x)^4dx\\
+=\dfrac{a^4}{3}\int_{-\pi}^{\pi}(1+4\cos x+6\cos ^2x+4\cos ^3x+\cos^4x)dx=\dfrac{a^4}{3}\int_{-\pi}^{\pi}(1+6\cos ^2x+\cos^4x)dx\\
+=\dfrac{a^4}{3}(2\pi+\int_{-\pi}^{\pi}3(1+\cos 2x)dx+\int_{-\pi}^{\pi}\dfrac{(1+\cos 2x)^2}{4}dx=\dfrac{a^4}{3}(8\pi+\int_{-\pi}^\pi{\dfrac{1+\dfrac{1}{2}}{4}}dx+0)\\
+=\dfrac{a^4}{3}(8\pi+\dfrac{3\pi}{4})=\dfrac{35\pi}{12}a^4\ \ \ \ (答案有误，分母缺少3)
+\]</span></p>
+<h4 id="section-10">13(2)</h4>
+<p>解：心脏线 <span class="math inline">\(\rho_1=a(1+\cos \theta)\)</span> 圆 <span class="math inline">\(\rho_2=\sqrt{3}a\sin \theta\)</span> 围成 <span class="math inline">\(D\)</span>，图像如右<img src="img\习题3.3.13(2)区域（心脏线）.png" style="zoom:40%;" /></p>
+<p>其中两者相交点满足 <span class="math inline">\(1+\cos \theta=\sqrt{3}\sin \theta\)</span>，解得 <span class="math inline">\(\theta=\dfrac{\pi}{3}\)</span>，则从虚线分开两部分面积之和 <span class="math display">\[
+S_{tot}=S_{left}+S_{right}=\int_\frac{\pi}{3}^{\pi}\dfrac{1}{2}\rho_1^2d\theta+\int_{0}^{\frac{\pi}{3}}\dfrac{1}{2}\rho_2^2d\theta=\int_{\frac{\pi}{3}}^{\pi}\dfrac{1}{2}a^2(1+\cos \theta)^2d\theta+\int_{0}^{\frac{\pi}{3}}\dfrac{3}{2}a^2\sin^2\theta d\theta\\
+=\dfrac{a^2}{2}(\int_{\frac{\pi}{3}}^{\pi}(1+2\cos \theta+\dfrac{1+\cos 2\theta}{2})d\theta+3\int_0^{\frac{\pi}{3}}\dfrac{1-\cos 2\theta}{2}d\theta)=\dfrac{a^2}{2}(\pi+(2\sin \theta+\dfrac{1}{4}\sin 2\theta)\big |_\frac{\pi}{3}^{\pi}+\\
+3(\dfrac{\pi}{6}-\dfrac{1}{4}\sin 2\theta\big |_0^{\frac{\pi}{3}}))=\dfrac{a^2}{2}(\pi-\sqrt{3}-\dfrac{\sqrt{3}}{8}+\dfrac{\pi}{2}-\dfrac{3\sqrt{3}}{8})=\dfrac{3a^2}{4}(\pi-\sqrt{3})
+\]</span></p>
+<h4 id="section-11">16(2)</h4>
+<p>解：代换 <span class="math inline">\(xy=u,\dfrac{y}{x}=v\)</span>，逆变换 <span class="math inline">\(x=\sqrt{\dfrac{u}{v}},y=\sqrt{uv}\)</span> ，则雅克比行列式 <span class="math display">\[
+\dfrac{D(x,y)}{D(u,v)}=\begin{vmatrix}\dfrac{\part x}{\part u}&amp;\dfrac{\part x}{\part v}\\\dfrac{\part y}{\part u}&amp;\dfrac{\part x}{\part v}\end{vmatrix}=\begin{vmatrix}\dfrac{1}{2\sqrt{uv}}&amp;-\dfrac{1}{2}\sqrt{\dfrac{u}{v^3}}\\\dfrac{1}{2}\sqrt{\dfrac{v}{u}}&amp;\dfrac{1}{2}\sqrt{\dfrac{u}{v}}\end{vmatrix}=\dfrac{1}{2v}
+\]</span> 原区域 <span class="math inline">\(D:\begin{cases}1\leq xy\leq 2\\1\leq \dfrac{y}{x}\leq 4\end{cases}\)</span> 变换后对应 <span class="math inline">\(D&#39;:\begin{cases}1\leq u\leq 2\\1\leq v\leq 4\end{cases}\)</span> 图像如右 <img src="img\习题3.3.16(2)区域（矩形）.png" style="zoom:40%;" /> <span class="math display">\[
+\underset{D}{\iint}f(xy)dxdy=\underset{D&#39;}{\iint}f(u)\cdot \dfrac{1}{2v}dudv=\int_1^2f(u)du\int_1^4\dfrac{dv}{2v}=\ln 2\int_1^2f(u)du=\ln 2\int_1^2f(t)dt
+\]</span></p>
+<h2 id="习题3.4">习题3.4</h2>
+<h4 id="section-12">6</h4>
+<p>解：三维图形为三棱锥，图像如右 <img src="img\ThreePyramid00.png" style="zoom:20%;" /></p>
+<p>在 <span class="math inline">\(z=z_0\)</span> 切面上由面积相似比等于 <span class="math inline">\(\eta=(1-z)^2\)</span>，从而有 <span class="math display">\[
+\int_0^{1}dx\int_0^xdy\int_0^y\dfrac{\cos z}{(1-z)^2}dz=\int_0^1\dfrac{\cos z}{(1-z)^2}\cdot Sdz=\int_0^1\dfrac{\cos z}{(1-z)^2}\cdot \dfrac{1}{2}(1-z)^2dz=\dfrac{\sin z}{2}\big |_0^1=\dfrac{\sin 1}{2}
+\]</span></p>
+<h4 id="section-13">7(1)</h4>
+<p>解：区域 <span class="math inline">\(\begin{cases}\sqrt{x^2+y^2}\leq z\\z\leq 1 \end{cases}\)</span> 由圆锥和平面围成，图像如右 <img src="img\3.4.7(1)(Cone).png" style="zoom:30%;" /></p>
+<p>换成柱坐标 <span class="math inline">\((\rho,\theta,z)\)</span> 有体积元变换 <span class="math inline">\(dxdydz=\rho d\rho d\theta dz\)</span>，区域为 <span class="math inline">\(\begin{cases}\rho\leq z\\z\leq 1\end{cases}\)</span>，从而积分化为 <span class="math display">\[
+\underset{\Omega}{\iiint}\sqrt{x^2+y^2}dxdydz=\underset{\Omega}{\iiint}\rho\cdot(\rho d\rho d\theta dz)=\int_0^1dz\int_0^{z}\rho^2d\rho\int_0^{2\pi}d\theta=2\pi\int_0^1\dfrac{1}{3}z^3dz=\dfrac{\pi}{6}
+\]</span></p>
+<h4 id="section-14">7(5)</h4>
+<p>解：<span class="math inline">\(D\small:\normalsize\begin{cases}x^2+y^2+z^2\leq 4\\x^2+y^2+(z-2)^2\leq 4\end{cases}\)</span> 对称，图像如右<img src="img\3.4.7(5)(Two_Spheres).png" style="zoom:40%;" /> <span class="math display">\[
+\underset{\Omega}{\iiint}xyzdxdydz=\underset{\Omega\ \cap\ \{z\leq 1\}}{\iiint}xyz_{down}dxdydz+\underset{\Omega\ \cap\ \{z&gt; 1\}}{\iiint}xyz_{up}dxdydz=\int_0^1dz\underset{\Omega\ \cap \ \{z=z_0\in[0,1]\}}{\iint}2xydxdy\\
+2\int_0^1dz\int_0^{\frac{\pi}{2}}d\theta\int_0^{\sqrt{4z-z^2}}r\sin \theta r\cos \theta\cdot rd\theta=\int_0^1dz\int_0^{\frac{\pi}{2}}\sin 2\theta d\theta\int_0^{\sqrt{4z-z^2}}r^3dr\\
+=\dfrac{1}{4}\int_0^1(4z-z^2)^2dz\cdot (-\dfrac{1}{2}\cos2\theta)\big |_0^{\frac{\pi}{2}}=\dfrac{1}{4}\int_0^1(16z^2-8z^3+z^4)dz=\dfrac{1}{4}(\dfrac{16}{3}-2+\dfrac{1}{5})=\dfrac{53}{60} 
+\]</span></p>
+<h4 id="section-15">10</h4>
+<p>解：积分区域为球体 <span class="math inline">\(x^2+y^2+z^2\leq t^2\)</span>，图像如右 <img src="img\3.4.10(One_Sphere).png" style="zoom:40%;" /></p>
+<p>换取为球坐标 <span class="math inline">\((x,y,z)\longrightarrow(\rho,\theta,\varphi)\)</span>，有体积元变换为 <span class="math inline">\(dxdydz=\rho^2\sin \theta d\rho d\theta d\varphi\)</span>，代入有 <span class="math display">\[
+f(t)=3\underset{x^2+y^2+z^2\leq t^2}{\iiint}f(\sqrt{x^2+y^2+z^2})dxdydz+\abs{t^3}=3\int_0^{2\pi}\int_0^{\pi}\int_0^tf(\rho)\rho^2\sin \theta d\rho d\theta d\varphi+\abs{t^3}\\
+=3\cdot2\cdot2\pi\int_0^tf(\rho)\rho^2d\rho+\abs{t^3}=12\pi\int_0^tf(\rho)\rho^2d\rho+\abs{t^3}
+\]</span> 两边对 <span class="math inline">\(t\)</span> 求导得 <span class="math display">\[
+f&#39;(t)=12\pi t^2 f(t)+\mbox{sgn}(t)\cdot 3t^2,where\ \mbox{sgn}(x)=\begin{cases}1,x&gt;0\\0,x=0\\-1,x&lt;0\end{cases}
+\]</span> 其特解与 <span class="math inline">\(t\)</span> 的符号有关 <span class="math inline">\(\begin{cases}t&gt;0,f_0=-\dfrac{1}{4\pi}\\t&lt;0,f_0=\dfrac{1}{4\pi}\end{cases}\)</span>，其通解满足方程 <span class="math display">\[
+\dfrac{df}{dt}=12\pi t^2f\Longrightarrow \int\dfrac{df}{f}=\int12\pi t^2dt\ ,\ \ln f=4\pi t^3+C \ \therefore f(t)=\begin{cases}C_1e^{4\pi t^3}-\dfrac{1}{4\pi},t&gt;0\\C_2e^{4\pi t^3}+\dfrac{1}{4\pi},t&lt;0\end{cases}
+\]</span> 由 <span class="math inline">\(f(t)\)</span> 在 <span class="math inline">\((-\infty,+\infty)\)</span> 连续得 <span class="math inline">\(C_1-\dfrac{1}{4\pi}=C_2+\dfrac{1}{4\pi}\)</span>，有 <span class="math inline">\(C_1=C_2+\dfrac{1}{2\pi}\)</span>，对 <span class="math inline">\(t&gt;0\)</span> 代入原积分有 <span class="math display">\[
+f(t)=C_1e^{4\pi t^2}-\dfrac{1}{4\pi}=12\pi\int_0^t(C_1e^{4\pi \rho^3}-\dfrac{1}{4\pi})\rho^2d\rho+t^3=\int_0^tC_1e^{4\pi\rho^3}d(4\pi \rho^3)+0=C_1(e^{4\pi t^2}-1)
+\]</span> 比对得 <span class="math inline">\(C_1=\dfrac{1}{4\pi}\)</span>，<span class="math inline">\(C_2=-\dfrac{1}{4\pi}\)</span>，从而 <span class="math inline">\(f(t)=\dfrac{\abs{e^{4\pi t^3}-1}}{4\pi}\)</span></p>
+<h2 id="习题3.5">习题3.5</h2>
+<h4 id="section-16">3(1)</h4>
+<p>解：显然该正方体 <span class="math inline">\(\mbox{x,y,z}\)</span> 三个方向上“平权”，只需计算一个方向的质心位置即可 <span class="math display">\[
+x_c=\dfrac{\displaystyle\underset{D}{\iiint}(x+y+z)xdxdydz}{\displaystyle\underset{D}{\iiint}(x+y+z)dxdydz}=\dfrac{\displaystyle\int_0^1xdx\int_0^{1}dy\int_0^{1}(x+y+z)dz}{\displaystyle\int_0^1dx\int_0^{1}dy\int_0^{1}(x+y+z)dz}\\
+=\dfrac{\displaystyle\int_0^1xdx\int_0^{1}(x+y+\dfrac{1}{2})dy}{\displaystyle\int_0^1dx\int_0^{1}(x+y+\dfrac{1}{2})dy}=\dfrac{\displaystyle\int_0^1x(x+1)dx}{\displaystyle\int_0^1(x+1)dx}=\dfrac{\dfrac{1}{3}+\dfrac{1}{2}}{\dfrac{1}{2}+1}=\dfrac{5}{9}
+\]</span> 从而质心坐标为 <span class="math inline">\((\dfrac{5}{9},\dfrac{5}{9},\dfrac{5}{9})\)</span></p>
+<h4 id="section-17">7</h4>
+<p>解：由液体压强，在深度 <span class="math inline">\(z\in[0,h]\)</span> 处 <span class="math inline">\(p=\rho gz\)</span>，取 <span class="math inline">\(dz\)</span> 厚度计算压力 <span class="math display">\[
+dF(z)_{//}=\int_0^{\pi}p(z)\cdot ad\theta dz\cdot \sin \theta=2ap(z)dz=2\rho gazdz
+\]</span> 积分得 <span class="math inline">\(F_{//}=\displaystyle \int_0^h2\rho gazdz=\rho gah^2\)</span>，方向沿 <span class="math inline">\(\mbox{x}\)</span> 正向</p>
+<h2 id="第三章总复习题">第三章总复习题</h2>
+<h4 id="section-18">16(1)</h4>
+<p>解：由 <span class="math inline">\(x_1,x_2\cdots x_n\)</span> 相互之间的独立性，有 <span class="math display">\[
+\underset{[0,1]^n}{\int\cdots\int}\sum_{i=1}^{n}x_i^2dx_1dx_2\cdots dx_n=n\underset{[0,1]^n}{\int\cdots\int}x_1^2dx_1dx_2\cdots dx_n=n\cdot \dfrac{1}{3}\cdot 1\cdot 1\cdots1=\dfrac{n}{3}
+\]</span></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Eren Zhao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%89%E7%AB%A0/">http://example.com/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%89%E7%AB%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/2022%E5%AF%92%E5%81%87/">2022寒假</a><a class="post-meta__tags" href="/tags/%E5%A4%9A%E5%85%83%E5%BE%AE%E7%A7%AF%E5%88%86/">多元微积分</a></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/61ed14332ab3f51d911d3503.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/02/18/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/defense/"><img class="prev-cover" src="https://pic.imgdb.cn/item/61eccc602ab3f51d91d70cc6.jpg" onerror="onerror=null;src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">一份奖学金答辩的模板</div></div></a></div><div class="next-post pull-right"><a href="/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><img class="next-cover" src="https://pic.imgdb.cn/item/62270f075baa1a80ab393529.jpg" onerror="onerror=null;src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">微积分 WXF 第二章作业</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/05/31/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E4%B8%80%E8%87%B4%E6%94%B6%E6%95%9B%E5%87%BD%E6%95%B0%E9%A1%B9%E7%BA%A7%E6%95%B0%E7%9A%84%E5%92%8C%E5%87%BD%E6%95%B0%E6%80%A7%E8%B4%A8/" title="一致收敛函数项级数的和函数性质"><img class="cover" src="https://pic.imgdb.cn/item/62270ef75baa1a80ab39048b.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-31</div><div class="title">一致收敛函数项级数的和函数性质</div></div></a></div><div><a href="/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf04/" title="第四讲 高阶导数与 Taylor 公式"><img class="cover" src="https://pic.imgdb.cn/item/61eccc242ab3f51d91d6d7ab.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-14</div><div class="title">第四讲 高阶导数与 Taylor 公式</div></div></a></div><div><a href="/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork2/" title="王晓峰老师的微积分A2作业（二）"><img class="cover" src="https://pic.imgdb.cn/item/61eccb4d2ab3f51d91d616f7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-14</div><div class="title">王晓峰老师的微积分A2作业（二）</div></div></a></div><div><a href="/2022/03/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Gauss%E5%85%AC%E5%BC%8F%E5%92%8CStokes%E5%85%AC%E5%BC%8F/" title="多元微积分 Gauss 公式与 Stokes 公式总结"><img class="cover" src="https://pic.imgdb.cn/item/61eccb3f2ab3f51d91d60b7d.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-17</div><div class="title">多元微积分 Gauss 公式与 Stokes 公式总结</div></div></a></div><div><a href="/2022/02/16/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%BA%94%E7%AB%A0/" title="微积分 WXF 第五章作业"><img class="cover" src="https://pic.imgdb.cn/item/61f2b2892ab3f51d91051bb8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-16</div><div class="title">微积分 WXF 第五章作业</div></div></a></div><div><a href="/2022/02/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/%E5%BE%AE%E7%A7%AF%E5%88%86%E4%BD%9C%E4%B8%9A%E7%AC%AC%E4%B8%80%E7%AB%A0/" title="微积分 WXF 第一章作业"><img class="cover" src="https://pic.imgdb.cn/item/61f106b02ab3f51d917b4c8a.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-17</div><div class="title">微积分 WXF 第一章作业</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend.jpg'" alt="avatar"/></div><div class="author-info__name">Eren Zhao</div><div class="author-info__description">求道之人，不论寒暑，无问西东</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">166</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zhaochenyang20"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">La vida sola viviras</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AE%E7%A7%AF%E5%88%86wxf%E7%AC%AC%E4%B8%89%E7%AB%A0%E4%BD%9C%E4%B8%9A-%E4%BD%9C%E8%80%85%E9%B2%81%E7%9D%BF"><span class="toc-number">1.</span> <span class="toc-text">微积分WXF第三章作业 作者：鲁睿</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%A0%E9%A2%983.3"><span class="toc-number">1.1.</span> <span class="toc-text">习题3.3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#section"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">4(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-1"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">4(2)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-2"><span class="toc-number">1.1.0.3.</span> <span class="toc-text">4(3)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-3"><span class="toc-number">1.1.0.4.</span> <span class="toc-text">5(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-4"><span class="toc-number">1.1.0.5.</span> <span class="toc-text">5(3)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-5"><span class="toc-number">1.1.0.6.</span> <span class="toc-text">5(5)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-6"><span class="toc-number">1.1.0.7.</span> <span class="toc-text">6(2)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-7"><span class="toc-number">1.1.0.8.</span> <span class="toc-text">6(4)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-8"><span class="toc-number">1.1.0.9.</span> <span class="toc-text">6(8)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-9"><span class="toc-number">1.1.0.10.</span> <span class="toc-text">6(9)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-10"><span class="toc-number">1.1.0.11.</span> <span class="toc-text">13(2)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-11"><span class="toc-number">1.1.0.12.</span> <span class="toc-text">16(2)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%A0%E9%A2%983.4"><span class="toc-number">1.2.</span> <span class="toc-text">习题3.4</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#section-12"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">6</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-13"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">7(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-14"><span class="toc-number">1.2.0.3.</span> <span class="toc-text">7(5)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-15"><span class="toc-number">1.2.0.4.</span> <span class="toc-text">10</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%A0%E9%A2%983.5"><span class="toc-number">1.3.</span> <span class="toc-text">习题3.5</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#section-16"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">3(1)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#section-17"><span class="toc-number">1.3.0.2.</span> <span class="toc-text">7</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%80%BB%E5%A4%8D%E4%B9%A0%E9%A2%98"><span class="toc-number">1.4.</span> <span class="toc-text">第三章总复习题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#section-18"><span class="toc-number">1.4.0.1.</span> <span class="toc-text">16(1)</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E5%9B%9B%E9%83%A8/" title="清华园日记——第四部"><img src="https://pic.imgdb.cn/item/61eccc282ab3f51d91d6db18.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="清华园日记——第四部"/></a><div class="content"><a class="title" href="/2022/05/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E5%9B%9B%E9%83%A8/" title="清华园日记——第四部">清华园日记——第四部</a><time datetime="2022-05-01T23:08:23.503Z" title="Created 2022-05-02 07:08:23">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/25/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E6%B1%82%E9%81%93%E4%B9%8B%E4%BA%BA/" title="求道之人，不问寒暑"><img src="https://pic.imgdb.cn/item/623475e95baa1a80ab3b366f.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="求道之人，不问寒暑"/></a><div class="content"><a class="title" href="/2022/04/25/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E6%B1%82%E9%81%93%E4%B9%8B%E4%BA%BA/" title="求道之人，不问寒暑">求道之人，不问寒暑</a><time datetime="2022-04-25T00:12:06.667Z" title="Created 2022-04-25 08:12:06">2022-04-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/24/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/aniversary/" title="分流转系后的一整年"><img src="https://pic.imgdb.cn/item/61eccb5c2ab3f51d91d6238c.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="分流转系后的一整年"/></a><div class="content"><a class="title" href="/2022/04/24/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/aniversary/" title="分流转系后的一整年">分流转系后的一整年</a><time datetime="2022-04-24T13:17:30.403Z" title="Created 2022-04-24 21:17:30">2022-04-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/15/CS/others/GSOC_proposal/" title="Proposal for Explore and Optimize Popular Datasets for Hub"><img src="https://pic.imgdb.cn/item/61f0fc802ab3f51d91731f03.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="Proposal for Explore and Optimize Popular Datasets for Hub"/></a><div class="content"><a class="title" href="/2022/04/15/CS/others/GSOC_proposal/" title="Proposal for Explore and Optimize Popular Datasets for Hub">Proposal for Explore and Optimize Popular Datasets for Hub</a><time datetime="2022-04-15T02:33:59.508Z" title="Created 2022-04-15 10:33:59">2022-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/Lecture/2022%20Spring/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BC%9F%E5%A4%A7%E4%B8%8E%E6%B8%BA%E5%B0%8F/" title="我们的伟大与渺小"><img src="https://pic.imgdb.cn/item/61f106b42ab3f51d917b5210.jpg" onerror="this.onerror=null;this.src='https://wkphoto.cdn.bcebos.com/1f178a82b9014a9058a735deb9773912b31bee3c.jpg'" alt="我们的伟大与渺小"/></a><div class="content"><a class="title" href="/2022/04/13/Lecture/2022%20Spring/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BC%9F%E5%A4%A7%E4%B8%8E%E6%B8%BA%E5%B0%8F/" title="我们的伟大与渺小">我们的伟大与渺小</a><time datetime="2022-04-13T10:15:08.391Z" title="Created 2022-04-13 18:15:08">2022-04-13</time></div></div></div></div></div></div></main><footer id="footer" style="background: ＃191970"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Local search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
