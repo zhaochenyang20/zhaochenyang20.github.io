@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2022/02/03/Lecture/2022%20Spring/%E4%BA%94%E9%81%93%E5%8F%A3%E4%BD%93%E6%A0%A1%E7%BA%BF%E4%B8%8A%E4%BD%93%E8%82%B2/</loc>
+    <lastmod>2022-05-28</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2022/05/24/Lecture/2022%20Spring/Reinforcement/</loc>
     <lastmod>2022-05-28</lastmod>
   </url>
@@ -414,10 +418,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/02/16/CS/others/python_decorator/</loc>
-    <lastmod>2022-02-23</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/02/03/Lecture/2022%20Spring/%E4%BA%94%E9%81%93%E5%8F%A3%E4%BD%93%E6%A0%A1%E7%BA%BF%E4%B8%8A%E4%BD%93%E8%82%B2/</loc>
     <lastmod>2022-02-23</lastmod>
   </url>
   <url>
