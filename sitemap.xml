@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>http://example.com/2022/05/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E5%9B%9B%E9%83%A8/</loc>
+    
+    <lastmod>2022-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2022/06/04/%E7%A3%95%E7%9B%90/Gau%20GAN/</loc>
     
     <lastmod>2022-06-04</lastmod>
@@ -23,15 +32,6 @@
     <loc>http://example.com/2022/05/24/Lecture/2022%20Spring/Reinforcement/</loc>
     
     <lastmod>2022-05-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/2022/05/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E5%9B%9B%E9%83%A8/</loc>
-    
-    <lastmod>2022-05-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
