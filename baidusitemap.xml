@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/2022/06/01/Lecture/2022%20Spring/deep%20learning/</loc>
+    <loc>http://example.com/2022/06/06/Lecture/2022%20Spring/deep_learning/</loc>
+    <lastmod>2022-06-06</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/05/17/Lecture/2022%20Spring/binaryDivdence/</loc>
     <lastmod>2022-06-06</lastmod>
   </url>
   <url>
@@ -33,6 +37,10 @@
     <lastmod>2022-06-04</lastmod>
   </url>
   <url>
+    <loc>http://example.com/2022/01/15/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E9%94%BB%E7%82%BC%E6%89%93%E5%8D%A1/</loc>
+    <lastmod>2022-06-03</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2022/01/27/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/photo_2022/</loc>
     <lastmod>2022-05-29</lastmod>
   </url>
@@ -43,10 +51,6 @@
   <url>
     <loc>http://example.com/2022/05/15/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/nonsense/</loc>
     <lastmod>2022-05-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/05/17/Lecture/2022%20Spring/binaryDivdence/</loc>
-    <lastmod>2022-05-18</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/03/08/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E8%BD%AF%E5%B7%A5%E8%B0%83%E7%A0%94/</loc>
@@ -447,10 +451,6 @@
   <url>
     <loc>http://example.com/2022/01/12/%E5%87%BA%E5%9B%BD/exchange_preparations/</loc>
     <lastmod>2022-02-17</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/01/15/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E9%94%BB%E7%82%BC%E6%89%93%E5%8D%A1/</loc>
-    <lastmod>2022-02-16</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/02/04/%E5%87%BA%E5%9B%BD/shool_details/</loc>
