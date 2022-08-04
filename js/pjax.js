@@ -1,1 +1,0 @@
-import{b as e,f as n}from"./chunk-72ZP56JR.js";import"./chunk-FEIY7W7S.js";function t(){new window.Pjax({selectors:["title",".js-Pjax","main","aside"]})}function d(){e(),n()}document.addEventListener("DOMContentLoaded",t);document.addEventListener("DOMContentLoaded",e);document.addEventListener("pjax:success",d);
