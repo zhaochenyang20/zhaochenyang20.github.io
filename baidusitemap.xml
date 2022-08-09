@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com/2022/01/23/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/Call%20Me%20A%20Fool/</loc>
+    <loc>http://example.com/2022/07/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%83%E9%83%A8/</loc>
     <lastmod>2022-08-09</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/07/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%83%E9%83%A8/</loc>
+    <loc>http://example.com/2022/07/25/Lecture/English/TOEFL_life_savior/</loc>
+    <lastmod>2022-08-09</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/05/15/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E8%8E%AB%E8%BF%87%E7%83%AD%E5%BF%B1%E5%B0%91%E5%B9%B4%E5%BF%83/</loc>
+    <lastmod>2022-08-09</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/01/23/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/Call%20Me%20A%20Fool/</loc>
     <lastmod>2022-08-09</lastmod>
   </url>
   <url>
@@ -45,10 +53,6 @@
     <lastmod>2022-08-09</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/07/25/Lecture/English/TOEFL_life_savior/</loc>
-    <lastmod>2022-08-08</lastmod>
-  </url>
-  <url>
     <loc>http://example.com/2022/08/03/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E5%9B%BD%E8%80%BB/</loc>
     <lastmod>2022-08-02</lastmod>
   </url>
@@ -63,10 +67,6 @@
   <url>
     <loc>http://example.com/2022/04/13/Lecture/2022%20Spring/%E6%88%91%E4%BB%AC%E7%9A%84%E4%BC%9F%E5%A4%A7%E4%B8%8E%E6%B8%BA%E5%B0%8F/</loc>
     <lastmod>2022-07-28</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/05/15/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E8%8E%AB%E8%BF%87%E7%83%AD%E5%BF%B1%E5%B0%91%E5%B9%B4%E5%BF%83/</loc>
-    <lastmod>2022-07-24</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/07/23/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/talk_with_dg/</loc>
