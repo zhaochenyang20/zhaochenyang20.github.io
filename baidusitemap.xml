@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2022/03/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Gauss%E5%85%AC%E5%BC%8F%E5%92%8CStokes%E5%85%AC%E5%BC%8F/</loc>
+    <lastmod>2022-08-26</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2022/06/16/Lecture/2022%20Spring/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91/</loc>
     <lastmod>2022-08-26</lastmod>
   </url>
@@ -134,10 +138,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/</loc>
-    <lastmod>2022-08-26</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/03/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Gauss%E5%85%AC%E5%BC%8F%E5%92%8CStokes%E5%85%AC%E5%BC%8F/</loc>
     <lastmod>2022-08-26</lastmod>
   </url>
   <url>
