@@ -2,27 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://example.com/2022/08/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_8/</loc>
-    <lastmod>2022-09-04</lastmod>
+    <lastmod>2022-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/07/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%83%E9%83%A8/</loc>
+    <lastmod>2022-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/02/03/%E5%87%BA%E5%9B%BD/Night%20Voyager/</loc>
+    <lastmod>2022-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/08/20/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/chain_of_thought/</loc>
+    <lastmod>2022-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/04/24/%E9%9A%8F%E7%AC%94/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2022-09-05</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/21/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/Summer%20research/</loc>
-    <lastmod>2022-09-04</lastmod>
+    <lastmod>2022-09-05</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/08/16/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E7%A7%91%E7%A0%94%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2022-09-03</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/08/20/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/chain_of_thought/</loc>
-    <lastmod>2022-09-02</lastmod>
-  </url>
-  <url>
     <loc>http://example.com/2022/04/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%89%E9%83%A8/</loc>
     <lastmod>2022-09-02</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/07/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%83%E9%83%A8/</loc>
-    <lastmod>2022-09-01</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/08/%E5%87%BA%E5%9B%BD/%E8%A7%84%E5%88%99%E4%B8%8E%E6%B0%94%E8%B4%A8/</loc>
@@ -42,10 +50,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/08/27/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/HGF_tutorial/</loc>
-    <lastmod>2022-08-27</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/04/24/%E9%9A%8F%E7%AC%94/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2022-08-27</lastmod>
   </url>
   <url>
@@ -438,10 +442,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/01/14/%E5%87%BA%E5%9B%BD/reasoning/</loc>
-    <lastmod>2022-08-26</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/02/03/%E5%87%BA%E5%9B%BD/Night%20Voyager/</loc>
     <lastmod>2022-08-26</lastmod>
   </url>
   <url>
