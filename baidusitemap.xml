@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://example.com/2022/10/01/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_9/</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2022-10-13</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/01/23/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/Call%20Me%20A%20Fool/</loc>
+    <lastmod>2022-10-13</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/08/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_8/</loc>
+    <lastmod>2022-10-13</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/02/03/%E5%87%BA%E5%9B%BD/Night%20Voyager/</loc>
     <lastmod>2022-10-12</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/08/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_8/</loc>
-    <lastmod>2022-10-11</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/09/25/Lecture/2022%20Fall/The-Truth-of-Thanksgiving/</loc>
@@ -362,10 +366,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/01/08/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/if_i_die_young/</loc>
-    <lastmod>2022-08-26</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/01/23/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/Call%20Me%20A%20Fool/</loc>
     <lastmod>2022-08-26</lastmod>
   </url>
   <url>
