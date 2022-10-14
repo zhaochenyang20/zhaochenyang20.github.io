@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://example.com/2022/10/01/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_9/</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-10-14</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/09/25/Lecture/2022%20Fall/The-Truth-of-Thanksgiving/</loc>
+    <lastmod>2022-10-14</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/08/20/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/chain_of_thought/</loc>
+    <lastmod>2022-10-14</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/08/16/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E7%A7%91%E7%A0%94%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2022-10-14</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/23/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/Call%20Me%20A%20Fool/</loc>
@@ -15,14 +27,6 @@
   <url>
     <loc>http://example.com/2022/02/03/%E5%87%BA%E5%9B%BD/Night%20Voyager/</loc>
     <lastmod>2022-10-12</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/09/25/Lecture/2022%20Fall/The-Truth-of-Thanksgiving/</loc>
-    <lastmod>2022-10-10</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/08/20/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/chain_of_thought/</loc>
-    <lastmod>2022-10-10</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/02/18/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/defense/</loc>
@@ -95,10 +99,6 @@
   <url>
     <loc>http://example.com/2022/06/22/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E7%AD%94%E7%96%91%E5%9D%8A%E6%8A%80%E6%9C%AF%E7%BB%84%E6%94%B9%E9%9D%A9%E6%96%B9%E6%A1%88/</loc>
     <lastmod>2022-09-06</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/08/16/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E7%A7%91%E7%A0%94%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2022-09-03</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/04/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%89%E9%83%A8/</loc>
