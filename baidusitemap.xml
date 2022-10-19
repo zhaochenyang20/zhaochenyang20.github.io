@@ -2,19 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://example.com/2022/10/01/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_9/</loc>
-    <lastmod>2022-10-18</lastmod>
+    <lastmod>2022-10-19</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/08/20/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/chain_of_thought/</loc>
+    <lastmod>2022-10-19</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/08/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_8/</loc>
-    <lastmod>2022-10-17</lastmod>
+    <lastmod>2022-10-19</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/01/21/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/Summer%20research/</loc>
+    <lastmod>2022-10-19</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/09/25/Lecture/2022%20Fall/The-Truth-of-Thanksgiving/</loc>
     <lastmod>2022-10-15</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/08/20/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/chain_of_thought/</loc>
-    <lastmod>2022-10-14</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/08/16/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E7%A7%91%E7%A0%94%E6%80%BB%E7%BB%93/</loc>
@@ -35,10 +39,6 @@
   <url>
     <loc>http://example.com/2022/04/24/%E9%9A%8F%E7%AC%94/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2022-10-09</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/01/21/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/Summer%20research/</loc>
-    <lastmod>2022-10-07</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/07/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%83%E9%83%A8/</loc>
