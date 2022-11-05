@@ -1,18 +1,18 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>多元函数的连续与可微 | 求道之人，不问寒暑</title><meta name="keywords" content="2022春季,多元微积分"><meta name="author" content="Eren Zhao"><meta name="copyright" content="Eren Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="以始为终...">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>多元函数的连续与可微 | 求道之人，不问寒暑</title><meta name="keywords" content="多元微积分,2022春季"><meta name="author" content="Eren Zhao"><meta name="copyright" content="Eren Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="以始为终...">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多元函数的连续与可微">
 <meta property="og:url" content="http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/index.html">
 <meta property="og:site_name" content="求道之人，不问寒暑">
 <meta property="og:description" content="以始为终...">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pic.imgdb.cn/item/61eccc682ab3f51d91d712d5.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Andreea Chidu (2FpMS1NuPBM).jpg">
 <meta property="article:published_time" content="2022-03-06T14:09:04.000Z">
 <meta property="article:modified_time" content="2022-08-26T16:15:50.692Z">
 <meta property="article:author" content="Eren Zhao">
-<meta property="article:tag" content="2022春季">
 <meta property="article:tag" content="多元微积分">
+<meta property="article:tag" content="2022春季">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pic.imgdb.cn/item/61eccc682ab3f51d91d712d5.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Andreea Chidu (2FpMS1NuPBM).jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"麻了，找不到您查询的内容：${query}"}},
@@ -148,224 +148,743 @@
     }
     detectApple()
     })(window)</script><link rel="stylesheet" href="/css/mouse.css"><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="求道之人，不问寒暑" type="application/atom+xml">
-<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">193</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">52</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/61eccc682ab3f51d91d712d5.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">求道之人，不问寒暑</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">多元函数的连续与可微</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-06T14:09:04.000Z" title="发表于 2022-03-06 22:09:04">2022-03-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-26T16:15:50.692Z" title="更新于 2022-08-27 00:15:50">2022-08-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">250</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="多元函数的连续与可微"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="第一章-多元函数的连续性"><a href="#第一章-多元函数的连续性" class="headerlink" title="第一章 多元函数的连续性"></a><strong>第一章 多元函数的连续性</strong></h3><p><strong>连续性</strong>（局部可用常值逼近），<strong>可微性</strong>（局部可用线性逼近）</p>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">193</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">52</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Andreea Chidu (2FpMS1NuPBM).jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">求道之人，不问寒暑</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">多元函数的连续与可微</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-06T14:09:04.000Z" title="发表于 2022-03-06 22:09:04">2022-03-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-26T16:15:50.692Z" title="更新于 2022-08-27 00:15:50">2022-08-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">6.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>28分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="多元函数的连续与可微"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="第一章-多元函数的连续性"><strong>第一章
+多元函数的连续性</strong></h3>
+<p><strong>连续性</strong>（局部可用常值逼近），<strong>可微性</strong>（局部可用线性逼近）</p>
 <p>多元函数是依赖于多个自变量的函数。其中函数值（映射的像）可以是数、点、向量等等。</p>
 <p>多元函数例子：</p>
-<p>欧氏空间 $\mathbb R^n$ 下三角形的三个顶点分别是 $P_1,P_2,P_3$ ，则其面积可以表示为：</p>
-<script type="math/tex; mode=display">
+<p>欧氏空间 <span class="math inline">\(\mathbb R^n\)</span>
+下三角形的三个顶点分别是 <span
+class="math inline">\(P_1,P_2,P_3\)</span> ，则其面积可以表示为： <span
+class="math display">\[
 \begin{aligned}
-&S(P_1,P_2,P_3)=\frac{1}{2}||P_1-P_2||||P_1-P_3||\sin \theta\\&=\frac{1}{2}\sqrt{||P_1-P_2||^2||P_1-P_3||^2-<P_1-P_2,P_1-P_3>^2} \\&=\frac{1}{2} \sqrt{\sum_{i=1}^{n}\left(x_{2}^{i}-x_{1}^{i}\right)^{2} \sum_{j=1}^{n}\left(x_{3}^{j}-x_{1}^{j}\right)^{2}-\left(\sum_{i=1}^{n}\left(x_{2}^{i}-x_{1}^{i}\right)\left(x_{3}^{i}-x_{1}^{i}\right)\right)^{2} }\\&=\frac{1}{2} \sqrt{\sum_{i, j}\left[\left(x_{2}^{i}-x_{1}^{i}\right)^{2}\left(x_{3}^{j}-x_{1}^{j}\right)^{2}-\left(x_{2}^{i}-x_{1}^{i}\right)\left(x_{3}^{i}-x_{1}^{i}\right)\left(x_{2}^{j}-x_{1}^{j}\right)\left(x_{3}^{j}-x_{1}^{j}\right)\right]}\\&=\frac{1}{2} \sqrt{\sum_{1 \leq i<j \leq n}\left|\begin{array}{ll}
-x_{2}^{i}-x_{1}^{i} & x_{3}^{i}-x_{1}^{i} \\
-x_{2}^{j}-x_{1}^{i} & x_{3}^{j}-x_{1}^{j}
-\end{array}\right|^{2} }\\&=\frac{1}{2}\sqrt{\sum\limits_{1\leq i\leq j\leq n}{\begin{vmatrix}1 &1&1\\x_1^i&x_2^i&x_3^i\\x_1^j&x_2^j&x_3^j\\\end{vmatrix} } }
-\end{aligned}</script><p><strong>多元函数的定义</strong></p>
-<p>$A \subseteq \mathbb{R}^{m}, \quad B$ 是集合。</p>
-<p><strong>映射</strong>：$f: A \rightarrow B$ ，对每一个 $\mathbf x \in A$ ,有唯一的 $y \in B$ 与 $\mathbf x$ 对应，记为 $y=f(\mathbf{x})$。</p>
-<p><strong>函数</strong>：映射 $f: A \rightarrow \mathbb{R}$ 。</p>
+&amp;S(P_1,P_2,P_3)=\frac{1}{2}||P_1-P_2||||P_1-P_3||\sin
+\theta\\&amp;=\frac{1}{2}\sqrt{||P_1-P_2||^2||P_1-P_3||^2-&lt;P_1-P_2,P_1-P_3&gt;^2}
+\\&amp;=\frac{1}{2}
+\sqrt{\sum_{i=1}^{n}\left(x_{2}^{i}-x_{1}^{i}\right)^{2}
+\sum_{j=1}^{n}\left(x_{3}^{j}-x_{1}^{j}\right)^{2}-\left(\sum_{i=1}^{n}\left(x_{2}^{i}-x_{1}^{i}\right)\left(x_{3}^{i}-x_{1}^{i}\right)\right)^{2}
+}\\&amp;=\frac{1}{2} \sqrt{\sum_{i,
+j}\left[\left(x_{2}^{i}-x_{1}^{i}\right)^{2}\left(x_{3}^{j}-x_{1}^{j}\right)^{2}-\left(x_{2}^{i}-x_{1}^{i}\right)\left(x_{3}^{i}-x_{1}^{i}\right)\left(x_{2}^{j}-x_{1}^{j}\right)\left(x_{3}^{j}-x_{1}^{j}\right)\right]}\\&amp;=\frac{1}{2}
+\sqrt{\sum_{1 \leq i&lt;j \leq n}\left|\begin{array}{ll}
+x_{2}^{i}-x_{1}^{i} &amp; x_{3}^{i}-x_{1}^{i} \\
+x_{2}^{j}-x_{1}^{i} &amp; x_{3}^{j}-x_{1}^{j}
+\end{array}\right|^{2} }\\&amp;=\frac{1}{2}\sqrt{\sum\limits_{1\leq
+i\leq j\leq n}{\begin{vmatrix}1
+&amp;1&amp;1\\x_1^i&amp;x_2^i&amp;x_3^i\\x_1^j&amp;x_2^j&amp;x_3^j\\\end{vmatrix}
+} }
+\end{aligned}
+\]</span> <strong>多元函数的定义</strong></p>
+<p><span class="math inline">\(A \subseteq \mathbb{R}^{m}, \quad
+B\)</span> 是集合。</p>
+<p><strong>映射</strong>：<span class="math inline">\(f: A \rightarrow
+B\)</span> ，对每一个 <span class="math inline">\(\mathbf x \in
+A\)</span> ,有唯一的 <span class="math inline">\(y \in B\)</span> 与
+<span class="math inline">\(\mathbf x\)</span> 对应，记为 <span
+class="math inline">\(y=f(\mathbf{x})\)</span>。</p>
+<p><strong>函数</strong>：映射 <span class="math inline">\(f: A
+\rightarrow \mathbb{R}\)</span> 。</p>
 <p>表示函数的方法：图像（直观）；等值集（降维）</p>
 <p>微积分的一个目标是通过局部线性近似来研究函数，所以需要的空间是线性空间。</p>
-<h5 id="1-空间"><a href="#1-空间" class="headerlink" title="1.空间"></a>1.空间</h5><p>$\mathbb{R}^{m}={(x^{1}, x^{2}, \ldots, x^{m})^{T} \mid x^{k} \in \mathbb{R}, k=1,2, \ldots, m}$ 是一个m维线性空间（在这里，上标通常表示坐标的序号，用以代替 $x,y,\cdots$ ,而下标则表示点的序号。）此空间中元素的加法和数乘是线性的。</p>
-<h5 id="2-距离"><a href="#2-距离" class="headerlink" title="2.距离"></a>2.距离</h5><p>$\mathbb R^m$ 上的距离：$d:\mathbb R^m \times \mathbb R^m \to \mathbb R$ 。满足1）对称 $d(\mathbf{x}, \mathbf{y})=d(\mathbf{y}, \mathbf{x})$ ，2）正定（大于等于 $0$ ，等于 $0$ 当且仅当两向量相同），3）三角形不等式 $\forall \mathbf{x}, \mathbf{y}, \mathbf{z} \in \mathbb{R}^{m}, \quad d(\mathbf{x}, \mathbf{y}) \leq d(\mathbf{x}, \mathbf{z})+d(\mathbf{z}, \mathbf{y})$ 。称距离是<strong>平移不变的</strong>，如果 $d(\mathbf{x}+\mathbf{z}, \mathbf{y}+\mathbf{z})=d(\mathbf{x}, \mathbf{y}), \quad \forall \mathbf{x}, \mathbf{y}, \mathbf{z} \in \mathbb{R}^{m}$ 。</p>
-<h5 id="1.3">3.范数</h5>
-
-<p>$\mathbb R^m$ 上的范数：$|| \cdot ||:\mathbb R^m\to\mathbb R$ 。1）正定（等于 $0$ 当且仅当 $\mathbf x=0$），2）三角形不等式 $\forall \mathbf{x}, \mathbf{y} \in \mathbb{R}^{m}, \quad|\mathbf{x}+\mathbf{y}| \leq|\mathbf{x}|+|\mathbf{y}|$ ，3）正齐次性 $||\lambda \mathbf x||=|\lambda|||\mathbf x||$ 。</p>
-<p>由范数可以得到一个平移不变的距离：$d(\mathbf{x}, \mathbf{y})=|\mathbf{x}-\mathbf{y}|$ 。</p>
-<p>验证一个函数是不是范数：先验证正定和正齐次性。重点是三角形不等式：在 $\forall\mathbf y$ 下先验证 $\mathbf{x=0}$ 时是否满足，再验证 $\mathbf{x=e}_i$ 时是否满足。若都满足，由于正齐次性，三角形不等式必成立。</p>
-<p><strong>p-范数</strong>：$\displaystyle|\mathbf{x}|<em>{p}=\left(\sum</em>{i=1}^{m}\left|x^{i}\right|^{p}\right)^{\frac{1}{p} }$  ( $p\geq1$ ) 可验证是一个范数（注意，当 $p&lt;1$ 时不满足三角形不等式，不是范数！可画此时的“单位圆”来验证。）同时也定义了一个平移不变的距离：$\displaystyle d<em>{p}(\mathbf{x}, \mathbf{y})=\left(\sum</em>{i=1}^{m}\left|x^{i}-y^{i}\right|^{p}\right)^{\frac{1}{p} }$ 。</p>
-<p>其中 $p=1$ （折线长）称为“曼哈顿距离”，而 $p=2$ 就是欧几里得距离。</p>
-<p>若是 $p\to\infty$ ，则 $d<em>{p}(\mathbf{x}, \mathbf{y}) \rightarrow \max\limits</em>{1 \leq i \leq m}\left|x^{i}-y^{i}\right|=: d<em>{\infty}(\mathbf{x}, \mathbf{y})$ ，以及$|\mathbf{x}|</em>{\infty}=\max\limits_{1 \leq i \leq m}\left|x^{i}\right|$ （此范数称为无穷范数）</p>
-<p>下图分别是二维和三维中不同 $p$ 值下的“单位圆/球”</p>
-<p><img src="https://pic.imgdb.cn/item/6216283c2ab3f51d91032dd2.jpg" alt=""></p>
-<p>对 $\mathbb R^m$ 的任意范数，任意 $\mathbf x\in\mathbb R^m$ ，有</p>
-<script type="math/tex; mode=display">
+<h5 id="空间">1.空间</h5>
+<p><span class="math inline">\(\mathbb{R}^{m}=\{(x^{1}, x^{2}, \ldots,
+x^{m})^{T} \mid x^{k} \in \mathbb{R}, k=1,2, \ldots, m\}\)</span>
+是一个m维线性空间（在这里，上标通常表示坐标的序号，用以代替 <span
+class="math inline">\(x,y,\cdots\)</span>
+,而下标则表示点的序号。）此空间中元素的加法和数乘是线性的。</p>
+<h5 id="距离">2.距离</h5>
+<p><span class="math inline">\(\mathbb R^m\)</span> 上的距离：<span
+class="math inline">\(d:\mathbb R^m \times \mathbb R^m \to \mathbb
+R\)</span> 。满足1）对称 <span class="math inline">\(d(\mathbf{x},
+\mathbf{y})=d(\mathbf{y}, \mathbf{x})\)</span> ，2）正定（大于等于 <span
+class="math inline">\(0\)</span> ，等于 <span
+class="math inline">\(0\)</span> 当且仅当两向量相同），3）三角形不等式
+<span class="math inline">\(\forall \mathbf{x}, \mathbf{y}, \mathbf{z}
+\in \mathbb{R}^{m}, \quad d(\mathbf{x}, \mathbf{y}) \leq d(\mathbf{x},
+\mathbf{z})+d(\mathbf{z}, \mathbf{y})\)</span>
+。称距离是<strong>平移不变的</strong>，如果 <span
+class="math inline">\(d(\mathbf{x}+\mathbf{z},
+\mathbf{y}+\mathbf{z})=d(\mathbf{x}, \mathbf{y}), \quad \forall
+\mathbf{x}, \mathbf{y}, \mathbf{z} \in \mathbb{R}^{m}\)</span> 。</p>
+<h5 id="1.3">
+3.范数
+</h5>
+<p><span class="math inline">\(\mathbb R^m\)</span> 上的范数：<span
+class="math inline">\(|| \cdot ||:\mathbb R^m\to\mathbb R\)</span>
+。1）正定（等于 <span class="math inline">\(0\)</span> 当且仅当 <span
+class="math inline">\(\mathbf x=0\)</span>），2）三角形不等式 <span
+class="math inline">\(\forall \mathbf{x}, \mathbf{y} \in \mathbb{R}^{m},
+\quad\|\mathbf{x}+\mathbf{y}\|
+\leq\|\mathbf{x}\|+\|\mathbf{y}\|\)</span> ，3）正齐次性 <span
+class="math inline">\(||\lambda \mathbf x||=|\lambda|||\mathbf
+x||\)</span> 。</p>
+<p>由范数可以得到一个平移不变的距离：<span
+class="math inline">\(d(\mathbf{x},
+\mathbf{y})=\|\mathbf{x}-\mathbf{y}\|\)</span> 。</p>
+<p>验证一个函数是不是范数：先验证正定和正齐次性。重点是三角形不等式：在
+<span class="math inline">\(\forall\mathbf y\)</span> 下先验证 <span
+class="math inline">\(\mathbf{x=0}\)</span> 时是否满足，再验证 <span
+class="math inline">\(\mathbf{x=e}_i\)</span>
+时是否满足。若都满足，由于正齐次性，三角形不等式必成立。</p>
+<p><strong>p-范数</strong>：<span
+class="math inline">\(\displaystyle\|\mathbf{x}\|_{p}=\left(\sum_{i=1}^{m}\left|x^{i}\right|^{p}\right)^{\frac{1}{p}
+}\)</span> ( <span class="math inline">\(p\geq1\)</span> )
+可验证是一个范数（注意，当 <span class="math inline">\(p&lt;1\)</span>
+时不满足三角形不等式，不是范数！可画此时的“单位圆”来验证。）同时也定义了一个平移不变的距离：<span
+class="math inline">\(\displaystyle d_{p}(\mathbf{x},
+\mathbf{y})=\left(\sum_{i=1}^{m}\left|x^{i}-y^{i}\right|^{p}\right)^{\frac{1}{p}
+}\)</span> 。</p>
+<p>其中 <span class="math inline">\(p=1\)</span>
+（折线长）称为“曼哈顿距离”，而 <span class="math inline">\(p=2\)</span>
+就是欧几里得距离。</p>
+<p>若是 <span class="math inline">\(p\to\infty\)</span> ，则 <span
+class="math inline">\(d_{p}(\mathbf{x}, \mathbf{y}) \rightarrow
+\max\limits_{1 \leq i \leq m}\left|x^{i}-y^{i}\right|=:
+d_{\infty}(\mathbf{x}, \mathbf{y})\)</span> ，以及<span
+class="math inline">\(\|\mathbf{x}\|_{\infty}=\max\limits_{1 \leq i \leq
+m}\left|x^{i}\right|\)</span> （此范数称为无穷范数）</p>
+<p>下图分别是二维和三维中不同 <span class="math inline">\(p\)</span>
+值下的“单位圆/球”</p>
+<p><img
+src="https://pic.imgdb.cn/item/6216283c2ab3f51d91032dd2.jpg" /></p>
+<p>对 <span class="math inline">\(\mathbb R^m\)</span> 的任意范数，任意
+<span class="math inline">\(\mathbf x\in\mathbb R^m\)</span> ，有 <span
+class="math display">\[
 \begin{aligned}
-||\mathbf x||&=||x^1\mathbf e_1+\cdot\cdot\cdot+x^m\mathbf e_m||\\
-&\leq|x^1|||\mathbf e_1||+\cdot\cdot\cdot+|x^m||\mathbf e_m||\\
-&\leq m||\mathbf x||_{\infty}
-\end{aligned}</script><h5 id="4-内积"><a href="#4-内积" class="headerlink" title="4.内积"></a>4.内积</h5><p>$\mathbb R^m$ 上的内积：$\langle\cdot,\cdot\rangle:\mathbb R^m \times \mathbb R^m \to \mathbb R$ 。1）对称 $\langle\mathbf{x}, \mathbf{y}\rangle=\langle\mathbf{y}, \mathbf{x}\rangle$ ，2）正定 $\langle\mathbf{x}, \mathbf{x}\rangle \geq 0,  \forall \mathbf{x} \in \mathbb{R}^{m} ; \langle\mathbf{x}, \mathbf{x}\rangle=0 \Leftrightarrow \mathbf x=0$  ，3）双线性。</p>
-<p>由内积可以得到一个范数： $||\mathbf x||=\sqrt{\langle\mathbf x,\mathbf x\rangle}$ 。</p>
-<p>以及<strong>Cauchy-Schwarz不等式</strong>：$||\mathbf x||\cdot||\mathbf y||\geq \, \langle\mathbf x,\mathbf y\rangle$ 等号成立当且仅当 $\mathbf{x}$,$\mathbf{y}$ 线性相关。</p>
-<h5 id="1.5">5.点列的极限</h5>
-
-<p>点列关于范数<strong>有界，收敛，的极限，是Cauchy点列</strong>的定义与数列几乎相同，只要把数列中的数（与数的差值）换成点（指向点的向量）的范数就行了。那么根据基于 $\varepsilon-N$ 语言的这种极限定义，可以得到以下结论：</p>
-<p>由 $|x|\leq m|x|_{\infty}$ 知</p>
-<p>A: $\left{\mathbf{x}<em>{n}\right}</em>{n \geq 1}$ 在范数 $|\cdot|_{\infty}$ 下有界/收敛（于 $\mathbf{a}$ ）/是 Cauchy 点列</p>
-<p> $\Rightarrow$ B: $\left{\mathbf{x}<em>{n}\right}</em>{n \geq 1}$ 在任何范数 $|\cdot|$ 下有界/收敛（于 $\mathbf{a}$ ）/是 Cauchy 点列。</p>
-<p>由不等式 $\left|x^{k}\right| \leq|\mathbf{x}|_{\infty} \leq\left|x^{1}\right|+\cdots+\left|x^{m}\right|$ 知</p>
-<p>A: $\left{\mathbf{x}<em>{n}\right}</em>{n \geq 1}$ 在范数 $|\cdot|_{\infty}$ 下有界/收敛（于 $\mathbf{a}$ ）/是 Cauchy 点列</p>
-<p> $\Leftrightarrow$ C: 对每个 $k$，$\left{x<em>{n}^{k}\right}</em>{n \geq 1}$ 是有界/收敛 (于 $a^{k}$ )/Cauchy 数列。</p>
+||\mathbf x||&amp;=||x^1\mathbf e_1+\cdot\cdot\cdot+x^m\mathbf e_m||\\
+&amp;\leq|x^1|||\mathbf e_1||+\cdot\cdot\cdot+|x^m||\mathbf e_m||\\
+&amp;\leq m||\mathbf x||_{\infty}
+\end{aligned}
+\]</span></p>
+<h5 id="内积">4.内积</h5>
+<p><span class="math inline">\(\mathbb R^m\)</span> 上的内积：<span
+class="math inline">\(\langle\cdot,\cdot\rangle:\mathbb R^m \times
+\mathbb R^m \to \mathbb R\)</span> 。1）对称 <span
+class="math inline">\(\langle\mathbf{x},
+\mathbf{y}\rangle=\langle\mathbf{y}, \mathbf{x}\rangle\)</span>
+，2）正定 <span class="math inline">\(\langle\mathbf{x},
+\mathbf{x}\rangle \geq 0, \forall \mathbf{x} \in \mathbb{R}^{m} ;
+\langle\mathbf{x}, \mathbf{x}\rangle=0 \Leftrightarrow \mathbf
+x=0\)</span> ，3）双线性。</p>
+<p>由内积可以得到一个范数： <span class="math inline">\(||\mathbf
+x||=\sqrt{\langle\mathbf x,\mathbf x\rangle}\)</span> 。</p>
+<p>以及<strong>Cauchy-Schwarz不等式</strong>：<span
+class="math inline">\(||\mathbf x||\cdot||\mathbf y||\geq \,
+\langle\mathbf x,\mathbf y\rangle\)</span> 等号成立当且仅当 <span
+class="math inline">\(\mathbf{x}\)</span>,<span
+class="math inline">\(\mathbf{y}\)</span> 线性相关。</p>
+<h5 id="1.5">
+5.点列的极限
+</h5>
+<p>点列关于范数<strong>有界，收敛，的极限，是Cauchy点列</strong>的定义与数列几乎相同，只要把数列中的数（与数的差值）换成点（指向点的向量）的范数就行了。那么根据基于
+<span class="math inline">\(\varepsilon-N\)</span>
+语言的这种极限定义，可以得到以下结论：</p>
+<p>由 <span class="math inline">\(\|x\|\leq m\|x\|_{\infty}\)</span>
+知</p>
+<p>A: <span class="math inline">\(\left\{\mathbf{x}_{n}\right\}_{n \geq
+1}\)</span> 在范数 <span
+class="math inline">\(\|\cdot\|_{\infty}\)</span> 下有界/收敛（于 <span
+class="math inline">\(\mathbf{a}\)</span> ）/是 Cauchy 点列</p>
+<p><span class="math inline">\(\Rightarrow\)</span> B: <span
+class="math inline">\(\left\{\mathbf{x}_{n}\right\}_{n \geq 1}\)</span>
+在任何范数 <span class="math inline">\(\|\cdot\|\)</span>
+下有界/收敛（于 <span class="math inline">\(\mathbf{a}\)</span> ）/是
+Cauchy 点列。</p>
+<p>由不等式 <span class="math inline">\(\left|x^{k}\right|
+\leq\|\mathbf{x}\|_{\infty}
+\leq\left|x^{1}\right|+\cdots+\left|x^{m}\right|\)</span> 知</p>
+<p>A: <span class="math inline">\(\left\{\mathbf{x}_{n}\right\}_{n \geq
+1}\)</span> 在范数 <span
+class="math inline">\(\|\cdot\|_{\infty}\)</span> 下有界/收敛（于 <span
+class="math inline">\(\mathbf{a}\)</span> ）/是 Cauchy 点列</p>
+<p><span class="math inline">\(\Leftrightarrow\)</span> C: 对每个 <span
+class="math inline">\(k\)</span>，<span
+class="math inline">\(\left\{x_{n}^{k}\right\}_{n \geq 1}\)</span>
+是有界/收敛 (于 <span class="math inline">\(a^{k}\)</span> )/Cauchy
+数列。</p>
 <p>又因为可以<a href="#p7">证明</a>引理：</p>
 <blockquote>
-<p>对 $\mathbb{R}^{m}$ 的任何范数 $|\cdot|$, 存在常数 $M&gt;0$ 使得对任意 $x \in \mathbb{R}^{m}$, $|\mathbf{x}|_{\infty} \leq M|\mathbf{x}|$ 。</p>
+<p>对 <span class="math inline">\(\mathbb{R}^{m}\)</span> 的任何范数
+<span class="math inline">\(\|\cdot\|\)</span>, 存在常数 <span
+class="math inline">\(M&gt;0\)</span> 使得对任意 <span
+class="math inline">\(x \in \mathbb{R}^{m}\)</span>, <span
+class="math inline">\(\|\mathbf{x}\|_{\infty} \leq
+M\|\mathbf{x}\|\)</span> 。</p>
 </blockquote>
 <p>因此，A,B,C彼此是完全等价的。这意味着，<strong>无论使用哪一种范数做标准，点列的有界/收敛/是Cauchy列等性质不会改变</strong>。</p>
-<h5 id="1.6">6.连续函数</h5>
-
+<h5 id="1.6">
+6.连续函数
+</h5>
 <p>多元函数的连续函数定义与一元函数大致相同，使用了范数（同样与范数选取无关）。多元复合函数的连续性也与一元函数的情形一样。</p>
 <p>例：范数是连续函数。</p>
 <p>证：范数的三角形不等式。</p>
 <p>例：线性映射是连续函数。</p>
-<p>证：$\displaystyle||L\mathbf x-L\mathbf x<em>0||=||L(\mathbf x-\mathbf x_0)||\leq||\mathbf x-\mathbf x_0||</em>{\infty}\sum\limits_{k=1}^n{L\mathbf e_k}$</p>
-<p>推论：数乘和内积（都是双线性映射，把两个自变量合并成一个向量后就是线性映射）都是连续函数。<a href="#p8">严格证明</a></p>
-<p>类似可证任意k-重线性映射 $f(\mathbf v_1,\cdot\cdot\cdot,\mathbf v_k)$ 都是连续的。因此，所以行列式函数都是连续函数。又因为（数和矩阵的）四则运算都是线性的，连续多元函数经过加减乘除后仍是连续函数。更复杂的情况需要具体分析。</p>
-<h5 id="1.7">7.有界闭集上的连续映射</h5>
-
-<p>若集合 $E\in\mathbb R^m$ 对极限封闭，则称 $E$ 是一个<strong>闭子集</strong>。</p>
-<p>定理：若 $E\in\mathbb R^m$ 是一个有界非空闭子集， $f:E\to\mathbb R^p$ 连续。则 $f(E)$ 是 $\mathbb R^p$ 的一个有界非空闭子集。<a href="#p9">证明</a></p>
-<p><strong>推论</strong>：设 $E \subseteq \mathbb{R}^{m}$ 是一个非空有界闭子集, $f: E \rightarrow \mathbb{R}$ 连续。则 $f$ 在 $E$ 上有最大值和最小值。</p>
-<h6 id="#1.7.2">应用：对称线性变换的特征值与特征向量</h6>
-
-<p>称线性映射 $A\in\mathbb R^m$ 对称：$\forall\mathbf x,\mathbf y,<A\mathbf x,\mathbf y>=&lt;\mathbf x,A\mathbf y&gt;$ </p>
-<p>定理：对称线性映射 $A$ 存在 $m$ 个特征值。<a href="#p10">证明</a></p>
-<h6 id="#1.7.3">应用：等周三角形</h6>
-
-<p>给定周长的三角形怎样面积最大？由椭圆和对称性仅能<a href="#p1">证明</a><strong>有最大面积的三角形</strong>的话等边三角形是面积最大的三角形，而是否存在这样一个最大值却没有说明。</p>
-<p>事实上，以 $P<em>{1}$  (不妨设 $P</em>{1}=O$ ), $P<em>{2}, P</em>{3}$ 为顶点的三角形面积</p>
-<script type="math/tex; mode=display">
-S(P_{2}, P_{3})=\frac{1}{2} \sqrt{\operatorname{det}\left(\begin{array}{cc}
-\left\langle P_{2}, P_{2}\right\rangle & \left\langle P_{2}, P_{3}\right\rangle \\
-\left\langle P_{2}, P_{3}\right\rangle & \left\langle P_{3}, P_{3}\right\rangle
-\end{array}\right)}</script><p>是一个连续函数。同时，设周长为定值 $L$ ，则集合</p>
-<script type="math/tex; mode=display">
-K=\left\{\left(P_{2}, P_{3}\right) \in \mathbb{R}^{2} \times \mathbb{R}^{2} \mid\left\|P_{2}\right\|+\left\|P_{3}\right\|+\left\|P_{2}-P_{3}\right\| \leq L\right\}</script><p>是一个有界闭集（这一点其实并不一目了然，且需要用到多元函数极限的知识），因此 $S(P_2,P_3),(P_2,P_3)\in K$ 必定存在最大值！下证最大值必定在周长最大（ $=L$ ）时取到：</p>
-<p>设 $S\left(P<em>{2}, P</em>{3}\right)$ 在 $K$ 上取得最大值 $S\left(P<em>{2}^{*}, P</em>{3}^{<em>}\right)$。若$\left|P_{2}^{</em>}\right|+\left|P<em>{3}^{*}\right|+\left|P</em>{2}^{<em>}-P_{3}^{</em>}\right|&lt;L$, 则取$\lambda=\frac{L}{\left|P<em>{2}^{*}\right|+\left|P</em>{3}^{<em>}\right|+\left|P_{2}^{</em>}-P<em>{3}^{*}\right|}, P</em>{k}^{‘}=\lambda P<em>{k}^{*}$, 从而 $\left(P</em>{2}^{‘}, P<em>{3}^{‘}\right) \in K$,<br>$S\left(P</em>{2}^{‘}, P<em>{3}^{‘}\right)=\lambda^{2} S\left(P</em>{2}^{<em>}, P_{3}^{</em>}\right)&gt;S\left(P<em>{2}^{*}, P</em>{3}^{<em>}\right)$ 。这与 $S\left(P_{2}^{</em>}, P<em>{3}^{*}\right)$ 是最大<br>值矛盾。因此 $\left|P</em>{2}^{<em>}\right|+\left|P_{3}^{</em>}\right|+\left|P<em>{2}^{*}-P</em>{3}^{*}\right|=L_{\circ}$ 再根据之前的分析，这个最大值就是等边三角形。</p>
-<h5 id="1.8">8.压缩映射原理（验证连续性的重要工具！）</h5>
-
-<p>设 $E \subseteq \mathbb{R}^{m}$ 是一个闭子集, 映射 $f: E \rightarrow \mathbb{R}^{m}$ 满足 $f(E) \subseteq E$ （封闭）, 且存在常数 $0&lt;\lambda&lt;1$ 使得</p>
-<script type="math/tex; mode=display">
-\|f(\mathbf{x})-f(\mathbf{y})\| \leq \lambda\|\mathbf{x}-\mathbf{y}\|, \quad \forall \mathbf{x}, \mathbf{y} \in E .</script><p>则可以<a href="#p2">证明</a>：</p>
-<p>存在唯一的 $\mathbf{x}^{<em>} \in E$ 使得: $f\left(\mathbf{x}^{</em>}\right)=\mathbf{x}^{<em>}$, 且对任意 $\mathbf{x} \in E$, 迭代点列 $\mathbf{x}_{n}=f^{n}(\mathbf{x})$ 收敛到 $\mathbf{x}^{</em>}$ （称为<strong>不动点</strong>）, 事实上, 对任意正整数 $n$,</p>
-<script type="math/tex; mode=display">
-\left\|f^{n}(\mathbf{x})-\mathbf{x}^{*}\right\| \leq \frac{\lambda^{n} }{1-\lambda}\|f(\mathbf{x})-\mathbf{x}\| .</script><h5 id="1.9">9.矩阵的算子范数</h5>
-
+<p>证：<span class="math inline">\(\displaystyle||L\mathbf x-L\mathbf
+x_0||=||L(\mathbf x-\mathbf x_0)||\leq||\mathbf x-\mathbf
+x_0||_{\infty}\sum\limits_{k=1}^n{L\mathbf e_k}\)</span></p>
+<p>推论：数乘和内积（都是双线性映射，把两个自变量合并成一个向量后就是线性映射）都是连续函数。<a
+href="#p8">严格证明</a></p>
+<p>类似可证任意k-重线性映射 <span class="math inline">\(f(\mathbf
+v_1,\cdot\cdot\cdot,\mathbf v_k)\)</span>
+都是连续的。因此，所以行列式函数都是连续函数。又因为（数和矩阵的）四则运算都是线性的，连续多元函数经过加减乘除后仍是连续函数。更复杂的情况需要具体分析。</p>
+<h5 id="1.7">
+7.有界闭集上的连续映射
+</h5>
+<p>若集合 <span class="math inline">\(E\in\mathbb R^m\)</span>
+对极限封闭，则称 <span class="math inline">\(E\)</span>
+是一个<strong>闭子集</strong>。</p>
+<p>定理：若 <span class="math inline">\(E\in\mathbb R^m\)</span>
+是一个有界非空闭子集， <span class="math inline">\(f:E\to\mathbb
+R^p\)</span> 连续。则 <span class="math inline">\(f(E)\)</span> 是 <span
+class="math inline">\(\mathbb R^p\)</span> 的一个有界非空闭子集。<a
+href="#p9">证明</a></p>
+<p><strong>推论</strong>：设 <span class="math inline">\(E \subseteq
+\mathbb{R}^{m}\)</span> 是一个非空有界闭子集, <span
+class="math inline">\(f: E \rightarrow \mathbb{R}\)</span> 连续。则
+<span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(E\)</span> 上有最大值和最小值。</p>
+<h6 id="#1.7.2">
+应用：对称线性变换的特征值与特征向量
+</h6>
+<p>称线性映射 <span class="math inline">\(A\in\mathbb R^m\)</span>
+对称：<span class="math inline">\(\forall\mathbf x,\mathbf
+y,&lt;A\mathbf x,\mathbf y&gt;=&lt;\mathbf x,A\mathbf y&gt;\)</span></p>
+<p>定理：对称线性映射 <span class="math inline">\(A\)</span> 存在 <span
+class="math inline">\(m\)</span> 个特征值。<a href="#p10">证明</a></p>
+<h6 id="#1.7.3">
+应用：等周三角形
+</h6>
+<p>给定周长的三角形怎样面积最大？由椭圆和对称性仅能<a
+href="#p1">证明</a><strong>有最大面积的三角形</strong>的话等边三角形是面积最大的三角形，而是否存在这样一个最大值却没有说明。</p>
+<p>事实上，以 <span class="math inline">\(P_{1}\)</span> (不妨设 <span
+class="math inline">\(P_{1}=O\)</span> ), <span
+class="math inline">\(P_{2}, P_{3}\)</span> 为顶点的三角形面积 <span
+class="math display">\[
+S(P_{2}, P_{3})=\frac{1}{2}
+\sqrt{\operatorname{det}\left(\begin{array}{cc}
+\left\langle P_{2}, P_{2}\right\rangle &amp; \left\langle P_{2},
+P_{3}\right\rangle \\
+\left\langle P_{2}, P_{3}\right\rangle &amp; \left\langle P_{3},
+P_{3}\right\rangle
+\end{array}\right)}
+\]</span> 是一个连续函数。同时，设周长为定值 <span
+class="math inline">\(L\)</span> ，则集合 <span class="math display">\[
+K=\left\{\left(P_{2}, P_{3}\right) \in \mathbb{R}^{2} \times
+\mathbb{R}^{2}
+\mid\left\|P_{2}\right\|+\left\|P_{3}\right\|+\left\|P_{2}-P_{3}\right\|
+\leq L\right\}
+\]</span>
+是一个有界闭集（这一点其实并不一目了然，且需要用到多元函数极限的知识），因此
+<span class="math inline">\(S(P_2,P_3),(P_2,P_3)\in K\)</span>
+必定存在最大值！下证最大值必定在周长最大（ <span
+class="math inline">\(=L\)</span> ）时取到：</p>
+<p>设 <span class="math inline">\(S\left(P_{2}, P_{3}\right)\)</span> 在
+<span class="math inline">\(K\)</span> 上取得最大值 <span
+class="math inline">\(S\left(P_{2}^{*},
+P_{3}^{*}\right)\)</span>。若<span
+class="math inline">\(\left\|P_{2}^{*}\right\|+\left\|P_{3}^{*}\right\|+\left\|P_{2}^{*}-P_{3}^{*}\right\|&lt;L\)</span>,
+则取<span
+class="math inline">\(\lambda=\frac{L}{\left\|P_{2}^{*}\right\|+\left\|P_{3}^{*}\right\|+\left\|P_{2}^{*}-P_{3}^{*}\right\|},
+P_{k}^{&#39;}=\lambda P_{k}^{*}\)</span>, 从而 <span
+class="math inline">\(\left(P_{2}^{&#39;}, P_{3}^{&#39;}\right) \in
+K\)</span>, <span class="math inline">\(S\left(P_{2}^{&#39;},
+P_{3}^{&#39;}\right)=\lambda^{2} S\left(P_{2}^{*},
+P_{3}^{*}\right)&gt;S\left(P_{2}^{*}, P_{3}^{*}\right)\)</span> 。这与
+<span class="math inline">\(S\left(P_{2}^{*}, P_{3}^{*}\right)\)</span>
+是最大 值矛盾。因此 <span
+class="math inline">\(\left\|P_{2}^{*}\right\|+\left\|P_{3}^{*}\right\|+\left\|P_{2}^{*}-P_{3}^{*}\right\|=L_{\circ}\)</span>
+再根据之前的分析，这个最大值就是等边三角形。</p>
+<h5 id="1.8">
+8.压缩映射原理（验证连续性的重要工具！）
+</h5>
+<p>设 <span class="math inline">\(E \subseteq \mathbb{R}^{m}\)</span>
+是一个闭子集, 映射 <span class="math inline">\(f: E \rightarrow
+\mathbb{R}^{m}\)</span> 满足 <span class="math inline">\(f(E) \subseteq
+E\)</span> （封闭）, 且存在常数 <span
+class="math inline">\(0&lt;\lambda&lt;1\)</span> 使得 <span
+class="math display">\[
+\|f(\mathbf{x})-f(\mathbf{y})\| \leq \lambda\|\mathbf{x}-\mathbf{y}\|,
+\quad \forall \mathbf{x}, \mathbf{y} \in E .
+\]</span> 则可以<a href="#p2">证明</a>：</p>
+<p>存在唯一的 <span class="math inline">\(\mathbf{x}^{*} \in E\)</span>
+使得: <span
+class="math inline">\(f\left(\mathbf{x}^{*}\right)=\mathbf{x}^{*}\)</span>,
+且对任意 <span class="math inline">\(\mathbf{x} \in E\)</span>, 迭代点列
+<span class="math inline">\(\mathbf{x}_{n}=f^{n}(\mathbf{x})\)</span>
+收敛到 <span class="math inline">\(\mathbf{x}^{*}\)</span>
+（称为<strong>不动点</strong>）, 事实上, 对任意正整数 <span
+class="math inline">\(n\)</span>, <span class="math display">\[
+\left\|f^{n}(\mathbf{x})-\mathbf{x}^{*}\right\| \leq \frac{\lambda^{n}
+}{1-\lambda}\|f(\mathbf{x})-\mathbf{x}\| .
+\]</span></p>
+<h5 id="1.9">
+9.矩阵的算子范数
+</h5>
 <p>此部分主要讨论求逆和解方程的操作是否连续和可微。</p>
-<p>我们记 $\mathcal{L}(m, n)$ 表示所有 $n$ 行 $m$ 列的实数矩阵的<strong>全体</strong>, 它可以看成是所有 $\mathbb{R}^{m} \rightarrow \mathbb{R}^{n}$ 的线性映射组成的向量空间。显然 $\mathcal{L}(m, n)$ 也可以看成 $\mathbb{R}^{n \times m}$ ，因此具有范数。</p>
-<p>由于每个线性映射 $L$ 都是连续函数，约定 $|L \mathbf{x}|$ 在有界闭集 $|\mathbf{x}|=1$ 上取得最大值表示为</p>
-<script type="math/tex; mode=display">
-\|L\|:=\max _{\|\mathbf{x}\|=1}\|L \mathbf{x}\| .</script><p>由线性代数的知识可以<a href="#p3">证明</a>，这种运算满足正定性、正齐次性和三角形不等式，因此是范数（称为矩阵的<strong>谱范数</strong>，详见线性代数教材）并可以<a href="#p4">证明</a>结论：对任意 $L<em>{1} \in \mathcal{L}(m, n)$ 和 $L</em>{2} \in \mathcal{L}(n, p)$, 都有 $\left|L<em>{2} L</em>{1}\right| \leq\left|L<em>{2}\right|\left|L</em>{1}\right|$ 。</p>
-<p>一个特殊情况（方阵）：$\mathcal{L}(m)=\mathcal{L}(m, m)$ 是一个向量空间, 它上面不仅有线性运算（加法、数乘），还有乘法：$\forall L<em>{1}, L</em>{2} \in \mathcal{L}(m), L<em>{2} L</em>{1} \in \mathcal{L}(m)$ 。现设 $|\cdot|$ 为此 $\mathcal{L}(m)$ 上的算子范数。则可以<a href="#p5">证明</a>对任意 $B \in \mathcal{L}(m)$ ，当 $|B|&lt;1$ 时，$I-B$ 是<strong>可逆矩阵</strong>，并且 $\left|(I-B)^{-1}-I\right| \leq \frac{|B|}{1-|B|}$ 。</p>
-<p>这些定理可以用于证明矩阵的求逆运算是连续的。事实上</p>
-<script type="math/tex; mode=display">
-A+\Delta A=A\left(I+A^{-1} \Delta A\right)</script><p>所以当 $|\Delta A|&lt;\dfrac{1}{\left|A^{-1}\right|}$ 时, $\left|A^{-1} \Delta A\right| \leq\left|A^{-1}\right||\Delta A|&lt;1$, 从而 $I+A^{-1} \Delta A$ 可逆，进而 $A+\Delta A$ 可逆。那么逆的变化与矩阵的变化是什么关系呢？</p>
-<script type="math/tex; mode=display">
+<p>我们记 <span class="math inline">\(\mathcal{L}(m, n)\)</span>
+表示所有 <span class="math inline">\(n\)</span> 行 <span
+class="math inline">\(m\)</span> 列的实数矩阵的<strong>全体</strong>,
+它可以看成是所有 <span class="math inline">\(\mathbb{R}^{m} \rightarrow
+\mathbb{R}^{n}\)</span> 的线性映射组成的向量空间。显然 <span
+class="math inline">\(\mathcal{L}(m, n)\)</span> 也可以看成 <span
+class="math inline">\(\mathbb{R}^{n \times m}\)</span>
+，因此具有范数。</p>
+<p>由于每个线性映射 <span class="math inline">\(L\)</span>
+都是连续函数，约定 <span class="math inline">\(\|L \mathbf{x}\|\)</span>
+在有界闭集 <span class="math inline">\(\|\mathbf{x}\|=1\)</span>
+上取得最大值表示为 <span class="math display">\[
+\|L\|:=\max _{\|\mathbf{x}\|=1}\|L \mathbf{x}\| .
+\]</span> 由线性代数的知识可以<a
+href="#p3">证明</a>，这种运算满足正定性、正齐次性和三角形不等式，因此是范数（称为矩阵的<strong>谱范数</strong>，详见线性代数教材）并可以<a
+href="#p4">证明</a>结论：对任意 <span class="math inline">\(L_{1} \in
+\mathcal{L}(m, n)\)</span> 和 <span class="math inline">\(L_{2} \in
+\mathcal{L}(n, p)\)</span>, 都有 <span
+class="math inline">\(\left\|L_{2} L_{1}\right\|
+\leq\left\|L_{2}\right\|\left\|L_{1}\right\|\)</span> 。</p>
+<p>一个特殊情况（方阵）：<span
+class="math inline">\(\mathcal{L}(m)=\mathcal{L}(m, m)\)</span>
+是一个向量空间, 它上面不仅有线性运算（加法、数乘），还有乘法：<span
+class="math inline">\(\forall L_{1}, L_{2} \in \mathcal{L}(m), L_{2}
+L_{1} \in \mathcal{L}(m)\)</span> 。现设 <span
+class="math inline">\(\|\cdot\|\)</span> 为此 <span
+class="math inline">\(\mathcal{L}(m)\)</span> 上的算子范数。则可以<a
+href="#p5">证明</a>对任意 <span class="math inline">\(B \in
+\mathcal{L}(m)\)</span> ，当 <span
+class="math inline">\(\|B\|&lt;1\)</span> 时，<span
+class="math inline">\(I-B\)</span> 是<strong>可逆矩阵</strong>，并且
+<span class="math inline">\(\left\|(I-B)^{-1}-I\right\| \leq
+\frac{\|B\|}{1-\|B\|}\)</span> 。</p>
+<p>这些定理可以用于证明矩阵的求逆运算是连续的。事实上 <span
+class="math display">\[
+A+\Delta A=A\left(I+A^{-1} \Delta A\right)
+\]</span> 所以当 <span class="math inline">\(\|\Delta
+A\|&lt;\dfrac{1}{\left\|A^{-1}\right\|}\)</span> 时, <span
+class="math inline">\(\left\|A^{-1} \Delta A\right\|
+\leq\left\|A^{-1}\right\|\|\Delta A\|&lt;1\)</span>, 从而 <span
+class="math inline">\(I+A^{-1} \Delta A\)</span> 可逆，进而 <span
+class="math inline">\(A+\Delta A\)</span>
+可逆。那么逆的变化与矩阵的变化是什么关系呢？ <span
+class="math display">\[
 \begin{aligned}
-\left\|(A+\Delta A)^{-1}-A^{-1}\right\| &=\left\|\left(I+A^{-1} \Delta A\right)^{-1} A^{-1}-A^{-1}\right\| \\
-& \leq\left\|A^{-1}\right\|\left\|\left(I+A^{-1} \Delta A\right)^{-1}-I\right\| \\
-& \leq \frac{\left\|A^{-1}\right\|^{2}\|\Delta A\|}{1-\left\|A^{-1}\right\|\|\Delta A\|}
-\end{aligned}</script><p>可以看到，当 $|\Delta A|&lt;\dfrac{1}{\left|A^{-1}\right|}$ ，且 $(1-\left|A^{-1}\right||\Delta A|)$ 不是特别小时，逆的变化与矩阵的变化同级。这表明求逆运算是一种连续映射。</p>
-<h5 id="1.10">10.误差扰动下线性方程的解</h5>
-
-<p>在求解线性方程组 $A \mathbf{x}=\mathbf{b}$ 时，由于现实情况的影响，求解的实际上是$(A+\Delta A) \mathbf{x}=\mathbf{b}+\Delta \mathbf{b}$ 。解的变化是连续的吗？</p>
-<p>由之前的理论铺垫我们知道，若 $|\Delta A|&lt;\dfrac{1}{\left|A^{-1}\right|}$ ，线性方程组仍有唯一解。且因求逆和线性变换都是连续的，解的变化也是连续的。<a href="#p6">严谨的证明</a></p>
-<h5 id="11-连通性与连续性"><a href="#11-连通性与连续性" class="headerlink" title="11.连通性与连续性"></a>11.连通性与连续性</h5><p>（区间的推广）称 $E \subseteq \mathbb{R}^{m}$ 是一个<strong>道路连通集</strong>，如果对任意 $\mathbf{x}, \mathbf{y} \in E$ ,存在连续映射 $f:[0,1] \rightarrow \mathbb{R}^{m}$ 使得 $f(0)=\mathbf{x}, f(1)=\mathbf{y}$ ，且对任意 $0 \leq t \leq 1, f(t) \in E$ 。</p>
-<p>定理：设 $E \subseteq \mathbb{R}^{m}$ 是一个道路连通集, $f: E \rightarrow \mathbb{R}^{p}$ 连续。则 $f(E)$ 是 $\mathbb{R}^{p}$ 中的一个道路连通集。</p>
-<p>由上可推知，m阶可逆矩阵全体<strong>不是</strong>一个道路连通集（因为 $\det$ 是连续函数，而可逆矩阵的 $\det$ 不包含 $0$ ）而 $<br>\mathcal{G} \mathcal{L}^{+}(m)={A \in \mathcal{G} \mathcal{L}(m) \mid \operatorname{det}(A)&gt;0} \text { 和 }<br>$<br>$\mathcal{G L}^{-}(m)={A \in \mathcal{G L}(m) \mid \operatorname{det}(A)&lt;0}$ 都是道路连通的。</p>
-<p><em>老师的思考题</em>：在二维或更高维数的线性空间中, 是否存在一个全序, 使得它与空间中由范数给出的拓扑相容？（不大懂，大概是说只有一维数轴上的数才能比大小，也就是说答案是否定的）</p>
-<h4 id="证明区"><a href="#证明区" class="headerlink" title="证明区"></a>证明区</h4><h6 id="p7">证明1.5</h6>
-
-<p>假设结论不对。则存在点列 $\left{\mathbf{x}<em>{n}\right}$ 使得 $\left|\mathbf{x}</em>{n}\right|<em>{\infty}&gt;n\left|\mathbf{x}</em>{n}\right|$ 。于是 $\mathbf{x}<em>{n} \neq \mathbf{0}$, 取 $\mathbf{y}</em>{n}=\frac{\mathbf{x}<em>{n} }{\left|\mathbf{x}</em>{n}\right|<em>{\infty} }$ ，则 $\left|\mathbf{y}</em>{n}\right|<em>{\infty}=1,\left|\mathbf{y}</em>{n}\right|&lt;\frac{1}{n}$ 。由 $\left|y<em>{n}^{k}\right| \leq\left|\mathbf{y}</em>{n}\right|<em>{\infty}=1$ 知 $\left{y</em>{n}^{k}\right}_{n \geq 1}$ 是有界数列，从而有收敛子列。</p>
-<p>因此不妨设对每个 $k \in{1,2, \ldots, m},\left{y<em>{n}^{k}\right}</em>{n \geq 1}$ 都收敛。 从而 $\left{\mathbf{y}<em>{n}\right}$ 在范数 $|\cdot|</em>{\infty}$ 下收敛。记 $\mathbf{y}<em>{0}$ 为相应极限。则 $\lim\limits</em>{n \rightarrow+\infty}\left|\mathbf{y}<em>{n}-\mathbf{y}</em>{0}\right|<em>{\infty}=0$ 。因此 $\lim\limits</em>{n \rightarrow+\infty}\left|\mathbf{y}<em>{n}-\mathbf{y}</em>{0}\right|=0$ （因为 $|x|\leq m|x|_{\infty}$ ）。所以：</p>
-<script type="math/tex; mode=display">
-\left\|\mathbf{y}_{0}\right\| \leq\left\|\mathbf{y}_{n}-\mathbf{y}_{0}\right\|+\left\|\mathbf{y}_{n}\right\|<\left\|\mathbf{y}_{n}-\mathbf{y}_{0}\right\|+\frac{1}{n} \rightarrow 0, \quad n \rightarrow+\infty</script><p>于是 $\mathbf{y}_{0}=\mathbf{0}$ 。而这导致如下矛盾</p>
-<script type="math/tex; mode=display">
-1=\left\|\mathbf{y}_{n}\right\|_{\infty}=\left\|\mathbf{y}_{n}-\mathbf{y}_{0}\right\|_{\infty} \rightarrow 0, \quad n \rightarrow+\infty</script><p>所以原结论成立。实话说，这是一个有点让人摸不着头脑的证明。<a href="#1.5">返回</a></p>
-<h6 id="p8">证明1.6</h6>
-
-<p>对双线性映射 $B: \mathbb{R}^{m} \times \mathbb{R}^{n} \rightarrow \mathbb{R}^{p}$ ，设 $\mathbf{e}<em>{1}, \ldots, \mathbf{e}</em>{m}$ 和 $\mathbf{f}<em>{1}, \ldots, \mathbf{f}</em>{n}$ 分别是 $\mathbb{R}^{m}$ 和 $\mathbb{R}^{n}$ 的基底。记 $M=\sum\limits<em>{i, j}\left|B\left(\mathbf{e}</em>{i}, \mathbf{f}<em>{j}\right)\right|$ 。则对 $\mathbf{x}=\sum\limits</em>{i} x^{i} \mathbf{e}<em>{i}, \mathbf{y}=\sum\limits</em>{j} y^{j} \mathbf{f}_{i}$ </p>
-<script type="math/tex; mode=display">
+\left\|(A+\Delta A)^{-1}-A^{-1}\right\| &amp;=\left\|\left(I+A^{-1}
+\Delta A\right)^{-1} A^{-1}-A^{-1}\right\| \\
+&amp; \leq\left\|A^{-1}\right\|\left\|\left(I+A^{-1} \Delta
+A\right)^{-1}-I\right\| \\
+&amp; \leq \frac{\left\|A^{-1}\right\|^{2}\|\Delta
+A\|}{1-\left\|A^{-1}\right\|\|\Delta A\|}
+\end{aligned}
+\]</span> 可以看到，当 <span class="math inline">\(\|\Delta
+A\|&lt;\dfrac{1}{\left\|A^{-1}\right\|}\)</span> ，且 <span
+class="math inline">\((1-\left\|A^{-1}\right\|\|\Delta A\|)\)</span>
+不是特别小时，逆的变化与矩阵的变化同级。这表明求逆运算是一种连续映射。</p>
+<h5 id="1.10">
+10.误差扰动下线性方程的解
+</h5>
+<p>在求解线性方程组 <span class="math inline">\(A
+\mathbf{x}=\mathbf{b}\)</span>
+时，由于现实情况的影响，求解的实际上是<span
+class="math inline">\((A+\Delta A) \mathbf{x}=\mathbf{b}+\Delta
+\mathbf{b}\)</span> 。解的变化是连续的吗？</p>
+<p>由之前的理论铺垫我们知道，若 <span class="math inline">\(\|\Delta
+A\|&lt;\dfrac{1}{\left\|A^{-1}\right\|}\)</span>
+，线性方程组仍有唯一解。且因求逆和线性变换都是连续的，解的变化也是连续的。<a
+href="#p6">严谨的证明</a></p>
+<h5 id="连通性与连续性">11.连通性与连续性</h5>
+<p>（区间的推广）称 <span class="math inline">\(E \subseteq
+\mathbb{R}^{m}\)</span> 是一个<strong>道路连通集</strong>，如果对任意
+<span class="math inline">\(\mathbf{x}, \mathbf{y} \in E\)</span>
+,存在连续映射 <span class="math inline">\(f:[0,1] \rightarrow
+\mathbb{R}^{m}\)</span> 使得 <span
+class="math inline">\(f(0)=\mathbf{x}, f(1)=\mathbf{y}\)</span>
+，且对任意 <span class="math inline">\(0 \leq t \leq 1, f(t) \in
+E\)</span> 。</p>
+<p>定理：设 <span class="math inline">\(E \subseteq
+\mathbb{R}^{m}\)</span> 是一个道路连通集, <span class="math inline">\(f:
+E \rightarrow \mathbb{R}^{p}\)</span> 连续。则 <span
+class="math inline">\(f(E)\)</span> 是 <span
+class="math inline">\(\mathbb{R}^{p}\)</span> 中的一个道路连通集。</p>
+<p>由上可推知，m阶可逆矩阵全体<strong>不是</strong>一个道路连通集（因为
+<span class="math inline">\(\det\)</span> 是连续函数，而可逆矩阵的 <span
+class="math inline">\(\det\)</span> 不包含 <span
+class="math inline">\(0\)</span> ）而 $ ^{+}(m)={A (m) (A)&gt;0} $ <span
+class="math inline">\(\mathcal{G L}^{-}(m)=\{A \in \mathcal{G L}(m) \mid
+\operatorname{det}(A)&lt;0\}\)</span> 都是道路连通的。</p>
+<p><em>老师的思考题</em>：在二维或更高维数的线性空间中,
+是否存在一个全序,
+使得它与空间中由范数给出的拓扑相容？（不大懂，大概是说只有一维数轴上的数才能比大小，也就是说答案是否定的）</p>
+<h4 id="证明区">证明区</h4>
+<h6 id="p7">
+证明1.5
+</h6>
+<p>假设结论不对。则存在点列 <span
+class="math inline">\(\left\{\mathbf{x}_{n}\right\}\)</span> 使得 <span
+class="math inline">\(\left\|\mathbf{x}_{n}\right\|_{\infty}&gt;n\left\|\mathbf{x}_{n}\right\|\)</span>
+。于是 <span class="math inline">\(\mathbf{x}_{n} \neq
+\mathbf{0}\)</span>, 取 <span
+class="math inline">\(\mathbf{y}_{n}=\frac{\mathbf{x}_{n}
+}{\left\|\mathbf{x}_{n}\right\|_{\infty} }\)</span> ，则 <span
+class="math inline">\(\left\|\mathbf{y}_{n}\right\|_{\infty}=1,\left\|\mathbf{y}_{n}\right\|&lt;\frac{1}{n}\)</span>
+。由 <span class="math inline">\(\left|y_{n}^{k}\right|
+\leq\left\|\mathbf{y}_{n}\right\|_{\infty}=1\)</span> 知 <span
+class="math inline">\(\left\{y_{n}^{k}\right\}_{n \geq 1}\)</span>
+是有界数列，从而有收敛子列。</p>
+<p>因此不妨设对每个 <span class="math inline">\(k \in\{1,2, \ldots,
+m\},\left\{y_{n}^{k}\right\}_{n \geq 1}\)</span> 都收敛。 从而 <span
+class="math inline">\(\left\{\mathbf{y}_{n}\right\}\)</span> 在范数
+<span class="math inline">\(\|\cdot\|_{\infty}\)</span> 下收敛。记 <span
+class="math inline">\(\mathbf{y}_{0}\)</span> 为相应极限。则 <span
+class="math inline">\(\lim\limits_{n
+\rightarrow+\infty}\left\|\mathbf{y}_{n}-\mathbf{y}_{0}\right\|_{\infty}=0\)</span>
+。因此 <span class="math inline">\(\lim\limits_{n
+\rightarrow+\infty}\left\|\mathbf{y}_{n}-\mathbf{y}_{0}\right\|=0\)</span>
+（因为 <span class="math inline">\(\|x\|\leq m\|x\|_{\infty}\)</span>
+）。所以： <span class="math display">\[
+\left\|\mathbf{y}_{0}\right\|
+\leq\left\|\mathbf{y}_{n}-\mathbf{y}_{0}\right\|+\left\|\mathbf{y}_{n}\right\|&lt;\left\|\mathbf{y}_{n}-\mathbf{y}_{0}\right\|+\frac{1}{n}
+\rightarrow 0, \quad n \rightarrow+\infty
+\]</span> 于是 <span
+class="math inline">\(\mathbf{y}_{0}=\mathbf{0}\)</span>
+。而这导致如下矛盾 <span class="math display">\[
+1=\left\|\mathbf{y}_{n}\right\|_{\infty}=\left\|\mathbf{y}_{n}-\mathbf{y}_{0}\right\|_{\infty}
+\rightarrow 0, \quad n \rightarrow+\infty
+\]</span> 所以原结论成立。实话说，这是一个有点让人摸不着头脑的证明。<a
+href="#1.5">返回</a></p>
+<h6 id="p8">
+证明1.6
+</h6>
+<p>对双线性映射 <span class="math inline">\(B: \mathbb{R}^{m} \times
+\mathbb{R}^{n} \rightarrow \mathbb{R}^{p}\)</span> ，设 <span
+class="math inline">\(\mathbf{e}_{1}, \ldots, \mathbf{e}_{m}\)</span> 和
+<span class="math inline">\(\mathbf{f}_{1}, \ldots,
+\mathbf{f}_{n}\)</span> 分别是 <span
+class="math inline">\(\mathbb{R}^{m}\)</span> 和 <span
+class="math inline">\(\mathbb{R}^{n}\)</span> 的基底。记 <span
+class="math inline">\(M=\sum\limits_{i, j}\left\|B\left(\mathbf{e}_{i},
+\mathbf{f}_{j}\right)\right\|\)</span> 。则对 <span
+class="math inline">\(\mathbf{x}=\sum\limits_{i} x^{i} \mathbf{e}_{i},
+\mathbf{y}=\sum\limits_{j} y^{j} \mathbf{f}_{i}\)</span> <span
+class="math display">\[
 \begin{aligned}
-\|B(\mathbf{x}, \mathbf{y})\| &=\left\|\sum_{i, j} x^{i} y^{j} B\left(\mathbf{e}_{i}, \mathbf{f}_{j}\right)\right\| \leq \sum_{i, j} \mid x^{i}\mid\mid y^{j}\mid \|B\left(\mathbf{e}_{i}, \mathbf{f}_{j}\right) \| \\
-& \leq\|\mathbf{x}\|_{\infty}\|\mathbf{y}\|_{\infty} \sum_{i, j}\left\|B\left(\mathbf{e}_{i}, \mathbf{f}_{j}\right)\right\|=M\|\mathbf{x}\|_{\infty}\|\mathbf{y}\|_{\infty} .
-\end{aligned}</script><p>从而</p>
-<script type="math/tex; mode=display">
+\|B(\mathbf{x}, \mathbf{y})\| &amp;=\left\|\sum_{i, j} x^{i} y^{j}
+B\left(\mathbf{e}_{i}, \mathbf{f}_{j}\right)\right\| \leq \sum_{i, j}
+\mid x^{i}\mid\mid y^{j}\mid \|B\left(\mathbf{e}_{i},
+\mathbf{f}_{j}\right) \| \\
+&amp; \leq\|\mathbf{x}\|_{\infty}\|\mathbf{y}\|_{\infty} \sum_{i,
+j}\left\|B\left(\mathbf{e}_{i},
+\mathbf{f}_{j}\right)\right\|=M\|\mathbf{x}\|_{\infty}\|\mathbf{y}\|_{\infty}
+.
+\end{aligned}
+\]</span> 从而 <span class="math display">\[
 \begin{aligned}
-&\left\|B(\mathbf{x}, \mathbf{y})-B\left(\mathbf{x}_{0}, \mathbf{y}_{0}\right)\right\| \\
-\leq &\left\|B\left(\mathbf{x}-\mathbf{x}_{0}, \mathbf{y}-\mathbf{y}_{0}\right)\right\|+\left\|B\left(\mathbf{x}-\mathbf{x}_{0}, \mathbf{y}_{0}\right)\right\|+\left\|B\left(\mathbf{x}_{0}, \mathbf{y}-\mathbf{y}_{0}\right)\right\| \\
-\leq & M\left(\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}\right)
-\end{aligned}</script><p>对任意 $\varepsilon&gt;0$, 当</p>
-<script type="math/tex; mode=display">
-\max \left\{\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty},\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}\right\}<\frac{\varepsilon}{\varepsilon+3 M\left(1+\left\|\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}_{0}\right\|_{\infty}\right)}</script><p>时, $\left|B(\mathbf{x}, \mathbf{y})-B\left(\mathbf{x}<em>{0}, \mathbf{y}</em>{0}\right)\right|&lt;\varepsilon_{\circ}$ 所以 $B$ 是连续映射。</p>
+&amp;\left\|B(\mathbf{x}, \mathbf{y})-B\left(\mathbf{x}_{0},
+\mathbf{y}_{0}\right)\right\| \\
+\leq &amp;\left\|B\left(\mathbf{x}-\mathbf{x}_{0},
+\mathbf{y}-\mathbf{y}_{0}\right)\right\|+\left\|B\left(\mathbf{x}-\mathbf{x}_{0},
+\mathbf{y}_{0}\right)\right\|+\left\|B\left(\mathbf{x}_{0},
+\mathbf{y}-\mathbf{y}_{0}\right)\right\| \\
+\leq &amp;
+M\left(\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}\right)
+\end{aligned}
+\]</span> 对任意 <span class="math inline">\(\varepsilon&gt;0\)</span>,
+当 <span class="math display">\[
+\max
+\left\{\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty},\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}\right\}&lt;\frac{\varepsilon}{\varepsilon+3
+M\left(1+\left\|\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}_{0}\right\|_{\infty}\right)}
+\]</span> 时, <span class="math inline">\(\left\|B(\mathbf{x},
+\mathbf{y})-B\left(\mathbf{x}_{0},
+\mathbf{y}_{0}\right)\right\|&lt;\varepsilon_{\circ}\)</span> 所以 <span
+class="math inline">\(B\)</span> 是连续映射。</p>
 <p>这里的构造很奇妙。而且感觉放缩得有点多了。<a href="#1.6">返回</a></p>
-<h6 id="p9">证明1.7.1</h6>
-
+<h6 id="p9">
+证明1.7.1
+</h6>
 <p>1)证明有界</p>
-<p>假设 $f(E)$ 无界, 则对任意正整数 $n$, 存在 $\mathbf{x}<em>{n} \in E$ 使得 $\left|f\left(\mathbf{x}</em>{n}\right)\right|&gt;n$ 。<br>因为 $E \subseteq \mathbb{R}^{m}$ 有界, 所以 $\left{\mathbf{x}<em>{n}\right}$ 有界。从而 $\left{\mathbf{x}</em>{n}\right}$ 有收敛子列 $\left{\mathbf{x}<em>{n</em>{k}}\right}<em>{k \geq 1}, \mathbf{a}=\lim \limits</em>{k \rightarrow+\infty} \mathbf{x}<em>{n</em>{k}}$ 。因为 $E$ 是闭集, 所以 $\mathbf{a} \in E$, 从而 $f$ 在 $\mathbf{a}$ 连续。于是<br>$k \leq n<em>k\leq\left|f\left(\mathbf{x}</em>{n<em>{k}}\right)\right| \leq|f(\mathbf{a})|+\left|f\left(\mathbf{x}</em>{n_{k}}\right)-f(\mathbf{a})\right| \rightarrow|f(\mathbf{a})|,  k \rightarrow+\infty$ ，其中第一个 $\leq$ 号是收敛子列的性质。然而这个式子矛盾，因此 $f(E)$ 有界。</p>
+<p>假设 <span class="math inline">\(f(E)\)</span> 无界, 则对任意正整数
+<span class="math inline">\(n\)</span>, 存在 <span
+class="math inline">\(\mathbf{x}_{n} \in E\)</span> 使得 <span
+class="math inline">\(\left\|f\left(\mathbf{x}_{n}\right)\right\|&gt;n\)</span>
+。 因为 <span class="math inline">\(E \subseteq \mathbb{R}^{m}\)</span>
+有界, 所以 <span
+class="math inline">\(\left\{\mathbf{x}_{n}\right\}\)</span> 有界。从而
+<span class="math inline">\(\left\{\mathbf{x}_{n}\right\}\)</span>
+有收敛子列 <span
+class="math inline">\(\left\{\mathbf{x}_{n_{k}}\right\}_{k \geq 1},
+\mathbf{a}=\lim \limits_{k \rightarrow+\infty}
+\mathbf{x}_{n_{k}}\)</span> 。因为 <span
+class="math inline">\(E\)</span> 是闭集, 所以 <span
+class="math inline">\(\mathbf{a} \in E\)</span>, 从而 <span
+class="math inline">\(f\)</span> 在 <span
+class="math inline">\(\mathbf{a}\)</span> 连续。于是 <span
+class="math inline">\(k \leq
+n_k\leq\left\|f\left(\mathbf{x}_{n_{k}}\right)\right\|
+\leq\|f(\mathbf{a})\|+\left\|f\left(\mathbf{x}_{n_{k}}\right)-f(\mathbf{a})\right\|
+\rightarrow\|f(\mathbf{a})\|, k \rightarrow+\infty\)</span> ，其中第一个
+<span class="math inline">\(\leq\)</span>
+号是收敛子列的性质。然而这个式子矛盾，因此 <span
+class="math inline">\(f(E)\)</span> 有界。</p>
 <p>2)证明闭集</p>
-<p>设 $\mathbf{x}<em>{n} \in E$ 使得 $\mathbf{b}=\lim\limits </em>{n \rightarrow+\infty} f\left(\mathbf{x}<em>{n}\right)$ 。我们希望证明 $\mathbf{b} \in f(E)$ 。因为 $E$ 是有界闭集, 所以 $\left{\mathbf{x}</em>{n}\right}$ 有收敛子列 $\lim\limits <em>{k \rightarrow+\infty} \mathbf{x}</em>{n<em>{k}}=\mathbf{a}$, 且 $\mathbf{a} \in E$ 。所以<br>$|\mathbf{b}-f(\mathbf{a})| \leq\left|\mathbf{b}-f\left(\mathbf{x}</em>{n<em>{k}}\right)\right|+\left|f\left(\mathbf{x}</em>{n_{k}}\right)-f(\mathbf{a})\right| \rightarrow 0, k \rightarrow+\infty .$ 因此 $\mathbf{b}=f(\mathbf{a}) \in f(E)$ 。所以 $f(E)$ 是闭集。</p>
-<p>因此 $f(E)$ 是有界闭集。<a href="#1.7">返回</a></p>
-<h6 id="p10">证明1.7.2</h6>
-
-<p>这里是要证明：如果 $A$ 是 $\mathbb{R}^{m}$ 上的对称线性变换, 则存在 $m$ 个正交的单位向量 $\mathbf{v}<em>{1}, \ldots, \mathbf{v}</em>{m}$ 以及 $m$ 个实数 $\lambda<em>{1}, \ldots, \lambda</em>{m}$ 使得对 $k=1,2, \ldots, m$, $A \mathbf{v}<em>{k}=\lambda</em>{k} \mathbf{v}_{k}$ 。</p>
+<p>设 <span class="math inline">\(\mathbf{x}_{n} \in E\)</span> 使得
+<span class="math inline">\(\mathbf{b}=\lim\limits _{n
+\rightarrow+\infty} f\left(\mathbf{x}_{n}\right)\)</span> 。我们希望证明
+<span class="math inline">\(\mathbf{b} \in f(E)\)</span> 。因为 <span
+class="math inline">\(E\)</span> 是有界闭集, 所以 <span
+class="math inline">\(\left\{\mathbf{x}_{n}\right\}\)</span> 有收敛子列
+<span class="math inline">\(\lim\limits _{k \rightarrow+\infty}
+\mathbf{x}_{n_{k}}=\mathbf{a}\)</span>, 且 <span
+class="math inline">\(\mathbf{a} \in E\)</span> 。所以 <span
+class="math inline">\(\|\mathbf{b}-f(\mathbf{a})\|
+\leq\left\|\mathbf{b}-f\left(\mathbf{x}_{n_{k}}\right)\right\|+\left\|f\left(\mathbf{x}_{n_{k}}\right)-f(\mathbf{a})\right\|
+\rightarrow 0, k \rightarrow+\infty .\)</span> 因此 <span
+class="math inline">\(\mathbf{b}=f(\mathbf{a}) \in f(E)\)</span> 。所以
+<span class="math inline">\(f(E)\)</span> 是闭集。</p>
+<p>因此 <span class="math inline">\(f(E)\)</span> 是有界闭集。<a
+href="#1.7">返回</a></p>
+<h6 id="p10">
+证明1.7.2
+</h6>
+<p>这里是要证明：如果 <span class="math inline">\(A\)</span> 是 <span
+class="math inline">\(\mathbb{R}^{m}\)</span> 上的对称线性变换, 则存在
+<span class="math inline">\(m\)</span> 个正交的单位向量 <span
+class="math inline">\(\mathbf{v}_{1}, \ldots, \mathbf{v}_{m}\)</span>
+以及 <span class="math inline">\(m\)</span> 个实数 <span
+class="math inline">\(\lambda_{1}, \ldots, \lambda_{m}\)</span> 使得对
+<span class="math inline">\(k=1,2, \ldots, m\)</span>, <span
+class="math inline">\(A \mathbf{v}_{k}=\lambda_{k}
+\mathbf{v}_{k}\)</span> 。</p>
 <p>1)先找到一组：</p>
-<p>记 $K=\left{\mathbf{v} \in \mathbb{R}^{m} \mid|\mathbf{v}|=1\right}$ 。则 $K$ 是有界闭集。函数 $f(\mathbf{v})=\langle A \mathbf{v}, \mathbf{v}\rangle$ 是连续函数。于是 $f$ 在 $K$ 上取得最大值， $f\left(\mathbf{v}<em>{1}\right)=\max\limits </em>{\mathbf{v} \in K} f(\mathbf{v})$ 。</p>
-<p>下面证明这就是一个特征向量。做些小扰动：任取与 $\mathbf{v}<em>{1}$ 正交的单位向量 $\mathbf{u} \in K$, 则 $\cos \theta \mathbf{v}</em>{1}+\sin \theta \mathbf{u} \in K$ 。记</p>
-<script type="math/tex; mode=display">
-g(\theta)=f\left(\cos \theta \mathbf{v}_{1}+\sin \theta \mathbf{u}\right) .</script><p>则 $g(\theta)$ 在 $\theta=0$ 时取最大值, 而</p>
-<script type="math/tex; mode=display">
+<p>记 <span class="math inline">\(K=\left\{\mathbf{v} \in \mathbb{R}^{m}
+\mid\|\mathbf{v}\|=1\right\}\)</span> 。则 <span
+class="math inline">\(K\)</span> 是有界闭集。函数 <span
+class="math inline">\(f(\mathbf{v})=\langle A \mathbf{v},
+\mathbf{v}\rangle\)</span> 是连续函数。于是 <span
+class="math inline">\(f\)</span> 在 <span
+class="math inline">\(K\)</span> 上取得最大值， <span
+class="math inline">\(f\left(\mathbf{v}_{1}\right)=\max\limits
+_{\mathbf{v} \in K} f(\mathbf{v})\)</span> 。</p>
+<p>下面证明这就是一个特征向量。做些小扰动：任取与 <span
+class="math inline">\(\mathbf{v}_{1}\)</span> 正交的单位向量 <span
+class="math inline">\(\mathbf{u} \in K\)</span>, 则 <span
+class="math inline">\(\cos \theta \mathbf{v}_{1}+\sin \theta \mathbf{u}
+\in K\)</span> 。记 <span class="math display">\[
+g(\theta)=f\left(\cos \theta \mathbf{v}_{1}+\sin \theta
+\mathbf{u}\right) .
+\]</span> 则 <span class="math inline">\(g(\theta)\)</span> 在 <span
+class="math inline">\(\theta=0\)</span> 时取最大值, 而 <span
+class="math display">\[
 \begin{aligned}
-g(\theta) &=\left\langle A\left(\cos \theta \mathbf{v}_{1}+\sin \theta \mathbf{u}\right), \cos \theta \mathbf{v}_{1}+\sin \theta \mathbf{u}\right\rangle \\
-&=\cos ^{2} \theta f\left(\mathbf{v}_{1}\right)+\sin ^{2} \theta f(\mathbf{u})+2 \sin \theta \cos \theta\left\langle A \mathbf{v}_{1}, \mathbf{u}\right\rangle \\
-&=g(0)+2 \theta\left\langle A \mathbf{v}_{1}, \mathbf{u}\right\rangle+o(\theta), \quad \theta \rightarrow 0
-\end{aligned}</script><p>因此 $g^{\prime}(0)=2\left\langle A \mathbf{v}<em>{1}, \mathbf{u}\right\rangle=0$ 。所以 $A \mathbf{v}</em>{1}$ 与 $\mathbf{u}$ 正交。由 $\mathbf{u}$ 的任意性知 $A \mathbf{v}<em>{1}$ 与 $\mathbf{v}</em>{1}$ 线性相关, 从而存在 $\lambda<em>{1}$ 使得 $A \mathbf{v}</em>{1}=\lambda<em>{1} \mathbf{v}</em>{1}$ 。</p>
-<p>2)证明可以扩展到 $m$ 组</p>
-<p>假设已经找到特征向量 $\mathbf{v}<em>{1}, \ldots, \mathbf{v}</em>{k}, k&lt;m$ 。记它们张成的线性子空间为 $W$ ，而 $W^{\perp}$ 是 $W$ 的正交补空间。则 $W$ 是 $A$ 不变子空间（即 $\forall \mathbf{w}\in W,A\mathbf{w}\in W$ ），$\operatorname{dim} W^{\perp} \geq 1$ 。任取 $\mathbf{v} \in W^{\perp}$ 和 $\mathbf{w} \in W$,</p>
-<script type="math/tex; mode=display">
-\langle A \mathbf{v}, \mathbf{w}\rangle=\langle\mathbf{v}, A \mathbf{w}\rangle=0,</script><p>所以 $A \mathbf{v} \in W^{\perp}$ ，从而 $W^{\perp}$ 是 $A$ 不变子空间。在 $K \cap W^{\perp}$ 上重复上述关于 $A$ 的讨论，得到 $\mathbf{v}<em>{k+1} \in K \cap W^{\perp}$ 使得 $A \mathbf{v}</em>{k+1}=\lambda<em>{k+1} \mathbf{v}</em>{k+1}$ 。<a href="##1.7.2">返回</a></p>
-<h6 id="p1">证明1.7.3</h6>
-
-<p>当固定三角形的周长和一条边时，其第三个点将落在以其余两点为焦点的椭圆上。为使面积最大，此点应落在使三角形等腰的位置。由于对称性，对三边都有此要求，因此三角形应为等边才能面积最大。<a href="##1.7.3">返回</a></p>
-<h6 id="p2">证明1.8</h6>
-
-<p><strong>存在性：</strong>观察迭代点列 $\mathbf{x}_{n}=f^{n}(\mathbf{x})$ ，可以证明这是一个Cauchy列：</p>
-<script type="math/tex; mode=display">
+g(\theta) &amp;=\left\langle A\left(\cos \theta \mathbf{v}_{1}+\sin
+\theta \mathbf{u}\right), \cos \theta \mathbf{v}_{1}+\sin \theta
+\mathbf{u}\right\rangle \\
+&amp;=\cos ^{2} \theta f\left(\mathbf{v}_{1}\right)+\sin ^{2} \theta
+f(\mathbf{u})+2 \sin \theta \cos \theta\left\langle A \mathbf{v}_{1},
+\mathbf{u}\right\rangle \\
+&amp;=g(0)+2 \theta\left\langle A \mathbf{v}_{1},
+\mathbf{u}\right\rangle+o(\theta), \quad \theta \rightarrow 0
+\end{aligned}
+\]</span> 因此 <span class="math inline">\(g^{\prime}(0)=2\left\langle A
+\mathbf{v}_{1}, \mathbf{u}\right\rangle=0\)</span> 。所以 <span
+class="math inline">\(A \mathbf{v}_{1}\)</span> 与 <span
+class="math inline">\(\mathbf{u}\)</span> 正交。由 <span
+class="math inline">\(\mathbf{u}\)</span> 的任意性知 <span
+class="math inline">\(A \mathbf{v}_{1}\)</span> 与 <span
+class="math inline">\(\mathbf{v}_{1}\)</span> 线性相关, 从而存在 <span
+class="math inline">\(\lambda_{1}\)</span> 使得 <span
+class="math inline">\(A \mathbf{v}_{1}=\lambda_{1}
+\mathbf{v}_{1}\)</span> 。</p>
+<p>2)证明可以扩展到 <span class="math inline">\(m\)</span> 组</p>
+<p>假设已经找到特征向量 <span class="math inline">\(\mathbf{v}_{1},
+\ldots, \mathbf{v}_{k}, k&lt;m\)</span> 。记它们张成的线性子空间为 <span
+class="math inline">\(W\)</span> ，而 <span
+class="math inline">\(W^{\perp}\)</span> 是 <span
+class="math inline">\(W\)</span> 的正交补空间。则 <span
+class="math inline">\(W\)</span> 是 <span
+class="math inline">\(A\)</span> 不变子空间（即 <span
+class="math inline">\(\forall \mathbf{w}\in W,A\mathbf{w}\in W\)</span>
+），<span class="math inline">\(\operatorname{dim} W^{\perp} \geq
+1\)</span> 。任取 <span class="math inline">\(\mathbf{v} \in
+W^{\perp}\)</span> 和 <span class="math inline">\(\mathbf{w} \in
+W\)</span>, <span class="math display">\[
+\langle A \mathbf{v}, \mathbf{w}\rangle=\langle\mathbf{v}, A
+\mathbf{w}\rangle=0,
+\]</span> 所以 <span class="math inline">\(A \mathbf{v} \in
+W^{\perp}\)</span> ，从而 <span class="math inline">\(W^{\perp}\)</span>
+是 <span class="math inline">\(A\)</span> 不变子空间。在 <span
+class="math inline">\(K \cap W^{\perp}\)</span> 上重复上述关于 <span
+class="math inline">\(A\)</span> 的讨论，得到 <span
+class="math inline">\(\mathbf{v}_{k+1} \in K \cap W^{\perp}\)</span>
+使得 <span class="math inline">\(A \mathbf{v}_{k+1}=\lambda_{k+1}
+\mathbf{v}_{k+1}\)</span> 。<a href="##1.7.2">返回</a></p>
+<h6 id="p1">
+证明1.7.3
+</h6>
+<p>当固定三角形的周长和一条边时，其第三个点将落在以其余两点为焦点的椭圆上。为使面积最大，此点应落在使三角形等腰的位置。由于对称性，对三边都有此要求，因此三角形应为等边才能面积最大。<a
+href="##1.7.3">返回</a></p>
+<h6 id="p2">
+证明1.8
+</h6>
+<p><strong>存在性：</strong>观察迭代点列 <span
+class="math inline">\(\mathbf{x}_{n}=f^{n}(\mathbf{x})\)</span>
+，可以证明这是一个Cauchy列： <span class="math display">\[
 \begin{aligned}
-\left\|\mathbf{x}_{n+p}-\mathbf{x}_{n}\right\| & \leq \sum_{k=1}^{p}\left\|\mathbf{x}_{n+k}-\mathbf{x}_{n+k-1}\right\| \leq \sum_{k=1}^{p} \lambda^{n+k-1}\|f(\mathbf{x})-\mathbf{x}\| \\
-& \leq \frac{\lambda^{n} }{1-\lambda}\|f(\mathbf{x})-\mathbf{x}\|
-\end{aligned}\tag{*}</script><p>因此存在 $\mathbf{x}^{<em>} \in \mathbb{R}^{m}$ 使得 $\lim\limits<em>{n \rightarrow+\infty} \mathbf{x}</em>{n}=\mathbf{x}^{</em>}$ 。因为 $E$ 是闭集, 所以 $\mathbf{x}^{*} \in E$ 。又</p>
-<script type="math/tex; mode=display">
+\left\|\mathbf{x}_{n+p}-\mathbf{x}_{n}\right\| &amp; \leq
+\sum_{k=1}^{p}\left\|\mathbf{x}_{n+k}-\mathbf{x}_{n+k-1}\right\| \leq
+\sum_{k=1}^{p} \lambda^{n+k-1}\|f(\mathbf{x})-\mathbf{x}\| \\
+&amp; \leq \frac{\lambda^{n} }{1-\lambda}\|f(\mathbf{x})-\mathbf{x}\|
+\end{aligned}\tag{*}
+\]</span> 因此存在 <span class="math inline">\(\mathbf{x}^{*} \in
+\mathbb{R}^{m}\)</span> 使得 <span class="math inline">\(\lim\limits_{n
+\rightarrow+\infty} \mathbf{x}_{n}=\mathbf{x}^{*}\)</span> 。因为 <span
+class="math inline">\(E\)</span> 是闭集, 所以 <span
+class="math inline">\(\mathbf{x}^{*} \in E\)</span> 。又 <span
+class="math display">\[
 \begin{aligned}
-\left\|f\left(\mathbf{x}^{*}\right)-\mathbf{x}^{*}\right\| & \leq\left\|f\left(\mathbf{x}^{*}\right)-f\left(\mathbf{x}_{n}\right)\right\|+\left\|f\left(\mathbf{x}_{n}\right)-\mathbf{x}^{*}\right\| \\
-& \leq \lambda\left\|\mathbf{x}^{*}-\mathbf{x}_{n}\right\|+\left\|\mathbf{x}_{n+1}-\mathbf{x}^{*}\right\| \rightarrow 0, \quad n \rightarrow+\infty
-\end{aligned}</script><p>因此 $f\left(\mathbf{x}^{<em>}\right)=\mathbf{x}^{</em>}$ ，即 $\mathbf{x}^{<em>}$ 就是不动点。让 $(</em>)$ 式中 $p\to+\infty$ 就可以得到</p>
-<script type="math/tex; mode=display">
-\left\|\mathbf{x}^{*}-\mathbf{x}_{n}\right\| \leq \frac{\lambda^{n} }{1-\lambda}\|f(\mathbf{x})-\mathbf{x}\|</script><p><strong>唯一性：</strong>若 $f\left(\mathbf{x}^{‘}\right)=\mathbf{x}^{‘}$, 则</p>
-<script type="math/tex; mode=display">
-\left\|\mathbf{x}^{'}-\mathbf{x}^{*}\right\|=\left\|f\left(\mathbf{x}^{'}\right)-f\left(\mathbf{x}^{*}\right)\right\| \leq \lambda\left\|\mathbf{x}^{'}-\mathbf{x}^{*}\right\| .</script><p>因此 $\mathbf{x}^{‘}=\mathbf{x}^{*}$ 。<a href="#1.8">返回</a></p>
-<h6 id="p3">证明1.9.1</h6>
-
-<p>这里仅证明该映射满足三角形不等式，即 $\left|L<em>{2}+ L</em>{1}\right| \leq\left|L<em>{2}\right|+\left|L</em>{1}\right|,L_1,L_2\in\mathbb R^{n\times m}$ 。设 $\mathbf{x}\in\mathbb R^m$ ，有</p>
-<script type="math/tex; mode=display">
+\left\|f\left(\mathbf{x}^{*}\right)-\mathbf{x}^{*}\right\| &amp;
+\leq\left\|f\left(\mathbf{x}^{*}\right)-f\left(\mathbf{x}_{n}\right)\right\|+\left\|f\left(\mathbf{x}_{n}\right)-\mathbf{x}^{*}\right\|
+\\
+&amp; \leq
+\lambda\left\|\mathbf{x}^{*}-\mathbf{x}_{n}\right\|+\left\|\mathbf{x}_{n+1}-\mathbf{x}^{*}\right\|
+\rightarrow 0, \quad n \rightarrow+\infty
+\end{aligned}
+\]</span> 因此 <span
+class="math inline">\(f\left(\mathbf{x}^{*}\right)=\mathbf{x}^{*}\)</span>
+，即 <span class="math inline">\(\mathbf{x}^{*}\)</span> 就是不动点。让
+<span class="math inline">\((*)\)</span> 式中 <span
+class="math inline">\(p\to+\infty\)</span> 就可以得到 <span
+class="math display">\[
+\left\|\mathbf{x}^{*}-\mathbf{x}_{n}\right\| \leq \frac{\lambda^{n}
+}{1-\lambda}\|f(\mathbf{x})-\mathbf{x}\|
+\]</span> <strong>唯一性：</strong>若 <span
+class="math inline">\(f\left(\mathbf{x}^{&#39;}\right)=\mathbf{x}^{&#39;}\)</span>,
+则 <span class="math display">\[
+\left\|\mathbf{x}^{&#39;}-\mathbf{x}^{*}\right\|=\left\|f\left(\mathbf{x}^{&#39;}\right)-f\left(\mathbf{x}^{*}\right)\right\|
+\leq \lambda\left\|\mathbf{x}^{&#39;}-\mathbf{x}^{*}\right\| .
+\]</span> 因此 <span
+class="math inline">\(\mathbf{x}^{&#39;}=\mathbf{x}^{*}\)</span> 。<a
+href="#1.8">返回</a></p>
+<h6 id="p3">
+证明1.9.1
+</h6>
+<p>这里仅证明该映射满足三角形不等式，即 <span
+class="math inline">\(\left\|L_{2}+ L_{1}\right\|
+\leq\left\|L_{2}\right\|+\left\|L_{1}\right\|,L_1,L_2\in\mathbb
+R^{n\times m}\)</span> 。设 <span
+class="math inline">\(\mathbf{x}\in\mathbb R^m\)</span> ，有 <span
+class="math display">\[
 \begin{aligned}
-\|(L_{2}+ L_{1})\mathbf{x}\| &\leq\|L_{2}\mathbf{x}\|+\|L_{1}\mathbf{x}\|\quad \text{（向量范数的三角形不等式）} \\
-&\leq\|L_1\| \|\mathbf{x}\|+\|L_2\| \|\mathbf{x}\| \quad \text{（定义）}\\
-&=(\|L_1\|+\|L_2\|)\|\mathbf{x}\|
-\end{aligned}</script><p>又由定义和向量范数的正齐次性知 $\dfrac{|(L<em>1+L_2)\mathbf{x}|}{|\mathbf{x}|}\geq\left|L</em>{2}+ L_{1}\right|$ ，证毕。<a href="#1.9">返回</a></p>
-<h6 id="p4">证明1.9.2</h6>
-
-<p>要证明 $\left|L<em>{2} L</em>{1}\right| \leq\left|L<em>{2}\right|\left|L</em>{1}\right|,L_1\in\mathbb R^{m\times n},L_2\in\mathbb R^{n\times p}$ 。设 $\mathbf{x}\in\mathbb R^p$ ，有</p>
-<script type="math/tex; mode=display">
+\|(L_{2}+ L_{1})\mathbf{x}\|
+&amp;\leq\|L_{2}\mathbf{x}\|+\|L_{1}\mathbf{x}\|\quad
+\text{（向量范数的三角形不等式）} \\
+&amp;\leq\|L_1\| \|\mathbf{x}\|+\|L_2\| \|\mathbf{x}\| \quad
+\text{（定义）}\\
+&amp;=(\|L_1\|+\|L_2\|)\|\mathbf{x}\|
+\end{aligned}
+\]</span> 又由定义和向量范数的正齐次性知 <span
+class="math inline">\(\dfrac{\|(L_1+L_2)\mathbf{x}\|}{\|\mathbf{x}\|}\geq\left\|L_{2}+
+L_{1}\right\|\)</span> ，证毕。<a href="#1.9">返回</a></p>
+<h6 id="p4">
+证明1.9.2
+</h6>
+<p>要证明 <span class="math inline">\(\left\|L_{2} L_{1}\right\|
+\leq\left\|L_{2}\right\|\left\|L_{1}\right\|,L_1\in\mathbb R^{m\times
+n},L_2\in\mathbb R^{n\times p}\)</span> 。设 <span
+class="math inline">\(\mathbf{x}\in\mathbb R^p\)</span> ，有 <span
+class="math display">\[
 \begin{aligned}
-\|L_1L_2\mathbf{x}\|&\leq\|L_1\|\|(L_2\mathbf{x})\|\quad\text{(定义)}\\
-&\leq\|L_1\|\|L_2\|\|\mathbf{x}\|\quad\text{(定义)}
-\end{aligned}</script><p>又因 $\dfrac{|L<em>1L_2\mathbf{x}|}{|\mathbf{x}|}\geq|L</em>{2}||L_{1}|$ ，证毕。<a href="#1.9">返回</a></p>
-<h6 id="p5">证明1.9.3</h6>
-
-<p>思路：通过转化为不动点问题来寻求 $I-B$ 形如 $I+C$ 的逆矩阵。我们发现</p>
-<script type="math/tex; mode=display">
-(I-B)(I+C)=I \text { 当且仅当 } C=B+B C \text {. }</script><p>记 $f: \mathcal{L}(m) \rightarrow \mathcal{L}(m), f(C)=B+B C$ ，于是问题变成了一个迭代是否存在不动点的问题。有</p>
-<script type="math/tex; mode=display">
-\left\|f\left(C_{1}\right)-f\left(C_{2}\right)\right\|=\left\|B C_{1}-B C_{2}\right\|=\left\|B\left(C_{1}-C_{2}\right)\right\| \leq\|B\|\left\|C_{1}-C_{2}\right\|</script><p>因为 $|B|&lt;1$ ，所以 $f$ 是压缩映射，根据压缩不动点定理，存在 $C \in \mathcal{L}(m)$ 使得 $f(C)=C$ 。因此 $I-B$ 可逆, $(I-B)^{-1}=I+C$ 。又因 $|C|=|B+B C| \leq|B|+|B||C|$ ，有 $|C| \leq \dfrac{|B|}{1-|B|}$ 。<a href="#1.9">返回</a></p>
-<h6 id="p6">证明1.10</h6>
-
-<script type="math/tex; mode=display">
+\|L_1L_2\mathbf{x}\|&amp;\leq\|L_1\|\|(L_2\mathbf{x})\|\quad\text{(定义)}\\
+&amp;\leq\|L_1\|\|L_2\|\|\mathbf{x}\|\quad\text{(定义)}
+\end{aligned}
+\]</span> 又因 <span
+class="math inline">\(\dfrac{\|L_1L_2\mathbf{x}\|}{\|\mathbf{x}\|}\geq\|L_{2}\|\|L_{1}\|\)</span>
+，证毕。<a href="#1.9">返回</a></p>
+<h6 id="p5">
+证明1.9.3
+</h6>
+<p>思路：通过转化为不动点问题来寻求 <span
+class="math inline">\(I-B\)</span> 形如 <span
+class="math inline">\(I+C\)</span> 的逆矩阵。我们发现 <span
+class="math display">\[
+(I-B)(I+C)=I \text { 当且仅当 } C=B+B C \text {. }
+\]</span> 记 <span class="math inline">\(f: \mathcal{L}(m) \rightarrow
+\mathcal{L}(m), f(C)=B+B C\)</span>
+，于是问题变成了一个迭代是否存在不动点的问题。有 <span
+class="math display">\[
+\left\|f\left(C_{1}\right)-f\left(C_{2}\right)\right\|=\left\|B C_{1}-B
+C_{2}\right\|=\left\|B\left(C_{1}-C_{2}\right)\right\|
+\leq\|B\|\left\|C_{1}-C_{2}\right\|
+\]</span> 因为 <span class="math inline">\(\|B\|&lt;1\)</span> ，所以
+<span class="math inline">\(f\)</span>
+是压缩映射，根据压缩不动点定理，存在 <span class="math inline">\(C \in
+\mathcal{L}(m)\)</span> 使得 <span class="math inline">\(f(C)=C\)</span>
+。因此 <span class="math inline">\(I-B\)</span> 可逆, <span
+class="math inline">\((I-B)^{-1}=I+C\)</span> 。又因 <span
+class="math inline">\(\|C\|=\|B+B C\| \leq\|B\|+\|B\|\|C\|\)</span> ，有
+<span class="math inline">\(\|C\| \leq \dfrac{\|B\|}{1-\|B\|}\)</span>
+。<a href="#1.9">返回</a></p>
+<h6 id="p6">
+证明1.10
+</h6>
+<p><span class="math display">\[
 \begin{aligned}
-&\|\mathbf{x}(A+\Delta A, \mathbf{b}+\Delta \mathbf{b})-\mathbf{x}(A, \mathbf{b})\| \\
-=&\left\|\left((A+\Delta A)^{-1}-A^{-1}\right) \mathbf{b}+(A+\Delta A)^{-1} \Delta \mathbf{b}\right\| \\
-\leq & \frac{\left\|A^{-1}\right\|^{2}\|\Delta A\|\|\mathbf{b}\|}{1-\left\|A^{-1}\right\|\|\Delta A\|}+\left(\left\|A^{-1}\right\|+\frac{\left\|A^{-1}\right\|^{2}\|\Delta A\|}{1-\left\|A^{-1}\right\|\|\Delta A\|}\right)\|\Delta \mathbf{b}\|
-\end{aligned}</script><p>对任意 $\varepsilon&gt;0$ ，当</p>
-<script type="math/tex; mode=display">
-\|\Delta \mathbf{b}\|<\frac{\varepsilon}{4\left\|A^{-1}\right\|}, \quad\|\Delta A\|<\frac{\varepsilon}{4\left\|A^{-1}\right\|^{2}\|\mathbf{b}\|+2\left\|A^{-1}\right\| \varepsilon}</script><p>时, $|\mathbf{x}(A+\Delta A, \mathbf{b}+\Delta \mathbf{b})-\mathbf{x}(A, \mathbf{b})|&lt;\varepsilon$ 。所以 $\mathbf{x}(A, \mathbf{b})$ 连续。<a href="#1.10">返回</a></p>
-</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/2022%E6%98%A5%E5%AD%A3/">2022春季</a><a class="post-meta__tags" href="/tags/%E5%A4%9A%E5%85%83%E5%BE%AE%E7%A7%AF%E5%88%86/">多元微积分</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62b11572b25ab3ab" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88first%20week%EF%BC%89/"><img class="prev-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Johny Goerend (f01YC_nH3XE).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">多元函数的连续性</div></div></a></div><div class="next-post pull-right"><a href="/2022/03/06/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E7%99%BE%E5%B9%B4%E4%BB%A5%E5%90%8E%E6%96%B0%E9%9D%92%E5%B9%B4/"><img class="next-cover" src="https://pic.imgdb.cn/item/61f106842ab3f51d917b1e63.jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">百年以后新青年</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork01/" title="多元微积分作业（一）"><img class="cover" src="https://pic.imgdb.cn/item/61f1068c2ab3f51d917b24cb.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-10</div><div class="title">多元微积分作业（一）</div></div></a></div><div><a href="/2022/03/09/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf03/" title="多元函数的导数与微分"><img class="cover" src="https://pic.imgdb.cn/item/61eccc472ab3f51d91d6f5d1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-09</div><div class="title">多元函数的导数与微分</div></div></a></div><div><a href="/2022/03/13/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf02/" title="多元函数的极限"><img class="cover" src="https://pic.imgdb.cn/item/61f106b42ab3f51d917b5210.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-13</div><div class="title">多元函数的极限</div></div></a></div><div><a href="/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Complex%20matrix%EF%BC%88Chapter%201%EF%BC%89/" title="复矩阵"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Hoach Le Dinh (Besxfn2Z8fo).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-14</div><div class="title">复矩阵</div></div></a></div><div><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88first%20week%EF%BC%89/" title="多元函数的连续性"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Johny Goerend (f01YC_nH3XE).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-06</div><div class="title">多元函数的连续性</div></div></a></div><div><a href="/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20three%EF%BC%89/" title="多元函数的导数与微分"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Buzz Andersen (E4944K_4SvI).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-10</div><div class="title">多元函数的导数与微分</div></div></a></div><div><a href="/2022/03/11/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20four%EF%BC%89/" title="高阶导数与 Taylor 公式"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Chris Henry (ZaT1RghkxsE).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-11</div><div class="title">高阶导数与 Taylor 公式</div></div></a></div><div><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%20%EF%BC%88Chapter%20two%EF%BC%89/" title="多元函数的极限"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Matthew Buchanan (ZTXr4ObIuOw).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-06</div><div class="title">多元函数的极限</div></div></a></div><div><a href="/2022/02/22/CS/others/Tsing_answer_analysis/" title="答疑坊数据统计"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by eberhard 🖐 grossgasteiger (v37iUOL2e8U).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-22</div><div class="title">答疑坊数据统计</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">第一章 多元函数的连续性</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E7%A9%BA%E9%97%B4"><span class="toc-number">1.0.1.</span> <span class="toc-text">1.空间</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E8%B7%9D%E7%A6%BB"><span class="toc-number">1.0.2.</span> <span class="toc-text">2.距离</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.3"><span class="toc-number">1.0.3.</span> <span class="toc-text">3.范数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%86%85%E7%A7%AF"><span class="toc-number">1.0.4.</span> <span class="toc-text">4.内积</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.5"><span class="toc-number">1.0.5.</span> <span class="toc-text">5.点列的极限</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.6"><span class="toc-number">1.0.6.</span> <span class="toc-text">6.连续函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.7"><span class="toc-number">1.0.7.</span> <span class="toc-text">7.有界闭集上的连续映射</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="##1.7.2"><span class="toc-number">1.0.7.1.</span> <span class="toc-text">应用：对称线性变换的特征值与特征向量</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="##1.7.3"><span class="toc-number">1.0.7.2.</span> <span class="toc-text">应用：等周三角形</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.8"><span class="toc-number">1.0.8.</span> <span class="toc-text">8.压缩映射原理（验证连续性的重要工具！）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.9"><span class="toc-number">1.0.9.</span> <span class="toc-text">9.矩阵的算子范数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.10"><span class="toc-number">1.0.10.</span> <span class="toc-text">10.误差扰动下线性方程的解</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#11-%E8%BF%9E%E9%80%9A%E6%80%A7%E4%B8%8E%E8%BF%9E%E7%BB%AD%E6%80%A7"><span class="toc-number">1.0.11.</span> <span class="toc-text">11.连通性与连续性</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%81%E6%98%8E%E5%8C%BA"><span class="toc-number">1.1.</span> <span class="toc-text">证明区</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#p7"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">证明1.5</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p8"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">证明1.6</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p9"><span class="toc-number">1.1.0.3.</span> <span class="toc-text">证明1.7.1</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p10"><span class="toc-number">1.1.0.4.</span> <span class="toc-text">证明1.7.2</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p1"><span class="toc-number">1.1.0.5.</span> <span class="toc-text">证明1.7.3</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p2"><span class="toc-number">1.1.0.6.</span> <span class="toc-text">证明1.8</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p3"><span class="toc-number">1.1.0.7.</span> <span class="toc-text">证明1.9.1</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p4"><span class="toc-number">1.1.0.8.</span> <span class="toc-text">证明1.9.2</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p5"><span class="toc-number">1.1.0.9.</span> <span class="toc-text">证明1.9.3</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p6"><span class="toc-number">1.1.0.10.</span> <span class="toc-text">证明1.10</span></a></li></ol></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: ＃0096FF"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
+&amp;\|\mathbf{x}(A+\Delta A, \mathbf{b}+\Delta
+\mathbf{b})-\mathbf{x}(A, \mathbf{b})\| \\
+=&amp;\left\|\left((A+\Delta A)^{-1}-A^{-1}\right) \mathbf{b}+(A+\Delta
+A)^{-1} \Delta \mathbf{b}\right\| \\
+\leq &amp; \frac{\left\|A^{-1}\right\|^{2}\|\Delta
+A\|\|\mathbf{b}\|}{1-\left\|A^{-1}\right\|\|\Delta
+A\|}+\left(\left\|A^{-1}\right\|+\frac{\left\|A^{-1}\right\|^{2}\|\Delta
+A\|}{1-\left\|A^{-1}\right\|\|\Delta A\|}\right)\|\Delta \mathbf{b}\|
+\end{aligned}
+\]</span></p>
+<p>对任意 <span class="math inline">\(\varepsilon&gt;0\)</span> ，当
+<span class="math display">\[
+\|\Delta \mathbf{b}\|&lt;\frac{\varepsilon}{4\left\|A^{-1}\right\|},
+\quad\|\Delta
+A\|&lt;\frac{\varepsilon}{4\left\|A^{-1}\right\|^{2}\|\mathbf{b}\|+2\left\|A^{-1}\right\|
+\varepsilon}
+\]</span> 时, <span class="math inline">\(\|\mathbf{x}(A+\Delta A,
+\mathbf{b}+\Delta \mathbf{b})-\mathbf{x}(A,
+\mathbf{b})\|&lt;\varepsilon\)</span> 。所以 <span
+class="math inline">\(\mathbf{x}(A, \mathbf{b})\)</span> 连续。<a
+href="#1.10">返回</a></p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%A4%9A%E5%85%83%E5%BE%AE%E7%A7%AF%E5%88%86/">多元微积分</a><a class="post-meta__tags" href="/tags/2022%E6%98%A5%E5%AD%A3/">2022春季</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62b11572b25ab3ab" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88first%20week%EF%BC%89/"><img class="prev-cover" src="https://pic.imgdb.cn/item/61ed143f2ab3f51d911d4294.jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">多元函数的连续性</div></div></a></div><div class="next-post pull-right"><a href="/2022/03/06/%E9%9A%8F%E7%AC%94/%E5%8D%9A%E6%96%87/%E7%99%BE%E5%B9%B4%E4%BB%A5%E5%90%8E%E6%96%B0%E9%9D%92%E5%B9%B4/"><img class="next-cover" src="https://pic.imgdb.cn/item/61f106862ab3f51d917b202b.jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">百年以后新青年</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork01/" title="多元微积分作业（一）"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Siyuan (keOUXTvzuAA).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-10</div><div class="title">多元微积分作业（一）</div></div></a></div><div><a href="/2022/03/09/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf03/" title="多元函数的导数与微分"><img class="cover" src="https://pic.imgdb.cn/item/61f106922ab3f51d917b2b9f.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-09</div><div class="title">多元函数的导数与微分</div></div></a></div><div><a href="/2022/03/13/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf02/" title="多元函数的极限"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Josh Gordon (pR166OP_l6g).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-13</div><div class="title">多元函数的极限</div></div></a></div><div><a href="/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Complex%20matrix%EF%BC%88Chapter%201%EF%BC%89/" title="复矩阵"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Steve Taylor (3GwfWSkM-XI).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-14</div><div class="title">复矩阵</div></div></a></div><div><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88first%20week%EF%BC%89/" title="多元函数的连续性"><img class="cover" src="https://pic.imgdb.cn/item/61ed143f2ab3f51d911d4294.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-06</div><div class="title">多元函数的连续性</div></div></a></div><div><a href="/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20three%EF%BC%89/" title="多元函数的导数与微分"><img class="cover" src="https://pic.imgdb.cn/item/61eccb4d2ab3f51d91d616f7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-10</div><div class="title">多元函数的导数与微分</div></div></a></div><div><a href="/2022/03/11/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20four%EF%BC%89/" title="高阶导数与 Taylor 公式"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by redcharlie (LQK8R7wjv4w).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-11</div><div class="title">高阶导数与 Taylor 公式</div></div></a></div><div><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%20%EF%BC%88Chapter%20two%EF%BC%89/" title="多元函数的极限"><img class="cover" src="https://pic.imgdb.cn/item/61f106842ab3f51d917b1e6e.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-06</div><div class="title">多元函数的极限</div></div></a></div><div><a href="/2022/03/17/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Gauss%E5%85%AC%E5%BC%8F%E5%92%8CStokes%E5%85%AC%E5%BC%8F/" title="多元微积分 Gauss 公式与 Stokes 公式总结"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Matthew Buchanan (ZTXr4ObIuOw).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-17</div><div class="title">多元微积分 Gauss 公式与 Stokes 公式总结</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">第一章
+多元函数的连续性</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4"><span class="toc-number">1.0.1.</span> <span class="toc-text">1.空间</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B7%9D%E7%A6%BB"><span class="toc-number">1.0.2.</span> <span class="toc-text">2.距离</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.3"><span class="toc-number">1.0.3.</span> <span class="toc-text">
+3.范数
+</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%86%85%E7%A7%AF"><span class="toc-number">1.0.4.</span> <span class="toc-text">4.内积</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.5"><span class="toc-number">1.0.5.</span> <span class="toc-text">
+5.点列的极限
+</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.6"><span class="toc-number">1.0.6.</span> <span class="toc-text">
+6.连续函数
+</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.7"><span class="toc-number">1.0.7.</span> <span class="toc-text">
+7.有界闭集上的连续映射
+</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="##1.7.2"><span class="toc-number">1.0.7.1.</span> <span class="toc-text">
+应用：对称线性变换的特征值与特征向量
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="##1.7.3"><span class="toc-number">1.0.7.2.</span> <span class="toc-text">
+应用：等周三角形
+</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.8"><span class="toc-number">1.0.8.</span> <span class="toc-text">
+8.压缩映射原理（验证连续性的重要工具！）
+</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.9"><span class="toc-number">1.0.9.</span> <span class="toc-text">
+9.矩阵的算子范数
+</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1.10"><span class="toc-number">1.0.10.</span> <span class="toc-text">
+10.误差扰动下线性方程的解
+</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%9E%E9%80%9A%E6%80%A7%E4%B8%8E%E8%BF%9E%E7%BB%AD%E6%80%A7"><span class="toc-number">1.0.11.</span> <span class="toc-text">11.连通性与连续性</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%81%E6%98%8E%E5%8C%BA"><span class="toc-number">1.1.</span> <span class="toc-text">证明区</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#p7"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">
+证明1.5
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p8"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">
+证明1.6
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p9"><span class="toc-number">1.1.0.3.</span> <span class="toc-text">
+证明1.7.1
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p10"><span class="toc-number">1.1.0.4.</span> <span class="toc-text">
+证明1.7.2
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p1"><span class="toc-number">1.1.0.5.</span> <span class="toc-text">
+证明1.7.3
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p2"><span class="toc-number">1.1.0.6.</span> <span class="toc-text">
+证明1.8
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p3"><span class="toc-number">1.1.0.7.</span> <span class="toc-text">
+证明1.9.1
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p4"><span class="toc-number">1.1.0.8.</span> <span class="toc-text">
+证明1.9.2
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p5"><span class="toc-number">1.1.0.9.</span> <span class="toc-text">
+证明1.9.3
+</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#p6"><span class="toc-number">1.1.0.10.</span> <span class="toc-text">
+证明1.10
+</span></a></li></ol></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: ＃0096FF"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
   var options = JSON.parse(document.getElementById('maid-script').getAttribute('mermaidoptioins'));
   mermaid.initialize(options);
 }</script></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库正在艰难运行</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
