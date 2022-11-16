@@ -5,13 +5,13 @@
 <meta property="og:site_name" content="I&#39;LL TAKE YOU TO THE MOON">
 <meta property="og:description" content="人生就像Splay树——输麻了...">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Samuel Ferrara (6dqCCs0vCcU).jpg">
+<meta property="og:image" content="https://pic.imgdb.cn/item/61f0fc662ab3f51d9172fef0.jpg">
 <meta property="article:published_time" content="2021-12-13T15:12:18.246Z">
 <meta property="article:modified_time" content="2022-08-26T15:35:35.183Z">
 <meta property="article:author" content="Eren Zhao">
 <meta property="article:tag" content="跪系的普通学生">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Samuel Ferrara (6dqCCs0vCcU).jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2021/12/13/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/BBST/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/61f0fc662ab3f51d9172fef0.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2021/12/13/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/BBST/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"麻了，找不到您查询的内容：${query}"}},
@@ -147,722 +147,608 @@
     }
     detectApple()
     })(window)</script><link rel="stylesheet" href="/css/mouse.css"><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="I'LL TAKE YOU TO THE MOON" type="application/atom+xml">
-<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">194</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">52</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Samuel Ferrara (6dqCCs0vCcU).jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">I'LL TAKE YOU TO THE MOON</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">BBST实验报告</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-13T15:12:18.246Z" title="发表于 2021-12-13 23:12:18">2021-12-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-26T15:35:35.183Z" title="更新于 2022-08-26 23:35:35">2022-08-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/DSA/">DSA</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">5.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>20分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="BBST实验报告"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="lab3-bbst">Lab3 BBST</h1>
-<h2 id="一数据结构">一、数据结构</h2>
-<h3 id="具体实现">1. 具体实现</h3>
-<p>本次实现的数据结构为<code>AVL</code>树与<code>Splay</code>树，现就两个数据结构的核心功能和公共接口实现方法进行说明。</p>
-<h4 id="splay">1.1 <code>Splay</code></h4>
-<p>Splay 树的主要操作是 <code>splay()</code>，每次增删查都将
-<code>_hot</code> 节点伸展至根。</p>
-<p>参考邓老师的讲义，基于<code>Tarjan</code>的画龙点睛之笔，对于 <span
-class="math inline">\(v\)</span> 节点，其父亲 <span
-class="math inline">\(p\)</span>，其祖父 <span
-class="math inline">\(g\)</span>，如果 <code>v、p、g</code>
-为之字形，则从父亲<code>p</code>出发逐层进行<code>zig</code>或者<code>zag</code>。而三者不为之字形时，则祖先<code>g</code>先进行旋转，随后再旋转父亲<code>p</code>。从而避免了逐层旋转可能出现的最坏情况。</p>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">194</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">52</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/61f0fc662ab3f51d9172fef0.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">I'LL TAKE YOU TO THE MOON</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">BBST实验报告</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-13T15:12:18.246Z" title="发表于 2021-12-13 23:12:18">2021-12-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-26T15:35:35.183Z" title="更新于 2022-08-26 23:35:35">2022-08-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/DSA/">DSA</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="BBST实验报告"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Lab3-BBST"><a href="#Lab3-BBST" class="headerlink" title="Lab3 BBST"></a>Lab3 BBST</h1><h2 id="一、数据结构"><a href="#一、数据结构" class="headerlink" title="一、数据结构"></a>一、数据结构</h2><h3 id="1-具体实现"><a href="#1-具体实现" class="headerlink" title="1. 具体实现"></a>1. 具体实现</h3><p>本次实现的数据结构为<code>AVL</code>树与<code>Splay</code>树，现就两个数据结构的核心功能和公共接口实现方法进行说明。</p>
+<h4 id="1-1-Splay"><a href="#1-1-Splay" class="headerlink" title="1.1 Splay"></a>1.1 <code>Splay</code></h4><p>Splay 树的主要操作是 <code>splay()</code>，每次增删查都将 <code>_hot</code> 节点伸展至根。</p>
+<p>参考邓老师的讲义，基于<code>Tarjan</code>的画龙点睛之笔，对于 $v$ 节点，其父亲 $p$，其祖父 $g$，如果 <code>v、p、g</code> 为之字形，则从父亲<code>p</code>出发逐层进行<code>zig</code>或者<code>zag</code>。而三者不为之字形时，则祖先<code>g</code>先进行旋转，随后再旋转父亲<code>p</code>。从而避免了逐层旋转可能出现的最坏情况。</p>
 <p>如此往复，直到将<code>_hot</code>伸展至根为止。</p>
-<h4 id="rotateat与34重构">1.2
-<code>rotateAt</code>与<code>3+4</code>重构</h4>
-<p><code>AVL</code>树的主要操作是通过<code>rotateAt</code>与<code>3+4</code>重构恢复平衡。为此在<code>rotateAt</code>中同样考察<span
-class="math inline">\(v\)</span> 节点，其父亲 <span
-class="math inline">\(p\)</span>，其祖父 <span
-class="math inline">\(g\)</span>，按三者的位置关系分为<code>zig-zig、zig-zag、zag-zig、zag-zag</code>，依照大小关系和左右子树的相应大小（实际上<code>zig</code>和<code>zag</code>表达的即是大小关系），调用公共接口<code>connect34</code>即可。</p>
+<h4 id="1-2-rotateAt与3-4重构"><a href="#1-2-rotateAt与3-4重构" class="headerlink" title="1.2 rotateAt与3+4重构"></a>1.2 <code>rotateAt</code>与<code>3+4</code>重构</h4><p><code>AVL</code>树的主要操作是通过<code>rotateAt</code>与<code>3+4</code>重构恢复平衡。为此在<code>rotateAt</code>中同样考察$v$ 节点，其父亲 $p$，其祖父 $g$，按三者的位置关系分为<code>zig-zig、zig-zag、zag-zig、zag-zag</code>，依照大小关系和左右子树的相应大小（实际上<code>zig</code>和<code>zag</code>表达的即是大小关系），调用公共接口<code>connect34</code>即可。</p>
 <p>需要提出的是，<code>connect34</code>本身只能完成<code>v、p、g</code>之间父子关系的链接，因此需要在调用之前先将新的局部的根链接上之前局部子树的根的父节点。且在<code>connect34</code>中还需考虑判定子树是否为空，最后还需在函数体内维护高度，即对<code>v、p、g</code>都调用<code>updateHeight</code>。</p>
-<h4 id="搜索">1.3 搜索</h4>
-<p>考虑到题目设计，实际上对<code>AVL</code>树与<code>Splay</code>树的搜索都可以基于<code>BST</code>的搜索算法直接模改得到。因为搜索返回的是不大于<code>key</code>的最大节点的值，故而在<code>tree</code>中设置<code>BinNodePosi&lt;T&gt; _max = nullptr;</code>用于辅助<code>search</code>功能。</p>
+<h4 id="1-3-搜索"><a href="#1-3-搜索" class="headerlink" title="1.3 搜索"></a>1.3 搜索</h4><p>考虑到题目设计，实际上对<code>AVL</code>树与<code>Splay</code>树的搜索都可以基于<code>BST</code>的搜索算法直接模改得到。因为搜索返回的是不大于<code>key</code>的最大节点的值，故而在<code>tree</code>中设置<code>BinNodePosi&lt;T&gt; _max = nullptr;</code>用于辅助<code>search</code>功能。</p>
 <p>在邓老师的示例代码<code>SearchIn</code>函数中添加逻辑，每当搜索到的节点当前节点的值大于<code>_max</code>的节点值时，将<code>_max</code>更新为当前节点。随后在主函数中根据<code>_max</code>是否存在，输出相应的值即可。</p>
 <p>当然，<code>Splay</code>树对于搜索到的节点需要进行伸展，这仅仅需要在主函数中对<code>_hot</code>进行一次<code>Splay</code>即可。</p>
-<h4 id="删除">1.4 删除</h4>
-<p>删除无非就是基于<code>BST</code>的删除接口进行改动。</p>
+<h4 id="1-4-删除"><a href="#1-4-删除" class="headerlink" title="1.4 删除"></a>1.4 删除</h4><p>删除无非就是基于<code>BST</code>的删除接口进行改动。</p>
 <p>对于<code>BST</code>而言，首先进行搜索，由于题目规定，搜索必然成功。如果搜索到的节点是叶节点，则删去叶节点随后更新高度即可。如果不是叶节点，则将其不断与中序遍历意义下的<code>succ</code>节点交换，直到交换到叶节点为止，随后删除。</p>
 <p>对于<code>Splay</code>树，删除节点后将<code>_hot</code>节点伸展至根即可。不过注意到，不仅仅<code>search</code>会改变<code>_hot</code>，实际上在调用<code>succ</code>接口的时候也会改变<code>_hot</code>，故而这一语义约定是完备的。</p>
 <p>对于<code>AVL</code>树，删除之后沿着<code>_hot</code>节点向上不断判定是否失衡，倘若失衡则调用<code>rotateAt</code>接口进行重构即可。不过需要留意的是，时刻牢记着维护节点间拓扑关系。</p>
-<h4 id="插入">1.5 插入</h4>
-<p><code>Splay</code>树的插入先调用重写后的<code>search</code>接口，此时<code>_hot</code>已经被延展到树根，对此时的树根插入新的节点即可。</p>
+<h4 id="1-5-插入"><a href="#1-5-插入" class="headerlink" title="1.5 插入"></a>1.5 插入</h4><p><code>Splay</code>树的插入先调用重写后的<code>search</code>接口，此时<code>_hot</code>已经被延展到树根，对此时的树根插入新的节点即可。</p>
 <p><code>AVL</code>树的插入基于<code>BST</code>的插入实现拓扑关系连接后，从<code>_hot</code>开始逐层检测是否失衡。检测到第一次失衡后，将其复原即可退出循环。</p>
-<h3 id="复杂度分析">2. 复杂度分析</h3>
-<p>空间复杂度上，各平衡二叉树与向量无异，均是 <span
-class="math inline">\(O(n)\)</span>，以下讨论时间复杂度。</p>
-<h4 id="avl-树">2.1. AVL 树</h4>
-<p>参考讲义P723页的分析示意图，设一个高度为<span
-class="math inline">\(h\)</span>的<code>AVL</code>树至少有<span
-class="math inline">\(S(h)\)</span>个节点，则： <span
-class="math display">\[
+<h3 id="2-复杂度分析"><a href="#2-复杂度分析" class="headerlink" title="2. 复杂度分析"></a>2. 复杂度分析</h3><p>空间复杂度上，各平衡二叉树与向量无异，均是 $O(n)$，以下讨论时间复杂度。</p>
+<h4 id="2-1-AVL-树"><a href="#2-1-AVL-树" class="headerlink" title="2.1. AVL 树"></a>2.1. AVL 树</h4><p>参考讲义P723页的分析示意图，设一个高度为$h$的<code>AVL</code>树至少有$S(h)$个节点，则：</p>
+<script type="math/tex; mode=display">
 S(h) = 1 + S(h - 1) + S(h - 2) \\
-S(h) + 1 = (S(h - 1) + 1) + (S(h - 2) + 1)
-\]</span> 可得高度为<span
-class="math inline">\(h\)</span>的<code>AVL</code>平衡树至少有 <span
-class="math inline">\(fib(h)\)</span>个节点，而<span
-class="math inline">\(fib(h)\)</span>大约呈<span
-class="math inline">\(\Phi^h\)</span>，指数式增长。故大小为<span
-class="math inline">\(k\)</span>的<code>AVL</code>树的高度为 <span
-class="math inline">\(O(\log k)\)</span>。</p>
-<p>这正是<code>BBST</code>所达到的等效平衡所在，同时意味着<code>AVL</code>树的<code>search</code>复杂度为
-<span class="math inline">\(O(\log n)\)</span>。</p>
-<p><code>P730</code>页指出，每次插入导致的失衡通过至多一次单旋或者双旋即可解决，故而修复的复杂度为
-<span
-class="math inline">\(O(1)\)</span>，最终插入的复杂度取决于向下搜索的高度，即
-<span class="math inline">\(O(\log n)\)</span>。</p>
-<p><code>P734</code>页指出，每次删除导致的失衡可能会导致从删除节点处到根均需进行重构复衡操作，故而旋转次数至多为
-<span class="math inline">\(O(\log
-n)\)</span>，综合查询操作可知删除的总体复杂度仍为 <span
-class="math inline">\(O(\log n)\)</span>。</p>
-<p>综上所述，<code>AVL</code>树的增删查操作时间复杂度均为 <span
-class="math inline">\(O(\log n)\)</span>，考虑到共计<span
-class="math inline">\(n\)</span>次操作，总体的时间复杂度为 <span
-class="math inline">\(O(n \log n)\)</span>。</p>
-<h4 id="splay-树">2.2. Splay 树</h4>
-<p>参考习题解析中对<code>Tarjan</code>原论文的解读，我们采用势能法分析<code>Splay</code>树的时间复杂度。</p>
-<p>仿照物理学的思想和概念, 这里可假想式地认为,
-每棵伸展树<code>S</code>都具有一定量(非负)的势 能 (potential), 记作$ (S)
-<span class="math inline">\(。于是,
-若经过某一操作并相应地通过旋转完成伸展之后\)</span>S$演化为另一伸展树
-<span class="math inline">\({ S}^{\prime}\)</span> , 则对应的势能变化为:
-<span class="math inline">\(\Delta
-\Phi=\Phi\left(S^{\prime}\right)-\Phi(S)\)</span></p>
-<p>推而广之, 考查对某伸展树 <span
-class="math inline">\(S\)</span>连续实施<span class="math inline">\(m
-\gg n\)</span>次操作的过程。将第<span
-class="math inline">\(i\)</span>次操作后的伸展树记作$<em>{} <span
-class="math inline">\(, 则有:\)</span></em>{i}=(S_{i})-(S_{i-1}), i
-m$</p>
-<p>而从该过程的整体来看, 应有<span class="math inline">\(\Delta
-\Phi=\sum_{i=1}^{m}\left[\Phi\left(S_{i}\right)-\Phi\left(S_{i-1}\right)\right]=\Phi\left(S_{m}\right)-\Phi\left(S_{\theta}\right)\)</span></p>
-<p>也就是说,
-整体的势能变化量仅取决于最初和最终状态一一这与物理学中势能场的规律吻合。势能函数与物理学中势能的另一相似之处在于,
-它也可以被看作是能量（计算成本）的一种 存在形式。比如,
-当某一步计算实际所需的时间小于分摊复杂度时,
-则可理解为通过势能的增加将提前支出的计算成本存储起来；反之，在前者大于后者时，则可从此前积累的势能中支取相应量用于支付超出的计算成本。</p>
-<p>以下，若将第<span
-class="math inline">\(i\)</span>次操作的分摊复杂度取作实际复杂度与势能变化量之和,即<span
-class="math inline">\(A=T_{i}+\Delta \Phi_{i}\)</span> 。则有<span
-class="math inline">\(\sum_{\mathrm{i}=1}^{\mathrm{m}}
-\mathrm{A}_{\mathrm{i}}=\sum_{\mathrm{i}=1}^{\mathrm{m}}
-\mathrm{T}_{\mathrm{i}}+\left[\Phi\left(\mathrm{S}_{\mathrm{m}}\right)-\Phi\left(\mathrm{S}_{\theta}\right)\right]\)</span></p>
-<p>然而<span class="math inline">\(m\)</span>状态和初始状态<span
-class="math inline">\(0\)</span>的势能大小并不能确定，经过<span
-class="math inline">\(m\)</span>次操作后，伸展树的势能可能上升也可能下降，故而并不能给出总体实际运行时间和总体分摊运行时间的绝对大小关系。只能够类似课件上所讲，当<span
-class="math inline">\(m\gg n\)</span>时，能够通过分摊的方法确定<span
-class="math inline">\(A_i\)</span>与<span
-class="math inline">\(T_i\)</span>为同一数量级。</p>
-<p>也即： <span class="math display">\[
-\sum_{i=1}^{m} A_{i}-\Phi\left(S_{m}\right)&lt;\sum_{i=1}^{m}
-T_{i}&lt;\sum_{i=1}^{m} A_{i}+\Phi\left(S_{0}\right)\\
-\sum_{i=1}^{m} A_{i}-O(nlog(n))&lt;\sum_{i=1}^{m}
-T_{i}&lt;\sum_{i=1}^{m} A_{i}+O(nlog(n))\\
-A_{i}-O(\frac{n}{m}log(n))&lt;T_{i}&lt;\sum_{i=1}^{m}
-A_{i}+O(\frac{n}{m}log(n))
-\]</span> 从而得<span class="math inline">\(A_i\)</span>与<span
-class="math inline">\(T_i\)</span>为同一数量级，故而后者的均摊变化程度即为前者的均摊复杂度。</p>
-<p><code>R.E.Tarjan</code>使用如下势能函数:<span
-class="math inline">\(\Phi(S)=\sum_{v \in S} \log |v|\)</span> , 其中
-<span class="math inline">\(|v|=\)</span>节点<span
-class="math inline">\(v\)</span>的后代数目。</p>
-<p>基于此，我们证明伸展树单次操作的分推时间复杂度为<span
-class="math inline">\(O(\operatorname{logn})\)</span>。为此,
-以下将分三种情况(其余情况不过是它们的对称形式)证明: 在对节点 v
-的伸展过程中，每一步调整所需时间均不超过 v 的势能变化的3倍，即:<span
-class="math inline">\(3
-\cdot\left[\Phi^{\prime}(v)-\Phi(v)\right]\)</span></p>
-<p>情况A) <code>Zig</code> 如教材第8.1.3节所述,
-这种情况在伸展树的每次操作中至多发生一次,
-而且只能是伸展调整过程的最后一步。作为单旋，这一步调整实际所需时间为$
-T=O(1) $。同时由教材207页图<code>8.5</code>,
-这步调整过程中只有节点<code>v</code> 和<code>p</code>的势能有所变化,
-且<code>v(p)</code>后代增加(减少)势能必上升(下降),
-故对应的分推复杂度为:</p>
-<p><span class="math inline">\(A=T+\Delta \Phi=1+\Delta \Phi(p)+\Delta
-\Phi(v) \leq 1+\left[\Phi^{\prime}(v)-\Phi(v)\right]\)</span></p>
-<p>情况B) <code>Zig-Zag</code> 作为双旋的组合, 这一调整实际所需时间为$
-T=O(2) $。于是由教材<code>206</code>页图8.4可知: <span
-class="math display">\[
+S(h) + 1 = (S(h - 1) + 1) + (S(h - 2) + 1)</script><p>可得高度为$h$的<code>AVL</code>平衡树至少有 $fib(h)$个节点，而$fib(h)$大约呈$\Phi^h$，指数式增长。故大小为$k$的<code>AVL</code>树的高度为 $O(\log k)$。</p>
+<p>这正是<code>BBST</code>所达到的等效平衡所在，同时意味着<code>AVL</code>树的<code>search</code>复杂度为 $O(\log n)$。</p>
+<p><code>P730</code>页指出，每次插入导致的失衡通过至多一次单旋或者双旋即可解决，故而修复的复杂度为 $O(1)$，最终插入的复杂度取决于向下搜索的高度，即 $O(\log n)$。</p>
+<p><code>P734</code>页指出，每次删除导致的失衡可能会导致从删除节点处到根均需进行重构复衡操作，故而旋转次数至多为 $O(\log n)$，综合查询操作可知删除的总体复杂度仍为 $O(\log n)$。</p>
+<p>综上所述，<code>AVL</code>树的增删查操作时间复杂度均为 $O(\log n)$，考虑到共计$n$次操作，总体的时间复杂度为 $O(n \log n)$。</p>
+<h4 id="2-2-Splay-树"><a href="#2-2-Splay-树" class="headerlink" title="2.2. Splay 树"></a>2.2. Splay 树</h4><p>参考习题解析中对<code>Tarjan</code>原论文的解读，我们采用势能法分析<code>Splay</code>树的时间复杂度。</p>
+<p>仿照物理学的思想和概念, 这里可假想式地认为, 每棵伸展树<code>S</code>都具有一定量(非负)的势 能 (potential), 记作$  \Phi(S)  $。于是, 若经过某一操作并相应地通过旋转完成伸展之后$S$演化为另一伸展树 ${ S}^{\prime}$ , 则对应的势能变化为: $\Delta \Phi=\Phi\left(S^{\prime}\right)-\Phi(S)$</p>
+<p>推而广之, 考查对某伸展树 $S$连续实施$m \gg n$次操作的过程。将第$i$次操作后的伸展树记作$\mathrm{S}<em>{\mathrm{i}} $, 则有:$\Delta \Phi</em>{i}=\Phi\left(S<em>{i}\right)-\Phi\left(S</em>{i-1}\right), \quad 1 \leq i \leq m$</p>
+<p>而从该过程的整体来看, 应有$\Delta \Phi=\sum<em>{i=1}^{m}\left[\Phi\left(S</em>{i}\right)-\Phi\left(S<em>{i-1}\right)\right]=\Phi\left(S</em>{m}\right)-\Phi\left(S_{\theta}\right)$</p>
+<p>也就是说, 整体的势能变化量仅取决于最初和最终状态一一这与物理学中势能场的规律吻合。势能函数与物理学中势能的另一相似之处在于, 它也可以被看作是能量（计算成本）的一种 存在形式。比如, 当某一步计算实际所需的时间小于分摊复杂度时, 则可理解为通过势能的增加将提前支出的计算成本存储起来；反之，在前者大于后者时，则可从此前积累的势能中支取相应量用于支付超出的计算成本。</p>
+<p>以下，若将第$i$次操作的分摊复杂度取作实际复杂度与势能变化量之和,即$A=T<em>{i}+\Delta \Phi</em>{i}$ 。则有$\sum<em>{\mathrm{i}=1}^{\mathrm{m}} \mathrm{A}</em>{\mathrm{i}}=\sum<em>{\mathrm{i}=1}^{\mathrm{m}} \mathrm{T}</em>{\mathrm{i}}+\left[\Phi\left(\mathrm{S}<em>{\mathrm{m}}\right)-\Phi\left(\mathrm{S}</em>{\theta}\right)\right]$</p>
+<p>然而$m$状态和初始状态$0$的势能大小并不能确定，经过$m$次操作后，伸展树的势能可能上升也可能下降，故而并不能给出总体实际运行时间和总体分摊运行时间的绝对大小关系。只能够类似课件上所讲，当$m\gg n$时，能够通过分摊的方法确定$A_i$与$T_i$为同一数量级。</p>
+<p>也即：</p>
+<script type="math/tex; mode=display">
+\sum_{i=1}^{m} A_{i}-\Phi\left(S_{m}\right)<\sum_{i=1}^{m} T_{i}<\sum_{i=1}^{m} A_{i}+\Phi\left(S_{0}\right)\\
+ \sum_{i=1}^{m} A_{i}-O(nlog(n))<\sum_{i=1}^{m} T_{i}<\sum_{i=1}^{m} A_{i}+O(nlog(n))\\
+ A_{i}-O(\frac{n}{m}log(n))<T_{i}<\sum_{i=1}^{m} A_{i}+O(\frac{n}{m}log(n))</script><p>从而得$A_i$与$T_i$为同一数量级，故而后者的均摊变化程度即为前者的均摊复杂度。</p>
+<p><code>R.E.Tarjan</code>使用如下势能函数:$\Phi(S)=\sum_{v \in S} \log |v|$ , 其中 $|v|=$节点$v$的后代数目。 </p>
+<p>基于此，我们证明伸展树单次操作的分推时间复杂度为$O(\operatorname{logn})$。为此, 以下将分三种情况(其余情况不过是它们的对称形式)证明:<br>在对节点  v  的伸展过程中，每一步调整所需时间均不超过  v  的势能变化的3倍，即:$3 \cdot\left[\Phi^{\prime}(v)-\Phi(v)\right]$ </p>
+<p>情况A) <code>Zig</code><br>如教材第8.1.3节所述, 这种情况在伸展树的每次操作中至多发生一次, 而且只能是伸展调整过程的最后一步。作为单旋，这一步调整实际所需时间为$  T=O(1)  $。同时由教材207页图<code>8.5</code>, 这步调整过程中只有节点<code>v</code> 和<code>p</code>的势能有所变化, 且<code>v(p)</code>后代增加(减少)势能必上升(下降), 故对应的分推复杂度为:</p>
+<p>$A=T+\Delta \Phi=1+\Delta \Phi(p)+\Delta \Phi(v) \leq 1+\left[\Phi^{\prime}(v)-\Phi(v)\right]$</p>
+<p>情况B) <code>Zig-Zag</code><br>作为双旋的组合, 这一调整实际所需时间为$  T=O(2)  $。于是由教材<code>206</code>页图8.4可知:</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-A &amp;=T+\Delta \Phi \\
-&amp;=2+\Delta \Phi(v)+\Delta \Phi(p)+\Delta \Phi(g) \\
-&amp;=2+\Phi^{\prime}(g)-\Phi(g)+\Phi^{\prime}(p)-\Phi(p)+\Phi^{\prime}(v)-\Phi(v)
-\\
-&amp;=2+\Phi^{\prime}(g)+\Phi^{\prime}(p)-\Phi(p)-\Phi(v)—————————————————\left(\because
-\Phi^{\prime}(v)=\Phi(g)\right) \\
-&amp; \leq 2+\Phi^{\prime}(g)+\Phi^{\prime}(p)-2 \cdot
-\Phi(v)——————————————————(\because \Phi(v)&lt;\Phi(p)) \\
-&amp; \leq 2+2 \cdot \Phi^{\prime}(v)-2-2 \cdot
-\Phi(v)——————————————————\left(\because
-\Phi^{\prime}(g)+\Phi^{\prime}(p) \leq 2 \cdot \Phi^{\prime}(v)-2\right)
-\\
-&amp;=2 \cdot\left[\Phi^{\prime}(v)-\Phi(v)\right]
-\end{aligned}
-\]</span> 这里的最后一步放大, 需利用对数函数$ f(x)=_{2} x $的性质,
-即该函数属于凹函数(concave function), 因此必有: <span
-class="math display">\[
-\frac{\log _{2} a+\log _{2} b}{2} \leq \log _{2}
-\frac{a+b}{2}\\亦即：\log _{2} a+\log _{2} b \leq 2 \cdot \log _{2}
-\frac{a+b}{2}=2 \cdot\left[\log _{2}(a+b)-1\right]&lt;2 \cdot\left(\log
-_{2} c-1\right)
-\]</span> 㥔况C) <code>Zig-Zig</code> 作为双旋的组合,
-这一调整实际所需时间也为$ T=O(2)
-$。于是由教材<code>206</code>页图8.3可知 <span class="math display">\[
+A &=T+\Delta \Phi \\
+&=2+\Delta \Phi(v)+\Delta \Phi(p)+\Delta \Phi(g) \\
+&=2+\Phi^{\prime}(g)-\Phi(g)+\Phi^{\prime}(p)-\Phi(p)+\Phi^{\prime}(v)-\Phi(v) \\
+&=2+\Phi^{\prime}(g)+\Phi^{\prime}(p)-\Phi(p)-\Phi(v)—————————————————\left(\because \Phi^{\prime}(v)=\Phi(g)\right) \\
+& \leq 2+\Phi^{\prime}(g)+\Phi^{\prime}(p)-2 \cdot \Phi(v)——————————————————(\because \Phi(v)<\Phi(p)) \\
+& \leq 2+2 \cdot \Phi^{\prime}(v)-2-2 \cdot \Phi(v)——————————————————\left(\because \Phi^{\prime}(g)+\Phi^{\prime}(p) \leq 2 \cdot \Phi^{\prime}(v)-2\right) \\
+&=2 \cdot\left[\Phi^{\prime}(v)-\Phi(v)\right]
+\end{aligned}</script><p>这里的最后一步放大, 需利用对数函数$ f(x)=\log _{2} x  $的性质, 即该函数属于凹函数(concave function), 因此必有:</p>
+<script type="math/tex; mode=display">
+\frac{\log _{2} a+\log _{2} b}{2} \leq \log _{2} \frac{a+b}{2}\\亦即：\log _{2} a+\log _{2} b \leq 2 \cdot \log _{2} \frac{a+b}{2}=2 \cdot\left[\log _{2}(a+b)-1\right]<2 \cdot\left(\log _{2} c-1\right)</script><p>㥔况C) <code>Zig-Zig</code><br>作为双旋的组合, 这一调整实际所需时间也为$  T=O(2)  $。于是由教材<code>206</code>页图8.3可知</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-A &amp;=T+\Delta \Phi \\
-&amp;=2+\Delta \Phi(v)+\Delta \Phi(p)+\Delta \Phi(g) \\
-&amp;=2+\Phi^{\prime}(g)-\Phi(g)+\Phi^{\prime}(p)-\Phi(p)+\Phi^{\prime}(v)-\Phi(v)
-\\
-&amp;=2+\Phi^{\prime}(g)+\Phi^{\prime}(p)-\Phi(p)-\Phi(v)
-——————————————————\left(\because \Phi^{\prime}(v)=\Phi(g)\right) \\
-&amp; \leq 2+\Phi^{\prime}(g)+\Phi^{\prime}(p)-2 \cdot \Phi(v)
-———————————————————(\because \Phi(v)&lt;\Phi(p)) \\
-&amp;\left.\leq 2+\Phi^{\prime}(g)+\Phi^{\prime}(v)-2 \cdot
-\Phi(v)——————————————————(\because)+\Phi^{\prime}(p)&lt;\Phi^{\prime}(v)\right)
-\\
-&amp;\left.\leq 3
-\cdot\left[\Phi^{\prime}(v)-\Phi(v)\right]——————————————————————(g)+\Phi(v)
-\leq 2 \cdot \Phi^{\prime}(v)-2\right)
-\end{aligned}
-\]</span> 同样地, 其中最后一步放大也需利用对数函数的凹性。
-综合以上各种情况可知, 无论具体过程如何,
-伸展操作的每一步至多需要$3$时间。因此, 若在对伸展树的某次操作中,
-节点<code>v</code>经过一连串这样的调整上升成为根节点<code>r</code>,
-则整趟伸展操作总体所需的分摊时间为: <span class="math display">\[
+A &=T+\Delta \Phi \\
+&=2+\Delta \Phi(v)+\Delta \Phi(p)+\Delta \Phi(g) \\
+&=2+\Phi^{\prime}(g)-\Phi(g)+\Phi^{\prime}(p)-\Phi(p)+\Phi^{\prime}(v)-\Phi(v) \\
+&=2+\Phi^{\prime}(g)+\Phi^{\prime}(p)-\Phi(p)-\Phi(v) ——————————————————\left(\because \Phi^{\prime}(v)=\Phi(g)\right) \\
+& \leq 2+\Phi^{\prime}(g)+\Phi^{\prime}(p)-2 \cdot \Phi(v) ———————————————————(\because \Phi(v)<\Phi(p)) \\
+&\left.\leq 2+\Phi^{\prime}(g)+\Phi^{\prime}(v)-2 \cdot \Phi(v)——————————————————(\because)+\Phi^{\prime}(p)<\Phi^{\prime}(v)\right) \\
+&\left.\leq 3 \cdot\left[\Phi^{\prime}(v)-\Phi(v)\right]——————————————————————(g)+\Phi(v) \leq 2 \cdot \Phi^{\prime}(v)-2\right)
+\end{aligned}</script><p>同样地, 其中最后一步放大也需利用对数函数的凹性。<br>综合以上各种情况可知, 无论具体过程如何, 伸展操作的每一步至多需要$3\times [ \Phi’ (v) -  \Phi(v)  ] $时间。因此, 若在对伸展树的某次操作中, 节点<code>v</code>经过一连串这样的调整上升成为根节点<code>r</code>, 则整趟伸展操作总体所需的分摊时间为:</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-A &amp; \leq 1+3 \cdot[\Phi(r)-\Phi(v)] \leq 1+3 \cdot \Phi(r) \\
-&amp;=O(1+\log n)=O(\log n)
-\end{aligned}
-\]</span> 综上所述，我们证明了对于<code>Splay</code>树的连续<span
-class="math inline">\(m\gg
-n\)</span>次访问的均摊时间复杂度为<code>O(logn)</code>。</p>
-<h2 id="二效率测试">二、效率测试</h2>
-<h3 id="测试环境">0. 测试环境</h3>
-<p>操作系统版本：<code>macOS Monterey 11.0.1</code>，基于<code>ARM</code>架构的<code>Apple M1</code>处理器。</p>
+A & \leq 1+3 \cdot[\Phi(r)-\Phi(v)] \leq 1+3 \cdot \Phi(r) \\
+&=O(1+\log n)=O(\log n)
+\end{aligned}</script><p>综上所述，我们证明了对于<code>Splay</code>树的连续$m\gg n$次访问的均摊时间复杂度为<code>O(logn)</code>。</p>
+<h2 id="二、效率测试"><a href="#二、效率测试" class="headerlink" title="二、效率测试"></a>二、效率测试</h2><h3 id="0-测试环境"><a href="#0-测试环境" class="headerlink" title="0. 测试环境"></a>0. 测试环境</h3><p>操作系统版本：<code>macOS Monterey 11.0.1</code>，基于<code>ARM</code>架构的<code>Apple M1</code>处理器。</p>
 <p>编译器版本：<code>Apple clang version 13.0.0 (clang-1300.0.29.3)</code>。</p>
-<h3 id="测例设计">1.测例设计</h3>
-<p>我设计了三类共计四种种测例。</p>
-<ol type="1">
+<h3 id="1-测例设计"><a href="#1-测例设计" class="headerlink" title="1.测例设计"></a>1.测例设计</h3><p>我设计了三类共计四种种测例。</p>
+<ol>
 <li>第一种测例假设用户会随机地进行增删查操作。其操作次数分别为<code>100</code>、<code>10000</code>、<code>1000000</code>、<code>5000000</code>、<code>10000000</code>次，同时每个数据进行三次重复试验。为此设计的生成为<code>rand.cpp</code>，同时编写的<code>shell</code>脚本为<code>rand.sh</code>。</li>
 <li>第二种测例先插入随后删除。一共进行操作次数分别为<code>100</code>、<code>10000</code>、<code>1000000</code>次。对比试验又分为两组，第一组前<code>90%</code>次操作进行随机插入，之后<code>10%</code>操作进行随机删除操作，第二组前<code>60%</code>次操作进行随机插入，之后<code>40%</code>操作进行随机删除操作，同时每组数据进行三次重复试验。为此设计的生成为<code>gen_insert_and_del.cpp</code>，同时编写的<code>shell</code>脚本为<code>insert_and_del.sh</code>。</li>
-<li>第三种测例为先插入再查询。一共进行操作次数分别为<code>100</code>、<code>10000</code>、<code>1000000</code>次。对比试验又分为三组，第一组前<code>60%</code>次操作进行随机插入，之后<code>40%</code>操作进行随机查询操作，第二组前<code>60%</code>次操作进行随机插入，之后<code>40%</code>操作进行局部查询操作，仅仅查询之前插入的所有节点的<code>10%</code>，且这<code>10%</code>的点的数值均在数据中位数<span
-class="math inline">\(\pm
-10\)</span>的范围内。最后一组为极端查询，前<code>60%</code>次操作进行随机插入，之后<code>40%</code>操作对同一个点进行疯狂查询操作。为此设计的生成为<code>search.cpp</code>，同时编写的<code>shell</code>脚本为<code>search_1.sh、search_2.sh、search_3.sh</code>。</li>
-<li>第四种测例也为先插入再查询。一共进行操作次数分别为<code>100</code>、<code>10000</code>、<code>1000000</code>次。对比试验又分为三组，第一组前<code>10%</code>次操作进行随机插入，之后<code>90%</code>操作进行随机查询操作，第二组前<code>10%</code>次操作进行随机插入，之后<code>90%</code>操作进行局部查询操作，仅仅查询之前插入的所有节点的<code>10%</code>，且这<code>10%</code>的点的数值均在数据中位数<span
-class="math inline">\(\pm
-10\)</span>的范围内。最后一组为极端查询，前<code>10%</code>次操作进行随机插入，之后<code>90%</code>操作对同一个点进行疯狂查询操作。为此设计的生成为<code>search.cpp</code>，同时编写的<code>shell</code>脚本为<code>search_4.sh、search_5.sh、search_6.sh</code>。</li>
+<li>第三种测例为先插入再查询。一共进行操作次数分别为<code>100</code>、<code>10000</code>、<code>1000000</code>次。对比试验又分为三组，第一组前<code>60%</code>次操作进行随机插入，之后<code>40%</code>操作进行随机查询操作，第二组前<code>60%</code>次操作进行随机插入，之后<code>40%</code>操作进行局部查询操作，仅仅查询之前插入的所有节点的<code>10%</code>，且这<code>10%</code>的点的数值均在数据中位数$\pm 10$的范围内。最后一组为极端查询，前<code>60%</code>次操作进行随机插入，之后<code>40%</code>操作对同一个点进行疯狂查询操作。为此设计的生成为<code>search.cpp</code>，同时编写的<code>shell</code>脚本为<code>search_1.sh、search_2.sh、search_3.sh</code>。</li>
+<li>第四种测例也为先插入再查询。一共进行操作次数分别为<code>100</code>、<code>10000</code>、<code>1000000</code>次。对比试验又分为三组，第一组前<code>10%</code>次操作进行随机插入，之后<code>90%</code>操作进行随机查询操作，第二组前<code>10%</code>次操作进行随机插入，之后<code>90%</code>操作进行局部查询操作，仅仅查询之前插入的所有节点的<code>10%</code>，且这<code>10%</code>的点的数值均在数据中位数$\pm 10$的范围内。最后一组为极端查询，前<code>10%</code>次操作进行随机插入，之后<code>90%</code>操作对同一个点进行疯狂查询操作。为此设计的生成为<code>search.cpp</code>，同时编写的<code>shell</code>脚本为<code>search_4.sh、search_5.sh、search_6.sh</code>。</li>
 </ol>
-<h3 id="测例生成器">2.测例生成器</h3>
-<p>测例生成思路基于利用<code>bitmap</code>来模拟一个<code>set</code>，如果<code>bitmap</code>某一位为<code>1</code>，则表示在集合内，可以进行删除但是不能进行插入。如果<code>bitmap</code>某一位为<code>0</code>，则表示在集合外，可以进行插入但是不能进行删除。</p>
+<h3 id="2-测例生成器"><a href="#2-测例生成器" class="headerlink" title="2.测例生成器"></a>2.测例生成器</h3><p>测例生成思路基于利用<code>bitmap</code>来模拟一个<code>set</code>，如果<code>bitmap</code>某一位为<code>1</code>，则表示在集合内，可以进行删除但是不能进行插入。如果<code>bitmap</code>某一位为<code>0</code>，则表示在集合外，可以进行插入但是不能进行删除。</p>
 <p>由于<code>bitmap</code>访存较慢，且生成器在删除逻辑中不得不从随机得到的位置开始遍历，故而复杂度较高。然而基于自己所学能够造出轮子的体验仍然十分美妙。</p>
 <p>实际上，实际仅仅在<code>rand.sh</code>当中数据生成耗时较长，在<code>insert_and_del.sh</code>与一系列的<code>search.sh</code>中，实际上效率仍然可观。</p>
 <p>另一方面，当数据规模较大后，实际上<code>IO</code>也会耗时严重。故而在生成器中采用了字符串储存输出数据的方式，程序结束后再进行一次<code>IO</code>即可。</p>
 <p>最后，在本次测例生成器的调试过程中，经常出现<code>linux</code>终端无法运行生成器的问题。最后发现应该是生成器起初的数据读入是通过<code>cin</code>实现的，这可能导致读入受阻。故而采用了读取命令行参数的方式来运行程序。</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argv, <span class="keyword">char</span> *argc[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    n = <span class="built_in">atoi</span>(argc[<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">int</span> insert_time = n*<span class="built_in">atoi</span>(argc[<span class="number">2</span>])/<span class="number">100</span>;</span><br><span class="line">    <span class="keyword">int</span> search_time = n*<span class="built_in">atoi</span>(argc[<span class="number">3</span>])/<span class="number">100</span>;</span><br><span class="line">    <span class="keyword">int</span> model = <span class="built_in">atoi</span>(argc[<span class="number">4</span>]);</span><br><span class="line">  ·················</span><br></pre></td></tr></table></figure>
-<h3 id="rand.sh测试数据">3.<code>rand.sh</code>测试数据</h3>
+<h3 id="3-rand-sh测试数据"><a href="#3-rand-sh测试数据" class="headerlink" title="3.rand.sh测试数据"></a>3.<code>rand.sh</code>测试数据</h3><div class="table-container">
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>数据规模/树种类</th>
 <th>AVL</th>
 <th>Splay</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000541s</td>
 <td>time:0.000552s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2</td>
 <td>time:0.000354s</td>
 <td>time:0.000343s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000152s</td>
 <td>time:0.00013s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.013448s</td>
 <td>time:0.013548s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4</td>
 <td>time:0.013103s</td>
 <td>time:0.01426s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.013132s</td>
 <td>time:0.01429s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.55929s</td>
 <td>time:1.58832s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6</td>
 <td>time:1.54717s</td>
 <td>time:1.58465s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.54726s</td>
 <td>time:1.56897s</td>
 </tr>
 </tbody>
 </table>
-<h3
-id="insert_and_del.sh测试数据">4.<code>insert_and_del.sh</code>测试数据</h3>
+</div>
+<h3 id="4-insert-and-del-sh测试数据"><a href="#4-insert-and-del-sh测试数据" class="headerlink" title="4.insert_and_del.sh测试数据"></a>4.<code>insert_and_del.sh</code>测试数据</h3><div class="table-container">
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>数据规模(插入比例)/树种类</th>
 <th>AVL</th>
 <th>Splay</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1e2(90)</td>
 <td>time:0.000568s</td>
 <td>time:0.000227s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2(90)</td>
 <td>time:0.000363s</td>
 <td>time:0.000224s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e2(90)</td>
 <td>time:0.000184s</td>
 <td>time:0.000219s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4(90)</td>
 <td>time:0.019172s</td>
 <td>time:0.016815s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4(90)</td>
 <td>time:0.015954s</td>
 <td>time:0.015668s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4(90)</td>
 <td>time:0.01882s</td>
 <td>time:0.01541s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6(90)</td>
 <td>time:2.01893s</td>
 <td>time:2.33512s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6(90)</td>
 <td>time:2.03421s</td>
 <td>time:2.32607s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6(90)</td>
 <td>time:2.01517s</td>
 <td>time:2.35297s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2(60)</td>
 <td>time:0.000127s</td>
 <td>time:0.000133s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e2(60)</td>
 <td>time:0.000124s</td>
 <td>time:0.00012s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2(60)</td>
 <td>time:0.000125s</td>
 <td>time:0.000125s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4(60)</td>
 <td>time:0.013686s</td>
 <td>time:0.014346s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4(60)</td>
 <td>time:0.013499s</td>
 <td>time:0.014604s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4(60)</td>
 <td>time:0.013589s</td>
 <td>time:0.014403s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6(60)</td>
 <td>time:1.98859s</td>
 <td>time:2.20867s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6(60)</td>
 <td>time:1.97533s</td>
 <td>time:2.1997s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6(60)</td>
 <td>time:1.98779s</td>
 <td>time:2.19264s</td>
 </tr>
 </tbody>
 </table>
-<h3
-id="所有search测例的数据数据">5.所有<code>search</code>测例的数据数据</h3>
-<p><code>search_1.sh</code>测试数据</p>
+</div>
+<h3 id="5-所有search测例的数据数据"><a href="#5-所有search测例的数据数据" class="headerlink" title="5.所有search测例的数据数据"></a>5.所有<code>search</code>测例的数据数据</h3><p><code>search_1.sh</code>测试数据</p>
+<div class="table-container">
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>数据规模/树种类</th>
 <th>AVL</th>
 <th>Splay</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000127s</td>
 <td>time:0.000551s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2</td>
 <td>time:0.00012s</td>
 <td>time:0.000353s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000129s</td>
 <td>time:0.000125s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.014449s</td>
 <td>time:0.018263s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4</td>
 <td>time:0.014061s</td>
 <td>time:0.015861s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.021159s</td>
 <td>time:0.014845s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.98545s</td>
 <td>time:2.40377s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6</td>
 <td>time:1.97226s</td>
 <td>time:2.36951s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.97932s</td>
 <td>time:2.40277s</td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><code>search_2.sh</code>测试数据</p>
+<div class="table-container">
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>数据规模/树种类</th>
 <th>AVL</th>
 <th>Splay</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.00029s</td>
 <td>time:0.000355s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2</td>
 <td>time:0.000278s</td>
 <td>time:0.000427s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000212s</td>
 <td>time:0.000134s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.014808s</td>
 <td>time:0.014661s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4</td>
 <td>time:0.01398s</td>
 <td>time:0.014646s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.014164s</td>
 <td>time:0.01428s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.76496s</td>
 <td>time:1.94585s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6</td>
 <td>time:1.7533s</td>
 <td>time:1.94399s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.76181s</td>
 <td>time:1.93839s</td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><code>search_3.sh</code>测试数据</p>
+<div class="table-container">
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>数据规模/树种类</th>
 <th>AVL</th>
 <th>Splay</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000545s</td>
 <td>time:0.000358s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2</td>
 <td>time:0.000343s</td>
 <td>time:0.000429s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000362s</td>
 <td>time:0.000345s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.014087s</td>
 <td>time:0.0142s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4</td>
 <td>time:0.014004s</td>
 <td>time:0.016212s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.013885s</td>
 <td>time:0.014552s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.7407s</td>
 <td>time:1.94346s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6</td>
 <td>time:1.73698s</td>
 <td>time:1.96719s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.72518s</td>
 <td>time:1.92923s</td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><code>search_4.sh</code>测试数据</p>
+<div class="table-container">
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>数据规模/树种类</th>
 <th>AVL</th>
 <th>Splay</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000118s</td>
 <td>time:0.000139s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2</td>
 <td>time:0.000113s</td>
 <td>time:0.000131s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000111s</td>
 <td>time:0.000132s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.014616s</td>
 <td>time:0.014813s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4</td>
 <td>time:0.01392s</td>
 <td>time:0.014797s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.013829s</td>
 <td>time:0.014919s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.7574s</td>
 <td>time:1.89245s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6</td>
 <td>time:1.75384s</td>
 <td>time:1.88271s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.75757s</td>
 <td>time:1.89904s</td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><code>search_5.sh</code>测试数据</p>
+<div class="table-container">
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>数据规模/树种类</th>
 <th>AVL</th>
 <th>Splay</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000152s</td>
 <td>time:0.000347s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2</td>
 <td>time:0.000149s</td>
 <td>time:0.000183s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000147s</td>
 <td>time:0.000183s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.025978s</td>
 <td>time:0.014267s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4</td>
 <td>time:0.019654s</td>
 <td>time:0.013614s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.016305s</td>
 <td>time:0.013643s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.53176s</td>
 <td>time:1.53011s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6</td>
 <td>time:1.52486s</td>
 <td>time:1.52437s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.53416s</td>
 <td>time:1.51953s</td>
 </tr>
 </tbody>
 </table>
+</div>
 <p><code>search_6.sh</code>测试数据</p>
+<div class="table-container">
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>数据规模/树种类</th>
 <th>AVL</th>
 <th>Splay</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000153s</td>
 <td>time:0.000554s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e2</td>
 <td>time:0.000149s</td>
 <td>time:0.000118s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e2</td>
 <td>time:0.000137s</td>
 <td>time:0.000122s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.013337s</td>
 <td>time:0.017674s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e4</td>
 <td>time:0.013379s</td>
 <td>time:0.014802s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e4</td>
 <td>time:0.013764s</td>
 <td>time:0.013478s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.4918s</td>
 <td>time:1.4908s</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1e6</td>
 <td>time:1.50743s</td>
 <td>time:1.48914s</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>1e6</td>
 <td>time:1.50316s</td>
 <td>time:1.4902s</td>
 </tr>
 </tbody>
 </table>
-<h3 id="数据分析">数据分析</h3>
-<h4 id="总体结论">总体结论</h4>
-<p>总体结果表明，<code>Splay</code>树的效率在我所生成的数据集合上大部分时候都落后于<code>AVL</code>树，而在少数有优势的情况下，优势之微弱几乎可以忽略不计。</p>
-<h4 id="原因分析">原因分析</h4>
-<p><code>Splay</code>树的复原基于<code>splay()</code>操作，而<code>AVL</code>树的复原基于<code>connect34()</code>，虽然单次操作复杂度并未有太大差距，然而<code>Splay</code>树的无论插入，删除，还是查询，都需要对<code>_hot</code>节点多次旋转直到达到树根为止。然而<code>AVL</code>树至多在删除时可能需要沿着<code>_hot</code>向上一直旋转到树根。并且，由于<code>Splay</code>树节点的平均深度高于<code>AVL</code>树，沿着<code>_hot</code>旋转至树根所需的步数也更大。</p>
+</div>
+<h3 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h3><h4 id="总体结论"><a href="#总体结论" class="headerlink" title="总体结论"></a>总体结论</h4><p>总体结果表明，<code>Splay</code>树的效率在我所生成的数据集合上大部分时候都落后于<code>AVL</code>树，而在少数有优势的情况下，优势之微弱几乎可以忽略不计。</p>
+<h4 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h4><p><code>Splay</code>树的复原基于<code>splay()</code>操作，而<code>AVL</code>树的复原基于<code>connect34()</code>，虽然单次操作复杂度并未有太大差距，然而<code>Splay</code>树的无论插入，删除，还是查询，都需要对<code>_hot</code>节点多次旋转直到达到树根为止。然而<code>AVL</code>树至多在删除时可能需要沿着<code>_hot</code>向上一直旋转到树根。并且，由于<code>Splay</code>树节点的平均深度高于<code>AVL</code>树，沿着<code>_hot</code>旋转至树根所需的步数也更大。</p>
 <p>综上所述，虽然二者单次操作的时间复杂度均为<code>O(logn)</code>，然而可见<code>Splay</code>树的常数会更大。</p>
-<h4 id="具体例子">具体例子</h4>
-<ul>
+<h4 id="具体例子"><a href="#具体例子" class="headerlink" title="具体例子"></a>具体例子</h4><ul>
 <li>第一组数据<code>rand.sh</code>完全随机化生成数据。</li>
 </ul>
 <p>考虑到随机数据的存在几乎使得每次操作<code>Splay</code>树都需进行<code>log(n)</code>次的旋转，总体旋转次数多于<code>AVL</code>树，故而效率上不如<code>AVL</code>树，从<code>1e2</code>到<code>1e4</code>最后到<code>1e6</code>可见，随着数据规模的增大，这种劣势在逐渐扩大。</p>
@@ -873,22 +759,20 @@ id="所有search测例的数据数据">5.所有<code>search</code>测例的数�
 <ul>
 <li>第三组数据<code>search.sh</code></li>
 </ul>
-<p><code>Splay</code>树理想情况下的优势在于利用数据访问的局部性。故而我构造的数据逐步加大了数据访问的局部性，也即在保持插入的随机性不变的前提下，使得搜索的数据越发集中(从完全随机搜索到只搜索中位数<span
-class="math inline">\(\pm
-10\)</span>范围内的数据，到完全只搜索中位数)，且大幅降低插入的比例而提高搜索的比例，试图体现<code>AVL</code>树的优势。</p>
+<p><code>Splay</code>树理想情况下的优势在于利用数据访问的局部性。故而我构造的数据逐步加大了数据访问的局部性，也即在保持插入的随机性不变的前提下，使得搜索的数据越发集中(从完全随机搜索到只搜索中位数$\pm 10$范围内的数据，到完全只搜索中位数)，且大幅降低插入的比例而提高搜索的比例，试图体现<code>AVL</code>树的优势。</p>
 <p>然而这样的优势仍然很难体现出来，以至于大多数时候仍是劣势。</p>
-<ol type="1">
+<ol>
 <li><p>在<code>search_1.sh、search_4.sh</code>中，完全随机搜索数据，使得<code>Splay</code>树几乎每次都需要旋转<code>log(n)</code>次。这一情况下，<code>Splay</code>树相对<code>AVL</code>劣势明显。从<code>search_1.sh</code>到<code>search_4.sh</code>，提升了搜索的比例。</p>
-<p>由于二者的插入都基于先搜索再接入新的节点，故而插入操作相对搜索的常数更高，减少插入占比理论上能够减少总的运行时间。事实也是如此，从从<code>search_1.sh</code>到<code>search_4.sh</code>正体现了这一点。</p></li>
-<li><p>在<code>search_2.sh、search_5.sh</code>中，我将搜索的范围集中到了中位数<span
-class="math inline">\(\pm
-10\)</span>范围内的数据，企图以此展示出<code>Splay</code>的优势，可惜这一优势任然未能得到充分体现。</p>
-<p>总的而言，<code>Splay</code>树仍然由于插入的复杂度更高而没法完全展示其优势。在插入占比<code>60%</code>的测试中，<code>AVL</code>树仍然优于<code>Splay</code>树。降低插入占比到<code>10%</code>后，<code>Splay</code>树在中等数据规模<code>1e4</code>左右体现出了一定优势，然而数据规模增大到<code>1e6</code>后此种规模几乎消失殆尽。</p></li>
-<li><p>最后，在<code>search_3.sh、search_6.sh</code>中，所有的搜索都集中在了中位数这一点上，期待的<code>Splay</code>树的大幅优势并未出现，反而事与愿违。在插入占比<code>60%</code>的<code>search_3.sh</code>中，<code>AVL</code>的性能优于<code>Splay</code>树，而插入占比<code>10%</code>后，<code>Splay</code>树终于在较大数据规模<code>1e6</code>上稳定地体现了微弱的优势。</p></li>
+<p>由于二者的插入都基于先搜索再接入新的节点，故而插入操作相对搜索的常数更高，减少插入占比理论上能够减少总的运行时间。事实也是如此，从从<code>search_1.sh</code>到<code>search_4.sh</code>正体现了这一点。</p>
+</li>
+<li><p>在<code>search_2.sh、search_5.sh</code>中，我将搜索的范围集中到了中位数$\pm 10$范围内的数据，企图以此展示出<code>Splay</code>的优势，可惜这一优势任然未能得到充分体现。</p>
+<p>总的而言，<code>Splay</code>树仍然由于插入的复杂度更高而没法完全展示其优势。在插入占比<code>60%</code>的测试中，<code>AVL</code>树仍然优于<code>Splay</code>树。降低插入占比到<code>10%</code>后，<code>Splay</code>树在中等数据规模<code>1e4</code>左右体现出了一定优势，然而数据规模增大到<code>1e6</code>后此种规模几乎消失殆尽。</p>
+</li>
+<li><p>最后，在<code>search_3.sh、search_6.sh</code>中，所有的搜索都集中在了中位数这一点上，期待的<code>Splay</code>树的大幅优势并未出现，反而事与愿违。在插入占比<code>60%</code>的<code>search_3.sh</code>中，<code>AVL</code>的性能优于<code>Splay</code>树，而插入占比<code>10%</code>后，<code>Splay</code>树终于在较大数据规模<code>1e6</code>上稳定地体现了微弱的优势。</p>
+</li>
 </ol>
 <p>根据如上分析得出结论，总体上<code>AVL</code>树的性能优于<code>Splay</code>树。</p>
-</article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62b11572b25ab3ab" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/12/18/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/hashfunc/"><img class="prev-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Mikita Karasiou (mMzVTy2V1Do).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">HashFun实验报告</div></div></a></div><div class="next-post pull-right"><a href="/2021/11/27/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/hacker/"><img class="next-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Benjamin Davies (21jDy_yt008).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hacker</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#lab3-bbst"><span class="toc-number">1.</span> <span class="toc-text">Lab3 BBST</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">1.1.</span> <span class="toc-text">一、数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 具体实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#splay"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">1.1 Splay</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rotateat%E4%B8%8E34%E9%87%8D%E6%9E%84"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">1.2
-rotateAt与3+4重构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">1.3 搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-number">1.1.1.4.</span> <span class="toc-text">1.4 删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%92%E5%85%A5"><span class="toc-number">1.1.1.5.</span> <span class="toc-text">1.5 插入</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 复杂度分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#avl-%E6%A0%91"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">2.1. AVL 树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#splay-%E6%A0%91"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">2.2. Splay 树</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E6%95%88%E7%8E%87%E6%B5%8B%E8%AF%95"><span class="toc-number">1.2.</span> <span class="toc-text">二、效率测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.1.</span> <span class="toc-text">0. 测试环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E4%BE%8B%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.测例设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E4%BE%8B%E7%94%9F%E6%88%90%E5%99%A8"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.测例生成器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rand.sh%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.4.</span> <span class="toc-text">3.rand.sh测试数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#insert_and_del.sh%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.5.</span> <span class="toc-text">4.insert_and_del.sh测试数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%80%E6%9C%89search%E6%B5%8B%E4%BE%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.6.</span> <span class="toc-text">5.所有search测例的数据数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="toc-number">1.2.7.</span> <span class="toc-text">数据分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E4%BD%93%E7%BB%93%E8%AE%BA"><span class="toc-number">1.2.7.1.</span> <span class="toc-text">总体结论</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90"><span class="toc-number">1.2.7.2.</span> <span class="toc-text">原因分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E4%BE%8B%E5%AD%90"><span class="toc-number">1.2.7.3.</span> <span class="toc-text">具体例子</span></a></li></ol></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: ＃0096FF"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
+</article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62b11572b25ab3ab" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/12/18/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/hashfunc/"><img class="prev-cover" src="https://pic.imgdb.cn/item/62270ef75baa1a80ab39048b.jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">HashFun实验报告</div></div></a></div><div class="next-post pull-right"><a href="/2021/11/27/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/DSA/hacker/"><img class="next-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Craig Tidball (qY2-efJojd8).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hacker</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Lab3-BBST"><span class="toc-number">1.</span> <span class="toc-text">Lab3 BBST</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">1.1.</span> <span class="toc-text">一、数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 具体实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Splay"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">1.1 Splay</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-rotateAt%E4%B8%8E3-4%E9%87%8D%E6%9E%84"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">1.2 rotateAt与3+4重构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-%E6%90%9C%E7%B4%A2"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">1.3 搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-%E5%88%A0%E9%99%A4"><span class="toc-number">1.1.1.4.</span> <span class="toc-text">1.4 删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-%E6%8F%92%E5%85%A5"><span class="toc-number">1.1.1.5.</span> <span class="toc-text">1.5 插入</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 复杂度分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-AVL-%E6%A0%91"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">2.1. AVL 树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-Splay-%E6%A0%91"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">2.2. Splay 树</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%95%88%E7%8E%87%E6%B5%8B%E8%AF%95"><span class="toc-number">1.2.</span> <span class="toc-text">二、效率测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#0-%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.1.</span> <span class="toc-text">0. 测试环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B5%8B%E4%BE%8B%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.测例设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%B5%8B%E4%BE%8B%E7%94%9F%E6%88%90%E5%99%A8"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.测例生成器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-rand-sh%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.4.</span> <span class="toc-text">3.rand.sh测试数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-insert-and-del-sh%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.5.</span> <span class="toc-text">4.insert_and_del.sh测试数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%89%80%E6%9C%89search%E6%B5%8B%E4%BE%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E6%95%B0%E6%8D%AE"><span class="toc-number">1.2.6.</span> <span class="toc-text">5.所有search测例的数据数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="toc-number">1.2.7.</span> <span class="toc-text">数据分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E4%BD%93%E7%BB%93%E8%AE%BA"><span class="toc-number">1.2.7.1.</span> <span class="toc-text">总体结论</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90"><span class="toc-number">1.2.7.2.</span> <span class="toc-text">原因分析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E4%BE%8B%E5%AD%90"><span class="toc-number">1.2.7.3.</span> <span class="toc-text">具体例子</span></a></li></ol></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: ＃0096FF"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
   var options = JSON.parse(document.getElementById('maid-script').getAttribute('mermaidoptioins'));
   mermaid.initialize(options);
 }</script></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库正在艰难运行</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
