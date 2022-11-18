@@ -1,18 +1,18 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>深度学习基础 | I'LL TAKE YOU TO THE MOON</title><meta name="keywords" content="2022春季,科研"><meta name="author" content="Eren Zhao"><meta name="copyright" content="Eren Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="为班上同学开源的人智导笔记...">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>深度学习基础 | 你将孤单而度过一生</title><meta name="keywords" content="2022春季,科研"><meta name="author" content="Chenytang Zhao"><meta name="copyright" content="Chenytang Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="为班上同学开源的人智导笔记...">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深度学习基础">
 <meta property="og:url" content="http://example.com/2022/05/17/Lecture/2022%20Spring/binaryDivdence/index.html">
-<meta property="og:site_name" content="I&#39;LL TAKE YOU TO THE MOON">
+<meta property="og:site_name" content="你将孤单而度过一生">
 <meta property="og:description" content="为班上同学开源的人智导笔记...">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Ander Peña (53Ms9vBKu6I).jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by John Rodenn Castillo (rQqWOHZ96OM).jpg">
 <meta property="article:published_time" content="2022-05-17T07:14:54.399Z">
 <meta property="article:modified_time" content="2022-10-03T13:43:06.968Z">
-<meta property="article:author" content="Eren Zhao">
+<meta property="article:author" content="Chenytang Zhao">
 <meta property="article:tag" content="2022春季">
 <meta property="article:tag" content="科研">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Ander Peña (53Ms9vBKu6I).jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2022/05/17/Lecture/2022%20Spring/binaryDivdence/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by John Rodenn Castillo (rQqWOHZ96OM).jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2022/05/17/Lecture/2022%20Spring/binaryDivdence/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"麻了，找不到您查询的内容：${query}"}},
@@ -147,794 +147,315 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/mouse.css"><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="I'LL TAKE YOU TO THE MOON" type="application/atom+xml">
-<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">194</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">52</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Ander Peña (53Ms9vBKu6I).jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">I'LL TAKE YOU TO THE MOON</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">深度学习基础</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-05-17T07:14:54.399Z" title="发表于 2022-05-17 15:14:54">2022-05-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-03T13:43:06.968Z" title="更新于 2022-10-03 21:43:06">2022-10-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">8.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>32分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="深度学习基础"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="readme">readme</h1>
-<p>这一章马老师讲的很玄学，尽我所能写一写…</p>
-<p>Credit to <a target="_blank" rel="noopener" href="https://zhaochenyang20.github.io/">Eren Zhao</a>
-and <a target="_blank" rel="noopener" href="https://saltyp0rridge.github.io/">saltyp0rridge</a>.</p>
-<h1 id="what-is-neural-network">What is neural network？</h1>
-<h2 id="术语">术语</h2>
-<p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/hidden.jpg" style="zoom:50%;" /></p>
-<ol type="1">
-<li><strong>全连接神经网络</strong> —— 对 n-1 层和 n 层而言，n-1
-层的任意一个节点，都和第 n 层所有节点有连接。即第 n
-层的每个节点在进行计算的时候，<a
-target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=激活函数&amp;spm=1001.2101.3001.7020">激活函数</a>的输入是
-n-1
-层所有节点的加权，这个激活函数是非线性的，可作用于大多数场景，然而<strong>权重过多，计算量很大。</strong></li>
-<li><strong>前馈神经网络</strong> ——
-在其内部，参数从输入层向输出层单向传播。有异于<a
-target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/循环神经网络">循环神经网络</a>，它的内部不会构成<a
-target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/環_(圖論)">有向环</a>。</li>
-<li><strong>多层感知器</strong> ——（Multilayer
-Perceptron,缩写MLP）是一种前向结构的<a
-target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/人工神经网络">人工神经网络</a>，映射一组输入向量到一组输出向量。MLP可以被看作是一个有向图，由多个的节点层所组成，每一层都全连接到下一层。除了输入节点，每个节点都是一个带有非线性激活函数的神经元（或称处理单元）。一种被称为<a
-target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/反向传播算法">反向传播算法</a>的<a
-target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/监督学习">监督学习</a>方法常被用来训练MLP。多层感知器遵循人类神经系统原理，学习并进行数据预测。它首先学习，然后使用权重存储数据，并使用算法来调整权重并减少训练过程中的偏差，即实际值和预测值之间的误差。主要优势在于其快速解决复杂问题的能力。多层感知的基本结构由三层组成：第一输入层，中间隐藏层和最后输出层，输入元素和权重的乘积被馈给具有神经元偏差的求和结点,主要优势在于其快速解决复杂问题的能力。MLP是<a
-target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/感知器">感知器</a>的推广，克服了感知器不能对<a
-target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/w/index.php?title=线性不可分&amp;action=edit&amp;redlink=1">线性不可分</a>数据进行识别的弱点。</li>
+    })(window)</script><link rel="stylesheet" href="/css/mouse.css"><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="你将孤单而度过一生" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">194</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">52</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by John Rodenn Castillo (rQqWOHZ96OM).jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">你将孤单而度过一生</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">深度学习基础</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-05-17T07:14:54.399Z" title="发表于 2022-05-17 15:14:54">2022-05-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-03T13:43:06.968Z" title="更新于 2022-10-03 21:43:06">2022-10-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">975</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="深度学习基础"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="readme"><a href="#readme" class="headerlink" title="readme"></a>readme</h1><p>这一章马老师讲的很玄学，尽我所能写一写…</p>
+<p>Credit to <a target="_blank" rel="noopener" href="https://zhaochenyang20.github.io/">Eren Zhao</a> and <a target="_blank" rel="noopener" href="https://saltyp0rridge.github.io/">saltyp0rridge</a>.</p>
+<h1 id="What-is-neural-network？"><a href="#What-is-neural-network？" class="headerlink" title="What is neural network？"></a>What is neural network？</h1><h2 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h2><p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/hidden.jpg" style="zoom:50%;" /></p>
+<ol>
+<li><strong>全连接神经网络</strong> —— 对 n-1 层和 n 层而言，n-1 层的任意一个节点，都和第 n 层所有节点有连接。即第 n 层的每个节点在进行计算的时候，<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=激活函数&amp;spm=1001.2101.3001.7020">激活函数</a>的输入是 n-1 层所有节点的加权，这个激活函数是非线性的，可作用于大多数场景，然而<strong>权重过多，计算量很大。</strong></li>
+<li><strong>前馈神经网络</strong> —— 在其内部，参数从输入层向输出层单向传播。有异于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/循环神经网络">循环神经网络</a>，它的内部不会构成<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/環_(圖論">有向环</a>)。</li>
+<li><strong>多层感知器</strong> ——（Multilayer Perceptron,缩写MLP）是一种前向结构的<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/人工神经网络">人工神经网络</a>，映射一组输入向量到一组输出向量。MLP可以被看作是一个有向图，由多个的节点层所组成，每一层都全连接到下一层。除了输入节点，每个节点都是一个带有非线性激活函数的神经元（或称处理单元）。一种被称为<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/反向传播算法">反向传播算法</a>的<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/监督学习">监督学习</a>方法常被用来训练MLP。多层感知器遵循人类神经系统原理，学习并进行数据预测。它首先学习，然后使用权重存储数据，并使用算法来调整权重并减少训练过程中的偏差，即实际值和预测值之间的误差。主要优势在于其快速解决复杂问题的能力。多层感知的基本结构由三层组成：第一输入层，中间隐藏层和最后输出层，输入元素和权重的乘积被馈给具有神经元偏差的求和结点,主要优势在于其快速解决复杂问题的能力。MLP是<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/感知器">感知器</a>的推广，克服了感知器不能对<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/w/index.php?title=线性不可分&amp;action=edit&amp;redlink=1">线性不可分</a>数据进行识别的弱点。</li>
 <li><strong>全连接层</strong> —— Fully Connected Layer 类似 FCN</li>
 <li><strong>稠密层</strong> —— 即 FCL 的同义词</li>
 </ol>
-<h2 id="结构与激活函数">结构与激活函数</h2>
-<p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/nearun.jpg" style="zoom:25%;" /></p>
+<h2 id="结构与激活函数"><a href="#结构与激活函数" class="headerlink" title="结构与激活函数"></a>结构与激活函数</h2><p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/nearun.jpg" style="zoom:25%;" /></p>
 <p>通过增设 0 项可以统一形式，不必单独写偏置量。</p>
 <p><img src="https://paddlepedia.readthedocs.io/en/latest/_images/identity.jpg" alt="图1 identity" style="zoom:33%;" /></p>
-<h3 id="identity">Identity</h3>
-<p>优点：适合于潜在行为是线性（与线性回归相似）的任务。</p>
+<h3 id="Identity"><a href="#Identity" class="headerlink" title="Identity"></a>Identity</h3><p>优点：适合于潜在行为是线性（与线性回归相似）的任务。</p>
 <p>缺点：无法提供非线性映射，当多层网络使用identity激活函数时，整个网络就相当于一个单层模型。</p>
-<h3 id="sigmoid">sigmoid</h3>
-<p>一般论文中的 <span class="math inline">\(\sigma\)</span> 专指
-sigmoid。连续，用的多。</p>
-<p>函数定义： <span class="math display">\[
-{ f }(x)=\sigma (x)=\frac { 1 }{ 1+{ e }^{ -x } }
-\]</span> 导数：</p>
-<p><span class="math display">\[
-{ f }^{ &#39; }(x)=f(x)(1-f(x))
-\]</span>
-<img src="https://paddlepedia.readthedocs.io/en/latest/_images/sigmoid.jpg" alt="sigmoid" style="zoom:33%;" /></p>
-<p>优点： 1. <span class="math inline">\(sigmoid\)</span>
-函数的输出映射在 <span class="math inline">\((0,1)\)</span>
-之间，单调连续，输出范围有限，优化稳定，可以用作输出层； 2.
-求导容易；</p>
-<p>缺点： 1.
-由于其软饱和性，一旦落入饱和区梯度就会接近于0，根据反向传播的链式法则，容易产生梯度消失，导致训练出现问题；
-2. Sigmoid 函数的输出恒大于
-0。非零中心化的输出会使得其后一层的神经元的输入发生偏置偏移（Bias
-Shift），并进一步使得梯度下降的收敛速度变慢； 3.
-计算时，由于具有幂运算，计算复杂度较高，运算速度较慢。</p>
-<h3 id="tanh">tanh</h3>
-<p>取值范围在 <code>(-1, 1)</code>，可经过简单变换变成 sigmoid。</p>
+<h3 id="sigmoid"><a href="#sigmoid" class="headerlink" title="sigmoid"></a>sigmoid</h3><p>一般论文中的 $\sigma$ 专指 sigmoid。连续，用的多。</p>
 <p>函数定义：</p>
-<p><span class="math display">\[
-{ f }(x)=tanh(x)=\frac { { e }^{ x }-{ e }^{ -x } }{ { e }^{ x }+{ e }^{
--x } }
-\]</span></p>
-<p>导数：</p>
-<p><span class="math display">\[
-{ f }^{ &#39; }(x)=1-f(x)^{ 2 }
-\]</span></p>
-<p>函数图形如 <strong>图4</strong> 所示：</p>
+<script type="math/tex; mode=display">
+{ f }(x)=\sigma (x)=\frac { 1 }{ 1+{ e }^{ -x } }</script><p>导数：</p>
+<script type="math/tex; mode=display">
+{ f }^{ ' }(x)=f(x)(1-f(x))</script><p><img src="https://paddlepedia.readthedocs.io/en/latest/_images/sigmoid.jpg" alt="sigmoid" style="zoom:33%;" /></p>
+<p>优点：</p>
+<ol>
+<li>$sigmoid$ 函数的输出映射在 $(0,1)$ 之间，单调连续，输出范围有限，优化稳定，可以用作输出层；</li>
+<li>求导容易；</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>由于其软饱和性，一旦落入饱和区梯度就会接近于0，根据反向传播的链式法则，容易产生梯度消失，导致训练出现问题；</li>
+<li>Sigmoid 函数的输出恒大于 0。非零中心化的输出会使得其后一层的神经元的输入发生偏置偏移（Bias Shift），并进一步使得梯度下降的收敛速度变慢；</li>
+<li>计算时，由于具有幂运算，计算复杂度较高，运算速度较慢。</li>
+</ol>
+<h3 id="tanh"><a href="#tanh" class="headerlink" title="tanh"></a>tanh</h3><p>取值范围在 <code>(-1, 1)</code>，可经过简单变换变成 sigmoid。</p>
+<p>函数定义：</p>
+<script type="math/tex; mode=display">
+{ f }(x)=tanh(x)=\frac { { e }^{ x }-{ e }^{ -x } }{ { e }^{ x }+{ e }^{ -x } }</script><p>导数：</p>
+<script type="math/tex; mode=display">
+{ f }^{ ' }(x)=1-f(x)^{ 2 }</script><p>函数图形如 <strong>图4</strong> 所示：</p>
 <p><img src="https://paddlepedia.readthedocs.io/en/latest/_images/tanh.jpg" alt="tanh" style="zoom:33%;" /></p>
-<p>优点： 1. <span class="math inline">\(tanh\)</span> 比 <span
-class="math inline">\(sigmoid\)</span> 函数收敛速度更快； 2. 相比 <span
-class="math inline">\(sigmoid\)</span> 函数，<span
-class="math inline">\(tanh\)</span> 是以 <span
-class="math inline">\(0\)</span> 为中心的；</p>
-<p>缺点： 1. 与 <span class="math inline">\(sigmoid\)</span>
-函数相同，由于饱和性容易产生的梯度消失； 2. 与 <span
-class="math inline">\(sigmoid\)</span>
-函数相同，由于具有幂运算，计算复杂度较高，运算速度较慢。</p>
-<h3 id="relu">ReLU</h3>
-<p>线性整流函数，整流这个词来自二极管。</p>
+<p>优点：</p>
+<ol>
+<li>$tanh$ 比 $sigmoid$ 函数收敛速度更快；</li>
+<li>相比 $sigmoid$ 函数，$tanh$ 是以 $0$ 为中心的；</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>与 $sigmoid$ 函数相同，由于饱和性容易产生的梯度消失；</li>
+<li>与 $sigmoid$ 函数相同，由于具有幂运算，计算复杂度较高，运算速度较慢。</li>
+</ol>
+<h3 id="ReLU"><a href="#ReLU" class="headerlink" title="ReLU"></a>ReLU</h3><p>线性整流函数，整流这个词来自二极管。</p>
 <p>函数定义：</p>
-<p><span class="math display">\[
-f(x)=\begin{cases} \begin{matrix} 0 &amp; x&lt;0 \end{matrix} \\
-\begin{matrix} x &amp; x\ge 0 \end{matrix} \end{cases}
-\]</span> 导数：</p>
-<p><span class="math display">\[
-{ { f }(x) }^{ &#39; }=\begin{cases} \begin{matrix} 0 &amp; x&lt;0
-\end{matrix} \\ \begin{matrix} 1 &amp; x\ge 0 \end{matrix} \end{cases}
-\]</span>
-<img src="https://paddlepedia.readthedocs.io/en/latest/_images/relu.jpg" alt="ReLU" style="zoom:33%;" /></p>
-<p>优点： 1. 收敛速度快； 2. 相较于 <span
-class="math inline">\(sigmoid\)</span> 和 <span
-class="math inline">\(tanh\)</span> 中涉及了幂运算，导致计算复杂度高，
-ReLU可以更加简单的实现； 3. 当输入 <span
-class="math inline">\(x&gt;=0\)</span> 时，ReLU
-的导数为常数，这样可有效缓解梯度消失问题； 4. 当 <span
-class="math inline">\(x&lt;0\)</span> 时，ReLU 的梯度总是 <span
-class="math inline">\(0\)</span>，提供了神经网络的稀疏表达能力；</p>
-<p>缺点： 1. ReLU 的输出不是以 <span class="math inline">\(0\)</span>
-为中心的； 2.
-神经元坏死现象，某些神经元可能永远不会被激活，导致相应参数永远不会被更新；
-3. 不能避免梯度爆炸问题；</p>
-<h3 id="softmax">softmax</h3>
-<p>在输出时，作用在整个层上，输出的和为 1，可视为概率。</p>
-<p>softmax
-函数一般用于多分类问题中，它是对逻辑斯蒂（logistic）回归的一种推广，也被称为多项逻辑斯蒂回归模型(multi-nominal
-logistic mode)。假设要实现 k 个类别的分类任务，Softmax 函数将输入数据
-<span class="math inline">\(x_i\)</span> 映射到第 <span
-class="math inline">\(i\)</span> 个类别的概率 <span
-class="math inline">\(y_i\)</span> 如下计算：</p>
-<p><span class="math display">\[
-y_i=soft\max \left( x_i \right) =\frac{e^{x_i}}{\sum_{j=1}^k{e^{x_j}}}
-\]</span></p>
-<p>显然，<span
-class="math inline">\(0&lt;y_i&lt;1\)</span>。下图给出了三类分类问题的
-softmax 输出示意图。在图中，对于取值为 4、1和-4 的 <span
-class="math inline">\(x_1\)</span>、<span
-class="math inline">\(x_2\)</span> 和 <span
-class="math inline">\(x_3\)</span>，通过 softmax 变换后，将其映射到
-(0,1) 之间的概率值。</p>
+<script type="math/tex; mode=display">
+f(x)=\begin{cases} \begin{matrix} 0 & x<0 \end{matrix} \\ \begin{matrix} x & x\ge 0 \end{matrix} \end{cases}</script><p>导数：</p>
+<script type="math/tex; mode=display">
+{ { f }(x) }^{ ' }=\begin{cases} \begin{matrix} 0 & x<0 \end{matrix} \\ \begin{matrix} 1 & x\ge 0 \end{matrix} \end{cases}</script><p><img src="https://paddlepedia.readthedocs.io/en/latest/_images/relu.jpg" alt="ReLU" style="zoom:33%;" /></p>
+<p>优点：</p>
+<ol>
+<li>收敛速度快；</li>
+<li>相较于 $sigmoid$ 和 $tanh$ 中涉及了幂运算，导致计算复杂度高， ReLU可以更加简单的实现；</li>
+<li>当输入 $x&gt;=0$ 时，ReLU 的导数为常数，这样可有效缓解梯度消失问题；</li>
+<li>当 $x&lt;0$ 时，ReLU 的梯度总是 $0$，提供了神经网络的稀疏表达能力；</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>ReLU 的输出不是以 $0$ 为中心的；</li>
+<li>神经元坏死现象，某些神经元可能永远不会被激活，导致相应参数永远不会被更新；</li>
+<li>不能避免梯度爆炸问题；</li>
+</ol>
+<h3 id="softmax"><a href="#softmax" class="headerlink" title="softmax"></a>softmax</h3><p>在输出时，作用在整个层上，输出的和为 1，可视为概率。</p>
+<p>softmax 函数一般用于多分类问题中，它是对逻辑斯蒂（logistic）回归的一种推广，也被称为多项逻辑斯蒂回归模型(multi-nominal logistic mode)。假设要实现 k 个类别的分类任务，Softmax 函数将输入数据 $x_i$ 映射到第 $i$ 个类别的概率 $y_i$ 如下计算：</p>
+<script type="math/tex; mode=display">
+y_i=soft\max \left( x_i \right) =\frac{e^{x_i}}{\sum_{j=1}^k{e^{x_j}}}</script><p>显然，$0&lt;y_i&lt;1$。下图给出了三类分类问题的  softmax 输出示意图。在图中，对于取值为 4、1和-4 的 $x_1$、$x_2$ 和 $x_3$，通过 softmax 变换后，将其映射到 (0,1) 之间的概率值。</p>
 <p><img src="https://paddlepedia.readthedocs.io/en/latest/_images/softmax.png" style="zoom: 43%;" /></p>
-<p>由于 softmax 输出结果的值累加起来为
-1，因此可将输出概率最大的作为分类目标。</p>
-<p>也可以从如下另外一个角度来理解：给定某个输入数据，可得到其分类为三个类别的初始结果，分别用
-<span class="math inline">\(x_1\)</span>、<span
-class="math inline">\(x_2\)</span> 和 <span
-class="math inline">\(x_3\)</span> 来表示。这三个初始分类结果分别是
-4、1和 -4。通过 Softmax
-函数，得到了三个类别分类任务中以概率表示的更好的分类结果，即分别以
-95.25%、4.71% 和 0.04% 归属于类别 1、类别 2 和类别
-3。显然，基于这样的概率值，可判断输入数据属于第一类。可见，通过使用
-Softmax 函数，可求取输入数据在所有类别上的概率分布。</p>
-<h2 id="如何训练与损失函数">如何训练与损失函数</h2>
-<h3 id="梯度下降法">梯度下降法</h3>
-<p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/grand.jpg" style="zoom:25%;" /></p>
-<ol type="1">
+<p>由于 softmax 输出结果的值累加起来为 1，因此可将输出概率最大的作为分类目标。</p>
+<p>也可以从如下另外一个角度来理解：给定某个输入数据，可得到其分类为三个类别的初始结果，分别用 $x_1$、$x_2$ 和 $x_3$ 来表示。这三个初始分类结果分别是 4、1和 -4。通过 Softmax 函数，得到了三个类别分类任务中以概率表示的更好的分类结果，即分别以 95.25%、4.71% 和 0.04% 归属于类别 1、类别 2 和类别 3。显然，基于这样的概率值，可判断输入数据属于第一类。可见，通过使用 Softmax 函数，可求取输入数据在所有类别上的概率分布。</p>
+<h2 id="如何训练与损失函数"><a href="#如何训练与损失函数" class="headerlink" title="如何训练与损失函数"></a>如何训练与损失函数</h2><h3 id="梯度下降法"><a href="#梯度下降法" class="headerlink" title="梯度下降法"></a>梯度下降法</h3><p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/grand.jpg" style="zoom:25%;" /></p>
+<ol>
 <li>梯度是指增长最快的方向，故而需要加上梯度的相反数</li>
 <li>在多维情况下，梯度计算较为复杂，可以改为偏导数</li>
 </ol>
-<h3 id="手动计算">手动计算</h3>
-<p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/gradient.jpg" style="zoom:25%;" /></p>
+<h3 id="手动计算"><a href="#手动计算" class="headerlink" title="手动计算"></a>手动计算</h3><p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/gradient.jpg" style="zoom:25%;" /></p>
 <p>这张图对于 sigmoid 情况下的梯度下降说的很清楚。</p>
 <p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/gradient3.jpg" style="zoom:25%;" /></p>
-<p>注意，这里 k 是 j 的后续，而不前驱，也即右图中 k 在 j 上方。</p>
-<h3 id="梯度下降算法">梯度下降算法</h3>
-<p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/gradient2.jpg" style="zoom:25%;" /></p>
-<p><strong>批量梯度下降</strong></p>
-<p>标准的梯度下降，即批量梯度下降（batch gradient descent,
-BGD），在整个训练集上计算损失函数关于参数 <span
-class="math inline">\(\theta\)</span> 的梯度。</p>
-<p><span class="math display">\[
-\theta=\theta-\eta \nabla_{\theta}J(\theta)
-\]</span> 其中 <span class="math inline">\(\theta\)</span>
-是模型的参数，<span class="math inline">\(\eta\)</span> 是学习率，<span
-class="math inline">\(\nabla_{\theta}J(\theta)\)</span> 为损失函数对参数
-<span class="math inline">\(\theta\)</span>
-的导数。由于为了一次参数更新我们需要在整个训练集上计算梯度，导致 BGD
-可能会非常慢，而且在训练集太大而不能全部载入内存的时候会很棘手。BGD
-也不允许我们在线更新模型参数，即实时增加新的训练样本。</p>
-<p>BGD 对于凸误差曲面（convex error
-surface）保证收敛到全局最优点，而对于非凸曲面（non-convex
-surface）则是局部最优点。</p>
+<p>注意，这里 k 是 j 的后续，而不前驱，也即右图中 k 在 j 上方。 </p>
+<h3 id="梯度下降算法"><a href="#梯度下降算法" class="headerlink" title="梯度下降算法"></a>梯度下降算法</h3><p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/gradient2.jpg" style="zoom:25%;" /></p>
+<p> <strong>批量梯度下降</strong></p>
+<p>标准的梯度下降，即批量梯度下降（batch gradient descent, BGD），在整个训练集上计算损失函数关于参数 $\theta$ 的梯度。</p>
+<script type="math/tex; mode=display">
+\theta=\theta-\eta \nabla_{\theta}J(\theta)</script><p>其中 $\theta$ 是模型的参数，$\eta$ 是学习率，$\nabla_{\theta}J(\theta)$ 为损失函数对参数 $\theta$ 的导数。由于为了一次参数更新我们需要在整个训练集上计算梯度，导致 BGD 可能会非常慢，而且在训练集太大而不能全部载入内存的时候会很棘手。BGD 也不允许我们在线更新模型参数，即实时增加新的训练样本。</p>
+<p>BGD 对于凸误差曲面（convex error surface）保证收敛到全局最优点，而对于非凸曲面（non-convex surface）则是局部最优点。</p>
 <p>缺点：收敛缓慢，容易陷入局部极值点</p>
 <p><strong>随机梯度下降</strong></p>
-<p>随机梯度下降（ stotastic gradient descent, SGD
-）则是每次使用一个训练样本 <span class="math inline">\(x^{i}\)</span>
-和标签 <span class="math inline">\(y^{i}\)</span> 进行一次参数更新。</p>
-<p><span class="math display">\[
-\theta=\theta -\eta \cdot \nabla_{\theta}J(\theta;x^i;y^i)
-\]</span> 其中 <span class="math inline">\(\theta\)</span>
-是模型的参数，<span class="math inline">\(\eta\)</span> 是学习率，<span
-class="math inline">\(\nabla_{\theta}J(\theta)\)</span> 为损失函数对参数
-<span class="math inline">\(\theta\)</span> 的导数。BGD
-对于大数据集来说执行了很多冗余的计算，因为在每一次参数更新前都要计算很多相似样本的梯度。SGD
-通过一次执行一次更新解决了这种冗余。因此通常 SGD
-的速度会非常快而且可以被用于在线学习。SGD
-以高方差的特点进行连续参数更新，导致目标函数严重震荡。</p>
-<figure>
-<img src="https://paddlepedia.readthedocs.io/en/latest/_images/sgd.png"
-alt="sgd震荡" />
-<figcaption aria-hidden="true">sgd震荡</figcaption>
-</figure>
-<p>BGD 能够收敛到（局部）最优点，然而 SGD
-的震荡特点导致其可以跳到新的潜在的可能更好的局部最优点。已经有研究显示当我们慢慢的降低学习率时，SGD
-拥有和 BGD
-一样的收敛性能，对于非凸和凸曲面几乎同样能够达到局部或者全局最优点。</p>
+<p>随机梯度下降（ stotastic gradient descent, SGD ）则是每次使用一个训练样本 $x^{i}$ 和标签 $y^{i}$ 进行一次参数更新。</p>
+<script type="math/tex; mode=display">
+\theta=\theta -\eta \cdot \nabla_{\theta}J(\theta;x^i;y^i)</script><p>其中 $\theta$ 是模型的参数，$\eta$ 是学习率，$\nabla_{\theta}J(\theta)$ 为损失函数对参数 $\theta$ 的导数。BGD 对于大数据集来说执行了很多冗余的计算，因为在每一次参数更新前都要计算很多相似样本的梯度。SGD 通过一次执行一次更新解决了这种冗余。因此通常 SGD 的速度会非常快而且可以被用于在线学习。SGD 以高方差的特点进行连续参数更新，导致目标函数严重震荡。</p>
+<p><img src="https://paddlepedia.readthedocs.io/en/latest/_images/sgd.png" alt="sgd震荡"></p>
+<p>BGD 能够收敛到（局部）最优点，然而 SGD 的震荡特点导致其可以跳到新的潜在的可能更好的局部最优点。已经有研究显示当我们慢慢的降低学习率时，SGD 拥有和 BGD 一样的收敛性能，对于非凸和凸曲面几乎同样能够达到局部或者全局最优点。</p>
 <p><strong>Mini-batch 梯度下降</strong></p>
-<p>Mini-batch gradient descent（ mini-batch gradient descent, MBGD
-）则是在上面两种方法中采取了一个折中的办法：每次从训练集中取出<span
-class="math inline">\(batch
-size\)</span>个样本作为一个mini-batch，以此来进行一次参数更新。</p>
-<p><span class="math display">\[
-\theta=\theta -\eta \cdot \nabla_{\theta}
-J(\theta;x^{(i:i+n);y^{(i:i+n)}})
-\]</span> 其中 <span class="math inline">\(\theta\)</span>
-是模型的参数，<span class="math inline">\(\eta\)</span> 是学习率，<span
-class="math inline">\(\nabla_{\theta}
-J(\theta;x^{(i:i+n);y^{(i:i+n)}}\)</span> 为损失函数对参数 <span
-class="math inline">\(\theta\)</span> 的导数，n 为
-Mini-bach的大小（batch size）。 batch size
-越大，批次越少，训练时间会更快一点，但可能造成数据的很大浪费；而 batch
-size
-越小，对数据的利用越充分，浪费的数据量越少，但批次会很大，训练会更耗时。</p>
+<p>Mini-batch gradient descent（ mini-batch gradient descent, MBGD ）则是在上面两种方法中采取了一个折中的办法：每次从训练集中取出$batch  size$个样本作为一个mini-batch，以此来进行一次参数更新。</p>
+<script type="math/tex; mode=display">
+\theta=\theta -\eta \cdot \nabla_{\theta} J(\theta;x^{(i:i+n);y^{(i:i+n)}})</script><p>其中 $\theta$ 是模型的参数，$\eta$ 是学习率，$\nabla_{\theta} J(\theta;x^{(i:i+n);y^{(i:i+n)}}$ 为损失函数对参数 $\theta$ 的导数，n 为 Mini-bach的大小（batch size）。 batch size 越大，批次越少，训练时间会更快一点，但可能造成数据的很大浪费；而 batch size 越小，对数据的利用越充分，浪费的数据量越少，但批次会很大，训练会更耗时。</p>
 <p><strong>优点</strong></p>
 <ul>
 <li>减小参数更新的方差，这样可以有更稳定的收敛。</li>
-<li>利用现在最先进的深度学习库对矩阵运算进行了高度优化的特点，这样可以使得计算
-mini-batch 的梯度更高效。</li>
+<li>利用现在最先进的深度学习库对矩阵运算进行了高度优化的特点，这样可以使得计算 mini-batch 的梯度更高效。</li>
 </ul>
-<p>样本数目较大的话，一般的 mini-batch 大小为 64 到
-512，考虑到电脑内存设置和使用的方式，如果mini-batch 大小是 <span
-class="math inline">\(2^n\)</span>，代码会运行地快一些。</p>
-<p>MBGD 是训练神经网络时的常用方法，而且通常即使实际上使用的是
-MBGD，也会使用 SGD 这个词来代替。</p>
-<h3 id="back-propagation"><strong>Back Propagation</strong></h3>
-<p>误差反向传播算法，给出了一种计算偏导数的方法。</p>
+<p>样本数目较大的话，一般的 mini-batch 大小为 64 到 512，考虑到电脑内存设置和使用的方式，如果mini-batch 大小是 $2^n$，代码会运行地快一些。</p>
+<p>MBGD 是训练神经网络时的常用方法，而且通常即使实际上使用的是 MBGD，也会使用 SGD 这个词来代替。</p>
+<h3 id="Back-Propagation"><a href="#Back-Propagation" class="headerlink" title="Back Propagation"></a><strong>Back Propagation</strong></h3><p>误差反向传播算法，给出了一种计算偏导数的方法。</p>
 <p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/BP.jpg" style="zoom:25%;" /></p>
-<h2 id="cross-entropy">cross entropy</h2>
-<p>在物理学中，“熵”被用来表示热力学系统所呈现的无序程度。香农将这一概念引入信息论领域，提出了“信息熵”概念，通过对数函数来测量信息的不确定性。</p>
-<p>交叉熵（cross
-entropy）是信息论中的重要概念，主要用来度量两个概率分布间的差异。假定
-<span class="math inline">\(p\)</span> 和 <span
-class="math inline">\(q\)</span> 是数据 <span
-class="math inline">\(x\)</span> 的两个概率分布，通过 <span
-class="math inline">\(q\)</span> 来表示 <span
-class="math inline">\(p\)</span> 的交叉熵可如下计算：</p>
-<p><span class="math display">\[
-H\left( p,q \right) =-\sum_x{p\left( x \right) \log q\left( x \right)}
-\]</span></p>
-<p>交叉熵刻画了两个概率分布之间的距离，旨在描绘通过概率分布 <span
-class="math inline">\(q\)</span> 来表达概率分布 <span
-class="math inline">\(p\)</span>
-的困难程度。根据公式不难理解，交叉熵越小，两个概率分布 <span
-class="math inline">\(p\)</span> 和 <span
-class="math inline">\(q\)</span> 越接近。</p>
-<p>这里仍然以三类分类问题为例，假设数据 <span
-class="math inline">\(x\)</span> 属于类别 <span
-class="math inline">\(1\)</span>。记数据 <span
-class="math inline">\(x\)</span> 的类别分布概率为 <span
-class="math inline">\(y\)</span>，显然 <span
-class="math inline">\(y=(1,0,0)\)</span> 代表数据 <span
-class="math inline">\(x\)</span> 的实际类别分布概率。记 $ $
-代表模型预测所得类别分布概率。</p>
-<p>那么对于数据 <span class="math inline">\(x\)</span>
-而言，其实际类别分布概率 <span class="math inline">\(y\)</span>
-和模型预测类别分布概率 <span class="math inline">\(\hat{y}\)</span>
-的交叉熵损失函数定义为：</p>
-<p><span class="math display">\[
-cross\ entropy=-y\times \log \left( \hat{y} \right)
-\]</span></p>
-<p>很显然，一个良好的神经网络要尽量保证对于每一个输入数据，神经网络所预测类别分布概率与实际类别分布概率之间的差距越小越好，即交叉熵越小越好。于是，可将交叉熵作为损失函数来训练神经网络。</p>
+<h2 id="cross-entropy"><a href="#cross-entropy" class="headerlink" title="cross entropy"></a>cross entropy</h2><p>在物理学中，“熵”被用来表示热力学系统所呈现的无序程度。香农将这一概念引入信息论领域，提出了“信息熵”概念，通过对数函数来测量信息的不确定性。</p>
+<p>交叉熵（cross entropy）是信息论中的重要概念，主要用来度量两个概率分布间的差异。假定 $p$ 和 $q$ 是数据 $x$ 的两个概率分布，通过 $q$ 来表示 $p$ 的交叉熵可如下计算：</p>
+<script type="math/tex; mode=display">
+H\left( p,q \right) =-\sum_x{p\left( x \right) \log q\left( x \right)}</script><p>交叉熵刻画了两个概率分布之间的距离，旨在描绘通过概率分布 $q$ 来表达概率分布 $p$ 的困难程度。根据公式不难理解，交叉熵越小，两个概率分布 $p$ 和 $q$ 越接近。</p>
+<p>这里仍然以三类分类问题为例，假设数据 $x$ 属于类别 $1$。记数据 $x$ 的类别分布概率为 $y$，显然 $y=(1,0,0)$ 代表数据 $x$ 的实际类别分布概率。记 $\hat{y}<br>$ 代表模型预测所得类别分布概率。</p>
+<p>那么对于数据 $x$ 而言，其实际类别分布概率 $y$ 和模型预测类别分布概率 $\hat{y}$ 的交叉熵损失函数定义为：</p>
+<script type="math/tex; mode=display">
+cross\ entropy=-y\times \log \left( \hat{y} \right)</script><p>很显然，一个良好的神经网络要尽量保证对于每一个输入数据，神经网络所预测类别分布概率与实际类别分布概率之间的差距越小越好，即交叉熵越小越好。于是，可将交叉熵作为损失函数来训练神经网络。</p>
 <p><img src="https://paddlepedia.readthedocs.io/en/latest/_images/CrossEntropy.png" style="zoom:53%;" /></p>
-<p>上图给出了一个三个类别分类的例子。由于输入数据 <span
-class="math inline">\(x\)</span> 属于类别 <span
-class="math inline">\(1\)</span>，因此其实际类别概率分布值为 <span
-class="math inline">\(y=(y_1,y_2,y_3)=(1,0,0)\)</span>。经过神经网络的变换，得到了输入数据
-<span class="math inline">\(x\)</span> 相对于三个类别的预测中间值 <span
-class="math inline">\((z1,z2,z3)\)</span>。然后，经过 <span
-class="math inline">\(Softmax\)</span>
-函数映射，得到神经网络所预测的输入数据 <span
-class="math inline">\(x\)</span> 的类别分布概率 <span
-class="math inline">\(\hat{y}=\left( \hat{y}_1,\hat{y}_2,\hat{y}_3
-\right)\)</span>。根据前面的介绍，<span
-class="math inline">\(\hat{y}_1\)</span>、<span
-class="math inline">\(\hat{y}_2\)</span> 和 <span
-class="math inline">\(\hat{y}_3\)</span> 为 <span
-class="math inline">\((0,1)\)</span> 范围之间的一个概率值。由于样本
-<span class="math inline">\(x\)</span>
-属于第一个类别，因此希望神经网络所预测得到的 <span
-class="math inline">\(\hat{y}_1\)</span>取值要远远大于 <span
-class="math inline">\(\hat{y}_2\)</span> 和 <span
-class="math inline">\(\hat{y}_3\)</span>
-的取值。为了得到这样的神经网络，在训练中可利用如下交叉熵损失函数来对模型参数进行优化：
-<span class="math display">\[
-cross\ entropy=-\left( y_1\times \log \left( \hat{y}_1 \right)
-+y_2\times \log \left( \hat{y}_2 \right) +y_3\times \log \left(
-\hat{y}_3 \right) \right)
-\]</span></p>
-<p>在上式中，<span class="math inline">\(y_2\)</span> 和 <span
-class="math inline">\(y_3\)</span> 均为 <span
-class="math inline">\(0\)</span>、<span
-class="math inline">\(y_1\)</span> 为 <span
-class="math inline">\(1\)</span>，因此交叉熵损失函数简化为： <span
-class="math display">\[
--y_1\times \log \left( \hat{y}_1 \right) =-\log \left( \hat{y}_1 \right)
-\]</span></p>
-<p>在神经网络训练中，要将输入数据实际的类别概率分布与模型预测的类别概率分布之间的误差（即损失）从输出端向输入端传递，以便来优化模型参数。下面简单介绍根据交叉熵计算得到的误差从
-<span class="math inline">\(\hat{y}_1\)</span> 传递给 <span
-class="math inline">\(z_1\)</span> 和 <span
-class="math inline">\(z_2\)</span>（<span
-class="math inline">\(z_3\)</span> 的推导与 <span
-class="math inline">\(z_2\)</span> 相同）的情况。</p>
-<p><span class="math display">\[
-\frac{\partial \hat{y}_1}{\partial z_1}=\frac{\partial \left(
-\frac{e^{z_1}}{\sum_k{e^{z_k}}} \right)}{\partial z_1}=\frac{\left(
-e^{z_1} \right) ^{&#39;}\times \sum_k{e^{z_k}-e^{z_1}\times
-e^{z_1}}}{\left( \sum_k{e^{z_k}} \right)
-^2}=\frac{e^{z_1}}{\sum_k{e^{z_k}}}-\frac{e^{z_1}}{\sum_k{e^{z_k}}}\times
-\frac{e^{z_1}}{\sum_k{e^{z_k}}}=\hat{y}_1\left( 1-\hat{y}_1 \right)
-\]</span></p>
-<p>由于交叉熵损失函数 <span class="math inline">\(-\log \left( \hat{y}_1
-\right)\)</span> 对 <span class="math inline">\(\hat{y}_1\)</span>
-求导的结果为 <span
-class="math inline">\(-\frac{1}{\hat{y}_1}\)</span>，<span
-class="math inline">\(\hat{y}_1\left( 1-\hat{y}_1 \right)\)</span> 与
-<span class="math inline">\(-\frac{1}{\hat{y}_1}\)</span> 相乘为 <span
-class="math inline">\(\hat{y}_1-1\)</span>。这说明一旦得到模型预测输出
-<span
-class="math inline">\(\hat{y}_1\)</span>，将该输出减去1就是交叉损失函数相对于
-<span class="math inline">\(z_1\)</span> 的偏导结果。</p>
-<p><span class="math display">\[
-\frac{\partial \hat{y}_1}{\partial z_2}=\frac{\partial \left(
-\frac{e^{z_1}}{\sum_k{e^{z_k}}} \right)}{\partial z_2}=\frac{0\times
-\sum_k{e^{z_k}-e^{z_1}\times e^{z_2}}}{\left( \sum_k{e^{z_k}} \right)
-^2}=-\frac{e^{z_1}}{\sum_k{e^{z_k}}}\times
-\frac{e^{z_2}}{\sum_k{e^{z_k}}}=-\hat{y}_1\hat{y}_2
-\]</span></p>
-<p>同理，交叉熵损失函数导数为 <span
-class="math inline">\(-\frac{1}{\hat{y}_1}\)</span>，<span
-class="math inline">\(-\hat{y}_1\hat{y}_2\)</span> 与 <span
-class="math inline">\(-\frac{1}{\hat{y}_1}\)</span> 相乘结果为 <span
-class="math inline">\(\hat{y}_2\)</span>。这意味对于除第一个输出节点以外的节点进行偏导，在得到模型预测输出后，只要将其保存，就是交叉损失函数相对于其他节点的偏导结果。在
-<span class="math inline">\(z_1\)</span>、<span
-class="math inline">\(z_2\)</span> 和 <span
-class="math inline">\(z_3\)</span>得到偏导结果后，再通过链式法则将损失误差继续往输入端传递即可。</p>
-<p>在上面的例子中，假设所预测中间值 <span
-class="math inline">\((z_1,z_2,z_3)\)</span> 经过 <span
-class="math inline">\(Softmax\)</span> 映射后所得结果为 <span
-class="math inline">\((0.34,0.46,0.20)\)</span>。由于已知输入数据 <span
-class="math inline">\(x\)</span>
-属于第一类，显然这个输出不理想而需要对模型参数进行优化。如果选择交叉熵损失函数来优化模型，则
-<span class="math inline">\((z_1,z_2,z_3)\)</span> 这一层的偏导值为
-<span class="math inline">\((0.34-1,0.46,0.20)=
-(-0.66,0.46,0.20)\)</span>。</p>
-<p>可以看出，<span class="math inline">\(Softmax\)</span>
-和交叉熵损失函数相互结合，为偏导计算带来了极大便利。偏导计算使得损失误差从输出端向输入端传递，来对模型参数进行优化。在这里，交叉熵与<span
-class="math inline">\(Softmax\)</span> 函数结合在一起，因此也叫 <span
-class="math inline">\(Softmax\)</span> 损失（Softmax with cross-entropy
-loss）。</p>
-<p><strong>softmax</strong>
-把分类输出标准化成概率分布，<strong>cross-entropy</strong>
-刻画预测分类和真实结果概率分布之间的相似度。</p>
-<h1 id="训练优化">训练优化</h1>
-<p>神经网络遇到的两大问题：梯度消失 + 过拟合</p>
-<h2 id="梯度消失">梯度消失</h2>
-<p>神经网络并非层数越深越好，层数越深，越越靠近输入处的神经元的梯度越小</p>
-<p>比如用 sigmoid，<span class="math inline">\(\delta_h=o_h(1-o_h)\le
-\frac{1}{4}\)</span>，越乘梯度越小</p>
+<p>上图给出了一个三个类别分类的例子。由于输入数据 $x$ 属于类别 $1$，因此其实际类别概率分布值为 $y=(y_1,y_2,y_3)=(1,0,0)$。经过神经网络的变换，得到了输入数据 $x$ 相对于三个类别的预测中间值 $(z1,z2,z3)$。然后，经过 $Softmax$ 函数映射，得到神经网络所预测的输入数据 $x$ 的类别分布概率 $\hat{y}=\left( \hat{y}_1,\hat{y}_2,\hat{y}_3 \right)$。根据前面的介绍，$\hat{y}_1$、$\hat{y}_2$ 和 $\hat{y}_3$ 为 $(0,1)$ 范围之间的一个概率值。由于样本 $x$ 属于第一个类别，因此希望神经网络所预测得到的 $\hat{y}_1$取值要远远大于 $\hat{y}_2$ 和 $\hat{y}_3$ 的取值。为了得到这样的神经网络，在训练中可利用如下交叉熵损失函数来对模型参数进行优化：</p>
+<script type="math/tex; mode=display">
+cross\ entropy=-\left( y_1\times \log \left( \hat{y}_1 \right) +y_2\times \log \left( \hat{y}_2 \right) +y_3\times \log \left( \hat{y}_3 \right) \right)</script><p>在上式中，$y_2$ 和 $y_3$ 均为 $0$、$y_1$ 为 $1$，因此交叉熵损失函数简化为：</p>
+<script type="math/tex; mode=display">
+-y_1\times \log \left( \hat{y}_1 \right) =-\log \left( \hat{y}_1 \right)</script><p>在神经网络训练中，要将输入数据实际的类别概率分布与模型预测的类别概率分布之间的误差（即损失）从输出端向输入端传递，以便来优化模型参数。下面简单介绍根据交叉熵计算得到的误差从 $\hat{y}_1$ 传递给 $z_1$ 和 $z_2$（$z_3$ 的推导与 $z_2$ 相同）的情况。</p>
+<script type="math/tex; mode=display">
+\frac{\partial \hat{y}_1}{\partial z_1}=\frac{\partial \left( \frac{e^{z_1}}{\sum_k{e^{z_k}}} \right)}{\partial z_1}=\frac{\left( e^{z_1} \right) ^{'}\times \sum_k{e^{z_k}-e^{z_1}\times e^{z_1}}}{\left( \sum_k{e^{z_k}} \right) ^2}=\frac{e^{z_1}}{\sum_k{e^{z_k}}}-\frac{e^{z_1}}{\sum_k{e^{z_k}}}\times \frac{e^{z_1}}{\sum_k{e^{z_k}}}=\hat{y}_1\left( 1-\hat{y}_1 \right)</script><p>由于交叉熵损失函数 $-\log \left( \hat{y}_1 \right)$ 对 $\hat{y}_1$ 求导的结果为 $-\frac{1}{\hat{y}_1}$，$\hat{y}_1\left( 1-\hat{y}_1 \right)$ 与 $-\frac{1}{\hat{y}_1}$ 相乘为 $\hat{y}_1-1$。这说明一旦得到模型预测输出 $\hat{y}_1$，将该输出减去1就是交叉损失函数相对于 $z_1$ 的偏导结果。</p>
+<script type="math/tex; mode=display">
+\frac{\partial \hat{y}_1}{\partial z_2}=\frac{\partial \left( \frac{e^{z_1}}{\sum_k{e^{z_k}}} \right)}{\partial z_2}=\frac{0\times \sum_k{e^{z_k}-e^{z_1}\times e^{z_2}}}{\left( \sum_k{e^{z_k}} \right) ^2}=-\frac{e^{z_1}}{\sum_k{e^{z_k}}}\times \frac{e^{z_2}}{\sum_k{e^{z_k}}}=-\hat{y}_1\hat{y}_2</script><p>同理，交叉熵损失函数导数为 $-\frac{1}{\hat{y}_1}$，$-\hat{y}_1\hat{y}_2$ 与 $-\frac{1}{\hat{y}_1}$ 相乘结果为 $\hat{y}_2$。这意味对于除第一个输出节点以外的节点进行偏导，在得到模型预测输出后，只要将其保存，就是交叉损失函数相对于其他节点的偏导结果。在 $z_1$、$z_2$ 和 $z_3$得到偏导结果后，再通过链式法则将损失误差继续往输入端传递即可。</p>
+<p>在上面的例子中，假设所预测中间值 $(z_1,z_2,z_3)$ 经过 $Softmax$ 映射后所得结果为 $(0.34,0.46,0.20)$。由于已知输入数据 $x$ 属于第一类，显然这个输出不理想而需要对模型参数进行优化。如果选择交叉熵损失函数来优化模型，则 $(z_1,z_2,z_3)$ 这一层的偏导值为 $(0.34-1,0.46,0.20)= (-0.66,0.46,0.20)$。</p>
+<p>可以看出，$Softmax$ 和交叉熵损失函数相互结合，为偏导计算带来了极大便利。偏导计算使得损失误差从输出端向输入端传递，来对模型参数进行优化。在这里，交叉熵与$Softmax$ 函数结合在一起，因此也叫 $Softmax$ 损失（Softmax with cross-entropy loss）。</p>
+<p><strong>softmax</strong> 把分类输出标准化成概率分布，<strong>cross-entropy</strong> 刻画预测分类和真实结果概率分布之间的相似度。</p>
+<h1 id="训练优化"><a href="#训练优化" class="headerlink" title="训练优化"></a>训练优化</h1><p>神经网络遇到的两大问题：梯度消失 + 过拟合</p>
+<h2 id="梯度消失"><a href="#梯度消失" class="headerlink" title="梯度消失"></a>梯度消失</h2><p>神经网络并非层数越深越好，层数越深，越越靠近输入处的神经元的梯度越小</p>
+<p>比如用 sigmoid，$\delta_h=o_h(1-o_h)\le \frac{1}{4}$，越乘梯度越小</p>
 <p>解决思路：</p>
-<ol type="1">
-<li><p>使用 ReLU 激活函数，ReLU 的导数为 1</p></li>
-<li><p>优化网络结构</p></li>
+<ol>
+<li><p>使用 ReLU 激活函数，ReLU 的导数为 1</p>
+</li>
+<li><p>优化网络结构</p>
+</li>
 </ol>
 <blockquote>
 <p>GoogLeNet：</p>
-<p>配合 inception
-模块采用辅助输出，中途分支的输出对应更浅层的神经网络，训练时用三个输出共同计算
-Loss，辅助输出更靠近输入，可以缓解梯度消失问题</p>
+<p>配合 inception 模块采用辅助输出，中途分支的输出对应更浅层的神经网络，训练时用三个输出共同计算 Loss，辅助输出更靠近输入，可以缓解梯度消失问题</p>
 <p>ResNet：</p>
-<p>设输入为 <span
-class="math inline">\(\boldsymbol{x}\)</span>，假设我们希望学出的理想映射为
-<span
-class="math inline">\(f(\boldsymbol{x})\)</span>，从而作为激活函数的输入。左图虚线框中的部分需要直接拟合出该映射
-<span
-class="math inline">\(f(\boldsymbol{x})\)</span>，而右图虚线框中的部分则需要拟合出有关恒等映射的残差映射
-<span
-class="math inline">\(f(\boldsymbol{x})-\boldsymbol{x}\)</span>。残差映射在实际中往往更容易优化。实际中，当理想映射
-<span class="math inline">\(f(\boldsymbol{x})\)</span>
-极接近于恒等映射时，残差映射也易于捕捉恒等映射的细微波动。右图也是ResNet的基础块，即残差块（residual
-block）。在残差块中，输入可通过跨层的数据线路更快地向前传播。</p>
+<p>设输入为 $\boldsymbol{x}$，假设我们希望学出的理想映射为 $f(\boldsymbol{x})$，从而作为激活函数的输入。左图虚线框中的部分需要直接拟合出该映射 $f(\boldsymbol{x})$，而右图虚线框中的部分则需要拟合出有关恒等映射的残差映射 $f(\boldsymbol{x})-\boldsymbol{x}$。残差映射在实际中往往更容易优化。实际中，当理想映射 $f(\boldsymbol{x})$ 极接近于恒等映射时，残差映射也易于捕捉恒等映射的细微波动。右图也是ResNet的基础块，即残差块（residual block）。在残差块中，输入可通过跨层的数据线路更快地向前传播。</p>
 <p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/res.svg" style="zoom:100%;" /></p>
 </blockquote>
-<h1 id="神经网络语言模型">神经网络语言模型</h1>
-<h2 id="词向量">词向量</h2>
-<p>词向量又称为词嵌入（word
-embedding），是一种将单词表示为向量的方法。</p>
+<h1 id="神经网络语言模型"><a href="#神经网络语言模型" class="headerlink" title="神经网络语言模型"></a>神经网络语言模型</h1><h2 id="词向量"><a href="#词向量" class="headerlink" title="词向量"></a>词向量</h2><p>词向量又称为词嵌入（word embedding），是一种将单词表示为向量的方法。</p>
 <p>嵌入：满足一定性质的一种变换。</p>
-<h3 id="one-hot-编码">one-hot 编码</h3>
-<ul>
+<h3 id="one-hot-编码"><a href="#one-hot-编码" class="headerlink" title="one-hot 编码"></a>one-hot 编码</h3><ul>
 <li>用与词表等长的向量表示一个词</li>
-<li>向量只有一个元素为 1，其余为 0</li>
+<li>向量只有一个元素为  1，其余为 0</li>
 <li>第 i 个元素为 1 的向量用于表示词表中的第 i 个词</li>
 </ul>
 <p><strong>优点</strong></p>
-<ol type="1">
+<ol>
 <li>编码简单</li>
 </ol>
 <p><strong>缺点</strong></p>
-<ol type="1">
+<ol>
 <li>编码太长</li>
 <li>无法度量词之间的相似性</li>
 </ol>
-<h3 id="分布式表示">分布式表示</h3>
-<ul>
+<h3 id="分布式表示"><a href="#分布式表示" class="headerlink" title="分布式表示"></a>分布式表示</h3><ul>
 <li>一种压缩表示方法，将词映射到一个较短的向量，用向量的所有位联合表示一个词。</li>
 <li>可根据需要指定向量的大小。</li>
 <li>一般语义相近的词在空间中分布相近。</li>
 </ul>
-<h2 id="nnlm-模型">NNLM 模型</h2>
-<p>neural network language model，这一块描述的我真的很不理解，私以为和
-Viterbi algorithm
-那章一样，希望通过神经网络来学习语句内词语的联系，也即前 n-1
-个词确定时，第 n 个词的分布概率。</p>
+<h2 id="NNLM-模型"><a href="#NNLM-模型" class="headerlink" title="NNLM 模型"></a>NNLM 模型</h2><p>neural network language model，这一块描述的我真的很不理解，私以为和 Viterbi algorithm 那章一样，希望通过神经网络来学习语句内词语的联系，也即前 n-1 个词确定时，第 n 个词的分布概率。</p>
 <p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/NNLM2.jpg" style="zoom:30%;" /></p>
 <p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/NNLM.jpg" style="zoom:30%;" /></p>
 <p>结合这两张图，还是蛮好理解的。</p>
-<h3 id="如何训练">如何训练</h3>
-<ol type="1">
+<h3 id="如何训练"><a href="#如何训练" class="headerlink" title="如何训练"></a>如何训练</h3><ol>
 <li>通过让联合概率最大化估计概率的方法称作最大似然估计</li>
 </ol>
 <blockquote>
 <p>联合概率分布一般含有参数，通过最大似然方法估计该联合概率的参数，对于神经网络语言模型就是估计网络的参数值</p>
 </blockquote>
 <p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/MLP.jpg" style="zoom:40%;" /></p>
-<h3 id="存在的问题">存在的问题</h3>
-<ol type="1">
+<h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><ol>
 <li>softmax 计算复杂度高</li>
 <li>输出层神经元个数多，等于词表长度 k</li>
 <li>全连接层参数较多</li>
 </ol>
-<h2 id="word2vec-模型">word2vec 模型</h2>
-<p>经过简化的 NNLM 模型，连续词袋模型（CBOW）or 跳词模型（Skip-Gram
-Model）</p>
-<h3 id="cbow-模型">CBOW 模型</h3>
-<p>对于第 t 个词 <span class="math inline">\(w_t\)</span>，考虑其前后各
-n 个词，我们假定语义信息是连续的，根据前后 n 个词能够推测出 <span
-class="math inline">\(w_t\)</span> 的语义信息。</p>
+<h2 id="word2vec-模型"><a href="#word2vec-模型" class="headerlink" title="word2vec 模型"></a>word2vec 模型</h2><p>经过简化的 NNLM 模型，连续词袋模型（CBOW）or 跳词模型（Skip-Gram Model）</p>
+<h3 id="CBOW-模型"><a href="#CBOW-模型" class="headerlink" title="CBOW 模型"></a>CBOW 模型</h3><p>对于第 t 个词 $w_t$，考虑其前后各 n 个词，我们假定语义信息是连续的，根据前后 n 个词能够推测出 $w_t$ 的语义信息。</p>
 <p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/huffman.jpg" style="zoom:40%;" /></p>
-<p>也即在此图中，直接将词向量相加得到 <span
-class="math inline">\(x_w\)</span>，当然，这里可以用同一套参数作用在词上，可以看成是一次卷积。</p>
-<p>接下来，把得到的 tensor <span class="math inline">\(w_t\)</span>
-作为一棵霍夫曼树的输入，开始从霍夫曼树的顶部开始往叶节点走。</p>
+<p>也即在此图中，直接将词向量相加得到 $x_w$，当然，这里可以用同一套参数作用在词上，可以看成是一次卷积。</p>
+<p>接下来，把得到的 tensor $w_t$ 作为一棵霍夫曼树的输入，开始从霍夫曼树的顶部开始往叶节点走。</p>
 <p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/huffman2.jpg" style="zoom:35%;" /></p>
-<p>注意，<span class="math inline">\(w_t\)</span>
-对应的词所在的位置实际上是确定的（在建树时就由词频决定了），故而 <span
-class="math inline">\(w_t\)</span> 到达 <span
-class="math inline">\(w_2\)</span>
-的路径是固定的。沿着这条路径，规定子节点在父节点的右侧则取 <span
-class="math inline">\(\sigma\)</span> ，反之则取 <span
-class="math inline">\(1-\sigma\)</span>。</p>
+<p>注意，$w_t$ 对应的词所在的位置实际上是确定的（在建树时就由词频决定了），故而 $w_t$ 到达 $w_2$ 的路径是固定的。沿着这条路径，规定子节点在父节点的右侧则取 $\sigma$ ，反之则取 $1-\sigma$。</p>
 <ul>
-<li>词 <span class="math inline">\(\mathrm{w}\)</span>
-的最大似然函数:</li>
+<li>词  $\mathrm{w}$  的最大似然函数:</li>
 </ul>
-<p><span class="math display">\[
-\prod_{i=2}^{l_{w}} p\left(d_{i}^{w} \mid x_{w},
-\theta_{i-1}^{w}\right)=\prod_{i=2}^{l_{w}}\left[\sigma\left(x_{w} \cdot
-\theta_{i-1}^{w}\right)\right]^{1-d_{i}^{w}}\left[1-\sigma\left(x_{w}
-\cdot \theta_{i-1}^{w}\right)\right]^{d_{i}^{w}}
-\]</span></p>
-<ul>
+<script type="math/tex; mode=display">
+\prod_{i=2}^{l_{w}} p\left(d_{i}^{w} \mid x_{w}, \theta_{i-1}^{w}\right)=\prod_{i=2}^{l_{w}}\left[\sigma\left(x_{w} \cdot \theta_{i-1}^{w}\right)\right]^{1-d_{i}^{w}}\left[1-\sigma\left(x_{w} \cdot \theta_{i-1}^{w}\right)\right]^{d_{i}^{w}}</script><ul>
 <li>定义损失函数（负对数似然函数）:</li>
 </ul>
-<p><span class="math display">\[
+<script type="math/tex; mode=display">
 \begin{aligned}
-\mathrm{L} &amp;=-\log \prod_{i=2}^{l_{w}} p\left(d_{i}^{w} \mid x_{w},
-\theta_{i-1}^{w}\right) \\
-&amp;=-\sum_{i=2}^{l_{w}}\left\{\left(1-d_{i}^{w}\right) \log
-\left[\sigma\left(x_{w} \cdot \theta_{i-1}^{w}\right)\right]+d_{i}^{w}
-\log \left[1-\sigma\left(x_{w} \cdot
-\theta_{i-1}^{w}\right)\right]\right\}
-\end{aligned}
-\]</span></p>
-<p>再以此为基础，BP 更新参数。</p>
+\mathrm{L} &=-\log \prod_{i=2}^{l_{w}} p\left(d_{i}^{w} \mid x_{w}, \theta_{i-1}^{w}\right) \\
+&=-\sum_{i=2}^{l_{w}}\left\{\left(1-d_{i}^{w}\right) \log \left[\sigma\left(x_{w} \cdot \theta_{i-1}^{w}\right)\right]+d_{i}^{w} \log \left[1-\sigma\left(x_{w} \cdot \theta_{i-1}^{w}\right)\right]\right\}
+\end{aligned}</script><p>再以此为基础，BP 更新参数。</p>
 <p><strong>优点</strong></p>
-<ol type="1">
+<ol>
 <li>每次只更新路径上的参数，也即每次只更新与该词有关的参数</li>
 <li>越是常用的词距离根节点越近，参数越少</li>
 </ol>
-<h1 id="词向量应用模型">词向量应用模型</h1>
-<h2 id="textcnn">TextCNN</h2>
-<p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/textCNN.jpg" style="zoom:50%;" /></p>
-<h2 id="rnn">RNN</h2>
-<p>Recurrent Neural Network</p>
-<p><span class="math inline">\(n\)</span> 元语法中，时间步 <span
-class="math inline">\(t\)</span> 的词 <span
-class="math inline">\(w_t\)</span>
-基于前面所有词的条件概率只考虑了最近时间步的 <span
-class="math inline">\(n-1\)</span> 个词。如果要考虑比 <span
-class="math inline">\(t-(n-1)\)</span> 更早时间步的词对 <span
-class="math inline">\(w_t\)</span> 的可能影响，我们需要增大 <span
-class="math inline">\(n\)</span>。但这样模型参数的数量将随之呈指数级增长。</p>
-<p>而 RNN
-并非刚性地记忆所有固定长度的序列，而是通过隐藏状态来存储之前时间步的信息。</p>
-<p>我们考虑输入数据存在时间相关性的情况。假设 <span
-class="math inline">\(\boldsymbol{X}_t \in \mathbb{R}^{n \times
-d}\)</span> 是序列中时间步 <span class="math inline">\(t\)</span>
-的小批量输入，<span class="math inline">\(\boldsymbol{H}_t \in
-\mathbb{R}^{n \times h}\)</span>
-是该时间步的隐藏变量。与多层感知机不同的是，这里我们保存上一时间步的隐藏变量
-<span
-class="math inline">\(\boldsymbol{H}_{t-1}\)</span>，并引入一个新的权重参数
-<span class="math inline">\(\boldsymbol{W}_{hh} \in \mathbb{R}^{h \times
-h}\)</span>，该参数用来描述在当前时间步如何使用上一时间步的隐藏变量。具体来说，时间步
-<span class="math inline">\(t\)</span>
-的隐藏变量的计算由当前时间步的输入和上一时间步的隐藏变量共同决定：</p>
-<p><span class="math display">\[
-\boldsymbol{H}_t = \phi(\boldsymbol{X}_t \boldsymbol{W}_{xh} +
-\boldsymbol{H}_{t-1} \boldsymbol{W}_{hh}  + \boldsymbol{b}_h).
-\]</span> 与多层感知机相比，我们在这里添加了 <span
-class="math inline">\(\boldsymbol{H}_{t-1} \boldsymbol{W}_{hh}\)</span>
-一项。由上式中相邻时间步的隐藏变量 <span
-class="math inline">\(\boldsymbol{H}_t\)</span>和<span
-class="math inline">\(\boldsymbol{H}_{t-1}\)</span>
-之间的关系可知，这里的隐藏变量能够捕捉截至当前时间步的序列的历史信息，就像是神经网络当前时间步的状态或记忆一样。因此，该隐藏变量也称为隐藏状态。由于隐藏状态在当前时间步的定义使用了上一时间步的隐藏状态，上式的计算是循环的。使用循环计算的网络即循环神经网络（recurrent
-neural network）。</p>
-<p>循环神经网络有很多种不同的构造方法。含上式所定义的隐藏状态的循环神经网络是极为常见的一种。在时间步
-<span
-class="math inline">\(t\)</span>，输出层的输出和多层感知机中的计算类似：</p>
-<p><span class="math display">\[
-\boldsymbol{O}_t = \boldsymbol{H}_t \boldsymbol{W}_{hq} +
-\boldsymbol{b}_q.
-\]</span> 循环神经网络的参数包括隐藏层的权重 <span
-class="math inline">\(\boldsymbol{W}_{xh} \in \mathbb{R}^{d \times
-h}\)</span>、<span class="math inline">\(\boldsymbol{W}_{hh} \in
-\mathbb{R}^{h \times h}\)</span> 和偏差 <span
-class="math inline">\(\boldsymbol{b}_h \in \mathbb{R}^{1 \times
-h}\)</span>，以及输出层的权重 <span
-class="math inline">\(\boldsymbol{W}_{hq} \in \mathbb{R}^{h \times
-q}\)</span> 和偏差 <span class="math inline">\(\boldsymbol{b}_q \in
-\mathbb{R}^{1 \times
-q}\)</span>。值得一提的是，即便在不同时间步，循环神经网络也始终使用这些模型参数。因此，循环神经网络模型参数的数量不随时间步的增加而增长。</p>
-<p><img
-src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.2_rnn.svg" /></p>
-<h3 id="gru">GRU</h3>
-<p>当时间步数较大或者时间步较小时，循环神经网络的梯度较容易出现衰减或爆炸。虽然裁剪梯度可以应对梯度爆炸，但无法解决梯度衰减的问题。通常由于这个原因，循环神经网络在实际中较难捕捉时间序列中时间步距离较大的依赖关系。</p>
-<p>门控循环神经网络（gated recurrent neural
-network）的提出，正是为了更好地捕捉时间序列中时间步距离较大的依赖关系。它通过可以学习的门来控制信息的流动。其中，门控循环单元（gated
-recurrent unit，GRU）是一种常用的门控循环神经网络，它引入了重置门（reset
-gate）和更新门（update
-gate）的概念，从而修改了循环神经网络中隐藏状态的计算方式。</p>
-<p>门控循环单元中的重置门和更新门的输入均为当前时间步输入 <span
-class="math inline">\(\boldsymbol{X}_t\)</span> 与上一时间步隐藏状态
-<span
-class="math inline">\(\boldsymbol{H}_{t-1}\)</span>，输出由激活函数为
-sigmoid 函数的全连接层计算得到。</p>
-<p><img
-src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.7_gru_1.svg" /></p>
-<p>具体来说，假设隐藏单元个数为 <span
-class="math inline">\(h\)</span>，给定时间步 <span
-class="math inline">\(t\)</span> 的小批量输入 <span
-class="math inline">\(\boldsymbol{X}_t \in \mathbb{R}^{n \times
-d}\)</span>（样本数为 <span class="math inline">\(n\)</span>，输入个数为
-<span class="math inline">\(d\)</span>）和上一时间步隐藏状态 <span
-class="math inline">\(\boldsymbol{H}_{t-1} \in \mathbb{R}^{n \times
-h}\)</span>。重置门 <span class="math inline">\(\boldsymbol{R}_t \in
-\mathbb{R}^{n \times h}\)</span> 和更新门 <span
-class="math inline">\(\boldsymbol{Z}_t \in \mathbb{R}^{n \times
-h}\)</span> 的计算如下：</p>
-<p><span class="math display">\[
+<h1 id="词向量应用模型"><a href="#词向量应用模型" class="headerlink" title="词向量应用模型"></a>词向量应用模型</h1><h2 id="TextCNN"><a href="#TextCNN" class="headerlink" title="TextCNN"></a>TextCNN</h2><p><img src="https://zhaochenyang20.github.io/pic/lecture/2022_spring/deep_learning/textCNN.jpg" style="zoom:50%;" /></p>
+<h2 id="RNN"><a href="#RNN" class="headerlink" title="RNN"></a>RNN</h2><p>Recurrent Neural Network</p>
+<p>$n$ 元语法中，时间步 $t$ 的词 $w_t$ 基于前面所有词的条件概率只考虑了最近时间步的 $n-1$ 个词。如果要考虑比 $t-(n-1)$ 更早时间步的词对 $w_t$ 的可能影响，我们需要增大 $n$。但这样模型参数的数量将随之呈指数级增长。</p>
+<p>而 RNN 并非刚性地记忆所有固定长度的序列，而是通过隐藏状态来存储之前时间步的信息。</p>
+<p>我们考虑输入数据存在时间相关性的情况。假设 $\boldsymbol{X}<em>t \in \mathbb{R}^{n \times d}$ 是序列中时间步 $t$ 的小批量输入，$\boldsymbol{H}_t  \in \mathbb{R}^{n \times h}$ 是该时间步的隐藏变量。与多层感知机不同的是，这里我们保存上一时间步的隐藏变量 $\boldsymbol{H}</em>{t-1}$，并引入一个新的权重参数 $\boldsymbol{W}_{hh} \in \mathbb{R}^{h \times h}$，该参数用来描述在当前时间步如何使用上一时间步的隐藏变量。具体来说，时间步 $t$ 的隐藏变量的计算由当前时间步的输入和上一时间步的隐藏变量共同决定：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{H}_t = \phi(\boldsymbol{X}_t \boldsymbol{W}_{xh} + \boldsymbol{H}_{t-1} \boldsymbol{W}_{hh}  + \boldsymbol{b}_h).</script><p>与多层感知机相比，我们在这里添加了 $\boldsymbol{H}<em>{t-1} \boldsymbol{W}</em>{hh}$  一项。由上式中相邻时间步的隐藏变量 $\boldsymbol{H}<em>t$和$\boldsymbol{H}</em>{t-1}$ 之间的关系可知，这里的隐藏变量能够捕捉截至当前时间步的序列的历史信息，就像是神经网络当前时间步的状态或记忆一样。因此，该隐藏变量也称为隐藏状态。由于隐藏状态在当前时间步的定义使用了上一时间步的隐藏状态，上式的计算是循环的。使用循环计算的网络即循环神经网络（recurrent neural network）。</p>
+<p>循环神经网络有很多种不同的构造方法。含上式所定义的隐藏状态的循环神经网络是极为常见的一种。在时间步 $t$，输出层的输出和多层感知机中的计算类似：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{O}_t = \boldsymbol{H}_t \boldsymbol{W}_{hq} + \boldsymbol{b}_q.</script><p>循环神经网络的参数包括隐藏层的权重 $\boldsymbol{W}<em>{xh} \in \mathbb{R}^{d \times h}$、$\boldsymbol{W}</em>{hh} \in \mathbb{R}^{h \times h}$ 和偏差 $\boldsymbol{b}<em>h \in \mathbb{R}^{1 \times h}$，以及输出层的权重 $\boldsymbol{W}</em>{hq} \in \mathbb{R}^{h \times q}$ 和偏差 $\boldsymbol{b}_q \in \mathbb{R}^{1 \times q}$。值得一提的是，即便在不同时间步，循环神经网络也始终使用这些模型参数。因此，循环神经网络模型参数的数量不随时间步的增加而增长。</p>
+<p><img src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.2_rnn.svg" alt=""></p>
+<h3 id="GRU"><a href="#GRU" class="headerlink" title="GRU"></a>GRU</h3><p>当时间步数较大或者时间步较小时，循环神经网络的梯度较容易出现衰减或爆炸。虽然裁剪梯度可以应对梯度爆炸，但无法解决梯度衰减的问题。通常由于这个原因，循环神经网络在实际中较难捕捉时间序列中时间步距离较大的依赖关系。</p>
+<p>门控循环神经网络（gated recurrent neural network）的提出，正是为了更好地捕捉时间序列中时间步距离较大的依赖关系。它通过可以学习的门来控制信息的流动。其中，门控循环单元（gated recurrent unit，GRU）是一种常用的门控循环神经网络，它引入了重置门（reset gate）和更新门（update gate）的概念，从而修改了循环神经网络中隐藏状态的计算方式。</p>
+<p>门控循环单元中的重置门和更新门的输入均为当前时间步输入 $\boldsymbol{X}<em>t$ 与上一时间步隐藏状态 $\boldsymbol{H}</em>{t-1}$，输出由激活函数为 sigmoid 函数的全连接层计算得到。</p>
+<p><img src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.7_gru_1.svg" alt=""></p>
+<p>具体来说，假设隐藏单元个数为 $h$，给定时间步 $t$ 的小批量输入 $\boldsymbol{X}<em>t \in \mathbb{R}^{n \times d}$（样本数为 $n$，输入个数为 $d$）和上一时间步隐藏状态 $\boldsymbol{H}</em>{t-1} \in \mathbb{R}^{n \times h}$。重置门 $\boldsymbol{R}_t \in \mathbb{R}^{n \times h}$ 和更新门 $\boldsymbol{Z}_t \in \mathbb{R}^{n \times h}$ 的计算如下：</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-\boldsymbol{R}_t = \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xr} +
-\boldsymbol{H}_{t-1} \boldsymbol{W}_{hr} + \boldsymbol{b}_r),\\
-\boldsymbol{Z}_t = \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xz} +
-\boldsymbol{H}_{t-1} \boldsymbol{W}_{hz} + \boldsymbol{b}_z),
-\end{aligned}
-\]</span></p>
-<p>其中 <span class="math inline">\(\boldsymbol{W}_{xr},
-\boldsymbol{W}_{xz} \in \mathbb{R}^{d \times h}\)</span> 和 <span
-class="math inline">\(\boldsymbol{W}_{hr}, \boldsymbol{W}_{hz} \in
-\mathbb{R}^{h \times h}\)</span> 是权重参数， <span
-class="math inline">\(\boldsymbol{b}_r, \boldsymbol{b}_z \in
-\mathbb{R}^{1 \times h}\)</span> 是偏差参数。多层感知机中介绍过，sigmoid
-函数可以将元素的值变换到 0 和 1 之间。因此，重置门 <span
-class="math inline">\(\boldsymbol{R}_t\)</span> 和更新门 <span
-class="math inline">\(\boldsymbol{Z}_t\)</span> 中每个元素的值域都是
-<span class="math inline">\([0, 1]\)</span>。</p>
-<p>接下来，门控循环单元将计算候选隐藏状态来辅助稍后的隐藏状态计算。我们将当前时间步重置门的输出与上一时间步隐藏状态做按元素乘法（符号为
-<span class="math inline">\(\odot\)</span>）。如果重置门中元素值接近
-0，那么意味着重置对应隐藏状态元素为
-0，即丢弃上一时间步的隐藏状态。如果元素值接近
-1，那么表示保留上一时间步的隐藏状态。然后，将按元素乘法的结果与当前时间步的输入连结，再通过含激活函数
-tanh的全连接层计算出候选隐藏状态，其所有元素的值域为 <span
-class="math inline">\([-1, 1]\)</span>。</p>
-<p><img
-src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.7_gru_2.svg" /></p>
-<p>具体来说，时间步 <span class="math inline">\(t\)</span>
-的候选隐藏状态 <span class="math inline">\(\tilde{\boldsymbol{H}}_t \in
-\mathbb{R}^{n \times h}\)</span> 的计算为</p>
-<p><span class="math display">\[
-\tilde{\boldsymbol{H}}_t = \text{tanh}(\boldsymbol{X}_t
-\boldsymbol{W}_{xh} + \left(\boldsymbol{R}_t \odot
-\boldsymbol{H}_{t-1}\right) \boldsymbol{W}_{hh} + \boldsymbol{b}_h),
-\]</span> 其中 <span class="math inline">\(\boldsymbol{W}_{xh} \in
-\mathbb{R}^{d \times h}\)</span> 和 <span
-class="math inline">\(\boldsymbol{W}_{hh} \in \mathbb{R}^{h \times
-h}\)</span> 是权重参数，<span class="math inline">\(\boldsymbol{b}_h \in
-\mathbb{R}^{1 \times h}\)</span>
-是偏差参数。从上面这个公式可以看出，重置门控制了上一时间步的隐藏状态如何流入当前时间步的候选隐藏状态。而上一时间步的隐藏状态可能包含了时间序列截至上一时间步的全部历史信息。因此，重置门可以用来丢弃与预测无关的历史信息。</p>
-<p>最后，时间步 <span class="math inline">\(t\)</span> 的隐藏状态 <span
-class="math inline">\(\boldsymbol{H}_t \in \mathbb{R}^{n \times
-h}\)</span> 的计算使用当前时间步的更新门 <span
-class="math inline">\(\boldsymbol{Z}_t\)</span> 来对上一时间步的隐藏状态
-<span class="math inline">\(\boldsymbol{H}_{t-1}\)</span>
-和当前时间步的候选隐藏状态 <span
-class="math inline">\(\tilde{\boldsymbol{H}}_t\)</span> 做组合：</p>
-<p><span class="math display">\[
-\boldsymbol{H}_t = \boldsymbol{Z}_t \odot \boldsymbol{H}_{t-1}  + (1 -
-\boldsymbol{Z}_t) \odot \tilde{\boldsymbol{H}}_t.
-\]</span></p>
-<div data-align="center">
-<p><img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.7_gru_3.svg"/></p>
+\boldsymbol{R}_t = \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xr} + \boldsymbol{H}_{t-1} \boldsymbol{W}_{hr} + \boldsymbol{b}_r),\\
+\boldsymbol{Z}_t = \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xz} + \boldsymbol{H}_{t-1} \boldsymbol{W}_{hz} + \boldsymbol{b}_z),
+\end{aligned}</script><p>其中 $\boldsymbol{W}<em>{xr}, \boldsymbol{W}</em>{xz} \in \mathbb{R}^{d \times h}$ 和 $\boldsymbol{W}<em>{hr}, \boldsymbol{W}</em>{hz} \in \mathbb{R}^{h \times h}$ 是权重参数， $\boldsymbol{b}_r, \boldsymbol{b}_z \in \mathbb{R}^{1 \times h}$ 是偏差参数。多层感知机中介绍过，sigmoid 函数可以将元素的值变换到 0 和 1 之间。因此，重置门 $\boldsymbol{R}_t$ 和更新门 $\boldsymbol{Z}_t$ 中每个元素的值域都是 $[0, 1]$。</p>
+<p>接下来，门控循环单元将计算候选隐藏状态来辅助稍后的隐藏状态计算。我们将当前时间步重置门的输出与上一时间步隐藏状态做按元素乘法（符号为 $\odot$）。如果重置门中元素值接近 0，那么意味着重置对应隐藏状态元素为 0，即丢弃上一时间步的隐藏状态。如果元素值接近 1，那么表示保留上一时间步的隐藏状态。然后，将按元素乘法的结果与当前时间步的输入连结，再通过含激活函数 tanh的全连接层计算出候选隐藏状态，其所有元素的值域为 $[-1, 1]$。</p>
+<p><img src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.7_gru_2.svg" alt=""></p>
+<p>具体来说，时间步 $t$ 的候选隐藏状态 $\tilde{\boldsymbol{H}}_t \in \mathbb{R}^{n \times h}$ 的计算为</p>
+<script type="math/tex; mode=display">
+\tilde{\boldsymbol{H}}_t = \text{tanh}(\boldsymbol{X}_t \boldsymbol{W}_{xh} + \left(\boldsymbol{R}_t \odot \boldsymbol{H}_{t-1}\right) \boldsymbol{W}_{hh} + \boldsymbol{b}_h),</script><p>其中 $\boldsymbol{W}<em>{xh} \in \mathbb{R}^{d \times h}$ 和 $\boldsymbol{W}</em>{hh} \in \mathbb{R}^{h \times h}$ 是权重参数，$\boldsymbol{b}_h \in \mathbb{R}^{1 \times h}$ 是偏差参数。从上面这个公式可以看出，重置门控制了上一时间步的隐藏状态如何流入当前时间步的候选隐藏状态。而上一时间步的隐藏状态可能包含了时间序列截至上一时间步的全部历史信息。因此，重置门可以用来丢弃与预测无关的历史信息。</p>
+<p>最后，时间步 $t$ 的隐藏状态 $\boldsymbol{H}<em>t \in \mathbb{R}^{n \times h}$ 的计算使用当前时间步的更新门 $\boldsymbol{Z}_t$ 来对上一时间步的隐藏状态 $\boldsymbol{H}</em>{t-1}$ 和当前时间步的候选隐藏状态 $\tilde{\boldsymbol{H}}_t$ 做组合：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{H}_t = \boldsymbol{Z}_t \odot \boldsymbol{H}_{t-1}  + (1 - \boldsymbol{Z}_t) \odot \tilde{\boldsymbol{H}}_t.</script><div align=center>
+<img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.7_gru_3.svg"/>
 </div>
-<div data-align="center">
-门控循环单元中隐藏状态的计算
-</div>
-<p>值得注意的是，更新门可以控制隐藏状态应该如何被包含当前时间步信息的候选隐藏状态所更新。假设更新门在时间步
-<span class="math inline">\(t&#39;\)</span> 到 <span
-class="math inline">\(t\)</span>（<span class="math inline">\(t&#39;
-&lt; t\)</span>）之间一直近似 1。那么，在时间步 <span
-class="math inline">\(t&#39;\)</span> 到 <span
-class="math inline">\(t\)</span> 之间的输入信息几乎没有流入时间步 <span
-class="math inline">\(t\)</span> 的隐藏状态 <span
-class="math inline">\(\boldsymbol{H}_t\)</span>。实际上，这可以看作是较早时刻的隐藏状态
-<span class="math inline">\(\boldsymbol{H}_{t&#39;-1}\)</span>
-一直通过时间保存并传递至当前时间步 <span
-class="math inline">\(t\)</span>。这个设计可以应对循环神经网络中的梯度衰减问题，并更好地捕捉时间序列中时间步距离较大的依赖关系。</p>
+<div align=center>门控循环单元中隐藏状态的计算</div>
+
+
+<p>值得注意的是，更新门可以控制隐藏状态应该如何被包含当前时间步信息的候选隐藏状态所更新。假设更新门在时间步 $t’$ 到 $t$（$t’ &lt; t$）之间一直近似 1。那么，在时间步 $t’$ 到 $t$ 之间的输入信息几乎没有流入时间步 $t$ 的隐藏状态 $\boldsymbol{H}<em>t$。实际上，这可以看作是较早时刻的隐藏状态 $\boldsymbol{H}</em>{t’-1}$ 一直通过时间保存并传递至当前时间步 $t$。这个设计可以应对循环神经网络中的梯度衰减问题，并更好地捕捉时间序列中时间步距离较大的依赖关系。</p>
 <p>我们对门控循环单元的设计稍作总结：</p>
 <ul>
 <li>重置门有助于捕捉时间序列里短期的依赖关系；</li>
 <li>更新门有助于捕捉时间序列里长期的依赖关系。</li>
 </ul>
-<h3 id="lstm">LSTM</h3>
-<p>long short-term memory，LSTM，比门控循环单元的结构复杂。</p>
-<p>LSTM 中引入了3个门，即输入门（input gate）、遗忘门（forget
-gate）和输出门（output
-gate），以及与隐藏状态形状相同的记忆细胞（某些文献把记忆细胞当成一种特殊的隐藏状态），从而记录额外的信息。</p>
-<p>与门控循环单元中的重置门和更新门一样，如图所示，长短期记忆的门的输入均为当前时间步输入
-<span class="math inline">\(\boldsymbol{X}_t\)</span>
-与上一时间步隐藏状态 <span
-class="math inline">\(\boldsymbol{H}_{t-1}\)</span>，输出由激活函数为
-sigmoid 函数的全连接层计算得到。如此一来，这 3 个门元素的值域均为 <span
-class="math inline">\([0,1]\)</span>。</p>
-<div data-align="center">
-<p><img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.8_lstm_0.svg"/></p>
+<h3 id="LSTM"><a href="#LSTM" class="headerlink" title="LSTM"></a>LSTM</h3><p>long short-term memory，LSTM，比门控循环单元的结构复杂。</p>
+<p>LSTM 中引入了3个门，即输入门（input gate）、遗忘门（forget gate）和输出门（output gate），以及与隐藏状态形状相同的记忆细胞（某些文献把记忆细胞当成一种特殊的隐藏状态），从而记录额外的信息。</p>
+<p>与门控循环单元中的重置门和更新门一样，如图所示，长短期记忆的门的输入均为当前时间步输入 $\boldsymbol{X}<em>t$ 与上一时间步隐藏状态 $\boldsymbol{H}</em>{t-1}$，输出由激活函数为 sigmoid 函数的全连接层计算得到。如此一来，这 3 个门元素的值域均为 $[0,1]$。</p>
+<div align=center>
+<img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.8_lstm_0.svg"/>
 </div>
-<div data-align="center">
-长短期记忆中输入门、遗忘门和输出门的计算
-</div>
-<p>具体来说，假设隐藏单元个数为 <span
-class="math inline">\(h\)</span>，给定时间步 <span
-class="math inline">\(t\)</span> 的小批量输入 <span
-class="math inline">\(\boldsymbol{X}_t \in \mathbb{R}^{n \times
-d}\)</span>（样本数为 <span class="math inline">\(n\)</span>，输入个数为
-<span class="math inline">\(d\)</span>）和上一时间步隐藏状态 <span
-class="math inline">\(\boldsymbol{H}_{t-1} \in \mathbb{R}^{n \times
-h}\)</span>。 时间步 <span class="math inline">\(t\)</span> 的输入门
-<span class="math inline">\(\boldsymbol{I}_t \in \mathbb{R}^{n \times
-h}\)</span>、遗忘门 <span class="math inline">\(\boldsymbol{F}_t \in
-\mathbb{R}^{n \times h}\)</span> 和输出门 <span
-class="math inline">\(\boldsymbol{O}_t \in \mathbb{R}^{n \times
-h}\)</span> 分别计算如下：</p>
-<p><span class="math display">\[
+<div align=center>长短期记忆中输入门、遗忘门和输出门的计算</div>
+
+<p>具体来说，假设隐藏单元个数为 $h$，给定时间步 $t$ 的小批量输入 $\boldsymbol{X}<em>t \in \mathbb{R}^{n \times d}$（样本数为 $n$，输入个数为 $d$）和上一时间步隐藏状态 $\boldsymbol{H}</em>{t-1} \in \mathbb{R}^{n \times h}$。<br>时间步 $t$ 的输入门 $\boldsymbol{I}_t \in \mathbb{R}^{n \times h}$、遗忘门 $\boldsymbol{F}_t \in \mathbb{R}^{n \times h}$ 和输出门 $\boldsymbol{O}_t \in \mathbb{R}^{n \times h}$ 分别计算如下：</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-\boldsymbol{I}_t &amp;= \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xi} +
-\boldsymbol{H}_{t-1} \boldsymbol{W}_{hi} + \boldsymbol{b}_i),\\
-\boldsymbol{F}_t &amp;= \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xf} +
-\boldsymbol{H}_{t-1} \boldsymbol{W}_{hf} + \boldsymbol{b}_f),\\
-\boldsymbol{O}_t &amp;= \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xo} +
-\boldsymbol{H}_{t-1} \boldsymbol{W}_{ho} + \boldsymbol{b}_o),
-\end{aligned}
-\]</span></p>
-<p>其中的 <span class="math inline">\(\boldsymbol{W}_{xi},
-\boldsymbol{W}_{xf}, \boldsymbol{W}_{xo} \in \mathbb{R}^{d \times
-h}\)</span> 和 <span class="math inline">\(\boldsymbol{W}_{hi},
-\boldsymbol{W}_{hf}, \boldsymbol{W}_{ho} \in \mathbb{R}^{h \times
-h}\)</span> 是权重参数，<span class="math inline">\(\boldsymbol{b}_i,
-\boldsymbol{b}_f, \boldsymbol{b}_o \in \mathbb{R}^{1 \times h}\)</span>
-是偏差参数。</p>
-<p>接下来，长短期记忆需要计算候选记忆细胞 <span
-class="math inline">\(\tilde{\boldsymbol{C}}_t\)</span>。它的计算与上面介绍的
-3 个门类似，但使用了值域在 <span class="math inline">\([-1, 1]\)</span>
-的 tanh 函数作为激活函数。</p>
-<div data-align="center">
-<p><img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.8_lstm_1.svg"/></p>
+\boldsymbol{I}_t &= \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xi} + \boldsymbol{H}_{t-1} \boldsymbol{W}_{hi} + \boldsymbol{b}_i),\\
+\boldsymbol{F}_t &= \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xf} + \boldsymbol{H}_{t-1} \boldsymbol{W}_{hf} + \boldsymbol{b}_f),\\
+\boldsymbol{O}_t &= \sigma(\boldsymbol{X}_t \boldsymbol{W}_{xo} + \boldsymbol{H}_{t-1} \boldsymbol{W}_{ho} + \boldsymbol{b}_o),
+\end{aligned}</script><p>其中的 $\boldsymbol{W}<em>{xi}, \boldsymbol{W}</em>{xf}, \boldsymbol{W}<em>{xo} \in \mathbb{R}^{d \times h}$ 和 $\boldsymbol{W}</em>{hi}, \boldsymbol{W}<em>{hf}, \boldsymbol{W}</em>{ho} \in \mathbb{R}^{h \times h}$ 是权重参数，$\boldsymbol{b}_i, \boldsymbol{b}_f, \boldsymbol{b}_o \in \mathbb{R}^{1 \times h}$ 是偏差参数。</p>
+<p>接下来，长短期记忆需要计算候选记忆细胞 $\tilde{\boldsymbol{C}}_t$。它的计算与上面介绍的 3 个门类似，但使用了值域在 $[-1, 1]$ 的 tanh 函数作为激活函数。</p>
+<div align=center>
+<img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.8_lstm_1.svg"/>
 </div>
-<div data-align="center">
-长短期记忆中候选记忆细胞的计算
-</div>
-<p>具体来说，时间步 <span class="math inline">\(t\)</span>
-的候选记忆细胞 <span class="math inline">\(\tilde{\boldsymbol{C}}_t \in
-\mathbb{R}^{n \times h}\)</span> 的计算为</p>
-<p><span class="math display">\[
-\tilde{\boldsymbol{C}}_t = \text{tanh}(\boldsymbol{X}_t
-\boldsymbol{W}_{xc} + \boldsymbol{H}_{t-1} \boldsymbol{W}_{hc} +
-\boldsymbol{b}_c),
-\]</span></p>
-<p>其中 <span class="math inline">\(\boldsymbol{W}_{xc} \in
-\mathbb{R}^{d \times h}\)</span> 和 <span
-class="math inline">\(\boldsymbol{W}_{hc} \in \mathbb{R}^{h \times
-h}\)</span> 是权重参数，<span class="math inline">\(\boldsymbol{b}_c \in
-\mathbb{R}^{1 \times h}\)</span> 是偏差参数。</p>
+<div align=center>长短期记忆中候选记忆细胞的计算</div>
+
+<p>具体来说，时间步 $t$ 的候选记忆细胞 $\tilde{\boldsymbol{C}}_t \in \mathbb{R}^{n \times h}$ 的计算为</p>
+<script type="math/tex; mode=display">
+\tilde{\boldsymbol{C}}_t = \text{tanh}(\boldsymbol{X}_t \boldsymbol{W}_{xc} + \boldsymbol{H}_{t-1} \boldsymbol{W}_{hc} + \boldsymbol{b}_c),</script><p>其中 $\boldsymbol{W}<em>{xc} \in \mathbb{R}^{d \times h}$ 和 $\boldsymbol{W}</em>{hc} \in \mathbb{R}^{h \times h}$ 是权重参数，$\boldsymbol{b}_c \in \mathbb{R}^{1 \times h}$ 是偏差参数。</p>
 <p><strong>记忆细胞</strong></p>
-<p>我们可以通过元素值域在 <span class="math inline">\([0, 1]\)</span>
-的输入门、遗忘门和输出门来控制隐藏状态中信息的流动，这一般也是通过使用按元素乘法（符号为
-<span class="math inline">\(\odot\)</span>）来实现的。当前时间步记忆细胞
-<span class="math inline">\(\boldsymbol{C}_t \in \mathbb{R}^{n \times
-h}\)</span>
-的计算组合了上一时间步记忆细胞和当前时间步候选记忆细胞的信息，并通过遗忘门和输入门来控制信息的流动：</p>
-<p><span class="math display">\[
-\boldsymbol{C}_t = \boldsymbol{F}_t \odot \boldsymbol{C}_{t-1} +
-\boldsymbol{I}_t \odot \tilde{\boldsymbol{C}}_t.
-\]</span></p>
-<p>遗忘门控制上一时间步的记忆细胞 <span
-class="math inline">\(\boldsymbol{C}_{t-1}\)</span>
-中的信息是否传递到当前时间步，而输入门则控制当前时间步的输入 <span
-class="math inline">\(\boldsymbol{X}_t\)</span> 通过候选记忆细胞 <span
-class="math inline">\(\tilde{\boldsymbol{C}}_t\)</span>
-如何流入当前时间步的记忆细胞。如果遗忘门一直近似 1 且输入门一直近似
-0，过去的记忆细胞将一直通过时间保存并传递至当前时间步。这个设计可以应对循环神经网络中的梯度衰减问题，并更好地捕捉时间序列中时间步距离较大的依赖关系。</p>
-<div data-align="center">
-<p><img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.8_lstm_2.svg"/></p>
+<p>我们可以通过元素值域在 $[0, 1]$ 的输入门、遗忘门和输出门来控制隐藏状态中信息的流动，这一般也是通过使用按元素乘法（符号为 $\odot$）来实现的。当前时间步记忆细胞 $\boldsymbol{C}_t \in \mathbb{R}^{n \times h}$ 的计算组合了上一时间步记忆细胞和当前时间步候选记忆细胞的信息，并通过遗忘门和输入门来控制信息的流动：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{C}_t = \boldsymbol{F}_t \odot \boldsymbol{C}_{t-1} + \boldsymbol{I}_t \odot \tilde{\boldsymbol{C}}_t.</script><p>遗忘门控制上一时间步的记忆细胞 $\boldsymbol{C}_{t-1}$ 中的信息是否传递到当前时间步，而输入门则控制当前时间步的输入 $\boldsymbol{X}_t$ 通过候选记忆细胞 $\tilde{\boldsymbol{C}}_t$ 如何流入当前时间步的记忆细胞。如果遗忘门一直近似 1 且输入门一直近似 0，过去的记忆细胞将一直通过时间保存并传递至当前时间步。这个设计可以应对循环神经网络中的梯度衰减问题，并更好地捕捉时间序列中时间步距离较大的依赖关系。</p>
+<div align=center>
+<img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.8_lstm_2.svg"/>
 </div>
-<div data-align="center">
-长短期记忆中记忆细胞的计算
-</div>
+<div align=center>长短期记忆中记忆细胞的计算</div>
+
 <p><strong>隐藏状态</strong></p>
-<p>有了记忆细胞以后，接下来我们还可以通过输出门来控制从记忆细胞到隐藏状态
-<span class="math inline">\(\boldsymbol{H}_t \in \mathbb{R}^{n \times
-h}\)</span> 的信息的流动：</p>
-<p><span class="math display">\[
-\boldsymbol{H}_t = \boldsymbol{O}_t \odot \text{tanh}(\boldsymbol{C}_t).
-\]</span></p>
-<p>这里的 tanh 函数确保隐藏状态元素值在 -1 到 1
-之间。需要注意的是，当输出门近似 1
-时，记忆细胞信息将传递到隐藏状态供输出层使用；当输出门近似 0
-时，记忆细胞信息只自己保留。下图展示了长短期记忆中隐藏状态的计算。</p>
-<div data-align="center">
-<p><img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.8_lstm_3.svg"/></p>
+<p>有了记忆细胞以后，接下来我们还可以通过输出门来控制从记忆细胞到隐藏状态 $\boldsymbol{H}_t \in \mathbb{R}^{n \times h}$ 的信息的流动：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{H}_t = \boldsymbol{O}_t \odot \text{tanh}(\boldsymbol{C}_t).</script><p>这里的 tanh 函数确保隐藏状态元素值在 -1 到 1 之间。需要注意的是，当输出门近似 1 时，记忆细胞信息将传递到隐藏状态供输出层使用；当输出门近似 0 时，记忆细胞信息只自己保留。下图展示了长短期记忆中隐藏状态的计算。</p>
+<div align=center>
+<img width="500" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.8_lstm_3.svg"/>
 </div>
-<div data-align="center">
-长短期记忆中隐藏状态的计算
+<div align=center>长短期记忆中隐藏状态的计算</div>
+
+<h3 id="双向循环网络"><a href="#双向循环网络" class="headerlink" title="双向循环网络"></a>双向循环网络</h3><p>对于单向的循环网络，序列前面的内容被后面的内容淹没。而且，单向循环网络都假设当前时间步是由前面的较早时间步的序列决定的，因此它们都将信息通过隐藏状态从前往后传递。有时候，当前时间步也可能由后面时间步决定。例如，当我们写下一个句子时，可能会根据句子后面的词来修改句子前面的用词。双向循环神经网络通过增加从后往前传递信息的隐藏层来更灵活地处理这类信息。</p>
+<div align=center>
+<img width="300" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.10_birnn.svg"/>
 </div>
-<h3 id="双向循环网络">双向循环网络</h3>
-<p>对于单向的循环网络，序列前面的内容被后面的内容淹没。而且，单向循环网络都假设当前时间步是由前面的较早时间步的序列决定的，因此它们都将信息通过隐藏状态从前往后传递。有时候，当前时间步也可能由后面时间步决定。例如，当我们写下一个句子时，可能会根据句子后面的词来修改句子前面的用词。双向循环神经网络通过增加从后往前传递信息的隐藏层来更灵活地处理这类信息。</p>
-<div data-align="center">
-<p><img width="300" src="https://tangshusen.me/Dive-into-DL-PyTorch/img/chapter06/6.10_birnn.svg"/></p>
-</div>
-<div data-align="center">
-双向循环神经网络的架构
-</div>
+<div align=center>双向循环神经网络的架构</div>
+
 <p>下面我们来介绍具体的定义。</p>
-<p>给定时间步 <span class="math inline">\(t\)</span> 的小批量输入 <span
-class="math inline">\(\boldsymbol{X}_t \in \mathbb{R}^{n \times
-d}\)</span>（样本数为 <span class="math inline">\(n\)</span>，输入个数为
-<span class="math inline">\(d\)</span>）和隐藏层激活函数为 <span
-class="math inline">\(\phi\)</span>。在双向循环神经网络的架构中，设该时间步正向隐藏状态为
-<span class="math inline">\(\overrightarrow{\boldsymbol{H}}_t \in
-\mathbb{R}^{n \times h}\)</span>（正向隐藏单元个数为 <span
-class="math inline">\(h\)</span>），反向隐藏状态为 <span
-class="math inline">\(\overleftarrow{\boldsymbol{H}}_t \in \mathbb{R}^{n
-\times h}\)</span>（反向隐藏单元个数为 <span
-class="math inline">\(h\)</span>）。我们可以分别计算正向隐藏状态和反向隐藏状态：
-<span class="math display">\[
+<p>给定时间步 $t$ 的小批量输入 $\boldsymbol{X}_t \in \mathbb{R}^{n \times d}$（样本数为 $n$，输入个数为 $d$）和隐藏层激活函数为 $\phi$。在双向循环神经网络的架构中，设该时间步正向隐藏状态为 $\overrightarrow{\boldsymbol{H}}_t  \in \mathbb{R}^{n \times h}$（正向隐藏单元个数为 $h$），反向隐藏状态为 $\overleftarrow{\boldsymbol{H}}_t  \in \mathbb{R}^{n \times h}$（反向隐藏单元个数为 $h$）。我们可以分别计算正向隐藏状态和反向隐藏状态：</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-\overrightarrow{\boldsymbol{H}}_t &amp;= \phi(\boldsymbol{X}_t
-\boldsymbol{W}_{xh}^{(f)} + \overrightarrow{\boldsymbol{H}}_{t-1}
-\boldsymbol{W}_{hh}^{(f)}  + \boldsymbol{b}_h^{(f)}),\\
-\overleftarrow{\boldsymbol{H}}_t &amp;= \phi(\boldsymbol{X}_t
-\boldsymbol{W}_{xh}^{(b)} + \overleftarrow{\boldsymbol{H}}_{t+1}
-\boldsymbol{W}_{hh}^{(b)}  + \boldsymbol{b}_h^{(b)}),
-\end{aligned}
-\]</span></p>
-<p>其中权重 <span class="math inline">\(\boldsymbol{W}_{xh}^{(f)} \in
-\mathbb{R}^{d \times h}\)</span>、<span
-class="math inline">\(\boldsymbol{W}_{hh}^{(f)} \in \mathbb{R}^{h \times
-h}\)</span>、<span class="math inline">\(\boldsymbol{W}_{xh}^{(b)} \in
-\mathbb{R}^{d \times h}\)</span>、<span
-class="math inline">\(\boldsymbol{W}_{hh}^{(b)} \in \mathbb{R}^{h \times
-h}\)</span> 和偏差 <span class="math inline">\(\boldsymbol{b}_h^{(f)}
-\in \mathbb{R}^{1 \times h}\)</span>、<span
-class="math inline">\(\boldsymbol{b}_h^{(b)} \in \mathbb{R}^{1 \times
-h}\)</span> 均为模型参数。</p>
-<p>然后我们连结两个方向的隐藏状态 <span
-class="math inline">\(\overrightarrow{\boldsymbol{H}}_t\)</span> 和
-<span class="math inline">\(\overleftarrow{\boldsymbol{H}}_t\)</span>
-来得到隐藏状态 <span class="math inline">\(\boldsymbol{H}_t \in
-\mathbb{R}^{n \times 2h}\)</span>，并将其输入到输出层。输出层计算输出
-<span class="math inline">\(\boldsymbol{O}_t \in \mathbb{R}^{n \times
-q}\)</span>（输出个数为 <span class="math inline">\(q\)</span>）：</p>
-<p><span class="math display">\[
-\boldsymbol{O}_t = \boldsymbol{H}_t \boldsymbol{W}_{hq} +
-\boldsymbol{b}_q,
-\]</span> 其中权重 <span class="math inline">\(\boldsymbol{W}_{hq} \in
-\mathbb{R}^{2h \times q}\)</span> 和偏差 <span
-class="math inline">\(\boldsymbol{b}_q \in \mathbb{R}^{1 \times
-q}\)</span> 为输出层的模型参数。不同方向上的隐藏单元个数也可以不同。</p>
-</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/2022%E6%98%A5%E5%AD%A3/">2022春季</a><a class="post-meta__tags" href="/tags/%E7%A7%91%E7%A0%94/">科研</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62b11572b25ab3ab" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/05/24/Lecture/2022%20Spring/Reinforcement/"><img class="prev-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Charl Folscher (yNTah8Y5qCQ).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">重力四子棋</div></div></a></div><div class="next-post pull-right"><a href="/2022/05/15/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E8%8E%AB%E8%BF%87%E7%83%AD%E5%BF%B1%E5%B0%91%E5%B9%B4%E5%BF%83/"><img class="next-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Johannes Groll (WWbAmuH8vBY).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">莫过热忱少年心</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/03/15/Lecture/2022%20Spring/Introduction_to_AI/" title="Introduction to Artificial Intelligence"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Egor Myznik (RtR2i-Fo6iI).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-15</div><div class="title">Introduction to Artificial Intelligence</div></div></a></div><div><a href="/2022/05/24/Lecture/2022%20Spring/Reinforcement/" title="重力四子棋"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Charl Folscher (yNTah8Y5qCQ).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-24</div><div class="title">重力四子棋</div></div></a></div><div><a href="/2022/06/06/Lecture/2022%20Spring/deep_learning/" title="Segement Me If U Can"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Matteo Grassi (ehLLpwEg4zs).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-06</div><div class="title">Segement Me If U Can</div></div></a></div><div><a href="/2022/03/23/Lecture/2022%20Spring/Input%20method/" title="How Do We Train An Input Method"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Carlos "Grury" Santos (WiuAZ1Q7aMw).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-23</div><div class="title">How Do We Train An Input Method</div></div></a></div><div><a href="/2022/06/04/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4/Gau%20GAN/" title="Understanding Gau GAN"><img class="cover" src="https://pic.imgdb.cn/item/62270e975baa1a80ab37e520.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-04</div><div class="title">Understanding Gau GAN</div></div></a></div><div><a href="/2022/03/08/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4/Fully%20Convolutional%20Networks%20for%20Semantic%20Segmentation/" title="Fully Convolutional Networks for Semantic Segmentation 阅读笔记"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Will Swann (-hMgQqhiyos).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-08</div><div class="title">Fully Convolutional Networks for Semantic Segmentation 阅读笔记</div></div></a></div><div><a href="/2022/05/06/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4/Enhancing%20photorealism%20enhancement/" title="Enhancing photorealism enhancement"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Lee Roylland (dfZbts6B4yw).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-06</div><div class="title">Enhancing photorealism enhancement</div></div></a></div><div><a href="/2022/02/22/CS/others/Tsing_answer_analysis/" title="答疑坊数据统计"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Kace  Rodriguez (p3OzJuT_Dks).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-22</div><div class="title">答疑坊数据统计</div></div></a></div><div><a href="/2022/05/25/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%BA%94%E9%83%A8/" title="清华园日记——第五部"><img class="cover" src="https://zhaochenyang20.github.io/pic/embed/5_31_1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-25</div><div class="title">清华园日记——第五部</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#readme"><span class="toc-number">1.</span> <span class="toc-text">readme</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#what-is-neural-network"><span class="toc-number">2.</span> <span class="toc-text">What is neural network？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD"><span class="toc-number">2.1.</span> <span class="toc-text">术语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E4%B8%8E%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0"><span class="toc-number">2.2.</span> <span class="toc-text">结构与激活函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#identity"><span class="toc-number">2.2.1.</span> <span class="toc-text">Identity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sigmoid"><span class="toc-number">2.2.2.</span> <span class="toc-text">sigmoid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tanh"><span class="toc-number">2.2.3.</span> <span class="toc-text">tanh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#relu"><span class="toc-number">2.2.4.</span> <span class="toc-text">ReLU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#softmax"><span class="toc-number">2.2.5.</span> <span class="toc-text">softmax</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="toc-number">2.3.</span> <span class="toc-text">如何训练与损失函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95"><span class="toc-number">2.3.1.</span> <span class="toc-text">梯度下降法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E8%AE%A1%E7%AE%97"><span class="toc-number">2.3.2.</span> <span class="toc-text">手动计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95"><span class="toc-number">2.3.3.</span> <span class="toc-text">梯度下降算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#back-propagation"><span class="toc-number">2.3.4.</span> <span class="toc-text">Back Propagation</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cross-entropy"><span class="toc-number">2.4.</span> <span class="toc-text">cross entropy</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%AD%E7%BB%83%E4%BC%98%E5%8C%96"><span class="toc-number">3.</span> <span class="toc-text">训练优化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1"><span class="toc-number">3.1.</span> <span class="toc-text">梯度消失</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">神经网络语言模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%8D%E5%90%91%E9%87%8F"><span class="toc-number">4.1.</span> <span class="toc-text">词向量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#one-hot-%E7%BC%96%E7%A0%81"><span class="toc-number">4.1.1.</span> <span class="toc-text">one-hot 编码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E8%A1%A8%E7%A4%BA"><span class="toc-number">4.1.2.</span> <span class="toc-text">分布式表示</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nnlm-%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.2.</span> <span class="toc-text">NNLM 模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AE%AD%E7%BB%83"><span class="toc-number">4.2.1.</span> <span class="toc-text">如何训练</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">4.2.2.</span> <span class="toc-text">存在的问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#word2vec-%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.3.</span> <span class="toc-text">word2vec 模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cbow-%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.3.1.</span> <span class="toc-text">CBOW 模型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%8D%E5%90%91%E9%87%8F%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">词向量应用模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#textcnn"><span class="toc-number">5.1.</span> <span class="toc-text">TextCNN</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rnn"><span class="toc-number">5.2.</span> <span class="toc-text">RNN</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#gru"><span class="toc-number">5.2.1.</span> <span class="toc-text">GRU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lstm"><span class="toc-number">5.2.2.</span> <span class="toc-text">LSTM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E5%BE%AA%E7%8E%AF%E7%BD%91%E7%BB%9C"><span class="toc-number">5.2.3.</span> <span class="toc-text">双向循环网络</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: ＃0096FF"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
+\overrightarrow{\boldsymbol{H}}_t &= \phi(\boldsymbol{X}_t \boldsymbol{W}_{xh}^{(f)} + \overrightarrow{\boldsymbol{H}}_{t-1} \boldsymbol{W}_{hh}^{(f)}  + \boldsymbol{b}_h^{(f)}),\\
+\overleftarrow{\boldsymbol{H}}_t &= \phi(\boldsymbol{X}_t \boldsymbol{W}_{xh}^{(b)} + \overleftarrow{\boldsymbol{H}}_{t+1} \boldsymbol{W}_{hh}^{(b)}  + \boldsymbol{b}_h^{(b)}),
+\end{aligned}</script><p>其中权重 $\boldsymbol{W}<em>{xh}^{(f)} \in \mathbb{R}^{d \times h}$、$\boldsymbol{W}</em>{hh}^{(f)} \in \mathbb{R}^{h \times h}$、$\boldsymbol{W}<em>{xh}^{(b)} \in \mathbb{R}^{d \times h}$、$\boldsymbol{W}</em>{hh}^{(b)} \in \mathbb{R}^{h \times h}$ 和偏差 $\boldsymbol{b}_h^{(f)} \in \mathbb{R}^{1 \times h}$、$\boldsymbol{b}_h^{(b)} \in \mathbb{R}^{1 \times h}$ 均为模型参数。</p>
+<p>然后我们连结两个方向的隐藏状态 $\overrightarrow{\boldsymbol{H}}_t$ 和 $\overleftarrow{\boldsymbol{H}}_t$ 来得到隐藏状态 $\boldsymbol{H}_t \in \mathbb{R}^{n \times 2h}$，并将其输入到输出层。输出层计算输出 $\boldsymbol{O}_t \in \mathbb{R}^{n \times q}$（输出个数为 $q$）：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{O}_t = \boldsymbol{H}_t \boldsymbol{W}_{hq} + \boldsymbol{b}_q,</script><p>其中权重 $\boldsymbol{W}_{hq} \in \mathbb{R}^{2h \times q}$ 和偏差 $\boldsymbol{b}_q \in \mathbb{R}^{1 \times q}$ 为输出层的模型参数。不同方向上的隐藏单元个数也可以不同。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/2022%E6%98%A5%E5%AD%A3/">2022春季</a><a class="post-meta__tags" href="/tags/%E7%A7%91%E7%A0%94/">科研</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62b11572b25ab3ab" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/05/24/Lecture/2022%20Spring/Reinforcement/"><img class="prev-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by eberhard 🖐 grossgasteiger (GWiaD-ksc2w).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">重力四子棋</div></div></a></div><div class="next-post pull-right"><a href="/2022/05/15/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E8%8E%AB%E8%BF%87%E7%83%AD%E5%BF%B1%E5%B0%91%E5%B9%B4%E5%BF%83/"><img class="next-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Yeo Khee (SNOUMI5OCt8).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">莫过热忱少年心</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/03/15/Lecture/2022%20Spring/Introduction_to_AI/" title="Introduction to Artificial Intelligence"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Carlos "Grury" Santos (fm6Ytt7dMN8).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-15</div><div class="title">Introduction to Artificial Intelligence</div></div></a></div><div><a href="/2022/05/24/Lecture/2022%20Spring/Reinforcement/" title="重力四子棋"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by eberhard 🖐 grossgasteiger (GWiaD-ksc2w).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-24</div><div class="title">重力四子棋</div></div></a></div><div><a href="/2022/06/06/Lecture/2022%20Spring/deep_learning/" title="Segement Me If U Can"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Michele Mescolin (lxbeHfdLQB8).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-06</div><div class="title">Segement Me If U Can</div></div></a></div><div><a href="/2022/03/23/Lecture/2022%20Spring/Input%20method/" title="How Do We Train An Input Method"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Jakob Owens (FKyHyNowp-4).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-23</div><div class="title">How Do We Train An Input Method</div></div></a></div><div><a href="/2022/06/04/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4/Gau%20GAN/" title="Understanding Gau GAN"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Karsten Würth (I2ZTZFuV5hg).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-04</div><div class="title">Understanding Gau GAN</div></div></a></div><div><a href="/2022/03/08/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4/Fully%20Convolutional%20Networks%20for%20Semantic%20Segmentation/" title="Fully Convolutional Networks for Semantic Segmentation 阅读笔记"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Sergey Pesterev (-YOvMSD7LbQ).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-08</div><div class="title">Fully Convolutional Networks for Semantic Segmentation 阅读笔记</div></div></a></div><div><a href="/2022/05/06/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4/Enhancing%20photorealism%20enhancement/" title="Enhancing photorealism enhancement"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Sergey Pesterev (ijFuMdN_02E).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-06</div><div class="title">Enhancing photorealism enhancement</div></div></a></div><div><a href="/2022/05/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E5%9B%9B%E9%83%A8/" title="清华园日记——第四部"><img class="cover" src="https://pic.imgdb.cn/item/61eccb6b2ab3f51d91d62fc2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-02</div><div class="title">清华园日记——第四部</div></div></a></div><div><a href="/2022/05/25/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%BA%94%E9%83%A8/" title="清华园日记——第五部"><img class="cover" src="https://zhaochenyang20.github.io/pic/embed/5_31_1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-25</div><div class="title">清华园日记——第五部</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#readme"><span class="toc-number">1.</span> <span class="toc-text">readme</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#What-is-neural-network%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">What is neural network？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD"><span class="toc-number">2.1.</span> <span class="toc-text">术语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E4%B8%8E%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0"><span class="toc-number">2.2.</span> <span class="toc-text">结构与激活函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Identity"><span class="toc-number">2.2.1.</span> <span class="toc-text">Identity</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sigmoid"><span class="toc-number">2.2.2.</span> <span class="toc-text">sigmoid</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tanh"><span class="toc-number">2.2.3.</span> <span class="toc-text">tanh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ReLU"><span class="toc-number">2.2.4.</span> <span class="toc-text">ReLU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#softmax"><span class="toc-number">2.2.5.</span> <span class="toc-text">softmax</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AE%AD%E7%BB%83%E4%B8%8E%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0"><span class="toc-number">2.3.</span> <span class="toc-text">如何训练与损失函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95"><span class="toc-number">2.3.1.</span> <span class="toc-text">梯度下降法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E8%AE%A1%E7%AE%97"><span class="toc-number">2.3.2.</span> <span class="toc-text">手动计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95"><span class="toc-number">2.3.3.</span> <span class="toc-text">梯度下降算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Back-Propagation"><span class="toc-number">2.3.4.</span> <span class="toc-text">Back Propagation</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cross-entropy"><span class="toc-number">2.4.</span> <span class="toc-text">cross entropy</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%AD%E7%BB%83%E4%BC%98%E5%8C%96"><span class="toc-number">3.</span> <span class="toc-text">训练优化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A2%AF%E5%BA%A6%E6%B6%88%E5%A4%B1"><span class="toc-number">3.1.</span> <span class="toc-text">梯度消失</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">神经网络语言模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%8D%E5%90%91%E9%87%8F"><span class="toc-number">4.1.</span> <span class="toc-text">词向量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#one-hot-%E7%BC%96%E7%A0%81"><span class="toc-number">4.1.1.</span> <span class="toc-text">one-hot 编码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E8%A1%A8%E7%A4%BA"><span class="toc-number">4.1.2.</span> <span class="toc-text">分布式表示</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NNLM-%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.2.</span> <span class="toc-text">NNLM 模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AE%AD%E7%BB%83"><span class="toc-number">4.2.1.</span> <span class="toc-text">如何训练</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">4.2.2.</span> <span class="toc-text">存在的问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#word2vec-%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.3.</span> <span class="toc-text">word2vec 模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CBOW-%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.3.1.</span> <span class="toc-text">CBOW 模型</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%8D%E5%90%91%E9%87%8F%E5%BA%94%E7%94%A8%E6%A8%A1%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">词向量应用模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#TextCNN"><span class="toc-number">5.1.</span> <span class="toc-text">TextCNN</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RNN"><span class="toc-number">5.2.</span> <span class="toc-text">RNN</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#GRU"><span class="toc-number">5.2.1.</span> <span class="toc-text">GRU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LSTM"><span class="toc-number">5.2.2.</span> <span class="toc-text">LSTM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E5%BE%AA%E7%8E%AF%E7%BD%91%E7%BB%9C"><span class="toc-number">5.2.3.</span> <span class="toc-text">双向循环网络</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: ＃0096FF"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Chenytang Zhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
   var options = JSON.parse(document.getElementById('maid-script').getAttribute('mermaidoptioins'));
   mermaid.initialize(options);
 }</script></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库正在艰难运行</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
@@ -1053,4 +574,4 @@ if ('Gitalk' === 'Gitalk' || !true) {
 POWERMODE.shake = false;
 POWERMODE.mobile = true;
 document.body.addEventListener('input', POWERMODE);
-</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>

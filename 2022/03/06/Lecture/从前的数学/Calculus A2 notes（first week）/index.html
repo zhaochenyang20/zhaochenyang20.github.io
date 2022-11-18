@@ -1,18 +1,18 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>多元函数的连续性 | I'LL TAKE YOU TO THE MOON</title><meta name="keywords" content="2022春季,多元微积分"><meta name="author" content="Eren Zhao"><meta name="copyright" content="Eren Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="以始为终...">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>多元函数的连续性 | 你将孤单而度过一生</title><meta name="keywords" content="2022春季,多元微积分"><meta name="author" content="Chenytang Zhao"><meta name="copyright" content="Chenytang Zhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="以始为终...">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多元函数的连续性">
 <meta property="og:url" content="http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88first%20week%EF%BC%89/index.html">
-<meta property="og:site_name" content="I&#39;LL TAKE YOU TO THE MOON">
+<meta property="og:site_name" content="你将孤单而度过一生">
 <meta property="og:description" content="以始为终...">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pic.imgdb.cn/item/61eccb672ab3f51d91d62c95.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Dawid Zawiła (wdcazvE9TU8).jpg">
 <meta property="article:published_time" content="2022-03-06T15:26:02.000Z">
 <meta property="article:modified_time" content="2022-08-26T16:13:41.315Z">
-<meta property="article:author" content="Eren Zhao">
+<meta property="article:author" content="Chenytang Zhao">
 <meta property="article:tag" content="2022春季">
 <meta property="article:tag" content="多元微积分">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pic.imgdb.cn/item/61eccb672ab3f51d91d62c95.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88first%20week%EF%BC%89/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Dawid Zawiła (wdcazvE9TU8).jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://example.com/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88first%20week%EF%BC%89/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"麻了，找不到您查询的内容：${query}"}},
@@ -147,330 +147,122 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/mouse.css"><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="I'LL TAKE YOU TO THE MOON" type="application/atom+xml">
-<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">194</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">52</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/61eccb672ab3f51d91d62c95.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">I'LL TAKE YOU TO THE MOON</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">多元函数的连续性</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-06T15:26:02.000Z" title="发表于 2022-03-06 23:26:02">2022-03-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-26T16:13:41.315Z" title="更新于 2022-08-27 00:13:41">2022-08-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>14分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="多元函数的连续性"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1
-id="微积分笔记第一讲多元函数的连续性">微积分笔记第一讲（多元函数的连续性）</h1>
-<p>函数图像：对应规则，公式，图像（二元函数需要使用三维空间），等值集</p>
+    })(window)</script><link rel="stylesheet" href="/css/mouse.css"><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="你将孤单而度过一生" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend.jpg'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">194</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">52</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Dawid Zawiła (wdcazvE9TU8).jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">你将孤单而度过一生</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/list-100/"><i class="fa-fw fas fa-music"></i><span> TODO</span></a></div><div class="menus_item"><a class="site-page" href="/projects/"><i class="fa-fw fas fa-video"></i><span> Projects</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">多元函数的连续性</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-06T15:26:02.000Z" title="发表于 2022-03-06 23:26:02">2022-03-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-26T16:13:41.315Z" title="更新于 2022-08-27 00:13:41">2022-08-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">424</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="多元函数的连续性"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="微积分笔记第一讲（多元函数的连续性）"><a href="#微积分笔记第一讲（多元函数的连续性）" class="headerlink" title="微积分笔记第一讲（多元函数的连续性）"></a>微积分笔记第一讲（多元函数的连续性）</h1><p>函数图像：对应规则，公式，图像（二元函数需要使用三维空间），等值集</p>
 <p>函数值/映射的像可以是数、点、向量等等</p>
 <p>连续性（局部可以使用常值近似），可微性质（局部可以使用线性逼近）</p>
-<p>例：欧式空间 <span class="math inline">\(R^n\)</span> 中三个点 <span
-class="math inline">\(P_1,P_2,P_3\)</span> 确定的三角形面积函数 <span
-class="math inline">\(S(P_1,P_2,P_3)\)</span> 多元函数，对内积产生的
-<span class="math inline">\(\cos \theta\)</span> 计算 <span
-class="math display">\[
+<p>例：欧式空间 $R^n$ 中三个点 $P_1,P_2,P_3$ 确定的三角形面积函数 $S(P_1,P_2,P_3)$ 多元函数，对内积产生的 $\cos \theta$ 计算</p>
+<script type="math/tex; mode=display">
 \begin{gathered}
-S(P_{1}, P_{2}, P_{3})=\frac{1}{2}|P_{2}-P_{1}||P_{3}-P_{1}| \sin
-\theta=\frac{1}{2}|P_{2}-P_{1}||P_{3}-P_{1}| \sqrt{1-\cos ^{2} \theta}
-\\
-=\frac{1}{2}|P_{2}-P_{1}||P_{3}-P_{1}| \sqrt{1-(\frac{(P_{2}-P_{1})
-\cdot(P_{3}-P_{1})}{|(P_{2}-P_{1})| \cdot|(P_{3}-P_{1})|})^{2}} \\
+S(P_{1}, P_{2}, P_{3})=\frac{1}{2}|P_{2}-P_{1}||P_{3}-P_{1}| \sin \theta=\frac{1}{2}|P_{2}-P_{1}||P_{3}-P_{1}| \sqrt{1-\cos ^{2} \theta} \\
+=\frac{1}{2}|P_{2}-P_{1}||P_{3}-P_{1}| \sqrt{1-(\frac{(P_{2}-P_{1}) \cdot(P_{3}-P_{1})}{|(P_{2}-P_{1})| \cdot|(P_{3}-P_{1})|})^{2}} \\
 =\frac{1}{2} \sqrt{\operatorname{det}(\begin{array}{cc}
-\langle P_{2}-P_{1}, P_{2}-P_{1}\rangle &amp; \langle P_{2}-P_{1},
-P_{3}-P_{1}\rangle \\
-\langle P_{2}-P_{1}, P_{3}-P_{1}\rangle &amp; \langle P_{3}-P_{1},
-P_{3}-P_{1}\rangle
+\langle P_{2}-P_{1}, P_{2}-P_{1}\rangle & \langle P_{2}-P_{1}, P_{3}-P_{1}\rangle \\
+\langle P_{2}-P_{1}, P_{3}-P_{1}\rangle & \langle P_{3}-P_{1}, P_{3}-P_{1}\rangle
 \end{array})}
-\end{gathered}
-\]</span>
-使用固定两点，另外一点在一个椭圆上移动可知，当这个点在固定点中垂线上的时候三角形面积最大，有两边长度相等，更换固定点得，<strong>周长一定的三角形为等边三角形时最大</strong>。该论证有一定问题，<strong>没有证明有最大值</strong>的情况。固定
-<span class="math inline">\(P_1\)</span> 为原点，考虑所有周长小于等于
-<span class="math inline">\(L\)</span> 的集合 <span
-class="math display">\[
-K=\{(P_{2}, P_{3}) \in \mathbb{R}^{2} \times \mathbb{R}^{2}
-\mid\|P_{2}\|+\|P_{3}\|+\|P_{2}-P_{3}\| \leq L\}
-\]</span> 则 <span class="math inline">\(K\)</span> 是有界闭集，从而
-<span class="math inline">\(S(P_{2}, P_{3})\)</span> 在 <span
-class="math inline">\(K\)</span> 上取得最大值 <span
-class="math inline">\(S(P_{2}^{*}, P_{3}^{*})\)</span> 。假若 <span
-class="math display">\[
-\|P_{2}^{*}\|+\|P_{3}^{*}\|+\|P_{2}^{*}-P_{3}^{*}\|&lt;L
-\]</span> 取 <span
-class="math inline">\(\lambda=\dfrac{L}{\|P_{2}^{*}\|+\|P_{3}^{*}\|+\|P_{2}^{*}-P_{3}^{*}\|},
-P_{k}^{&#39;}=\lambda P_{k}^{*}\)</span>，显然面积变成原来的 <span
-class="math inline">\(\lambda^2\)</span> 倍。这与 <span
-class="math inline">\(S(P_{2}^{*}, P_{3}^{*})\)</span>
-是最大值矛盾。因此</p>
-<p><span class="math display">\[
-\left\|P_{2}^{*}\right\|+\left\|P_{3}^{*}\right\|+\left\|P_{2}^{*}-P_{3}^{*}\right\|=L
-\]</span> 上标为维数的区分，下标为同一维数不同点的区分，对 <span
-class="math inline">\(P_{1},P_{2},P_{3}\)</span> 中 <span
-class="math inline">\(\mathbf x_{1,2,3}^j\)</span> <span
-class="math display">\[
-S(P_1,P_2,P_3)=\frac{1}{2} \sqrt{\sum_{1\leq i&lt;j \leq
-n}\left|\begin{array}{cc}\mathbf x_{2}^{i}-\mathbf x_{1}^{i} &amp;
-\mathbf x_{3}^{i}-\mathbf x_{1}^{i} \\ \mathbf x_{2}^{j}-\mathbf
-x_{1}^{i} &amp; \mathbf x_{3}^{j}-\mathbf
-x_{1}^{j}\end{array}\right|^{2}}=\frac{1}{2} \sqrt{\sum_{1\leq i&lt;j
-\leq n}\left|\begin{array}{ccc}1&amp;1&amp;1\\ \mathbf x_{1}^{i} &amp;
-\mathbf x_{2}^{i} &amp; \mathbf x_{3}^{i} \\ \mathbf x_{1}^{j} &amp;
-\mathbf x_{2}^{j} &amp; \mathbf x_{3}^{j}\end{array}\right|^{2}}
-\]</span> <strong>（向量值）函数：</strong>映射 <span
-class="math inline">\(f:A\to R^{\ p}\)</span>，<span
-class="math inline">\(f(\mathbf x)=(f^1(\mathbf x),f^2(\mathbf
-x),\cdots,f^p(\mathbf x))\)</span></p>
-<p>其中 <span class="math inline">\(f^{k}:A\to R\)</span> 是函数，将
-<span class="math inline">\(f(\mathbf x)\in R^{p}\)</span>
-映射后的向量“作用点”附着于<span class="math inline">\(\mathbf x\)</span>
-处，称为<strong>数量场</strong>（物理中称为<strong>纯量场</strong>）</p>
-<p><strong>等值集</strong>：<span
-class="math inline">\(\Sigma_{\mathbf{y}}=f^{-1}(\mathbf{y})=\{\mathbf{\mathbf
-x} \in A \mid {f(\mathbf{\mathbf x})}=\mathbf{y}\}\)</span></p>
+\end{gathered}</script><p>使用固定两点，另外一点在一个椭圆上移动可知，当这个点在固定点中垂线上的时候三角形面积最大，有两边长度相等，更换固定点得，<strong>周长一定的三角形为等边三角形时最大</strong>。该论证有一定问题，<strong>没有证明有最大值</strong>的情况。固定 $P_1$  为原点，考虑所有周长小于等于 $L$ 的集合</p>
+<script type="math/tex; mode=display">
+K=\{(P_{2}, P_{3}) \in \mathbb{R}^{2} \times \mathbb{R}^{2} \mid\|P_{2}\|+\|P_{3}\|+\|P_{2}-P_{3}\| \leq L\}</script><p>则 $K$ 是有界闭集，从而 $S(P<em>{2}, P</em>{3})$ 在 $K$ 上取得最大值 $S(P<em>{2}^{*}, P</em>{3}^{*})$ 。假若 </p>
+<script type="math/tex; mode=display">
+\|P_{2}^{*}\|+\|P_{3}^{*}\|+\|P_{2}^{*}-P_{3}^{*}\|<L</script><p>取 $\lambda=\dfrac{L}{|P<em>{2}^{*}|+|P</em>{3}^{<em>}|+|P_{2}^{</em>}-P<em>{3}^{*}|}, P</em>{k}^{‘}=\lambda P<em>{k}^{*}$，显然面积变成原来的 $\lambda^2$ 倍。这与 $S(P</em>{2}^{<em>}, P_{3}^{</em>})$ 是最大值矛盾。因此</p>
+<script type="math/tex; mode=display">
+\left\|P_{2}^{*}\right\|+\left\|P_{3}^{*}\right\|+\left\|P_{2}^{*}-P_{3}^{*}\right\|=L</script><p>上标为维数的区分，下标为同一维数不同点的区分，对 $P<em>{1},P</em>{2},P<em>{3}$ 中 $\mathbf x</em>{1,2,3}^j$</p>
+<script type="math/tex; mode=display">
+S(P_1,P_2,P_3)=\frac{1}{2} \sqrt{\sum_{1\leq i<j \leq n}\left|\begin{array}{cc}\mathbf x_{2}^{i}-\mathbf x_{1}^{i} & \mathbf x_{3}^{i}-\mathbf x_{1}^{i} \\ \mathbf x_{2}^{j}-\mathbf x_{1}^{i} & \mathbf x_{3}^{j}-\mathbf x_{1}^{j}\end{array}\right|^{2}}=\frac{1}{2} \sqrt{\sum_{1\leq i<j \leq n}\left|\begin{array}{ccc}1&1&1\\ \mathbf x_{1}^{i} & \mathbf x_{2}^{i} & \mathbf x_{3}^{i} \\ \mathbf x_{1}^{j} & \mathbf x_{2}^{j} & \mathbf x_{3}^{j}\end{array}\right|^{2}}</script><p><strong>（向量值）函数：</strong>映射 $f:A\to R^{\ p}$，$f(\mathbf x)=(f^1(\mathbf x),f^2(\mathbf x),\cdots,f^p(\mathbf x))$</p>
+<p>其中 $f^{k}:A\to R$ 是函数，将 $f(\mathbf x)\in R^{p}$ 映射后的向量“作用点”附着于$\mathbf x$ 处，称为<strong>数量场</strong>（物理中称为<strong>纯量场</strong>）</p>
+<p><strong>等值集</strong>：$\Sigma_{\mathbf{y}}=f^{-1}(\mathbf{y})={\mathbf{\mathbf x} \in A \mid {f(\mathbf{\mathbf x})}=\mathbf{y}}$</p>
 <p>微积分的一个目标是通过局部线性近似来研究函数，所以需要空间是向量空间（线性空间）或者局部近似的空间（微分流形）</p>
-<p><strong>距离</strong>，满足对称，正定，三角形不等式，可以度量两个点的远近程度。：
-<span class="math display">\[
+<p><strong>距离</strong>，满足对称，正定，三角形不等式，可以度量两个点的远近程度。：</p>
+<script type="math/tex; mode=display">
 \begin{gathered}
-\text { (对称) } \quad d(\mathbf{x}, \mathbf{y})=d(\mathbf{y},
-\mathbf{x}) \\
-\text { (正定) } \quad d(\mathbf{x}, \mathbf{y}) \geq 0, \forall
-\mathbf{x}, \mathbf{y} \in R^{m}, d(\mathbf{x}, \mathbf{y})=0
-\Longleftrightarrow \mathbf{x}=\mathbf{y} \\
-\text { (三角形不等式) } \quad \forall \mathbf{x}, \mathbf{y},
-\mathbf{z} \in R^{m}, d(\mathbf{x}, \mathbf{y}) \leq d(\mathbf{x},
-\mathbf{z})+d(\mathbf{z}, \mathbf{y})
-\end{gathered}
-\]</span> 若 <span class="math inline">\(d(\mathbf x+\mathbf z,\mathbf
-y+\mathbf z)=d(\mathbf x,\mathbf y),\forall \mathbf x,\mathbf y,\mathbf
-z\in R^m\)</span>，称为距离 <span class="math inline">\(d\)</span>
-是<strong>平移不变</strong>的</p>
-<p><strong>范数</strong>，满足正定，三角形不等式，正齐次性，范数可以度量向量的“长度”：
-<span class="math display">\[
+\text { (对称) } \quad d(\mathbf{x}, \mathbf{y})=d(\mathbf{y}, \mathbf{x}) \\
+\text { (正定) } \quad d(\mathbf{x}, \mathbf{y}) \geq 0, \forall \mathbf{x}, \mathbf{y} \in R^{m}, d(\mathbf{x}, \mathbf{y})=0 \Longleftrightarrow \mathbf{x}=\mathbf{y} \\
+\text { (三角形不等式) } \quad \forall \mathbf{x}, \mathbf{y}, \mathbf{z} \in R^{m}, d(\mathbf{x}, \mathbf{y}) \leq d(\mathbf{x}, \mathbf{z})+d(\mathbf{z}, \mathbf{y})
+\end{gathered}</script><p>若 $d(\mathbf x+\mathbf z,\mathbf y+\mathbf z)=d(\mathbf x,\mathbf y),\forall \mathbf x,\mathbf y,\mathbf z\in R^m$，称为距离 $d$ 是<strong>平移不变</strong>的</p>
+<p><strong>范数</strong>，满足正定，三角形不等式，正齐次性，范数可以度量向量的“长度”：</p>
+<script type="math/tex; mode=display">
 \begin{gathered}
-(\text { 正定 }) \quad\|\mathbf{x}\| \geq 0, \forall \mathbf{x} \in
-R^{m},\|\mathbf{x}\|=0 \Longleftrightarrow \mathbf{x}=0 \\
-\text { (三角形不等式) } \quad \forall \mathbf{x}, y, z \in
-R^{m},\|\mathbf{x}+y\| \leq\|\mathbf{x}\|+\|y\| \\
-\text { (正齐次性) } \quad \forall \mathbf{x} \in R^{m}, \forall \lambda
-\in R,\|\lambda \mathbf{x}\|=|\lambda|\|\mathbf{x}\|
-\end{gathered}
-\]</span> 范数和凸集一一对应 <span class="math inline">\(\{x\mid
-\|x\|\leq 1\}\Longleftrightarrow 凸\)</span></p>
-<p><strong>内积</strong>，满足对称，正定，双线性： <span
-class="math display">\[
+(\text { 正定 }) \quad\|\mathbf{x}\| \geq 0, \forall \mathbf{x} \in R^{m},\|\mathbf{x}\|=0 \Longleftrightarrow \mathbf{x}=0 \\
+\text { (三角形不等式) } \quad \forall \mathbf{x}, y, z \in R^{m},\|\mathbf{x}+y\| \leq\|\mathbf{x}\|+\|y\| \\
+\text { (正齐次性) } \quad \forall \mathbf{x} \in R^{m}, \forall \lambda \in R,\|\lambda \mathbf{x}\|=|\lambda|\|\mathbf{x}\|
+\end{gathered}</script><p>范数和凸集一一对应 ${x\mid |x|\leq 1}\Longleftrightarrow 凸$</p>
+<p><strong>内积</strong>，满足对称，正定，双线性：</p>
+<script type="math/tex; mode=display">
 \begin{gathered}
-\text { (对称) } \quad\langle\mathbf{x},
-\mathbf{y}\rangle=\langle\mathbf{y}, \mathbf{x}\rangle \\
-\text { (正定) } \quad\langle\mathbf{x}, \mathbf{x}\rangle \geq 0,
-\forall x \in R^{m},\langle\mathbf{x}, \mathbf{x}\rangle=0
-\Longleftrightarrow \mathbf{x}=0 \\
-\text { (双线性) } \quad \forall \mathbf{x}, \mathbf{y}, \mathbf{z} \in
-R^{m},\langle\lambda \mathbf{x}+\mu
-\mathbf{y}\rangle=\lambda\langle\mathbf{x}\rangle+\mu\langle\mathbf{y}\rangle
-\end{gathered}
-\]</span> 代表方向长度，可以计算面积体积之类的度量</p>
-<p><strong>p-范数</strong>：<span class="math inline">\(\displaystyle
-\|\mathbf{\mathbf x}\|_{p}=\left(\sum_{i=1}^{m}\left|\mathbf
-x^{i}\right|^{p}\right)^{\frac{1}{p}}\)</span>，对应可以定义一个平移不变的距离
-<span class="math inline">\(\displaystyle \|d_{p}(\mathbf x,\mathbf
-y)\|=\left(\sum_{i=1}^{m}\left|\mathbf x^{i}-\mathbf
-y^{i}\right|^{p}\right)^{\frac{1}{p}}\)</span>，当</p>
-<p><span class="math inline">\(p=2\)</span> 时，为欧几里得距离；当 <span
-class="math inline">\(p=1\)</span>
-时为<strong>曼哈顿距离</strong>或<strong>出租车距离</strong>；当 <span
-class="math inline">\(p\to +\infty\)</span> 时，</p>
-<p><span class="math inline">\(d_{p}(\mathbf x,\mathbf y)\to
-\underset{1\leq i\leq m}{max}|{\mathbf x^i-\mathbf
-y^i}|=d_{\infty}(\mathbf x,\mathbf y)\)</span>，对范数也可定义无穷范数
-<span class="math inline">\(\|\mathbf x\|_{\infty}=\underset{1\leq i\leq
-m}{\max}|x^{i}|\)</span></p>
-<p>图一展示了 <span class="math inline">\(p\geq 1\)</span>
-的情形，对应凸集；图二展示了 <span class="math inline">\(p&lt;1\)</span>
-的情形，对应凹集</p>
+\text { (对称) } \quad\langle\mathbf{x}, \mathbf{y}\rangle=\langle\mathbf{y}, \mathbf{x}\rangle \\
+\text { (正定) } \quad\langle\mathbf{x}, \mathbf{x}\rangle \geq 0, \forall x \in R^{m},\langle\mathbf{x}, \mathbf{x}\rangle=0 \Longleftrightarrow \mathbf{x}=0 \\
+\text { (双线性) } \quad \forall \mathbf{x}, \mathbf{y}, \mathbf{z} \in R^{m},\langle\lambda \mathbf{x}+\mu \mathbf{y}\rangle=\lambda\langle\mathbf{x}\rangle+\mu\langle\mathbf{y}\rangle
+\end{gathered}</script><p>代表方向长度，可以计算面积体积之类的度量</p>
+<p><strong>p-范数</strong>：$\displaystyle |\mathbf{\mathbf x}|<em>{p}=\left(\sum</em>{i=1}^{m}\left|\mathbf x^{i}\right|^{p}\right)^{\frac{1}{p}}$，对应可以定义一个平移不变的距离 $\displaystyle |d<em>{p}(\mathbf x,\mathbf y)|=\left(\sum</em>{i=1}^{m}\left|\mathbf x^{i}-\mathbf y^{i}\right|^{p}\right)^{\frac{1}{p}}$，当 </p>
+<p>$p=2$ 时，为欧几里得距离；当 $p=1$ 时为<strong>曼哈顿距离</strong>或<strong>出租车距离</strong>；当 $p\to +\infty$ 时，</p>
+<p>$d<em>{p}(\mathbf x,\mathbf y)\to \underset{1\leq i\leq m}{max}|{\mathbf x^i-\mathbf y^i}|=d</em>{\infty}(\mathbf x,\mathbf y)$，对范数也可定义无穷范数 $|\mathbf x|_{\infty}=\underset{1\leq i\leq m}{\max}|x^{i}|$</p>
+<p>图一展示了 $p\geq 1$ 的情形，对应凸集；图二展示了 $p&lt;1$ 的情形，对应凹集</p>
 <p><img src="https://pic.imgdb.cn/item/6216283c2ab3f51d91032dd2.jpg" title="图一" style="zoom:45%;" /><img src="https://pic.imgdb.cn/item/621349b82ab3f51d91dbbfb3.png" title="图二" style="zoom:33%;" /></p>
-<p><span class="math inline">\(\|\mathbf{\mathbf x}\|_{\infty}
-\leq\|\mathbf{\mathbf x}\|_{p} \leq m^{\frac{1}{p}}\|\mathbf{\mathbf
-x}\|_{\infty}\)</span>，在有限维空间下，对 <span
-class="math inline">\(R^m\)</span> 的任意范数均有 <span
-class="math display">\[
-\begin{aligned}\|\mathbf{\mathbf x}\| &amp;=\left\|\mathbf x^{1}
-\mathbf{e}_{1}+\cdots+\mathbf x^{m} \mathbf{e}_{m}\right\| \leq
-\left|\mathbf
-x^{1}\right|\left\|\mathbf{e}_{1}\right\|+\cdots+\left|\mathbf
-x^{m}\right|\left\|\mathbf{e}_{m}\right\| \\ &amp; \leq \max_{1\leq k
-\leq m}\left|\mathbf
-x^{k}\right|\left(\left\|\mathbf{e}_{1}\right\|+\cdots+\left\|\mathbf{e}_{m}\right\|\right|=M\|\mathbf{\mathbf
-x}\|_{\infty} . \end{aligned}
-\]</span> 则通过 <span class="math inline">\(\mbox{Cauchy}\)</span>
-收敛准则可知，在 <span class="math inline">\(\mathbb{R}^{m}\)</span>
-中，有界，收敛，极限这些概念与范数的选取无关。可以任意选取范数验证相关
-<span class="math inline">\(\epsilon -\delta\)</span> 语言</p>
-<p><strong>多元函数连续</strong>：设 <span
-class="math inline">\(E\subseteq R^m,\forall \ \epsilon &gt;0,\exists \
-\delta_{\epsilon}&gt;0,s.t.\mathbf x\in E,\|\mathbf x-\mathbf
-a\|&lt;\delta_{\epsilon}\Longrightarrow \|f(\mathbf x)-f(\mathbf
-a)|&lt;\epsilon\)</span></p>
-<p>则称 <span class="math inline">\(f:E\to R^n\)</span> 在 <span
-class="math inline">\(\mathbf a\in E\)</span> 处连续</p>
-<p>常值映射，两个连续函数的复合映射，线性映射，<span
-class="math inline">\(k-\)</span>重线性映射都是连续映射</p>
-<p>例：<strong>任何双线性映射 <span
-class="math inline">\(B\)</span>：<span
-class="math inline">\(\mathbb{R}^{m} \times \mathbb{R}^{n} \rightarrow
-\mathbb{R}^{p}\)</span>
-都是连续映射</strong>。对两空间的基底和多元函数放缩得 <span
-class="math display">\[
-\begin{aligned}\|B(\mathbf{x}, \mathbf{y})\| &amp;=\left\|\sum_{i, j}
-x^{i} y^{j} B\left(\mathbf{e}_{i}, \mathbf{f}_{j}\right)\right\| \leq
-\sum_{i, j} \mid x^{i}\left\|y^{j}\right\| B\left(\mathbf{e}_{i},
-\mathbf{f}_{j}\right) \| \\ &amp;
-\leq\|\mathbf{x}\|_{\infty}\|\mathbf{y}\|_{\infty} \sum_{i,
-j}\left\|B\left(\mathbf{e}_{i},
-\mathbf{f}_{j}\right)\right\|=M\|\mathbf{x}\|_{\infty}\|\mathbf{y}\|_{\infty}
-\end{aligned}
-\]</span> 从而替换为无穷范数得 <span class="math display">\[
+<p>$|\mathbf{\mathbf x}|<em>{\infty} \leq|\mathbf{\mathbf x}|</em>{p} \leq m^{\frac{1}{p}}|\mathbf{\mathbf x}|_{\infty}$，在有限维空间下，对 $R^m$ 的任意范数均有</p>
+<script type="math/tex; mode=display">
+\begin{aligned}\|\mathbf{\mathbf x}\| &=\left\|\mathbf x^{1} \mathbf{e}_{1}+\cdots+\mathbf x^{m} \mathbf{e}_{m}\right\| \leq \left|\mathbf x^{1}\right|\left\|\mathbf{e}_{1}\right\|+\cdots+\left|\mathbf x^{m}\right|\left\|\mathbf{e}_{m}\right\| \\ & \leq \max_{1\leq k \leq m}\left|\mathbf x^{k}\right|\left(\left\|\mathbf{e}_{1}\right\|+\cdots+\left\|\mathbf{e}_{m}\right\|\right|=M\|\mathbf{\mathbf x}\|_{\infty} . \end{aligned}</script><p>则通过 $\mbox{Cauchy}$ 收敛准则可知，在 $\mathbb{R}^{m}$ 中，有界，收敛，极限这些概念与范数的选取无关。可以任意选取范数验证相关 $\epsilon -\delta$ 语言</p>
+<p><strong>多元函数连续</strong>：设 $E\subseteq R^m,\forall \ \epsilon &gt;0,\exists \ \delta<em>{\epsilon}&gt;0,s.t.\mathbf x\in E,|\mathbf x-\mathbf a|&lt;\delta</em>{\epsilon}\Longrightarrow |f(\mathbf x)-f(\mathbf a)|&lt;\epsilon$</p>
+<p>则称 $f:E\to R^n$ 在 $\mathbf a\in E$ 处连续</p>
+<p>常值映射，两个连续函数的复合映射，线性映射，$k-$重线性映射都是连续映射</p>
+<p>例：<strong>任何双线性映射 $B$：$\mathbb{R}^{m} \times \mathbb{R}^{n} \rightarrow \mathbb{R}^{p}$ 都是连续映射</strong>。对两空间的基底和多元函数放缩得</p>
+<script type="math/tex; mode=display">
+\begin{aligned}\|B(\mathbf{x}, \mathbf{y})\| &=\left\|\sum_{i, j} x^{i} y^{j} B\left(\mathbf{e}_{i}, \mathbf{f}_{j}\right)\right\| \leq \sum_{i, j} \mid x^{i}\left\|y^{j}\right\| B\left(\mathbf{e}_{i}, \mathbf{f}_{j}\right) \| \\ & \leq\|\mathbf{x}\|_{\infty}\|\mathbf{y}\|_{\infty} \sum_{i, j}\left\|B\left(\mathbf{e}_{i}, \mathbf{f}_{j}\right)\right\|=M\|\mathbf{x}\|_{\infty}\|\mathbf{y}\|_{\infty} \end{aligned}</script><p>从而替换为无穷范数得</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-&amp;\left\|B(\mathbf{x}, \mathbf{y})-B\left(\mathbf{x}_{0},
-\mathbf{y}_{0}\right)\right\| \\
-\leq &amp;\left\|B\left(\mathbf{x}-\mathbf{x}_{0},
-\mathbf{y}-\mathbf{y}_{0}\right)\right\|+\left\|B\left(\mathbf{x}-\mathbf{x}_{0},
-\mathbf{y}_{0}\right)\right\|+\left\|B\left(\mathbf{x}_{0},
-\mathbf{y}-\mathbf{y}_{0}\right)\right\| \\
-\leq &amp;
-M\left(\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}\right)
-.
-\end{aligned}
-\]</span> 对任意 <span class="math inline">\(\varepsilon&gt;0\)</span>,
-当 <span class="math display">\[
-\max
-\left\{\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty},\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}\right\}&lt;\frac{\varepsilon}{\varepsilon+3
-M\left(1+\left\|\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}_{0}\right\|_{\infty}\right)}
-\]</span> 时, <span class="math inline">\(\left\|B(\mathbf{x},
-\mathbf{y})-B\left(\mathbf{x}_{0},
-\mathbf{y}_{0}\right)\right\|&lt;\varepsilon_{0}\)</span> 所以 <span
-class="math inline">\(B\)</span> 是连续映射。</p>
-<p><strong>有界闭集上的连续映射</strong>：称 <span
-class="math inline">\(E \subseteq \mathbb{R}^{m}\)</span> 是一个闭子集,
-如果点列 <span class="math inline">\(\left\{\mathbf
-{x}_{n}\right\}\)</span> 满足对任意 <span class="math inline">\(n \geq
-1\)</span>, <span class="math inline">\(\mathbf{x}_{n} \in E\)</span>,
-且 <span
-class="math inline">\(\lim\limits_{n\to+\infty}\mathbf{x}_{n}=\mathbf{x}^{*}\)</span>,
-则 <span class="math inline">\(\mathbf{x}^{*} \in E\)</span>
-。(E对极限封闭)</p>
-<p>对称线性变换的特征值和特征向量，<strong>对称</strong>：<span
-class="math inline">\(\langle Ax,y \rangle=\langle x,Ay
-\rangle\)</span>（内积可置换性）</p>
-<p><span class="math inline">\(\mathbf{v}_1\)</span> 对应最大值，任取与
-<span class="math inline">\(\mathbf{v}_1\)</span> 正交的单位向量 <span
-class="math inline">\(\mathbf{u}\in K\)</span>，则考虑 <span
-class="math inline">\(g(\theta)=f(\cos \theta\mathbf{v}_1+\sin
-\theta\mathbf{u})\)</span> <span class="math display">\[
+&\left\|B(\mathbf{x}, \mathbf{y})-B\left(\mathbf{x}_{0}, \mathbf{y}_{0}\right)\right\| \\
+\leq &\left\|B\left(\mathbf{x}-\mathbf{x}_{0}, \mathbf{y}-\mathbf{y}_{0}\right)\right\|+\left\|B\left(\mathbf{x}-\mathbf{x}_{0}, \mathbf{y}_{0}\right)\right\|+\left\|B\left(\mathbf{x}_{0}, \mathbf{y}-\mathbf{y}_{0}\right)\right\| \\
+\leq & M\left(\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}_{0}\right\|_{\infty}\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}\right) .
+\end{aligned}</script><p>对任意 $\varepsilon&gt;0$, 当</p>
+<script type="math/tex; mode=display">
+\max \left\{\left\|\mathbf{x}-\mathbf{x}_{0}\right\|_{\infty},\left\|\mathbf{y}-\mathbf{y}_{0}\right\|_{\infty}\right\}<\frac{\varepsilon}{\varepsilon+3 M\left(1+\left\|\mathbf{y}_{0}\right\|_{\infty}+\left\|\mathbf{x}_{0}\right\|_{\infty}\right)}</script><p>时, $\left|B(\mathbf{x}, \mathbf{y})-B\left(\mathbf{x}<em>{0}, \mathbf{y}</em>{0}\right)\right|&lt;\varepsilon_{0}$ 所以 $B$ 是连续映射。</p>
+<p><strong>有界闭集上的连续映射</strong>：称 $E \subseteq \mathbb{R}^{m}$ 是一个闭子集, 如果点列 $\left{\mathbf {x}<em>{n}\right}$ 满足对任意 $n \geq 1$, $\mathbf{x}</em>{n} \in E$, 且 $\lim\limits<em>{n\to+\infty}\mathbf{x}</em>{n}=\mathbf{x}^{<em>}$, 则 $\mathbf{x}^{</em>} \in E$ 。(E对极限封闭)</p>
+<p>对称线性变换的特征值和特征向量，<strong>对称</strong>：$\langle Ax,y \rangle=\langle x,Ay \rangle$（内积可置换性）</p>
+<p>$\mathbf{v}_1$ 对应最大值，任取与 $\mathbf{v}_1$ 正交的单位向量 $\mathbf{u}\in K$，则考虑 $g(\theta)=f(\cos \theta\mathbf{v}_1+\sin \theta\mathbf{u})$ </p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-g(\theta) &amp;=\left\langle A\left(\cos \theta \mathbf{v}_{1}+\sin
-\theta \mathbf{u}\right), \cos \theta \mathbf{v}_{1}+\sin \theta
-\mathbf{u}\right\rangle \\
-&amp;=\cos ^{2} \theta f\left(\mathbf{v}_{1}\right)+\sin ^{2} \theta
-f(\mathbf{u})+2 \sin \theta \cos \theta\left\langle A \mathbf{v}_{1},
-\mathbf{u}\right\rangle \\
-&amp;=g(0)+2 \theta\left\langle A \mathbf{v}_{1},
-\mathbf{u}\right\rangle+o(\theta), \quad \theta \rightarrow 0
-\end{aligned}
-\]</span> <span class="math inline">\(g&#39;(0)=2\langle A
-\mathbf{v}_{1}, \mathbf{u}\rangle=0\)</span></p>
-<p>由于行列式函数连续，从而对任意可逆实数方阵 <span
-class="math inline">\(A\)</span>，总存在 <span
-class="math inline">\(\delta(A)&gt;0\)</span>，当 <span
-class="math inline">\(\|A-B\|&lt;\delta\)</span> 时，<span
-class="math inline">\(B\)</span> 也可逆</p>
+g(\theta) &=\left\langle A\left(\cos \theta \mathbf{v}_{1}+\sin \theta \mathbf{u}\right), \cos \theta \mathbf{v}_{1}+\sin \theta \mathbf{u}\right\rangle \\
+&=\cos ^{2} \theta f\left(\mathbf{v}_{1}\right)+\sin ^{2} \theta f(\mathbf{u})+2 \sin \theta \cos \theta\left\langle A \mathbf{v}_{1}, \mathbf{u}\right\rangle \\
+&=g(0)+2 \theta\left\langle A \mathbf{v}_{1}, \mathbf{u}\right\rangle+o(\theta), \quad \theta \rightarrow 0
+\end{aligned}</script><p>$g’(0)=2\langle A \mathbf{v}_{1}, \mathbf{u}\rangle=0$</p>
+<p>由于行列式函数连续，从而对任意可逆实数方阵 $A$，总存在 $\delta(A)&gt;0$，当 $|A-B|&lt;\delta$ 时，$B$ 也可逆</p>
 <p>对行列式函数是连续的，非零量“微扰”后也为非零量，进而可逆</p>
-<p>压缩映射原理（地图纸和现实世界存在唯一的点恰好不动）：设 <span
-class="math inline">\(E \subseteq \mathbb{R}^{m}\)</span> 是一个闭子集,
-映射 <span class="math inline">\(f: E \rightarrow
-\mathbb{R}^{m}\)</span> 满足 <span class="math inline">\(f(E) \subseteq
-E\)</span>, 且存在常数 <span
-class="math inline">\(0&lt;\lambda&lt;1\)</span> 使得 <span
-class="math display">\[
-\|f(\mathbf{x})-f(\mathbf{y})\| \leq \lambda\|\mathbf{x}-\mathbf{y}\|,
-\quad \forall\  \mathbf{x}, \mathbf{y} \in E .
-\]</span> 则存在唯一的 <span class="math inline">\(\mathbf{x}^{*} \in
-E\)</span> 使得: <span
-class="math inline">\(f\left(\mathbf{x}^{*}\right)=\mathbf{x}^{*}\)</span>,
-且对任意 <span class="math inline">\(\mathbf{x} \in E\)</span>, 迭代点列
-<span class="math inline">\(\mathbf{x}_{n}=f^{n}(\mathbf{x})\)</span>
-收敛到 <span class="math inline">\(\mathbf{x}^{*}\)</span> <span
-class="math display">\[
+<p>压缩映射原理（地图纸和现实世界存在唯一的点恰好不动）：设 $E \subseteq \mathbb{R}^{m}$ 是一个闭子集, 映射 $f: E \rightarrow \mathbb{R}^{m}$ 满足 $f(E) \subseteq E$, 且存在常数 $0&lt;\lambda&lt;1$ 使得</p>
+<script type="math/tex; mode=display">
+\|f(\mathbf{x})-f(\mathbf{y})\| \leq \lambda\|\mathbf{x}-\mathbf{y}\|, \quad \forall\  \mathbf{x}, \mathbf{y} \in E .</script><p>则存在唯一的 $\mathbf{x}^{<em>} \in E$ 使得: $f\left(\mathbf{x}^{</em>}\right)=\mathbf{x}^{<em>}$, 且对任意 $\mathbf{x} \in E$, 迭代点列 $\mathbf{x}_{n}=f^{n}(\mathbf{x})$ 收敛到 $\mathbf{x}^{</em>}$</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-\left\|\mathbf{x}_{n+p}-\mathbf{x}_{n}\right\| &amp; \leq
-\sum_{k=1}^{p}\left\|\mathbf{x}_{n+k}-\mathbf{x}_{n+k-1}\right\| \leq
-\sum_{k=1}^{p} \lambda^{n+k-1}\|f(\mathbf{x})-\mathbf{x}\|
+\left\|\mathbf{x}_{n+p}-\mathbf{x}_{n}\right\| & \leq \sum_{k=1}^{p}\left\|\mathbf{x}_{n+k}-\mathbf{x}_{n+k-1}\right\| \leq \sum_{k=1}^{p} \lambda^{n+k-1}\|f(\mathbf{x})-\mathbf{x}\|
 \leq \frac{\lambda^{n}}{1-\lambda}\|f(\mathbf{x})-\mathbf{x}\|
-\end{aligned}
-\]</span> 所以 <span
-class="math inline">\(\left\{\mathbf{x}_{n}\right\}\)</span> 是 Cauchy
-列, 从而存在 <span class="math inline">\(\mathbf{x}^{*} \in
-\mathbb{R}^{m}\)</span> 使得 <span class="math inline">\(\lim\limits_{n
-\rightarrow+\infty} \mathbf{x}_{n}=\mathbf{x}^{*}\)</span> 。 因为 <span
-class="math inline">\(E\)</span> 是闭集, 所以 <span
-class="math inline">\(\mathbf{x}^{*} \in E\)</span> 。 <span
-class="math display">\[
+\end{aligned}</script><p>所以 $\left{\mathbf{x}<em>{n}\right}$ 是 Cauchy 列, 从而存在 $\mathbf{x}^{*} \in \mathbb{R}^{m}$ 使得 $\lim\limits</em>{n \rightarrow+\infty} \mathbf{x}_{n}=\mathbf{x}^{<em>}$ 。 因为 $E$ 是闭集, 所以 $\mathbf{x}^{</em>} \in E$ 。</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-\left\|f\left(\mathbf{x}^{*}\right)-\mathbf{x}^{*}\right\| &amp;
-\leq\left\|f\left(\mathbf{x}^{*}\right)-f\left(\mathbf{x}_{n}\right)\right\|+\left\|f\left(\mathbf{x}_{n}\right)-\mathbf{x}^{*}\right\|
-\\
-&amp; \leq
-\lambda\left\|\mathbf{x}^{*}-\mathbf{x}_{n}\right\|+\left\|\mathbf{x}_{n+1}-\mathbf{x}^{*}\right\|
-\rightarrow 0, \quad n \rightarrow+\infty
-\end{aligned}
-\]</span> 所以 <span
-class="math inline">\(f\left(\mathbf{x}^{*}\right)=\mathbf{x}^{*}\)</span>
-。让最初的不等式中 <span class="math inline">\(p
-\rightarrow+\infty\)</span>, 得到 <span class="math display">\[
-\left\|\mathbf{x}^{*}-\mathbf{x}_{n}\right\| \leq
-\frac{\lambda^{n}}{1-\lambda}\|f(\mathbf{x})-\mathbf{x}\|_{\circ}
-\]</span> 证明<strong>矩阵求逆是连续映射</strong>：</p>
+\left\|f\left(\mathbf{x}^{*}\right)-\mathbf{x}^{*}\right\| & \leq\left\|f\left(\mathbf{x}^{*}\right)-f\left(\mathbf{x}_{n}\right)\right\|+\left\|f\left(\mathbf{x}_{n}\right)-\mathbf{x}^{*}\right\| \\
+& \leq \lambda\left\|\mathbf{x}^{*}-\mathbf{x}_{n}\right\|+\left\|\mathbf{x}_{n+1}-\mathbf{x}^{*}\right\| \rightarrow 0, \quad n \rightarrow+\infty
+\end{aligned}</script><p>所以 $f\left(\mathbf{x}^{<em>}\right)=\mathbf{x}^{</em>}$ 。让最初的不等式中 $p \rightarrow+\infty$, 得到</p>
+<script type="math/tex; mode=display">
+\left\|\mathbf{x}^{*}-\mathbf{x}_{n}\right\| \leq \frac{\lambda^{n}}{1-\lambda}\|f(\mathbf{x})-\mathbf{x}\|_{\circ}</script><p>证明<strong>矩阵求逆是连续映射</strong>：</p>
 <blockquote>
-<p>引理：只要 <span class="math inline">\(\|B\|&lt;1\)</span>，有 <span
-class="math inline">\(I-B\)</span> 可逆，且有 <span
-class="math inline">\(\|(I-B)^{-1}-I\|\leq
-\dfrac{\|B\|}{1-\|B\|}\)</span></p>
-<p>对 <span class="math inline">\((I-B)(I+C)=I\Longrightarrow
-C=B+BC\)</span>，考虑映射 <span
-class="math inline">\(f(C)=B+BC\)</span>，其满足压缩映射（<span
-class="math inline">\(\|B\|=\lambda&lt;1\)</span>） <span
-class="math display">\[
-\|f(C_1)-f(C_2)\|=\|B(C_1-C_2)\|\leq \|B\|\|C_1-C_2\|
-\]</span> 从而 <span class="math inline">\(\exists\ ! \
-C_0,s.t.C=B+BC\)</span>，<span class="math inline">\(I-B\)</span>
-可逆，且有 <span class="math display">\[
+<p>引理：只要 $|B|&lt;1$，有 $I-B$ 可逆，且有 $|(I-B)^{-1}-I|\leq \dfrac{|B|}{1-|B|}$</p>
+<p>对 $(I-B)(I+C)=I\Longrightarrow C=B+BC$，考虑映射 $f(C)=B+BC$，其满足压缩映射（$|B|=\lambda&lt;1$）</p>
+<script type="math/tex; mode=display">
+\|f(C_1)-f(C_2)\|=\|B(C_1-C_2)\|\leq \|B\|\|C_1-C_2\|</script><p>从而 $\exists\ ! \ C_0,s.t.C=B+BC$，$I-B$ 可逆，且有</p>
+<script type="math/tex; mode=display">
 \begin{gathered}
-\|C\|=\|B+BC\|\leq \|B\|\|I+C\|\leq\|B\|(1+\|C\|)\quad\\
-\|(I-B)^{-1}-I\|\leq \dfrac{\|B\|}{1-\|B\|}
-\therefore\ A\ 可逆\ \mbox{and}\  \|\small \Delta \normalsize
-A\|&lt;\dfrac{1}{\|A^{-1}\|}\Longrightarrow A+\small \Delta \normalsize
-A\ 可逆
-\end{gathered}
-\]</span></p>
-</blockquote>
-<p>对于小扰动，总能被 <span class="math inline">\(\|\small \Delta
-\normalsize A\|\)</span> 控制，从而求逆是连续映射 <span
-class="math display">\[
+\|C\|=\|B+BC\|\leq \|B\|\|I+C\|\leq\|B\|(1+\|C\|)\quad\\ \|(I-B)^{-1}-I\|\leq \dfrac{\|B\|}{1-\|B\|}
+\therefore\ A\ 可逆\ \mbox{and}\  \|\small \Delta \normalsize A\|<\dfrac{1}{\|A^{-1}\|}\Longrightarrow A+\small \Delta \normalsize A\ 可逆
+\end{gathered}</script></blockquote>
+<p>对于小扰动，总能被 $|\small \Delta \normalsize A|$ 控制，从而求逆是连续映射</p>
+<script type="math/tex; mode=display">
 \begin{gathered}
-\left\|(A+\Delta A)^{-1}-A^{-1}\right\|=\left\|\left(I+A^{-1} \Delta
-A\right)^{-1} A^{-1}-A^{-1}\right\| \\
-\leq\left\|A^{-1}\right\|\left\|\left(I+A^{-1} \Delta
-A\right)^{-1}-I\right\|\leq \frac{\left\|A^{-1}\right\|^{2}\|\Delta
-A\|}{1-\left\|A^{-1}\right\|\|\Delta A\|}
-\end{gathered}
-\]</span> <strong>道路连通集</strong>：对任意 <span
-class="math inline">\(\mathbf{x}, \mathbf{y} \in E\)</span>,
-存在连续映射 <span class="math inline">\(f:[0,1] \rightarrow
-\mathbb{R}^{m}\)</span> 使得 <span
-class="math inline">\(f(0)=\mathbf{x}, f(1)=\mathbf{y}\)</span>,
-且对任意 $0 t , f(t) E $，下图均为道路连通集</p>
-<p>​
-<img src="https://pic.imgdb.cn/item/6215cc2f2ab3f51d9124d06a.jpg" style="zoom:50%;" />
-<img src="https://pic.imgdb.cn/item/6215cb562ab3f51d9122e1d1.png" style="zoom:50%;" /></p>
-<p>例：<span class="math inline">\(m\)</span>
-阶可逆矩阵的全体不是道路连通的。由于 <span
-class="math inline">\(\det\)</span> 是连续函数，有 <span
-class="math inline">\(\det I=1,\det
-(-\mathbf{e}_1,\mathbf{e}_2,\cdots,\mathbf{e}_m)=-1\)</span></p>
-<p>两者一定经过 <span
-class="math inline">\(0\)</span>（不可逆），从而不是连续函数</p>
-<p>对平面上的点，使用字典序 <span
-class="math inline">\(\begin{cases}x_1&gt;x_2\\y_1&gt;y_2,\mbox{when}\  x_1=x_2\end{cases}\)</span>，<span
-class="math inline">\(Abel&gt;Direclet\)</span></p>
+\left\|(A+\Delta A)^{-1}-A^{-1}\right\|=\left\|\left(I+A^{-1} \Delta A\right)^{-1} A^{-1}-A^{-1}\right\| \\
+ \leq\left\|A^{-1}\right\|\left\|\left(I+A^{-1} \Delta A\right)^{-1}-I\right\|\leq \frac{\left\|A^{-1}\right\|^{2}\|\Delta A\|}{1-\left\|A^{-1}\right\|\|\Delta A\|}
+\end{gathered}</script><p><strong>道路连通集</strong>：对任意 $\mathbf{x}, \mathbf{y} \in E$, 存在连续映射 $f:[0,1] \rightarrow \mathbb{R}^{m}$ 使得 $f(0)=\mathbf{x}, f(1)=\mathbf{y}$, 且对任意<br>$0 \leq t \leq 1, f(t) \in E $，下图均为道路连通集</p>
+<p>​                                         <img src="https://pic.imgdb.cn/item/6215cc2f2ab3f51d9124d06a.jpg" style="zoom:50%;" />   <img src="https://pic.imgdb.cn/item/6215cb562ab3f51d9122e1d1.png" style="zoom:50%;" /></p>
+<p>例：$m$ 阶可逆矩阵的全体不是道路连通的。由于 $\det$ 是连续函数，有 $\det I=1,\det (-\mathbf{e}_1,\mathbf{e}_2,\cdots,\mathbf{e}_m)=-1$</p>
+<p>两者一定经过 $0$（不可逆），从而不是连续函数  </p>
+<p>对平面上的点，使用字典序 $\begin{cases}x_1&gt;x_2\y_1&gt;y_2,\mbox{when}\  x_1=x_2\end{cases}$，$Abel&gt;Direclet$</p>
 <p>二维或者更高维数线性空间中不存在一个全序，使得它空间中由范数给出的拓扑相容。只有一维数轴是满足的。</p>
-</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/2022%E6%98%A5%E5%AD%A3/">2022春季</a><a class="post-meta__tags" href="/tags/%E5%A4%9A%E5%85%83%E5%BE%AE%E7%A7%AF%E5%88%86/">多元微积分</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62b11572b25ab3ab" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%20%EF%BC%88Chapter%20two%EF%BC%89/"><img class="prev-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Michael Niessl (KraoHdRYrRE).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">多元函数的极限</div></div></a></div><div class="next-post pull-right"><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/"><img class="next-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Casey Horner (Wsr13XFjZWw).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">多元函数的连续与可微</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork01/" title="多元微积分作业（一）"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by John Lee (oMneOBYhJxY).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-10</div><div class="title">多元微积分作业（一）</div></div></a></div><div><a href="/2022/03/09/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf03/" title="多元函数的导数与微分"><img class="cover" src="https://pic.imgdb.cn/item/61eccb152ab3f51d91d5e92a.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-09</div><div class="title">多元函数的导数与微分</div></div></a></div><div><a href="/2022/03/13/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf02/" title="多元函数的极限"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Jarrod Pimental (yDxzI-3IEMc).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-13</div><div class="title">多元函数的极限</div></div></a></div><div><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/" title="多元函数的连续与可微"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Casey Horner (Wsr13XFjZWw).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-06</div><div class="title">多元函数的连续与可微</div></div></a></div><div><a href="/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Complex%20matrix%EF%BC%88Chapter%201%EF%BC%89/" title="复矩阵"><img class="cover" src="https://pic.imgdb.cn/item/61eccb4d2ab3f51d91d616f7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-14</div><div class="title">复矩阵</div></div></a></div><div><a href="/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20three%EF%BC%89/" title="多元函数的导数与微分"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Anton Repponen (AQ8jQo7QULU).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-10</div><div class="title">多元函数的导数与微分</div></div></a></div><div><a href="/2022/03/11/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20four%EF%BC%89/" title="高阶导数与 Taylor 公式"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by eberhard 🖐 grossgasteiger (qQHjKX1QCuY).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-11</div><div class="title">高阶导数与 Taylor 公式</div></div></a></div><div><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%20%EF%BC%88Chapter%20two%EF%BC%89/" title="多元函数的极限"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Michael Niessl (KraoHdRYrRE).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-06</div><div class="title">多元函数的极限</div></div></a></div><div><a href="/2022/02/22/CS/others/Tsing_answer_analysis/" title="答疑坊数据统计"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Kace  Rodriguez (p3OzJuT_Dks).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-02-22</div><div class="title">答疑坊数据统计</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AE%E7%A7%AF%E5%88%86%E7%AC%94%E8%AE%B0%E7%AC%AC%E4%B8%80%E8%AE%B2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">微积分笔记第一讲（多元函数的连续性）</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: ＃0096FF"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Eren Zhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/2022%E6%98%A5%E5%AD%A3/">2022春季</a><a class="post-meta__tags" href="/tags/%E5%A4%9A%E5%85%83%E5%BE%AE%E7%A7%AF%E5%88%86/">多元微积分</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62b11572b25ab3ab" async="async"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%20%EF%BC%88Chapter%20two%EF%BC%89/"><img class="prev-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Pascal Debrunner (ELv8fvulR0g).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">多元函数的极限</div></div></a></div><div class="next-post pull-right"><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/"><img class="next-cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Cody Fitzgerald (tM8vN04UZvo).jpg" onerror="onerror=null;src='https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Oscar Rodrigo Hernandez Panczenko (P0GQ95huhBo).jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">多元函数的连续与可微</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxfwork01/" title="多元微积分作业（一）"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Tevin Trinh (e0lswhTboHA).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-10</div><div class="title">多元微积分作业（一）</div></div></a></div><div><a href="/2022/03/09/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf03/" title="多元函数的导数与微分"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by JOHN TOWNER (3Kv48NS4WUU).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-09</div><div class="title">多元函数的导数与微分</div></div></a></div><div><a href="/2022/03/13/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf02/" title="多元函数的极限"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Nikita Krassiouk (VQegrm9mbLU).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-13</div><div class="title">多元函数的极限</div></div></a></div><div><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/wxf01/" title="多元函数的连续与可微"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Cody Fitzgerald (tM8vN04UZvo).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-06</div><div class="title">多元函数的连续与可微</div></div></a></div><div><a href="/2022/03/14/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Complex%20matrix%EF%BC%88Chapter%201%EF%BC%89/" title="复矩阵"><img class="cover" src="https://pic.imgdb.cn/item/61f0fc772ab3f51d9173149e.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-14</div><div class="title">复矩阵</div></div></a></div><div><a href="/2022/03/10/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20three%EF%BC%89/" title="多元函数的导数与微分"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Craig Tidball (qY2-efJojd8).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-10</div><div class="title">多元函数的导数与微分</div></div></a></div><div><a href="/2022/03/11/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%EF%BC%88Chapter%20four%EF%BC%89/" title="高阶导数与 Taylor 公式"><img class="cover" src="https://pic.imgdb.cn/item/61eccc602ab3f51d91d70cc6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-11</div><div class="title">高阶导数与 Taylor 公式</div></div></a></div><div><a href="/2022/03/06/Lecture/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%95%B0%E5%AD%A6/Calculus%20A2%20notes%20%EF%BC%88Chapter%20two%EF%BC%89/" title="多元函数的极限"><img class="cover" src="https://raw.githubusercontent.com/zhaochenyang20/ivue_wallpaper/main/ivue_desktop/Photo by Pascal Debrunner (ELv8fvulR0g).jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-06</div><div class="title">多元函数的极限</div></div></a></div><div><a href="/2022/05/02/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E5%9B%9B%E9%83%A8/" title="清华园日记——第四部"><img class="cover" src="https://pic.imgdb.cn/item/61eccb6b2ab3f51d91d62fc2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-02</div><div class="title">清华园日记——第四部</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AE%E7%A7%AF%E5%88%86%E7%AC%94%E8%AE%B0%E7%AC%AC%E4%B8%80%E8%AE%B2%EF%BC%88%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">微积分笔记第一讲（多元函数的连续性）</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: ＃0096FF"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Chenytang Zhao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
   var options = JSON.parse(document.getElementById('maid-script').getAttribute('mermaidoptioins'));
   mermaid.initialize(options);
 }</script></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库正在艰难运行</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
@@ -589,4 +381,4 @@ if ('Gitalk' === 'Gitalk' || !true) {
 POWERMODE.shake = false;
 POWERMODE.mobile = true;
 document.body.addEventListener('input', POWERMODE);
-</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
