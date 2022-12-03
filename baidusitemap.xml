@@ -2,7 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://example.com/2022/11/01/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_11/</loc>
-    <lastmod>2022-12-02</lastmod>
+    <lastmod>2022-12-03</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/07/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%83%E9%83%A8/</loc>
+    <lastmod>2022-12-03</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/08/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_8/</loc>
+    <lastmod>2022-12-03</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/21/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/Summer%20research/</loc>
@@ -19,10 +27,6 @@
   <url>
     <loc>http://example.com/2022/11/27/%E5%87%BA%E5%9B%BD/recommend/</loc>
     <lastmod>2022-11-29</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/08/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_8/</loc>
-    <lastmod>2022-11-28</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/10/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E5%87%BA%E9%80%83%E8%AE%B0/</loc>
@@ -87,10 +91,6 @@
   <url>
     <loc>http://example.com/2022/02/03/%E5%87%BA%E5%9B%BD/Night%20Voyager/</loc>
     <lastmod>2022-10-12</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/07/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%83%E9%83%A8/</loc>
-    <lastmod>2022-10-07</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/05/17/Lecture/2022%20Spring/binaryDivdence/</loc>
