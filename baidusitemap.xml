@@ -2,7 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://example.com/2022/11/01/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_11/</loc>
-    <lastmod>2022-12-08</lastmod>
+    <lastmod>2022-12-09</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/01/21/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/Summer%20research/</loc>
+    <lastmod>2022-12-09</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/02/18/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/defense/</loc>
+    <lastmod>2022-12-09</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/04/24/%E9%9A%8F%E7%AC%94/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
@@ -15,10 +23,6 @@
   <url>
     <loc>http://example.com/2022/07/31/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0--%E7%AC%AC%E4%B8%83%E9%83%A8/</loc>
     <lastmod>2022-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/01/21/CS/%E7%A7%91%E7%A0%94/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4/Summer%20research/</loc>
-    <lastmod>2022-12-01</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/11/01/%E9%9A%8F%E7%AC%94/%E6%B8%85%E5%8D%8E%E5%9B%AD%E6%97%A5%E8%AE%B0/dairy_THU_10/</loc>
@@ -70,10 +74,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/01/12/%E5%87%BA%E5%9B%BD/exchange_preparations/</loc>
-    <lastmod>2022-11-10</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/02/18/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/defense/</loc>
     <lastmod>2022-11-10</lastmod>
   </url>
   <url>
