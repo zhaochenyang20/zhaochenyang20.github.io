@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2022/04/24/%E9%9A%8F%E7%AC%94/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2023-02-22</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/08/15/%E9%9A%8F%E7%AC%94/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4%E5%B1%95%E6%9C%9B/</loc>
+    <lastmod>2023-02-22</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/08/20/CS/%E7%A7%91%E7%A0%94/chain_of_thought/</loc>
+    <lastmod>2023-02-17</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/01/23/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/Call%20Me%20A%20Fool/</loc>
+    <lastmod>2023-01-20</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/01/14/%E5%87%BA%E5%9B%BD/reasoning/</loc>
+    <lastmod>2023-01-13</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/01/09/%E5%87%BA%E5%9B%BD/%E6%B2%99%E6%BC%A0%E9%87%8C%E7%9A%84%E7%BA%BD%E7%BA%A6%E5%9F%8E/</loc>
+    <lastmod>2023-01-13</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2022/02/22/CS/others/Tsing_answer_analysis/</loc>
+    <lastmod>2023-01-09</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2022/08/15/%E9%9A%8F%E7%AC%94/%E6%80%BB%E7%BB%93/PhD-1.5/</loc>
-    <lastmod>2022-12-30</lastmod>
+    <lastmod>2022-12-31</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/07/25/Lecture/English/TOEFL_life_savior/</loc>
@@ -53,10 +81,6 @@
     <lastmod>2022-12-30</lastmod>
   </url>
   <url>
-    <loc>http://example.com/2022/02/22/CS/others/Tsing_answer_analysis/</loc>
-    <lastmod>2022-12-30</lastmod>
-  </url>
-  <url>
     <loc>http://example.com/2022/01/09/CS/others/typing/</loc>
     <lastmod>2022-12-30</lastmod>
   </url>
@@ -82,10 +106,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/02/18/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/defense/</loc>
-    <lastmod>2022-12-30</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/01/23/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/Call%20Me%20A%20Fool/</loc>
     <lastmod>2022-12-30</lastmod>
   </url>
   <url>
@@ -115,14 +135,6 @@
   <url>
     <loc>http://example.com/2022/11/27/%E5%87%BA%E5%9B%BD/recommend/</loc>
     <lastmod>2022-12-30</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/08/20/CS/%E7%A7%91%E7%A0%94/chain_of_thought/</loc>
-    <lastmod>2022-12-30</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/04/24/%E9%9A%8F%E7%AC%94/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%BA%8C%E5%AD%A6%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2022-12-16</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/10/%E9%9A%8F%E7%AC%94/%E5%BF%83%E5%BF%83%E5%BF%B5%E5%BF%B5/%E5%87%BA%E9%80%83%E8%AE%B0/</loc>
@@ -167,14 +179,6 @@
   <url>
     <loc>http://example.com/2022/03/31/%E5%87%BA%E5%9B%BD/%E9%A1%B9%E8%84%8A%E8%BD%A9%E5%BF%97/</loc>
     <lastmod>2022-09-18</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/08/15/%E9%9A%8F%E7%AC%94/%E6%80%BB%E7%BB%93/%E5%A4%A7%E4%B8%89%E5%AD%A6%E5%B9%B4%E5%B1%95%E6%9C%9B/</loc>
-    <lastmod>2022-09-12</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/01/14/%E5%87%BA%E5%9B%BD/reasoning/</loc>
-    <lastmod>2022-09-11</lastmod>
   </url>
   <url>
     <loc>http://example.com/2022/01/08/%E5%87%BA%E5%9B%BD/%E8%A7%84%E5%88%99%E4%B8%8E%E6%B0%94%E8%B4%A8/</loc>
@@ -278,10 +282,6 @@
   </url>
   <url>
     <loc>http://example.com/2022/01/09/%E5%87%BA%E5%9B%BD/%E7%96%AB%E6%83%85/</loc>
-    <lastmod>2022-08-26</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2022/01/09/%E5%87%BA%E5%9B%BD/%E6%B2%99%E6%BC%A0%E9%87%8C%E7%9A%84%E7%BA%BD%E7%BA%A6%E5%9F%8E/</loc>
     <lastmod>2022-08-26</lastmod>
   </url>
   <url>
